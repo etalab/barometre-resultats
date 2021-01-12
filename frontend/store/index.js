@@ -17,6 +17,7 @@ export const state = () => ({
     height: 0
   },
   triggerResize: 1,
+  triggerResizeNoScroll: 1,
 
   // BREAKPOINTS
   breakpoint: {
@@ -273,6 +274,9 @@ export const mutations = {
   },
   toggleTriggerResize (state) {
     state.triggerResize = state.triggerResize + 1
+  },
+  toggleTriggerResizeNoScroll (state) {
+    state.triggerResizeNoScroll = state.triggerResizeNoScroll + 1
   },
 
   // ROUTES CONFIG
