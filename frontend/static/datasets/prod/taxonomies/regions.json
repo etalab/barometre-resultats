@@ -31,7 +31,7 @@
     "libelle": "La R\u00e9union", 
     "ncc": "LA REUNION", 
     "nccenr": "La R\u00e9union", 
-    "pre": "",
+    "pre": "solo",
     "reg": "04", 
     "tncc": "0"
   }, 
@@ -40,7 +40,7 @@
     "libelle": "Mayotte", 
     "ncc": "MAYOTTE", 
     "nccenr": "Mayotte", 
-    "pre": "fem",
+    "pre": "solo",
     "reg": "06", 
     "tncc": "0"
   }, 
