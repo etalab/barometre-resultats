@@ -19,7 +19,7 @@
     <!-- triggerVis: <code>{{triggerVis}}</code> -->
     <!-- getDivVisibilityArray: <br><code>{{getDivVisibilityArray}}</code> -->
     <!-- {{ contentWindowHeightPx() }}  -->
-    <!-- $vuetify.breakpoint.name : {{ $vuetify.breakpoint.name }}<br> -->
+    $vuetify.breakpoint.name : {{ $vuetify.breakpoint.name }}<br>
 
     <v-row
       v-for="(row, index) in routeConfig.pageRows"
