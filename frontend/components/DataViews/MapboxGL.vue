@@ -743,9 +743,9 @@ export default {
     },
 
     redraw(mainMap = true) {
-      this.log && console.log("\nC-MapboxGL / redraw - mainMap : ", mainMap)
-      this.log && console.log("C-MapboxGL / redrawing mainMap...")
-      this.log && console.log("C-MapboxGL / redraw - this.mainMapId : ", this.mainMapId)
+      // this.log && console.log("\nC-MapboxGL / redraw - mainMap : ", mainMap)
+      // this.log && console.log("C-MapboxGL / redrawing mainMap...")
+      // this.log && console.log("C-MapboxGL / redraw - this.mainMapId : ", this.mainMapId)
       let storeSourcesArray = this.sources.filter((s) => s.from === "store")
       let urlSourcesArray = this.sources.filter((s) => s.from === "url")
       this.loadStoreSources(storeSourcesArray, mainMap)
@@ -754,7 +754,7 @@ export default {
         this.loadClicEvents(this.maps, mainMap)
         // set up view 
         if (this.fitToPolygon) {
-          this.log && console.log("C-MapboxGL / redraw - map / this.fitToPolygon : ", this.fitToPolygon)
+          // this.log && console.log("C-MapboxGL / redraw - map / this.fitToPolygon : ", this.fitToPolygon)
           if (this.fitToPolygon.zoomBy === 'polygon') {
             let newParams = { ...this.fitToPolygon, ...this.paramsReset }
             this.goToPolygon({}, newParams)
@@ -1254,15 +1254,15 @@ export default {
     // ZOOM FUNCTIONS
 
     fit(geojson) {
-      this.log && console.log('\nC-MapboxGL / fit ... geojson : ', geojson )
+      // this.log && console.log('\nC-MapboxGL / fit ... geojson : ', geojson )
       let mapbox = _map
       var _bbox = bbox(geojson)
       let options = { padding: 20, animate: true }
       mapbox.fitBounds(_bbox, options)
     },
     flyTo(center, zoom, convertToLngLat=false) {
-      this.log && console.log('\nC-MapboxGL / flyTo ... center : ', center )
-      this.log && console.log('C-MapboxGL / flyTo ... zoom : ', zoom )
+      // this.log && console.log('\nC-MapboxGL / flyTo ... center : ', center )
+      // this.log && console.log('C-MapboxGL / flyTo ... zoom : ', zoom )
       let mapbox = _map
       if (zoom > 0 && center) {
         mapbox.flyTo({
@@ -1272,11 +1272,11 @@ export default {
       }
     },
     goToPolygon(event, params) {
-      this.log && console.log("\nC-MapboxGL / goToPolygon ... params : ", params )
-      this.log && console.log("C-MapboxGL / goToPolygon ... event.features : ", event.features )
+      // this.log && console.log("\nC-MapboxGL / goToPolygon ... params : ", params )
+      // this.log && console.log("C-MapboxGL / goToPolygon ... event.features : ", event.features )
       let mapbox = _map
       let isFnInZoomRange = this.isInZoomRange(params.zoomRange)
-      this.log && console.log("C-MapboxGL / goToPolygon ... isFnInZoomRange : ", isFnInZoomRange )
+      // this.log && console.log("C-MapboxGL / goToPolygon ... isFnInZoomRange : ", isFnInZoomRange )
 
       let eventProps = event.features && event.features[0] && event.features[0].properties
       // this.log && console.log("C-MapboxGL / goToPolygon ... eventProps : ", eventProps )
@@ -1298,19 +1298,19 @@ export default {
 
         // find corresponding data in map
         let source = params.source
-        this.log && console.log("C-MapboxGL / goToPolygon ... source : ", source )
+        // this.log && console.log("C-MapboxGL / goToPolygon ... source : ", source )
         let sourceFeatures = mapbox.querySourceFeatures( source, { sourceLayer: `${source}-fill` } )
-        this.log && console.log("C-MapboxGL / goToPolygon ... sourceFeatures : ", sourceFeatures )
+        // this.log && console.log("C-MapboxGL / goToPolygon ... sourceFeatures : ", sourceFeatures )
         
         let selectedPolygon = sourceFeatures.find((feat) => feat.properties.code === geodata.properties.code)
-        this.log && console.log("C-MapboxGL / goToPolygon ... selectedPolygon : ", selectedPolygon )
+        // this.log && console.log("C-MapboxGL / goToPolygon ... selectedPolygon : ", selectedPolygon )
 
         // toggle selected on
         if (selectedPolygon) {
           let pseudoEvent = {
             features: [selectedPolygon]
           }
-          this.log && console.log("C-MapboxGL / goToPolygon ... pseudoEvent : ", pseudoEvent )
+          // this.log && console.log("C-MapboxGL / goToPolygon ... pseudoEvent : ", pseudoEvent )
           this.toggleSelectedOn(pseudoEvent, source, params)
         }
       }
@@ -1398,11 +1398,11 @@ export default {
       this.selectedStateId = {}
     },
     resetSelectedPolygons(source, params) {
-      this.log && console.log('C-MapboxGL / resetSelectedPolygons ...' )
-      this.log && console.log('C-MapboxGL / resetSelectedPolygons ... source : ', source )
-      this.log && console.log('C-MapboxGL / resetSelectedPolygons ... params : ', params )
+      // this.log && console.log('C-MapboxGL / resetSelectedPolygons ...' )
+      // this.log && console.log('C-MapboxGL / resetSelectedPolygons ... source : ', source )
+      // this.log && console.log('C-MapboxGL / resetSelectedPolygons ... params : ', params )
       // this.log && console.log('C-MapboxGL / resetSelectedPolygons ... featureId : ', featureId )
-      this.log && console.log('C-MapboxGL / resetSelectedPolygons ... this.selectedStateId : ', this.selectedStateId )
+      // this.log && console.log('C-MapboxGL / resetSelectedPolygons ... this.selectedStateId : ', this.selectedStateId )
       let mapbox = _map
       let mapboxBlocks = _maps
 
@@ -1415,11 +1415,11 @@ export default {
       const filteredLayers = layers.filter(lay => layersView.includes(lay))
 
       const sources = ['regions', 'departements']
-      this.log && console.log('C-MapboxGL / resetSelectedPolygons ... sources : ', sources )
+      // this.log && console.log('C-MapboxGL / resetSelectedPolygons ... sources : ', sources )
       const sourcesView = this.sources.map(src => src.id)
-      this.log && console.log('C-MapboxGL / resetSelectedPolygons ... sourcesView : ', sourcesView )
+      // this.log && console.log('C-MapboxGL / resetSelectedPolygons ... sourcesView : ', sourcesView )
       const filteredSources = sources.filter(src => sourcesView.includes(src))
-      this.log && console.log('C-MapboxGL / resetSelectedPolygons ... filteredSources : ', filteredSources )
+      // this.log && console.log('C-MapboxGL / resetSelectedPolygons ... filteredSources : ', filteredSources )
       
       filteredSources.forEach(src => {
         mapbox.removeFeatureState({ source: src })
@@ -1447,20 +1447,20 @@ export default {
       // })
     },
     setSelectedPolygons(selected, params = this.paramsReset) {
-      this.log && console.log('\nC-MapboxGL / setSelectedPolygons ... selected : ', selected )
-      this.log && console.log('C-MapboxGL / setSelectedPolygons ... params : ', params )
+      // this.log && console.log('\nC-MapboxGL / setSelectedPolygons ... selected : ', selected )
+      // this.log && console.log('C-MapboxGL / setSelectedPolygons ... params : ', params )
       let mapbox = _map
       let mapboxBlocks = _maps
       // clean all features from selected state
       this.resetSelectedPolygons({}, this.paramsReset)
       let selectedSources = Object.keys(selected)
-      this.log && console.log('C-MapboxGL / setSelectedPolygons ... selectedSources : ', selectedSources )
+      // this.log && console.log('C-MapboxGL / setSelectedPolygons ... selectedSources : ', selectedSources )
       selectedSources.forEach( src => {
-        this.log && console.log('C-MapboxGL / setSelectedPolygons ... src : ', src )
+        // this.log && console.log('C-MapboxGL / setSelectedPolygons ... src : ', src )
         let featureId = parseInt( selected[src] )
-        this.log && console.log('C-MapboxGL / setSelectedPolygons ... featureId : ', featureId )
+        // this.log && console.log('C-MapboxGL / setSelectedPolygons ... featureId : ', featureId )
         this.selectedStateId[src] = featureId
-        this.log && console.log('C-MapboxGL / setSelectedPolygons ... this.selectedStateId : ', this.selectedStateId )
+        // this.log && console.log('C-MapboxGL / setSelectedPolygons ... this.selectedStateId : ', this.selectedStateId )
         mapbox.setFeatureState(
           { source: src, id: featureId },
           { selected: true }
@@ -1474,26 +1474,26 @@ export default {
       })
     },
     toggleSelectedOn(event, source, params) {
-      this.log && console.log('\nC-MapboxGL / toggleSelectedOn ... event : ', event )
-      this.log && console.log('C-MapboxGL / toggleSelectedOn ... params : ', params )
-      this.log && console.log('C-MapboxGL / toggleSelectedOn ... source : ', source )
-      this.log && console.log('C-MapboxGL / toggleSelectedOn ... event.features : ', event.features )
-      this.log && console.log('C-MapboxGL / toggleSelectedOn ... this.selectedStateId : ', this.selectedStateId )
+      // this.log && console.log('\nC-MapboxGL / toggleSelectedOn ... event : ', event )
+      // this.log && console.log('C-MapboxGL / toggleSelectedOn ... params : ', params )
+      // this.log && console.log('C-MapboxGL / toggleSelectedOn ... source : ', source )
+      // this.log && console.log('C-MapboxGL / toggleSelectedOn ... event.features : ', event.features )
+      // this.log && console.log('C-MapboxGL / toggleSelectedOn ... this.selectedStateId : ', this.selectedStateId )
       let mapbox = _map
       let mapboxBlocks = _maps
       this.resetSelectedPolygons(source, params)
       
       if (event.features) {
-        this.log && console.log('C-MapboxGL / toggleSelectedOn ... event.features[0] : ', event.features[0] )
-        this.log && console.log('C-MapboxGL / toggleSelectedOn ... this.selectedStateId - 1 : ', this.selectedStateId )
+        // this.log && console.log('C-MapboxGL / toggleSelectedOn ... event.features[0] : ', event.features[0] )
+        // this.log && console.log('C-MapboxGL / toggleSelectedOn ... this.selectedStateId - 1 : ', this.selectedStateId )
 
         // clean all sources froom selected state
         this.selectedStateId[source] = event.features[0] && event.features[0].id
 
-        this.log && console.log('C-MapboxGL / toggleSelectedOn ... this.selectedStateId - 2 : ', this.selectedStateId )
+        // this.log && console.log('C-MapboxGL / toggleSelectedOn ... this.selectedStateId - 2 : ', this.selectedStateId )
         
         let sources = Object.keys(this.selectedStateId)
-        this.log && console.log('C-MapboxGL / toggleSelectedOn ...sources :', sources )
+        // this.log && console.log('C-MapboxGL / toggleSelectedOn ...sources :', sources )
         sources.forEach(src => {
           // this.log && console.log('C-MapboxGL / toggleSelectedOn ...src :', src )
           mapbox.setFeatureState(
@@ -1520,7 +1520,7 @@ export default {
       let MapVisibilityConfig = this.mapsVisibility.map_switches.find(
         (item) => item.id === mapSelectedId
       )
-      this.log && console.log("C-MapboxGL / switchMapVisibility / MapVisibilityConfig : ", MapVisibilityConfig)
+      // this.log && console.log("C-MapboxGL / switchMapVisibility / MapVisibilityConfig : ", MapVisibilityConfig)
 
       let mapSelected = this.maps.find(
         (m) => m.id === MapVisibilityConfig.mapId
