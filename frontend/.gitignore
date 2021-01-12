@@ -93,4 +93,4 @@ sw.*
 *.swp
 
 # env file
-.env
+!.env
