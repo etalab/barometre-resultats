@@ -73,8 +73,9 @@ body {
   <v-app
     id="ODAMAP-root"
     :class="`${isIframe && browser && browser.isFirefox ? 'hide-scrollbar' :  ''}`"
-    :style="`${isIframe ? 'overflow:hidden;' : ''}`"
+    :style="`'overflow:hidden;'`"
     >
+    <!-- :style="`${isIframe ? 'overflow:hidden;' : ''}`" -->
     <!-- :style="`${isIframe && routeConfig.forceHeightIfIframe ? '' : 'overflow:hidden;' } `" -->
     <!-- max-height:${layoutHeight}px; -->
     <!-- :style="`overflow: hidden;`" -->
@@ -374,11 +375,11 @@ export default {
       return winHeight
     },
 
-    // isMobileWidth() {
-    //   let breakpoints = this.mobileBreakpoints
-    //   let currentBreakpoint = this.$vuetify.breakpoint.name
-    //   return breakpoints.includes(currentBreakpoint)
-    // },
+    isMobileWidth() {
+      let breakpoints = this.mobileBreakpoints
+      let currentBreakpoint = this.$vuetify.breakpoint.name
+      return breakpoints.includes(currentBreakpoint)
+    },
   },
 
   methods: {
@@ -475,7 +476,7 @@ export default {
       const forceFullHeight = this.isIframe && this.routeConfig.forceHeightIfIframe
       // console.log('L-default / sendPostMessage / forceFullHeight : ', forceFullHeight)
 
-      if (forceFullHeight) {
+      if (forceFullHeight || this.isMobileWidth) {
         heightToSend = this.contentMaxScrollHeight() + 200
       } else {
         heightToSend = this.defaultOdamapHeight
