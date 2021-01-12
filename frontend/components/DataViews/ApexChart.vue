@@ -402,7 +402,10 @@ export default {
       this.isLoading = true
     },
     panel(next, prev) {
-      this.$store.commit('toggleTriggerResizeNoScroll')
+      var self = this
+      setTimeout(function(){
+        self.$store.commit('toggleTriggerResizeNoScroll')
+      },100)
     }
   },
 
