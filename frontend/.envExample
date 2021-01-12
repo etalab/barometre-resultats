@@ -5,11 +5,12 @@
 NUXT_ENV_RUN_MODE=dev
 NUXT_ENV_HOST=localhost
 NUXT_ENV_PORT_DEV=8000
-# NUXT_ENV_APP_TITLE=Objets de la Vie Quotidienne
-NUXT_ENV_APP_TITLE=Actions prioritaires du gouvernement
+NUXT_ENV_PORT_PROD=8001
+# NUXT_ENV_APP_TITLE=Actions prioritaires du gouvernement
+NUXT_ENV_APP_TITLE=Baromètre des résultats
 
 ### OVERRIDES
-NUXT_ENV_APP_IFRAME_OVERRIDE=no
+NUXT_ENV_APP_IFRAME_OVERRIDE=false
 NUXT_ENV_APP_ROUTESTABS_OVERRIDE=no
 NUXT_ENV_APP_NOMAPSCROLL_OVERRIDE=no
 
@@ -23,8 +24,8 @@ NUXT_ENV_LANG_DEFAULT_LOCALES=fr:Français:fr-FR.js
 ### - - - - - - - - - - - - - - - - - - - - - ###
 ### MATOMO STATS
 ### - - - - - - - - - - - - - - - - - - - - - ###
-NUXT_ENV_MATOMO_HOST=https://stats.data.gouv.fr
-NUXT_ENV_MATOMO_SITE_ID=127
+NUXT_ENV_MATOMO_HOST=XXXXX
+NUXT_ENV_MATOMO_SITE_ID=XXX
 
 
 ### - - - - - - - - - - - - - - - - - - - - - ###
@@ -32,10 +33,13 @@ NUXT_ENV_MATOMO_SITE_ID=127
 ### - - - - - - - - - - - - - - - - - - - - - ###
 # NUXT_ENV_CONFIG_FROM : local_js_files (default | undefined) | local_json_files | distant_json_files (distant)
 NUXT_ENV_CONFIG_FROM=local_js_files
+# NUXT_ENV_CONFIG_FROM=local_json_files
 NUXT_ENV_CONFIG_TO_JSON_FOLDER=config-ovq
+NUXT_ENV_CONFIG_STATIC_STRUCTURE_KPIFAMS_FILEPATH=/datasets/ovq-data/prod/structure/structure-families.json
+NUXT_ENV_CONFIG_STATIC_STRUCTURE_KPIS_FILEPATH=/datasets/ovq-data/prod/structure/structure-cible.json
 
 ### ONLY FOR DISTANT FILES
-NUXT_ENV_configs_URLBASE=https://raw.githubusercontent.com/co-demos/ODAMPA-configs/master/AIDES-ENTREPRISES/configs/json/
+NUXT_ENV_configs_URLBASE=https://raw.githubusercontent.com/etalab/ovq-dashboard/master/frontend/configs/config-ovq/json/
 NUXT_ENV_configAppUIUX=configAppUIUX.json
 NUXT_ENV_configAppRoutes=configAppRoutes.json
 NUXT_ENV_configAppData=configAppData.json
@@ -50,14 +54,9 @@ NUXT_ENV_configAppNavbarFooters=configAppNavbarFooters.json
 NUXT_ENV_configAppGlobalButtons=configAppGlobalButtons.json
 
 ### - - - - - - - - - - - - - - - - - - - - - ###
-### CONFIGS FROM ...
-### - - - - - - - - - - - - - - - - - - - - - ###
-NUXT_ENV_GENERATE_ROUTES=/plan-velo,/asile,/logement-d-abord,/thd,/apprentissage,/ecole-inclusive
-
-### - - - - - - - - - - - - - - - - - - - - - ###
 ### COLORS
 ### - - - - - - - - - - - - - - - - - - - - - ###
-NUXT_ENV_LOADING_COLOR=#d1335b
+NUXT_ENV_LOADING_COLOR=#fff
 NUXT_ENV_LOADING_HEIGHT=5
 
 NUXT_ENV_THEME_IS_DARK=false
