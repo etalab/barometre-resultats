@@ -474,7 +474,7 @@ export default {
       // console.log('L-default / sendPostMessage / forceFullHeight : ', forceFullHeight)
 
       if (forceFullHeight) {
-        heightToSend = this.contentMaxScrollHeight()
+        heightToSend = this.contentMaxScrollHeight() + 200
       } else {
         heightToSend = this.defaultOdamapHeight
       }
@@ -486,7 +486,7 @@ export default {
         // frameHeight: Math.ceil(heightToSend * 1.3),
         needScrollToTop: !noScroll
       }
-      console.log('L-default / sendPostMessage / messageToIframeParent : ', messageToIframeParent)
+      // console.log('L-default / sendPostMessage / messageToIframeParent : ', messageToIframeParent)
       this.resizeIndex = this.resizeIndex + 1
       window.parent.postMessage(messageToIframeParent,'*')
     },
