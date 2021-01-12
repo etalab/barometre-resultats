@@ -428,8 +428,8 @@ export default {
       }
 
       // this.log && console.log("L-default / contentWindowHeight ... height : ", height )
-      return height
       this.layoutHeight = height
+      return height
     },
     // contentWindowHeightPx() {
     //   const forceFullHeight = this.isIframe && this.routeConfig.forceHeightIfIframe
