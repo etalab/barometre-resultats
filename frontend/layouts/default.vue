@@ -73,8 +73,11 @@ body {
   <v-app
     id="ODAMAP-root"
     :class="`${isIframe && browser && browser.isFirefox ? 'hide-scrollbar' :  ''}`"
-    :style="`${routeConfig.forceHeightIfIframe ? '' : 'overflow:hidden;' } max-height:${layoutHeight}px;`"
+    :style="`${isIframe ? 'overflow:hidden;' : ''}`"	
     >
+    <!-- :style="`${isIframe ? 'overflow:hidden;' : ''}`" -->
+    <!-- :style="`${isIframe && routeConfig.forceHeightIfIframe ? '' : 'overflow:hidden;' } `" -->
+    <!-- max-height:${layoutHeight}px; -->
     <!-- :style="`overflow: hidden;`" -->
 
     <!-- DYNAMIC CSS -->
@@ -97,7 +100,7 @@ body {
       <v-main
         id="ODAMAP-layout-content"
         class="ma-0 pa-0"
-        :style="`height: ${layoutHeight}px; padding: 0 0 0 0`"
+        :style="`${ isMobileWidth ? '' : 'height:' + layoutHeight + 'px;' } padding: 0 0 0 0;'`"
         >
 
         <!-- <Filters /> -->
@@ -217,6 +220,7 @@ export default {
         fr : 'chargement des données'
       },
       browser:  undefined,
+      resizeIndex: 0,
       userParams: {
         kpifamilies : '',
         datasetid : '',
@@ -228,6 +232,9 @@ export default {
   watch: {
     triggerResize (next, prev) {
       this.handleResize()
+    },
+    triggerResizeNoScroll (next, prev) {
+      this.handleResize(true)
     },
     triggerComponentsLoaded (next, prev) {
       this.handleResize()
@@ -333,8 +340,9 @@ export default {
       isRouteLoading: (state) => state.isRouteLoading,
 
       triggerResize: (state) => state.triggerResize,
+      triggerResizeNoScroll: (state) => state.triggerResizeNoScroll,
       triggerComponentsLoaded: (state) => state.triggerComponentsLoaded,
-      // mobileBreakpoints: (state) => state.configUX.mobileBreakpoints,
+      mobileBreakpoints: (state) => state.configUX.mobileBreakpoints,
       defaultOdamapHeight: (state) => state.defaultOdamapHeight,
       // vuetifyThemeIsSet: (state) => state.configs.vuetifyThemeIsSet,
       // configUI: (state) => state.configUI,
@@ -367,22 +375,22 @@ export default {
       return winHeight
     },
 
-    // isMobileWidth() {
-    //   let breakpoints = this.mobileBreakpoints
-    //   let currentBreakpoint = this.$vuetify.breakpoint.name
-    //   return breakpoints.includes(currentBreakpoint)
-    // },
+    isMobileWidth() {
+      let breakpoints = this.mobileBreakpoints
+      let currentBreakpoint = this.$vuetify.breakpoint.name
+      return breakpoints.includes(currentBreakpoint)
+    },
   },
 
   methods: {
-    handleResize() {
+    handleResize(noScroll = false) {
       // send iframe height to parent if isIframe
       // let iframeHeight = this.contentWindowHeight
       // this.log && console.log('L-default / handleResize / iframeHeight : ', iframeHeight)
       // this.log && console.log('L-default / handleResize / this.isIframe : ', this.isIframe)
       this.contentWindowHeight()
       if (this.isIframe) {
-        this.sendPostMessage()
+        this.sendPostMessage(noScroll)
       }
     },
     contentWindowHeight() {
@@ -428,8 +436,8 @@ export default {
       }
 
       // this.log && console.log("L-default / contentWindowHeight ... height : ", height )
-      return height
       this.layoutHeight = height
+      return height
     },
     // contentWindowHeightPx() {
     //   const forceFullHeight = this.isIframe && this.routeConfig.forceHeightIfIframe
@@ -462,25 +470,28 @@ export default {
       ODAMAP_scrolHeight = ODAMAP_scrolHeight < this.defaultOdamapHeight ? this.defaultOdamapHeight : ODAMAP_scrolHeight
       return ODAMAP_scrolHeight
     },
-    sendPostMessage() {
+    sendPostMessage(noScroll = false) {
 
       let heightToSend
       const forceFullHeight = this.isIframe && this.routeConfig.forceHeightIfIframe
       // console.log('L-default / sendPostMessage / forceFullHeight : ', forceFullHeight)
 
-      if (forceFullHeight) {
-        heightToSend = this.contentMaxScrollHeight()
+      if (forceFullHeight || this.isMobileWidth) {
+        heightToSend = Math.ceil(this.contentMaxScrollHeight() * 1.1)
       } else {
         heightToSend = this.defaultOdamapHeight
       }
       // console.log('L-default / sendPostMessage / heightToSend - B : ', heightToSend)
       let messageToIframeParent = {
         // fixedHeight: !forceFullHeight,
-        frameHeight: heightToSend + 200
+        frameHeight: heightToSend,
+        resizeIndex: this.resizeIndex,
+        // frameHeight: Math.ceil(heightToSend * 1.3),
+        needScrollToTop: !noScroll
       }
       // console.log('L-default / sendPostMessage / messageToIframeParent : ', messageToIframeParent)
-      
-      window.parent.postMessage(messageToIframeParent, '*')
+      this.resizeIndex = this.resizeIndex + 1
+      window.parent.postMessage(messageToIframeParent,'*')
     },
 
     handleRouteChange(){

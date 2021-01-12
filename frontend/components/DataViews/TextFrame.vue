@@ -367,6 +367,13 @@ export default {
     triggerVis(next, prev) {
       this.getCanShow()
     },
+
+    panel(next, prev) {
+      var self = this
+      setTimeout(function(){
+        self.$store.commit('toggleTriggerResizeNoScroll')
+      },100)
+    }
   },
 
   beforeMount() {

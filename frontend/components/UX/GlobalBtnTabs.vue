@@ -285,32 +285,43 @@ export default {
       } else {
         this.openTabBtns.unshift(id)  
       }*/
+      var self = this
       if (!this.openTabBtns.includes(id)) {
         this.openTabBtns = [id]
       }
       this.triggerTabBtn = !this.triggerTabBtn
-      this.$store.commit('toggleTriggerResize')
       this.updateSpecialStoreWithKpiFamilies()
       this.$store.commit('toggleTriggerComponentLoaded')
       this.$store.dispatch('buttons/changeTabs', this.tabsObject)
+      setTimeout(function(){
+        self.$store.commit('toggleTriggerResize')
+      },100)
+      
     },
 
     selectAllTabsBtn(){
+      var self = this
       this.openTabBtns = this.tabs.map( tab => tab.id )
       this.triggerTabBtn = !this.triggerTabBtn
-      this.$store.commit('toggleTriggerResize')
       this.updateSpecialStoreWithKpiFamilies()
       // this.$store.commit('buttons/toggleBtnReset')
       this.$store.commit('toggleTriggerComponentLoaded')
       this.$store.dispatch('buttons/changeTabs', this.tabsObject)
+      setTimeout(function(){
+        self.$store.commit('toggleTriggerResize')
+      },100)
     },
 
     resetTabBtn(){
+      var self = this
       this.openTabBtns = []
       this.openTabBtns.push(this.tabs[0].id)
       this.updateSpecialStoreWithKpiFamilies()
       this.$store.commit('toggleTriggerComponentLoaded')
       this.$store.dispatch('buttons/changeTabs', this.tabsObject)
+      setTimeout(function(){
+        self.$store.commit('toggleTriggerResize')
+      },100)
     },
 
     updateSpecialStoreWithKpiFamilies() {
