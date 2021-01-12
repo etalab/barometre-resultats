@@ -1,0 +1,115 @@
+// @import './fontawesome.scss';
+// @import './materialdesign.scss';
+
+.odm-row {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+.skip-navbar {
+  padding-top : rem(64px) ;
+}
+.no-scroll {
+  overflow: hidden;
+  position: fixed;
+}
+.fullscreen-div {
+  height: 100%;
+  width: 100%;
+}
+.hide-scrollbar {
+  overflow: auto;
+  -ms-overflow-style: none; /* IE 11 */
+  scrollbar-width: none !important; /* Firefox 64 */
+}
+.small-spacing {
+  letter-spacing: 0em!important;
+}
+.text-reduce-1 {
+  font-size: 80%;
+}
+.v-list-item--link {
+  min-height: 40px !important;
+}
+.no-space-after {
+  margin-right: -.25em !important;
+}
+.word-break {
+  word-break: break-word !important;
+}
+.no-pointer {
+  cursor: initial;
+}
+.force-pointer {
+  cursor: pointer !important;
+}
+.no-max-width {
+  max-width: none !important;
+  // flex: none !important;
+}
+.no-flex {
+  flex: none !important;
+}
+.full-opacity {
+  opacity: 1 !important;
+}
+.borders-y-only {
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+}
+.borders-b-only {
+  border-bottom: 1px solid #e7e7e7;
+}
+.no-background-color:before {
+  background-color: white !important;
+}
+
+.odm-col-padding-xs {
+  padding: 0 18px 0 18px !important;
+}
+.odm-col-padding-sm {
+  padding: 0 15px 0 15px !important;
+}
+.odm-col-padding-md {
+  padding: 0 20px 0 50px !important;
+}
+.odm-col-padding-lg {
+  padding: 0 20px 0 70px !important;
+}
+.odm-col-padding-xl {
+  padding: 0 20px 0 100px !important;
+}
+
+.kpi-block-carto-top {
+  padding: 30px 30px 0 30px !important;
+  background-color: #f9f8f6;
+  // padding: 30px 30px 30px 30px !important;
+}
+.kpi-block-carto-top-mobile {
+  padding: 18px 18px 0 18px !important;
+  background-color: #f9f8f6;
+  // padding: 30px 30px 30px 30px !important;
+}
+
+.kpi-block-carto-bottom {
+  // margin: 0 30px 20px 30px !important;
+  background-color: #f9f8f6;
+  padding: 0 30px 30px 30px !important;
+}
+.kpi-block-carto-bottom-mobile {
+  // margin: 0 30px 20px 30px !important;
+  background-color: #f9f8f6;
+  padding: 0 18px 18px 18px !important;
+}
+
+.kpi-block-carto-alone {
+  // padding: 30px 30px 0 30px !important;
+  background-color: #f9f8f6;
+  padding: 30px 30px 30px 30px !important;
+}
+.kpi-block-carto-alone-mobile {
+  // padding: 30px 30px 0 30px !important;
+  background-color: #f9f8f6;
+  padding: 18px 18px 18px !important;
+}

@@ -1,0 +1,4 @@
+<p>
+L'indicateur permet de mesurer chaque année la satisfaction des usagers à l'égard de leurs services publics. Il résulte d’une enquête réalisée annuellement auprès des usagers des 9 domaines identifiés dans le <a target="_blank" href="http://www.delouvrier.org/wp-content/uploads/2020/12/Site_2_70AI72-Baromètre-Institut-Paul-Delouvrier-Décembre-2020-Version-allégée.pdf">baromètre Delouvrier</a> : fiscalité et impôts, police et gendarmerie, santé publique, sécurité sociale, logement, éducation nationale, justice, environnement, emploi/lutte contre le chômage. 
+</p>
+<p class="font-italic body-2">Source : Enquête réalisée annuellement par l’institut Delouvrier <br> Consulter les données sur <a target="_blank" href="https://www.data.gouv.fr/fr/datasets/barometre-des-resultats-de-laction-publique/">www.data.gouv.fr</a></p>

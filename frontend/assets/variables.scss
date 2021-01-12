@@ -1,0 +1,41 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+
+// The variables you want to modify
+$body-font-family: 'Marianne';
+$heading-font-family: 'Marianne';
+$expansion-panel-header-padding: 0 18px 0 18px;
+$expansion-panel-content-padding: 0 18px 0 18px;
+$card-title-letter-spacing: 0em;
+$btn-letter-spacing: 0em;
+$headings: (
+  'body-1': (
+    // 'font-family': $body-font-family,
+    'letter-spacing': 0em,
+  ),
+  'body-2': (
+    // 'font-family': $body-font-family,
+    'letter-spacing': 0em,
+  ),
+  'caption': (
+    // 'font-family': $body-font-family,
+    'letter-spacing': 0em,
+  )
+);
+.v-application {
+  .display-1,
+  .display-2,
+  .display-3,
+  .display-4,
+  .headline,
+  .title,
+  .subtitle-1,
+  .subtitle-2,
+  .body-1,
+  .body-2,
+  .caption,
+  .p,
+  .overline {
+    font-family: $body-font-family !important;
+  }
+}
+// @import "~vuetify/src/styles/styles.sass";
