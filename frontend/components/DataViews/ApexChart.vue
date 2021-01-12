@@ -401,9 +401,9 @@ export default {
     isRouteLoading (next, prev) {
       this.isLoading = true
     },
-    // panel(next, prev) {
-    //   this.$store.commit('toggleTriggerResize')
-    // }
+    panel(next, prev) {
+      this.$store.commit('toggleTriggerResizeNoScroll')
+    }
   },
 
   created() {
