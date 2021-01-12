@@ -73,8 +73,10 @@ body {
   <v-app
     id="ODAMAP-root"
     :class="`${isIframe && browser && browser.isFirefox ? 'hide-scrollbar' :  ''}`"
-    :style="`${routeConfig.forceHeightIfIframe ? '' : 'overflow:hidden;' } max-height:${layoutHeight}px;`"
+    :style="`${isIframe ? 'overflow:hidden;' : ''}`"
     >
+    <!-- :style="`${isIframe && routeConfig.forceHeightIfIframe ? '' : 'overflow:hidden;' } `" -->
+    <!-- max-height:${layoutHeight}px; -->
     <!-- :style="`overflow: hidden;`" -->
 
     <!-- DYNAMIC CSS -->
@@ -97,7 +99,7 @@ body {
       <v-main
         id="ODAMAP-layout-content"
         class="ma-0 pa-0"
-        :style="`height: ${layoutHeight}px; padding: 0 0 0 0`"
+        :style="`${ isMobileWidth ? '' : 'height:' + layoutHeight + 'px;' } padding: 0 0 0 0;'`"
         >
 
         <!-- <Filters /> -->
