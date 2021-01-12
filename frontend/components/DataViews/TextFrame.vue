@@ -368,9 +368,9 @@ export default {
       this.getCanShow()
     },
 
-    panel(next, prev) {
-      this.$store.commit('toggleTriggerResize')
-    }
+    // panel(next, prev) {
+    //   this.$store.commit('toggleTriggerResize')
+    // }
   },
 
   beforeMount() {
