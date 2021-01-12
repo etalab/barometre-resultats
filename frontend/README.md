@@ -73,32 +73,6 @@ npm run generate
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
-<br>
-
-#### note for iOS users, in case of issues during install :
-
-- cf : https://github.com/nodejs/node-gyp/blob/master/macOS_Catalina.md#Solutions
-
-this is for you if you encounter the following message : 
-```shell
-gyp: No Xcode or CLT version detected!
-```
-
---> steps for fixing this problem: 
-- run this acid test 
-```bash
-curl -sL https://github.com/nodejs/node-gyp/raw/master/macOS_Catalina_acid_test.sh | bash
-```
-If test succeeded, you are done! You should be ready to install `node-gyp`.
-
-If test failed, there is a problem with your Xcode Command Line Tools installation. See below...
-
-- check your iOS version 
-```bash
-sw_vers
-```
-- for Catalina 10.15.6 for instance => install `Command_Line_Tools_for_Xcode_12` : https://download.developer.apple.com/Developer_Tools/Command_Line_Tools_for_Xcode_12/Command_Line_Tools_for_Xcode_12.dmg
-
 ----------
 
 ## Linting
@@ -137,7 +111,7 @@ npm run lintfix
 
 ---------
 
-## Déploiement sur Netlify
+## Deploy on Netlify
 
 #### Build settings
 

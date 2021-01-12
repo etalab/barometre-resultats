@@ -1,6 +1,6 @@
 # ODAMAP - OVQ INSTANCE
 
-cloned from : https://github.com/etalab/dashboard-aides-entreprises
+cloned and evolved from : https://github.com/etalab/dashboard-aides-entreprises
 
 ## site
 
