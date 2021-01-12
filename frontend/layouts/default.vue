@@ -481,12 +481,12 @@ export default {
       let messageToIframeParent = {
         // fixedHeight: !forceFullHeight,
         // frameHeight: heightToSend
-        frameHeight: Math.ceil(heightToSend * 1.3)
+        frameHeight: Math.ceil(heightToSend * 1.3),
+        needScrollToTop: !noScroll
       }
       console.log('L-default / sendPostMessage / messageToIframeParent : ', messageToIframeParent)
       
-      let signal = noScroll ? 'no-scrolling' : '*'
-      window.parent.postMessage(messageToIframeParent, signal)
+      window.parent.postMessage(messageToIframeParent,'*')
     },
 
     handleRouteChange(){
