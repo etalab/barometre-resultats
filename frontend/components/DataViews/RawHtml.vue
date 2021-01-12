@@ -88,6 +88,10 @@ export default {
     templateURL(next, prev) {
       this.getRawHtml(next)
     },
+
+    showMore(next, prev) {
+      this.$store.commit('toggleTriggerResizeNoScroll')
+    }
   },
 
   computed: {
