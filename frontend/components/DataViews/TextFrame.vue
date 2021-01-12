@@ -367,6 +367,10 @@ export default {
     triggerVis(next, prev) {
       this.getCanShow()
     },
+
+    panel(next, prev) {
+      this.$store.commit('toggleTriggerResize')
+    }
   },
 
   beforeMount() {
