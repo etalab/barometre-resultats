@@ -229,6 +229,9 @@ export default {
     triggerResize (next, prev) {
       this.handleResize()
     },
+    triggerResizeNoScroll (next, prev) {
+      this.handleResize(true)
+    },
     triggerComponentsLoaded (next, prev) {
       this.handleResize()
     },
@@ -333,6 +336,7 @@ export default {
       isRouteLoading: (state) => state.isRouteLoading,
 
       triggerResize: (state) => state.triggerResize,
+      triggerResizeNoScroll: (state) => state.triggerResizeNoScroll,
       triggerComponentsLoaded: (state) => state.triggerComponentsLoaded,
       // mobileBreakpoints: (state) => state.configUX.mobileBreakpoints,
       defaultOdamapHeight: (state) => state.defaultOdamapHeight,
@@ -375,14 +379,14 @@ export default {
   },
 
   methods: {
-    handleResize() {
+    handleResize(noScroll = false) {
       // send iframe height to parent if isIframe
       // let iframeHeight = this.contentWindowHeight
       // this.log && console.log('L-default / handleResize / iframeHeight : ', iframeHeight)
       // this.log && console.log('L-default / handleResize / this.isIframe : ', this.isIframe)
       this.contentWindowHeight()
       if (this.isIframe) {
-        this.sendPostMessage()
+        this.sendPostMessage(noScroll)
       }
     },
     contentWindowHeight() {
@@ -462,7 +466,7 @@ export default {
       ODAMAP_scrolHeight = ODAMAP_scrolHeight < this.defaultOdamapHeight ? this.defaultOdamapHeight : ODAMAP_scrolHeight
       return ODAMAP_scrolHeight
     },
-    sendPostMessage() {
+    sendPostMessage(noScroll = false) {
 
       let heightToSend
       const forceFullHeight = this.isIframe && this.routeConfig.forceHeightIfIframe
@@ -477,11 +481,12 @@ export default {
       let messageToIframeParent = {
         // fixedHeight: !forceFullHeight,
         // frameHeight: heightToSend
-        frameHeight: Math.ceil(heightToSend * 1.3)
+        frameHeight: Math.ceil(heightToSend * 1.3),
+        needScrollToTop: !noScroll
       }
       console.log('L-default / sendPostMessage / messageToIframeParent : ', messageToIframeParent)
       
-      window.parent.postMessage(messageToIframeParent, '*')
+      window.parent.postMessage(messageToIframeParent,'*')
     },
 
     handleRouteChange(){
