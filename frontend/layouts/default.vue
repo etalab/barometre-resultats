@@ -477,7 +477,7 @@ export default {
       let messageToIframeParent = {
         // fixedHeight: !forceFullHeight,
         // frameHeight: heightToSend
-        frameHeight: Math.ceil(heightToSend * 1.2)
+        frameHeight: Math.ceil(heightToSend * 1.3)
       }
       console.log('L-default / sendPostMessage / messageToIframeParent : ', messageToIframeParent)
       
