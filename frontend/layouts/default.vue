@@ -217,6 +217,7 @@ export default {
         fr : 'chargement des données'
       },
       browser:  undefined,
+      resizeIndex: 0,
       userParams: {
         kpifamilies : '',
         datasetid : '',
@@ -480,12 +481,13 @@ export default {
       // console.log('L-default / sendPostMessage / heightToSend - B : ', heightToSend)
       let messageToIframeParent = {
         // fixedHeight: !forceFullHeight,
-        // frameHeight: heightToSend
-        frameHeight: Math.ceil(heightToSend * 1.3),
+        frameHeight: heightToSend,
+        resizeIndex: this.resizeIndex,
+        // frameHeight: Math.ceil(heightToSend * 1.3),
         needScrollToTop: !noScroll
       }
       console.log('L-default / sendPostMessage / messageToIframeParent : ', messageToIframeParent)
-      
+      this.resizeIndex = this.resizeIndex + 1
       window.parent.postMessage(messageToIframeParent,'*')
     },
 
