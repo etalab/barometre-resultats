@@ -19,6 +19,7 @@ frontend/_snippets
 # macOS
 .DS_Store
 
+!frontend/.env
 
 ### Node template
 # Logs
