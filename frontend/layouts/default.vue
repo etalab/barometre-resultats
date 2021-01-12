@@ -342,7 +342,7 @@ export default {
       triggerResize: (state) => state.triggerResize,
       triggerResizeNoScroll: (state) => state.triggerResizeNoScroll,
       triggerComponentsLoaded: (state) => state.triggerComponentsLoaded,
-      // mobileBreakpoints: (state) => state.configUX.mobileBreakpoints,
+      mobileBreakpoints: (state) => state.configUX.mobileBreakpoints,
       defaultOdamapHeight: (state) => state.defaultOdamapHeight,
       // vuetifyThemeIsSet: (state) => state.configs.vuetifyThemeIsSet,
       // configUI: (state) => state.configUI,
