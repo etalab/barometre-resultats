@@ -17,41 +17,39 @@
 
 #### Documentation
 
-Check our brand new documentation website : 
-
-https://etalab.github.io/dashboard-aides-entreprises/
+Check our [documentation website](https://etalab.github.io/dashboard-aides-entreprises/)
 
 
 ----------
 
 #### Version : v.2.xxx (beta)
 
-- Check the [versions logs here](VERSIONS.md)
-
-- See also our roadmaps : 
-  - [page "project" on Github][kanban]
-  - [roadmap (pdf) / wireframe][wireframe_pdf]
-  - [roadmap (slides) / wireframe][wireframe_slides]
+- Check the [versions logs here](./VERSIONS.md)
 
 ----------
-#### Co-authors : 
+
+#### Co-authors:
 
 - Julien Paris
-- Alexandre Bulté
 - Geoffrey Aldebert
+- Nicolas Boeuf
+- Alexandre Bulté
+
+#### Team (in alphabetical order):
+
+- Geoffrey Aldebert
+- Nicolas Boeuf
+- Alexandre Bulte
+- Mathilde Hoang
+- Julien Paris
+- Mario Restuccia
 
 ----------
 
-## Sites 
+## Sites:
 
-- **live / prod** : https://aides-entreprises.data.gouv.fr/
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f09c4d46-99a4-4fdf-8c4a-34b38f4d6a26/deploy-status)](https://app.netlify.com/sites/aides-entreprises-covid19/deploys)
-
-
-<!-- #### - Preprod 
-
-**live / test** : https://covid-aides-entreprises.netlify.com
-[![Netlify Status](https://api.netlify.com/api/v1/badges/71e2942d-961b-4f06-8ac3-8dc73dceb6ee/deploy-status)](https://app.netlify.com/sites/covid-aides-entreprises/deploys) -->
+- **live / prod** : https://barometre-resultats.data.gouv.fr/
+- **live integration / preprod** : https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement
 
 -----------
 
@@ -107,15 +105,15 @@ sw_vers
 
 <br>
 
-#### Linting avec `standard`
+#### Linting with `standard`
 
-Vous pouvez lancer `standard` pour simplement vérifier les erreurs :
+You can launch`standard` to underline some errors :
 
 ```bash
 npx standard
 ```
 
-pour corriger ce qui peut l'être
+to fix what can be fixed
 
 ```bash
 npx standard --fix
@@ -123,15 +121,15 @@ npx standard --fix
 
 <br>
 
-#### Linting avec `lint`
+#### Linting with `lint`
 
-Vous pouvez lancer `lint` pour simplement vérifier les erreurs :
+You can launch `lint` to avoid some other errors :
 
 ```bash
 npm run lint
 ```
 
-ou `lintfix` pour corriger ce qui peut l'être
+or `lintfix` to fix what can be fixed
 
 ```bash
 npm run lintfix
@@ -143,7 +141,7 @@ npm run lintfix
 
 #### Build settings
 
-- Repository : `github.com/etalab/dashboard-aides-entreprises`
+- Repository : `github.com/etalab/barometre-resultatts`
 - Build command : `npm run build`
 - Publish directory : `dist`
 
@@ -152,10 +150,6 @@ npm run lintfix
 - Production branch : `master`
 - ( ou : Production branch : `preprod` )
 
-#### Environment variables
-
-- `NUXT_ENV_RUN_MODE` = `prod` (ou `preprod` pour avoir les logs dans la console)
-- voir également les autres variables possibles en regardant le fichier d'exemple [`.envExample`](.envExample)
 
 ---------
 
@@ -198,15 +192,14 @@ npm run lintfix
 
 ### ce qu’il n’y a pas encore :
 
-- afficher les départements dépendants d’une région et uniquement eux ;
-- minivues pour les dom-tom en dessous ou à côté de la carte principale ;
 - settings pour connexion à une API de backend, mais sketché pour quand même ;
 - footer “officiel” + liens ;
-- meilleure gestion du zoom et des largeurs de cercles en fonction de l’altitude ;
 - ...
 
 ### ce qu’il y a dedans :
 
+- meilleure gestion du zoom et des largeurs de cercles en fonction du niveau de zoom ;
+- minivues pour les dom-tom en dessous ou à côté de la carte principale ;
 - responsive a minima (chart puis carte sur mobile) ;
 - interaction avec les régions et/ou les départements -> change les chiffres dans les autres composants ;
 - chargement des données json et geojson, ventilées soit dans le store soit uniquement dans la carte.. ;
@@ -230,67 +223,11 @@ npm run lintfix
 ### stack :
 
 - vuejs / nuxt / axios / dotenv /
-- vuetify / fontawesome / material Design
+- vuetify
 - i18n /
 - mapboxGL.js / vue-mapbox / Apexcharts / vue-apexCharts / turf
 déploiement : SPA mais plusieurs urls possibles pour afficher des pages / netlify (sur mon compte Netlify pour le moment mais assez simple à déployer)
 
------------
+----------
 
-
-### Variables de configuration remarquables
-
-------------
-
-#### fichier : [`appConfigMap.js`](./configs/appConfigMap.js)
-
-Pour le composant [`MapboxGL`](./componenents/DataViews/MapboxGL.vue) : 
-
-- `settingsIds[-].map.clicEvents[-].functions` : (array)
-  - liste des fonctions à déclencher lors d'un événement sur un élément de la carte
-<br>
-
-- `settingsIds[-].map.clicEvents[-].functions[-].funcName` : (string)
-  - choix : 
-    - `goToPolygon` : zoom sur polygon `target`
-    - `updateDisplayedData` : mise à jour de données du store
-    - `setChildrenPolygons` : ( non codé )
-    - `updateQuery` : (non codé )
-<br>
-
-- `settingsIds[-].map.clicEvents[-].functions[-].funcParams.zoomRange` : object)
-  - `minZoom` : fonction inactive en deçà
-  - `maxZoom` : fonction inactive au-delà
-<br>
-
-- `settingsIds[-].map.clicEvents[-].functions[-].funcParams.propName` : 
-  - propriété de la `feature` à récupérer comme valeur à passer dans la fonction
-<br>
-
-- `settingsIds[-].map.clicEvents[-].functions[-].funcParams.targets` : array
-  - liste des références des données à mettre à jour et des données cibles
-<br>
-
-----------------
-
-#### fichier : [`appConfigGlobalButtons.js`](./configs/appConfigGlobalButtons.js)
-
-Pour le composant [`GlobalButton`](./components/UX/GlobalButton.vue) : 
-
-- `settingsIds[-].componentButtons.functions[-]` : (array)
-  - liste des fonctions à déclencher lors d'un clic sur le bouton
-<br>
-
-- `settingsIds[-].componentButtons.functions[-].funcName` : (string)
-  - choix : 
-    - `resetStore` : reinitiélisation du store
-    - `resetMapZoom` : reinitialisation du zoom du/des composants 
-<br>
-
-
-----------------
-
-[branch_front]: https://github.com/etalab/dashboard-aides-entreprises/tree/j_front/frontend
-[kanban]: https://github.com/etalab/dashboard-aides-entreprises/projects/1 
-[wireframe_slides]: https://docs.google.com/presentation/d/1j_0xaJzPIjmuDSQG-nNYzADad4pFaf8E3VBkggFu1FY/edit?usp=sharing
-[wireframe_pdf]: ../screeshots/DASHBOARD_WIREFRAME_v.1.0-2.0.pdf
+[branch_front]: https://github.com/etalab/barometre-resultats/tree/master/frontend
