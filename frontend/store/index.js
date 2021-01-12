@@ -272,7 +272,7 @@ export const mutations = {
     state.isIframe = isIframe
   },
   toggleTriggerResize (state) {
-    state.triggerResize = state.triggerResize * -1
+    state.triggerResize = state.triggerResize + 1
   },
 
   // ROUTES CONFIG

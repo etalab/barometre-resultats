@@ -473,12 +473,12 @@ export default {
       } else {
         heightToSend = this.defaultOdamapHeight
       }
-      // console.log('L-default / sendPostMessage / heightToSend - B : ', heightToSend)
+      console.log('L-default / sendPostMessage / heightToSend - B : ', heightToSend)
       let messageToIframeParent = {
         // fixedHeight: !forceFullHeight,
-        frameHeight: heightToSend
+        frameHeight: Math.ceil(heightToSend * 0.2)
       }
-      // console.log('L-default / sendPostMessage / messageToIframeParent : ', messageToIframeParent)
+      console.log('L-default / sendPostMessage / messageToIframeParent : ', messageToIframeParent)
       
       window.parent.postMessage(messageToIframeParent, '*')
     },
