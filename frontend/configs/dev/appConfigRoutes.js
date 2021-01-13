@@ -784,7 +784,7 @@ const COMMON_TEMPLATES = {
                 // },
 
                 // KPI GROUP'S KPI COMPONENTS
-                ...COMMON_KPI_COMPONENTS.components(kpiFamilyOptions, kpiGroupOptions, true), // true => addCharts to map routes
+                ...COMMON_KPI_COMPONENTS.components(kpiFamilyOptions, kpiGroupOptions, false), // true => addCharts to map routes
 
                 {
                   component: 'infoBox',
