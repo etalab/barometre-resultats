@@ -452,7 +452,10 @@ export default {
     contentMaxScrollHeight() {
       // console.log("\nL-default / contentMaxScrollHeight ... document : ", document )
 
-      let docRows = document.querySelectorAll(`.odm-row`)
+      setTimeout(function(){
+        let docRows = document.querySelectorAll(`.odm-row`)
+      },200)
+      consol.log("time out 200")
       // console.log("L-default / contentMaxScrollHeight ... docRows : ", docRows )
 
       let docRowsArray = Array.prototype.slice.call(docRows)
@@ -473,9 +476,7 @@ export default {
     sendPostMessage(noScroll = false) {
 
       let heightToSend
-      setTimeout(function(){
-        const forceFullHeight = this.isIframe && this.routeConfig.forceHeightIfIframe
-      },200)
+      const forceFullHeight = this.isIframe && this.routeConfig.forceHeightIfIframe
       // console.log('L-default / sendPostMessage / forceFullHeight : ', forceFullHeight)
 
       if (forceFullHeight || this.isMobileWidth) {
@@ -483,7 +484,7 @@ export default {
       } else {
         heightToSend = this.defaultOdamapHeight
       }
-      console.log("time")
+      console.log("1.05")
       // console.log('L-default / sendPostMessage / heightToSend - B : ', heightToSend)
       let messageToIframeParent = {
         // fixedHeight: !forceFullHeight,
