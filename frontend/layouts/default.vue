@@ -477,7 +477,7 @@ export default {
       // console.log('L-default / sendPostMessage / forceFullHeight : ', forceFullHeight)
 
       if (forceFullHeight || this.isMobileWidth) {
-        heightToSend = Math.ceil(this.contentMaxScrollHeight() * 1.05)
+        heightToSend = Math.ceil(this.contentMaxScrollHeight() * 1.01)
       } else {
         heightToSend = this.defaultOdamapHeight
       }
