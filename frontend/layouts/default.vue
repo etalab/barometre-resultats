@@ -477,11 +477,11 @@ export default {
       // console.log('L-default / sendPostMessage / forceFullHeight : ', forceFullHeight)
 
       if (forceFullHeight || this.isMobileWidth) {
-        heightToSend = Math.ceil(this.contentMaxScrollHeight() * 1.01)
+        heightToSend = Math.ceil(this.contentMaxScrollHeight() * 1.05)
       } else {
         heightToSend = this.defaultOdamapHeight
       }
-      console.log("1.01")
+      console.log("1.05")
       // console.log('L-default / sendPostMessage / heightToSend - B : ', heightToSend)
       let messageToIframeParent = {
         // fixedHeight: !forceFullHeight,
