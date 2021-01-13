@@ -835,8 +835,8 @@ export default {
       localChartOptions.chart.width = this.fromKpiTable ? `${this.widthsFromKpi[this.$vuetify.breakpoint.name]}px` : `${this.widthsFromMap[this.$vuetify.breakpoint.name]}px`
       localChartOptions.yaxis = localChartOptions.yaxis ? localChartOptions.yaxis : {}
       localChartOptions.yaxis.tickAmount = 6
-      localChartOptions.yaxis.max = this.isFloat ? Number(this.maxValue + 1 ) : Number(this.maxValue) 
-      localChartOptions.yaxis.min = this.isFloat ? Number(this.minValue - 1 ) : Number(this.minValue)
+      localChartOptions.yaxis.max = this.isFloat ? Number(Math.ceil(this.maxValue + 1) ) : Number(this.maxValue) 
+      localChartOptions.yaxis.min = this.isFloat ? Number(Math.floor(this.minValue - 1) ) : Number(this.minValue)
 
       const deltaMinMax = localChartOptions.yaxis.max - localChartOptions.yaxis.min
       // this.log && console.log("C-ApexChart / updateYaxis / deltaMinMax : ", deltaMinMax)
