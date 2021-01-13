@@ -471,27 +471,29 @@ export default {
       return ODAMAP_scrolHeight
     },
     sendPostMessage(noScroll = false) {
+      var self = this
+      setTimeout(function(){
+        let heightToSend
+        const forceFullHeight = self.isIframe && self.routeConfig.forceHeightIfIframe
+        // console.log('L-default / sendPostMessage / forceFullHeight : ', forceFullHeight)
 
-      let heightToSend
-      const forceFullHeight = this.isIframe && this.routeConfig.forceHeightIfIframe
-      // console.log('L-default / sendPostMessage / forceFullHeight : ', forceFullHeight)
-
-      if (forceFullHeight || this.isMobileWidth) {
-        heightToSend = Math.ceil(this.contentMaxScrollHeight() * 1.1)
-      } else {
-        heightToSend = this.defaultOdamapHeight
-      }
-      // console.log('L-default / sendPostMessage / heightToSend - B : ', heightToSend)
-      let messageToIframeParent = {
-        // fixedHeight: !forceFullHeight,
-        frameHeight: heightToSend,
-        resizeIndex: this.resizeIndex,
-        // frameHeight: Math.ceil(heightToSend * 1.3),
-        needScrollToTop: !noScroll
-      }
-      // console.log('L-default / sendPostMessage / messageToIframeParent : ', messageToIframeParent)
-      this.resizeIndex = this.resizeIndex + 1
-      window.parent.postMessage(messageToIframeParent,'*')
+        if (forceFullHeight || self.isMobileWidth) {
+          heightToSend = Math.ceil(self.contentMaxScrollHeight() * 1.1)
+        } else {
+          heightToSend = self.defaultOdamapHeight
+        }
+        // console.log('L-default / sendPostMessage / heightToSend - B : ', heightToSend)
+        let messageToIframeParent = {
+          // fixedHeight: !forceFullHeight,
+          frameHeight: heightToSend,
+          resizeIndex: self.resizeIndex,
+          // frameHeight: Math.ceil(heightToSend * 1.3),
+          needScrollToTop: !noScroll
+        }
+        // console.log('L-default / sendPostMessage / messageToIframeParent : ', messageToIframeParent)
+        self.resizeIndex = self.resizeIndex + 1
+        window.parent.postMessage(messageToIframeParent,'*')
+      },200)
     },
 
     handleRouteChange(){
