@@ -451,27 +451,24 @@ export default {
     // },
     contentMaxScrollHeight() {
       // console.log("\nL-default / contentMaxScrollHeight ... document : ", document )
-      var self = this
-      setTimeout(function(){
-        let docRows = document.querySelectorAll(`.odm-row`)
-      
-        // console.log("L-default / contentMaxScrollHeight ... docRows : ", docRows )
 
-        let docRowsArray = Array.prototype.slice.call(docRows)
-        // console.log("L-default / contentMaxScrollHeight ... docRowsArray : ", docRowsArray )
+      let docRows = document.querySelectorAll(`.odm-row`)
+      // console.log("L-default / contentMaxScrollHeight ... docRows : ", docRows )
 
-        let ODAMAP_scrolHeight = 0
-        docRowsArray.forEach( (row) => {
-          // console.log("L-default / contentMaxScrollHeight ... row : ", row )
-          // console.log("L-default / contentMaxScrollHeight ... row.clientHeight : ", row.clientHeight )
-          // console.log("L-default / contentMaxScrollHeight ... ODAMAP_scrolHeight : ", ODAMAP_scrolHeight )
-          ODAMAP_scrolHeight = ODAMAP_scrolHeight + row.scrollHeight
-        })
+      let docRowsArray = Array.prototype.slice.call(docRows)
+      // console.log("L-default / contentMaxScrollHeight ... docRowsArray : ", docRowsArray )
+
+      let ODAMAP_scrolHeight = 0
+      docRowsArray.forEach( (row) => {
+        // console.log("L-default / contentMaxScrollHeight ... row : ", row )
+        // console.log("L-default / contentMaxScrollHeight ... row.clientHeight : ", row.clientHeight )
         // console.log("L-default / contentMaxScrollHeight ... ODAMAP_scrolHeight : ", ODAMAP_scrolHeight )
-        
-        ODAMAP_scrolHeight = ODAMAP_scrolHeight < self.defaultOdamapHeight ? self.defaultOdamapHeight : ODAMAP_scrolHeight
-        return ODAMAP_scrolHeight
-      },200)
+        ODAMAP_scrolHeight = ODAMAP_scrolHeight + row.scrollHeight
+      })
+      // console.log("L-default / contentMaxScrollHeight ... ODAMAP_scrolHeight : ", ODAMAP_scrolHeight )
+      
+      ODAMAP_scrolHeight = ODAMAP_scrolHeight < this.defaultOdamapHeight ? this.defaultOdamapHeight : ODAMAP_scrolHeight
+      return ODAMAP_scrolHeight
     },
     sendPostMessage(noScroll = false) {
 
@@ -480,11 +477,10 @@ export default {
       // console.log('L-default / sendPostMessage / forceFullHeight : ', forceFullHeight)
 
       if (forceFullHeight || this.isMobileWidth) {
-        heightToSend = Math.ceil(this.contentMaxScrollHeight() * 1.05)
+        heightToSend = Math.ceil(this.contentMaxScrollHeight() * 1.1)
       } else {
         heightToSend = this.defaultOdamapHeight
       }
-      console.log("1.05")
       // console.log('L-default / sendPostMessage / heightToSend - B : ', heightToSend)
       let messageToIframeParent = {
         // fixedHeight: !forceFullHeight,
