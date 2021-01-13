@@ -73,7 +73,7 @@ body {
   <v-app
     id="ODAMAP-root"
     :class="`${isIframe && browser && browser.isFirefox ? 'hide-scrollbar' :  ''}`"
-    :style="`${isIframe ? 'overflow:hidden;' : ''}`"	
+    :style="`${isIframe ? 'overflow:hidden!important;-moz-overflow:hidden!important' : ''}`"	
     >
     <!-- :style="`${isIframe ? 'overflow:hidden;' : ''}`" -->
     <!-- :style="`${isIframe && routeConfig.forceHeightIfIframe ? '' : 'overflow:hidden;' } `" -->
