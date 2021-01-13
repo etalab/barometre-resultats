@@ -46,10 +46,9 @@ Check our [documentation website](https://etalab.github.io/dashboard-aides-entre
 
 ----------
 
-## Sites:
+## Site:
 
 - **live / prod** : https://barometre-resultats.data.gouv.fr/
-- **live integration / preprod** : https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement
 
 -----------
 
