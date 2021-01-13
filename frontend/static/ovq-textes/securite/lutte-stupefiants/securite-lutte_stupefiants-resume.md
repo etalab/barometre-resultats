@@ -1,6 +1,6 @@
 <p>
   <span id="brief">
-    L'action des forces de sécurité vise à réduire l’offre de stupéfiants par le démantèlement des réseaux et la neutralisation judiciaire des trafiquants, le démantèlement des circuits de blanchiment et en saisissant les avoirs criminels, et par l’interruption des routes de la drogue.
+    L'action des forces de sécurité vise à réduire l’offre de stupéfiants par le démantèlement des réseaux et la neutralisation judiciaire des trafiquants, le démantèlement des circuits de blanchiment, la saisie des avoirs criminels, et par l’interruption des routes de la drogue.
   </span>
 </p>
 <p>
