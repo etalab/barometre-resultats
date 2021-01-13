@@ -451,27 +451,27 @@ export default {
     // },
     contentMaxScrollHeight() {
       // console.log("\nL-default / contentMaxScrollHeight ... document : ", document )
-
+      var self = this
       setTimeout(function(){
         let docRows = document.querySelectorAll(`.odm-row`)
-      },200)
-      console.log("time out 200")
-      // console.log("L-default / contentMaxScrollHeight ... docRows : ", docRows )
-
-      let docRowsArray = Array.prototype.slice.call(docRows)
-      // console.log("L-default / contentMaxScrollHeight ... docRowsArray : ", docRowsArray )
-
-      let ODAMAP_scrolHeight = 0
-      docRowsArray.forEach( (row) => {
-        // console.log("L-default / contentMaxScrollHeight ... row : ", row )
-        // console.log("L-default / contentMaxScrollHeight ... row.clientHeight : ", row.clientHeight )
-        // console.log("L-default / contentMaxScrollHeight ... ODAMAP_scrolHeight : ", ODAMAP_scrolHeight )
-        ODAMAP_scrolHeight = ODAMAP_scrolHeight + row.scrollHeight
-      })
-      // console.log("L-default / contentMaxScrollHeight ... ODAMAP_scrolHeight : ", ODAMAP_scrolHeight )
       
-      ODAMAP_scrolHeight = ODAMAP_scrolHeight < this.defaultOdamapHeight ? this.defaultOdamapHeight : ODAMAP_scrolHeight
-      return ODAMAP_scrolHeight
+        // console.log("L-default / contentMaxScrollHeight ... docRows : ", docRows )
+
+        let docRowsArray = Array.prototype.slice.call(docRows)
+        // console.log("L-default / contentMaxScrollHeight ... docRowsArray : ", docRowsArray )
+
+        let ODAMAP_scrolHeight = 0
+        docRowsArray.forEach( (row) => {
+          // console.log("L-default / contentMaxScrollHeight ... row : ", row )
+          // console.log("L-default / contentMaxScrollHeight ... row.clientHeight : ", row.clientHeight )
+          // console.log("L-default / contentMaxScrollHeight ... ODAMAP_scrolHeight : ", ODAMAP_scrolHeight )
+          ODAMAP_scrolHeight = ODAMAP_scrolHeight + row.scrollHeight
+        })
+        // console.log("L-default / contentMaxScrollHeight ... ODAMAP_scrolHeight : ", ODAMAP_scrolHeight )
+        
+        ODAMAP_scrolHeight = ODAMAP_scrolHeight < self.defaultOdamapHeight ? self.defaultOdamapHeight : ODAMAP_scrolHeight
+        return ODAMAP_scrolHeight
+      },200)
     },
     sendPostMessage(noScroll = false) {
 
