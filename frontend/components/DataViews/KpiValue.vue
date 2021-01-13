@@ -131,7 +131,7 @@ export default {
   data() {
     return {
       animate: true,
-      resizeTrigger: 0,
+      // resizeTrigger: 0,
       valueType: undefined,
       counter: 0,
       noDataText: {
@@ -188,12 +188,12 @@ export default {
         }
       }
     },
-    resizeTrigger(next, prev) {
-      var self = this
-      setTimeout(function(){
-        self.$store.commit('toggleTriggerResizeNoScroll')
-      },100)
-    }
+    // resizeTrigger(next, prev) {
+    //   var self = this
+    //   setTimeout(function(){
+    //     self.$store.commit('toggleTriggerResizeNoScroll')
+    //   },100)
+    // }
   },
   methods: {
 
@@ -237,7 +237,7 @@ export default {
         let value = this.formatValue(item, header)
         showVal = value === this.noDataText[this.locale] ? false : true
       }
-      this.resizeTrigger = this.resizeTrigger + 1
+      // this.resizeTrigger = this.resizeTrigger + 1
       return showVal
     },
 
