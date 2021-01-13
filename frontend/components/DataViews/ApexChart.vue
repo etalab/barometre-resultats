@@ -340,7 +340,10 @@ export default {
         type: 'integer',
         sepThousands: ' '
       },
-
+      defaultFormatterFloat: {
+        type: 'float',
+        sepComma: ','
+      },
       panel: false,
       drawerTitleIconColor: 'grey darken-1',
       drawerTitleTextColor: 'grey--darken-1--text',
@@ -834,13 +837,20 @@ export default {
       localChartOptions.yaxis.tickAmount = 6
       localChartOptions.yaxis.max = this.isFloat ? Number(this.maxValue + 1 ) : Number(this.maxValue) 
       localChartOptions.yaxis.min = this.isFloat ? Number(this.minValue - 1 ) : Number(this.minValue)
+
+      const deltaMinMax = localChartOptions.yaxis.max - localChartOptions.yaxis.min
+      // this.log && console.log("C-ApexChart / updateYaxis / deltaMinMax : ", deltaMinMax)
+      const needLabelFloat = deltaMinMax < 6
+      // this.log && console.log("C-ApexChart / updateYaxis / needLabelFloat : ", needLabelFloat)
+      let format = needLabelFloat ? this.defaultFormatterFloat : this.defaultFormatter
+
       if (localChartOptions.chart.type === 'bar') {
         localChartOptions.yaxis.min = 0
       }
       localChartOptions.yaxis.forceNiceScale = true
       localChartOptions.yaxis.labels = {
         formatter: (val) => {
-          return numberToString(val, this.defaultFormatter, true, this.settings.id)
+          return numberToString(val, format, true, this.settings.id)
           // return numberToStringBasic(val, this.defaultFormatter.type, true, this.settings.id)
         }
       }
