@@ -455,7 +455,7 @@ export default {
       setTimeout(function(){
         let docRows = document.querySelectorAll(`.odm-row`)
       },200)
-      consol.log("time out 200")
+      console.log("time out 200")
       // console.log("L-default / contentMaxScrollHeight ... docRows : ", docRows )
 
       let docRowsArray = Array.prototype.slice.call(docRows)
