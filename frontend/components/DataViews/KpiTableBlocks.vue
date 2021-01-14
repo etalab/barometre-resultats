@@ -443,7 +443,7 @@ animation: fadeIn ease 1s;
                                   >
                                   <span
                                     v-show="!isMobileWidth"
-                                    :class="`${levelnameTextColor} ruleFalseA`">
+                                    :class="`${levelnameTextColor}`">
                                     {{ levelNameTextPrefix[locale] }}
                                   </span>
 
@@ -451,13 +451,13 @@ animation: fadeIn ease 1s;
                                   <span
                                     v-show="!isMobileWidth"
                                     v-if="kpi.textLevelNameRules"
-                                    :class="`${levelnameTextColor} ${getRuleValue(getPropsItemValue(props.items, kpi.fromDatasetKeyValue), kpi.textLevelNameRules, true)} ruleFalseB`"
+                                    :class="`${levelnameTextColor} ${getRuleValue(getPropsItemValue(props.items, kpi.fromDatasetKeyValue), kpi.textLevelNameRules, true)}`"
                                     v-html="getRuleValue(getPropsItemValue(props.items, kpi.fromDatasetKeyValue), kpi.textLevelNameRules)"
                                   />
 
                                   <!-- LEVEL NAME -->
                                   <span
-                                    :class="`${levelnameTextColor} font-weight-bold ruleFalseC`"
+                                    :class="`${levelnameTextColor} font-weight-bold`"
                                     >
                                     {{ getSpecialStore.levelname }}
                                   </span>
@@ -471,14 +471,13 @@ animation: fadeIn ease 1s;
                                   >
                                   <!-- ADD WARNING SUFFIX FROM SPECIAL STORE -->
                                   <span
-                                    class="ruleTrueA"
                                     v-show="!isMobileWidth"
                                     >
                                     {{ kpi.suffixRulesWarningText[locale] }}
                                   </span>
                                   <!-- LEVEL NAME / WARNING -->
                                   <span
-                                    class="font-weight-bold ruleTrueB"
+                                    class="font-weight-bold"
                                     v-html="capitalizeIfMobile(getRuleValue(getPropsItemValue(props.items, kpi.fromDatasetKeyValue), kpi.textSuffixRules))"
                                   />
                                 </div>
