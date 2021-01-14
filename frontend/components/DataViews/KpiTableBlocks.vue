@@ -443,7 +443,7 @@ animation: fadeIn ease 1s;
                                   >
                                   <span
                                     v-show="!isMobileWidth"
-                                    :class="`${levelnameTextColor}`">
+                                    :class="`${levelnameTextColor} ruleFalseA`">
                                     {{ levelNameTextPrefix[locale] }}
                                   </span>
 
@@ -451,12 +451,14 @@ animation: fadeIn ease 1s;
                                   <span
                                     v-show="!isMobileWidth"
                                     v-if="kpi.textLevelNameRules"
-                                    :class="`${levelnameTextColor} ${getRuleValue(getPropsItemValue(props.items, kpi.fromDatasetKeyValue), kpi.textLevelNameRules, true)}`"
+                                    :class="`${levelnameTextColor} ${getRuleValue(getPropsItemValue(props.items, kpi.fromDatasetKeyValue), kpi.textLevelNameRules, true)} ruleFalseB`"
                                     v-html="getRuleValue(getPropsItemValue(props.items, kpi.fromDatasetKeyValue), kpi.textLevelNameRules)"
                                   />
 
                                   <!-- LEVEL NAME -->
-                                  <span :class="`${levelnameTextColor} font-weight-bold`">
+                                  <span
+                                    :class="`${levelnameTextColor} font-weight-bold ruleFalseC`"
+                                    >
                                     {{ getSpecialStore.levelname }}
                                   </span>
 
@@ -469,14 +471,15 @@ animation: fadeIn ease 1s;
                                   >
                                   <!-- ADD WARNING SUFFIX FROM SPECIAL STORE -->
                                   <span
+                                    class="ruleTrueA"
                                     v-show="!isMobileWidth"
                                     >
                                     {{ kpi.suffixRulesWarningText[locale] }}
                                   </span>
                                   <!-- LEVEL NAME / WARNING -->
                                   <span
-                                    class="font-weight-bold"
-                                    v-html="getRuleValue(getPropsItemValue(props.items, kpi.fromDatasetKeyValue), kpi.textSuffixRules)"
+                                    class="font-weight-bold ruleTrueB"
+                                    v-html="capitalizeIfMobile(getRuleValue(getPropsItemValue(props.items, kpi.fromDatasetKeyValue), kpi.textSuffixRules))"
                                   />
                                 </div>
 
@@ -1122,7 +1125,7 @@ export default {
       }
     },
 
-    getRuleValue(item, rules, returnClass = false, returnFallback = false) {
+    getRuleValue(item, rules, returnClass = false, returnFallback = false, capitalize = false) {
       let fix = ''
       let value = ''
 
@@ -1233,8 +1236,6 @@ export default {
       }
 
       if (!returnFallback) {
-        // this.log && console.log("C-KpiTableBlocks / fix (end) : ", fix)
-        // this.log && console.log("C-KpiTableBlocks / value (end) : ", value)
         return `${fix} ${value}`
       } else {
         // this.log && console.log("C-KpiTableBlocks / rulesToApply (end) : ", rulesToApply)
@@ -1249,7 +1250,12 @@ export default {
           }
         }
       }
+    },
+    capitalizeIfMobile(string) {
+      string = this.isMobileWidth ? string.charAt(0).toUpperCase() + string.slice(1) : string
+      return string
     }
   },
+
 }
 </script>
