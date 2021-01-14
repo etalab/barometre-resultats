@@ -493,7 +493,7 @@ export default {
         // console.log('L-default / sendPostMessage / messageToIframeParent : ', messageToIframeParent)
         self.resizeIndex = self.resizeIndex + 1
         window.parent.postMessage(messageToIframeParent,'*')
-      },200)
+      },500)
     },
 
     handleRouteChange(){
