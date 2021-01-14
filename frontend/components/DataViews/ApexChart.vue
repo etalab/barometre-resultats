@@ -835,20 +835,33 @@ export default {
       localChartOptions.chart.width = this.fromKpiTable ? `${this.widthsFromKpi[this.$vuetify.breakpoint.name]}px` : `${this.widthsFromMap[this.$vuetify.breakpoint.name]}px`
       localChartOptions.yaxis = localChartOptions.yaxis ? localChartOptions.yaxis : {}
       localChartOptions.yaxis.tickAmount = 6
-      localChartOptions.yaxis.max = this.isFloat ? Number(this.maxValue + 1 ) : Number(this.maxValue) 
-      localChartOptions.yaxis.min = this.isFloat ? Number(this.minValue - 1 ) : Number(this.minValue)
+      // this.log && console.log("C-ApexChart / updateYaxis / this.maxValue : ", this.maxValue)
+      // this.log && console.log("C-ApexChart / updateYaxis / this.minValue : ", this.minValue)
+      localChartOptions.yaxis.max = this.isFloat ? Number(this.maxValue + 1) : Number(this.maxValue) 
+      localChartOptions.yaxis.min = this.isFloat ? Number(this.minValue - 1) : Number(this.minValue)
 
       const deltaMinMax = localChartOptions.yaxis.max - localChartOptions.yaxis.min
       // this.log && console.log("C-ApexChart / updateYaxis / deltaMinMax : ", deltaMinMax)
       const needLabelFloat = deltaMinMax < 6
       // this.log && console.log("C-ApexChart / updateYaxis / needLabelFloat : ", needLabelFloat)
-      let format = needLabelFloat ? this.defaultFormatterFloat : this.defaultFormatter
-
+      // let format = needLabelFloat ? this.defaultFormatterFloat : this.defaultFormatter
+      if (needLabelFloat) {
+        localChartOptions.yaxis.tickAmount = deltaMinMax === 0 ? 4 : deltaMinMax
+        localChartOptions.yaxis.max = deltaMinMax === 0 ? localChartOptions.yaxis.max + 1 : Math.ceil(localChartOptions.yaxis.max) 
+        localChartOptions.yaxis.min = deltaMinMax === 0 ? this.minValue : Math.floor(localChartOptions.yaxis.min) 
+      }
+      let format = deltaMinMax === 0 && localChartOptions.yaxis.max < 10 ? this.defaultFormatterFloat : this.defaultFormatter
+      const unit = this.datasetMappers.unit
+      // this.log && console.log("\nC-ApexChart / updateYaxis / unit : ", unit)
+      if (unit.includes('%')) {
+        format.unit = '%'
+      }
       if (localChartOptions.chart.type === 'bar') {
         localChartOptions.yaxis.min = 0
       }
-      localChartOptions.yaxis.forceNiceScale = true
+      localChartOptions.yaxis.forceNiceScale = !needLabelFloat
       localChartOptions.yaxis.labels = {
+        minWidth: 60,
         formatter: (val) => {
           return numberToString(val, format, true, this.settings.id)
           // return numberToStringBasic(val, this.defaultFormatter.type, true, this.settings.id)
