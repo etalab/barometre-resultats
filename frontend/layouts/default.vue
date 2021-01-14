@@ -478,7 +478,7 @@ export default {
         // console.log('L-default / sendPostMessage / forceFullHeight : ', forceFullHeight)
 
         if (forceFullHeight || self.isMobileWidth) {
-          heightToSend = Math.ceil(self.contentMaxScrollHeight() * 1.1)
+          heightToSend = Math.ceil(self.contentMaxScrollHeight() + 100)
         } else {
           heightToSend = self.defaultOdamapHeight
         }
@@ -493,7 +493,7 @@ export default {
         // console.log('L-default / sendPostMessage / messageToIframeParent : ', messageToIframeParent)
         self.resizeIndex = self.resizeIndex + 1
         window.parent.postMessage(messageToIframeParent,'*')
-      },200)
+      },500)
     },
 
     handleRouteChange(){

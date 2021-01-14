@@ -216,6 +216,7 @@ animation: fadeIn ease 1s;
                 max-width="100%"
                 :lazy-src="kpiFamily.image"
                 :src="kpiFamily.image"
+                v-on:load="onLoadImg"
               ></v-img>
             </v-row>
             <br>
@@ -1256,7 +1257,16 @@ export default {
     capitalizeIfMobile(string) {
       string = this.isMobileWidth ? `${string.charAt(0).toUpperCase()}${string.slice(1)}` : string
       return string
+    },
+
+    onLoadImg(){
+      var self = this
+      console.log("img loaded")
+      setTimeout(function(){
+        self.$store.commit('toggleTriggerResizeNoScroll')
+      },100)
     }
+
   },
 
 }
