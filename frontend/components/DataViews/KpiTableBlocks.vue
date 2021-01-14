@@ -1124,7 +1124,7 @@ export default {
       }
     },
 
-    getRuleValue(item, rules, returnClass = false, returnFallback = false, capitalize = false) {
+    getRuleValue(item, rules, returnClass = false, returnFallback = false) {
       let fix = ''
       let value = ''
 
