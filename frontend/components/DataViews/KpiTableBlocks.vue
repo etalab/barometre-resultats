@@ -456,9 +456,7 @@ animation: fadeIn ease 1s;
                                   />
 
                                   <!-- LEVEL NAME -->
-                                  <span
-                                    :class="`${levelnameTextColor} font-weight-bold`"
-                                    >
+                                  <span :class="`${levelnameTextColor} font-weight-bold`">
                                     {{ getSpecialStore.levelname }}
                                   </span>
 
