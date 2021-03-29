@@ -1008,6 +1008,22 @@ export const configAppRoutes = {
                 //   }
                 // },
                 {
+                  component: 'text',
+                  activated: true,
+                  smallScreenVerticalOrder: 1,
+                  textBrief: true,
+                  justify: 'left',
+                  align: 'center',
+                  settings: {
+                    id: 'text-territoires-header-localization',
+                    forceShow: true,
+                    containerClass: 'ml-5 mt-0 mb-0 pt-0 pb-0',
+                    containerClassMobile: 'mt-0 mb-0 py-0 pb-0',
+                    mobileIsVisibleDefault: true,
+                    desktopIsVisibleDefault: true
+                  }
+                },
+                {
                   component: 'globalButtons',
                   activated: true,
                   smallScreenVerticalOrder: 1,
@@ -1031,6 +1047,22 @@ export const configAppRoutes = {
                     id: 'global-button-simple-territoires',
                     containerClass: 'py-0 mt-0 mb-5',
                     containerClassMobile: 'py-0 my-0',
+                    mobileIsVisibleDefault: true,
+                    desktopIsVisibleDefault: true
+                  }
+                },
+                {
+                  component: 'text',
+                  activated: true,
+                  smallScreenVerticalOrder: 1,
+                  textBrief: true,
+                  justify: 'left',
+                  align: 'center',
+                  settings: {
+                    id: 'text-territoires-header-thema',
+                    forceShow: true,
+                    containerClass: 'ml-5 mt-0 mb-0 pt-0 pb-0 pb-0',
+                    containerClassMobile: 'mt-0 mb-0 py-0 pb-0',
                     mobileIsVisibleDefault: true,
                     desktopIsVisibleDefault: true
                   }

@@ -27,7 +27,9 @@ const {
 
   keyKpiId,
   // keyKpiText,
+  keyKpiGroupTextOpen,
   keyKpiTextBrief,
+  keyKpiTextOpen,
   // keyKpiName,
 
   keyKpiChartTitleRaw,
@@ -649,6 +651,7 @@ const COMMON_KPI_TEMPLATES = {
               drawerIcon: 'icon-plus',
               drawerIconOff: 'icon-minus1',
               drawerTitle: { fr: 'Que mesure cet indicateur ?' },
+              drawerOpen: kpi[keyKpiTextOpen],
               mobileIsVisibleDefault: true,
               desktopIsVisibleDefault: true
             }

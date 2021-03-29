@@ -47,7 +47,7 @@
 
     <v-row 
       v-else
-      :class="`${viewConfig.btnsRowClass} ${isMobileWidth ? viewConfig.btnsRowClassMobile : 'mt-5 mx-4'}`"
+      :class="`${viewConfig.btnsRowClass} ${isMobileWidth ? viewConfig.btnsRowClassMobile : 'mt-1 mx-3'}`"
       v-for="(btn, index) in viewConfig.componentButtons"
       :key="`B-${btn.id}-${index}-vertical`"
       :id="`B-${btn.id}-${index}-vertical`"

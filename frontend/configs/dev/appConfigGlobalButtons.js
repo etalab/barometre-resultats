@@ -629,8 +629,8 @@ export const configAppGlobalButtons = {
           inputLabel: { fr: 'ex : Bourgogne-Franche-Comté' },
           inputNoData: { fr: 'cherchez une région' },
 
-          btnClass: 'justify-left pt-1',
-          btnClassMobile: 'justify-left pt-1 pb-0',
+          btnClass: 'justify-left pt-1 px-0',
+          btnClassMobile: 'justify-left pt-1 px-0 pb-0',
 
           block: true,
           icon: false,
@@ -767,8 +767,8 @@ export const configAppGlobalButtons = {
           inputLabel: { fr: 'ex : 33 ou Gironde' },
           inputNoData: { fr: 'cherchez un département' },
 
-          btnClass: 'justify-center pt-0 pb-3',
-          btnClassMobile: 'justify-center pt-0',
+          btnClass: 'justify-center pt-0 pb-5 px-0',
+          btnClassMobile: 'justify-center pt-0 px-0',
 
           block: true,
           icon: false,
@@ -893,6 +893,7 @@ export const configAppGlobalButtons = {
 
       ]
     },
+
     resetBtnTerritories,
 
     {
@@ -901,7 +902,7 @@ export const configAppGlobalButtons = {
       title: { fr: '' },
       titleI18n: 'buttons.button01.title',
       dividers: {
-        before: true,
+        before: false,
         after: false
       },
       btnsRowClass: 'align-center justify-left',
