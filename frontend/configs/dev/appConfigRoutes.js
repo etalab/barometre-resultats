@@ -740,6 +740,20 @@ const COMMON_TEMPLATES = {
                   component: 'globalButtons',
                   activated: true,
                   smallScreenVerticalOrder: 1,
+                  justify: 'center',
+                  align: 'center',
+                  settings: {
+                    id: 'back-detail-button-simple-territoires',
+                    containerClass: 'ml-0 pl-3 py-0 mb-5',
+                    containerClassMobile: 'py-0 my-0',
+                    mobileIsVisibleDefault: true,
+                    desktopIsVisibleDefault: true
+                  }
+                },
+                {
+                  component: 'globalButtons',
+                  activated: true,
+                  smallScreenVerticalOrder: 1,
                   justify: 'left',
                   align: 'center',
                   settings: {
@@ -784,7 +798,8 @@ const COMMON_TEMPLATES = {
                 // },
 
                 // KPI GROUP'S KPI COMPONENTS
-                ...COMMON_KPI_COMPONENTS.components(kpiFamilyOptions, kpiGroupOptions, false), // true => addCharts to map routes
+                // ...COMMON_KPI_COMPONENTS.components(kpiFamilyOptions, kpiGroupOptions, false), // true => addCharts to map routes
+                ...COMMON_KPI_COMPONENTS.components(kpiFamilyOptions, kpiGroupOptions, true), // true => addCharts to map routes
 
                 {
                   component: 'infoBox',
@@ -1046,6 +1061,20 @@ export const configAppRoutes = {
                   settings: {
                     id: 'global-button-simple-territoires',
                     containerClass: 'py-0 mt-0 mb-5',
+                    containerClassMobile: 'py-0 my-0',
+                    mobileIsVisibleDefault: true,
+                    desktopIsVisibleDefault: true
+                  }
+                },
+                {
+                  component: 'globalButtons',
+                  activated: true,
+                  smallScreenVerticalOrder: 1,
+                  justify: 'center',
+                  align: 'center',
+                  settings: {
+                    id: 'actu-button-simple-territoires',
+                    containerClass: 'ml-5 pl-3 py-0 mb-5',
                     containerClassMobile: 'py-0 my-0',
                     mobileIsVisibleDefault: true,
                     desktopIsVisibleDefault: true

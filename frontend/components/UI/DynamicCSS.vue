@@ -1,6 +1,9 @@
 <template>
   <div id="dynamic-css">
-    <style v-for="(css, index) in configCSS" :key="index" type="text/css">
+    <style 
+      v-for="(css, index) in configCSS"
+      :key="index" type="text/css"
+      >
       {{ css.class }} {
       {{ css.config }}
       }

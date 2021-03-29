@@ -2,54 +2,84 @@
 </style>
 
 <template>
-    <div
-      v-show="canShow"
-      :class="`pa-0 ${btn.btnInnerClass.includes('btn-gouv') ? 'btn-borders mb-0 mt-1' :''}`"
+  <div
+    v-show="canShow"
+    :class="`pa-0 ${btn.btnInnerClass.includes('btn-gouv') ? 'btn-borders mb-0 mt-1' :''}`"
+    :trigger="`${trigger}`"
+    :trigger-vis="`${triggerVis}`"
+    >
+    <v-btn
+      :class="`ma-0 ${btn.btnInnerClass} ${btn.btnInnerClass.includes('btn-gouv') ? 'btn-gouv-translate' : ''}`"
+      :block="btn.block"
+      :icon="btn.icon"
+      :outlined="btn.outlined"
+      :fab="btn.fab"
+      :color="btn.color"
+      :large="isMobileWidth ? false : btn.large"
+      :small="isMobileWidth ? true : btn.small"
+      :text="btn.text"
+      :dark="btn.dark"
+      :tile="btn.tile"
+      :rounded="btn.rounded"
+      :disabled="btn.disabled"
+      :height="btn.height ? btn.height : '36px'"
+      @click="runBtnFunctions(btn)"
       >
-      <v-btn
-        :class="`${btn.btnInnerClass} ma-0 ${btn.btnInnerClass.includes('btn-gouv') ? 'btn-gouv-translate' : ''}`"
-        :block="btn.block"
-        :icon="btn.icon"
-        :outlined="btn.outlined"
-        :fab="btn.fab"
-        :color="btn.color"
-        :large="isMobileWidth ? false : btn.large"
-        :small="isMobileWidth ? true : btn.small"
-        :text="btn.text"
-        :dark="btn.dark"
-        :tile="btn.tile"
-        :rounded="btn.rounded"
-        :disabled="btn.disabled"
-        @click="runBtnFunctions(btn)"
+      <v-icon
+        v-if="btn.iconLink"
+        :small="!isMobileWidth"
+        :x-small="isMobileWidth"
+        class="mr-2"
         >
-        <v-icon
-          v-if="btn.iconLink"
-          :small="!isMobileWidth"
-          :x-small="isMobileWidth"
-          class="mr-2"
+        {{ btn.iconLink }}
+      </v-icon>
+      <v-icon
+        v-if="btn.btnInnerIcon"
+        :small="!isMobileWidth"
+        :x-small="isMobileWidth"
+        class="mr-2"
+        >
+        {{ btn.btnInnerIcon }}
+      </v-icon>
+
+        <!-- {{ btn.title[locale] }} -->
+      <span
+        v-if="!btn.textPrefixRules"
+        v-html="btn.title[locale]">
+      </span>
+
+      <span
+        v-if="btn.textPrefixRules"
+        >
+        <span
+          :class="`${btn.textPrefixClass}`"
           >
-          {{ btn.iconLink }}
-        </v-icon>
-        <v-icon
-          v-if="btn.btnInnerIcon"
-          :small="!isMobileWidth"
-          :x-small="isMobileWidth"
-          class="mr-2"
+          {{ btn.textPrefix[locale] }}
+        </span>
+        <br>
+        <span
+          :class="`${btn.textPrefixClass} ${getSuffixRuleValue(getSpecialStore[btn.specialStoreId], btn.textPrefixRules, true)}`"
+          v-html="getSuffixRuleValue(getSpecialStore[btn.specialStoreId], btn.textPrefixRules)"
+        />
+        <span
+          v-if="btn.specialStoreId"
+          :class="`${btn.specialStoreIdClass}`"
           >
-          {{ btn.btnInnerIcon }}
-        </v-icon>
-        {{ btn.title[locale] }}
-        <v-icon
-          v-if="btn.iconAfterTitle"
-          :small="!isMobileWidth"
-          :x-small="isMobileWidth"
-          class="pl-2 pb-0"
-          color="primary"
-          >
-          {{ btn.iconAfterTitle }}
-        </v-icon>
-      </v-btn>
-    </div>
+          {{ getSpecialStore[btn.specialStoreId] }}
+        </span>
+      </span>
+
+      <v-icon
+        v-if="btn.iconAfterTitle"
+        :small="!isMobileWidth"
+        :x-small="isMobileWidth"
+        class="pl-2 pb-0"
+        color="primary"
+        >
+        {{ btn.iconAfterTitle }}
+      </v-icon>
+    </v-btn>
+  </div>
 </template>
 
 <script>
@@ -96,6 +126,7 @@ export default {
       log: (state) => state.log,
       locale: (state) => state.locale,
       trigger: (state) => state.data.triggerChange,
+      triggerVis: (state) => state.triggerVisChange,
       mobileBreakpoints: (state) => state.configUX.mobileBreakpoints,
       routeParams: (state) => state.routeParams,
       queryRouteId: (state) => state.queryRouteId,
@@ -263,6 +294,47 @@ export default {
     resetSelectedPolygons() {
       this.$store.commit('maps/seSelectedStateId', undefined);
     },
+
+    getSuffixRuleValue(value, rules, returnClass = false) {
+      let fix = ''
+
+      // this.log && console.log("\nC-TextFrame / getSuffixRuleValue / value : ", value)
+      const specialStore = this.getSpecialStore
+      // this.log && console.log("C-TextFrame / getSuffixRuleValue / specialStore : ", specialStore)
+
+      // this.log && console.log("C-TextFrame / getSuffixRuleValue / rules : ", rules)
+      let localeRules = rules && rules[this.locale]
+      // this.log && console.log("C-TextFrame / getSuffixRuleValue / localeRules : ", localeRules)
+
+      const localeRulesPosition = localeRules.position
+      const localeRulesList = localeRules.rules
+
+      // filter out applying rules' conditions 
+      let rulesToApply = localeRulesList.filter(rule => {
+        const conditions = rule.conditions
+        let boolArray = []
+        for (const cond of conditions) {
+          // this.log && console.log("C-TextFrame / getSuffixRuleValue / cond : ", cond)
+          let boolVal = specialStore[cond.specialStoreId] === cond.specialStoreValue
+          // this.log && console.log("C-TextFrame / getSuffixRuleValue / boolVal : ", boolVal)
+          boolArray.push(boolVal)
+        }
+        // this.log && console.log("C-TextFrame / getSuffixRuleValue / boolArray : ", boolArray)
+        return boolArray.every(v => v === true)
+      })
+
+      // this.log && console.log("C-TextFrame / getSuffixRuleValue / rulesToApply : ", rulesToApply)
+      // apply rules to value
+      for (const rule of rulesToApply) {
+        fix = rule.add
+        if (returnClass) {
+          fix = rule.class
+        }
+      }
+
+      return fix
+    }
+    
   },
 };
 </script>

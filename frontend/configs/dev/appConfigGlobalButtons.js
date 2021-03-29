@@ -150,6 +150,104 @@ const COMMON_FUNCTIONS = {
     }
   }
 }
+const COMMON_RULES = {
+  fr_prepositions: {
+    position: 'after_prefix',
+    rules: [
+      {
+        add: 'la',
+        class: 'mx-1',
+        conditions: [
+          {
+            specialStoreId: 'levelcode',
+            specialStoreValue: 'national'
+          }
+        ]
+      },
+      {
+        add: 'la région',
+        class: 'mx-1',
+        conditions: [
+          {
+            specialStoreId: 'levelcode',
+            specialStoreValue: 'regional'
+          }
+        ]
+      },
+      {
+        add: "le département de l'",
+        // class: 'ml-1',
+        class: 'no-space-after',
+        conditions: [
+          {
+            specialStoreId: 'levelcode',
+            specialStoreValue: 'departemental'
+          },
+          {
+            specialStoreId: 'gender',
+            specialStoreValue: 'app'
+          }
+        ]
+      },
+      {
+        add: 'le département du',
+        class: 'mx-0',
+        conditions: [
+          {
+            specialStoreId: 'levelcode',
+            specialStoreValue: 'departemental'
+          },
+          {
+            specialStoreId: 'gender',
+            specialStoreValue: 'masc'
+          }
+        ]
+      },
+      {
+        add: 'le département de la',
+        class: 'mx-0',
+        conditions: [
+          {
+            specialStoreId: 'levelcode',
+            specialStoreValue: 'departemental'
+          },
+          {
+            specialStoreId: 'gender',
+            specialStoreValue: 'fem'
+          }
+        ]
+      },
+      {
+        add: 'le département des',
+        class: 'mx-0',
+        conditions: [
+          {
+            specialStoreId: 'levelcode',
+            specialStoreValue: 'departemental'
+          },
+          {
+            specialStoreId: 'gender',
+            specialStoreValue: 'plur'
+          }
+        ],
+      },
+      {
+        add: 'le département',
+        class: 'ml-0',
+        conditions: [
+          {
+            specialStoreId: 'levelcode',
+            specialStoreValue: 'departemental'
+          },
+          {
+            specialStoreId: 'gender',
+            specialStoreValue: 'solo'
+          }
+        ],
+      }
+    ]
+  }
+}
 
 const COMMONS_TARGETS = {
   resetLevel: {
@@ -319,7 +417,7 @@ const COMMON_TEMPLATES = {
         }
       ],
       hideIfs: [
-        { specialStoreId: 'levelcode', value: 'national' }
+        { specialStoreId: 'levelcode', value: 'national' },
       ]
     }
   },
@@ -388,7 +486,7 @@ const COMMON_TEMPLATES = {
           btnType: 'simpleBtn',
           title: { fr: 'Réinitialiser la recherche' },
           titleI18n: 'buttons.button01.title',
-          btnClass: `text-${kpiGroupOptions.justify ? kpiGroupOptions.justify : 'center'} pa-0 mt-2 mb-0`,
+          btnClass: `text-${kpiGroupOptions.justify ? kpiGroupOptions.justify : 'center'} pa-0 mt-2 mb-2`,
           btnClassMobile: `text-${kpiGroupOptions.justify ? kpiGroupOptions.justify : 'left'} pa-0 mt-2 mb-0`,
           btnInnerClass: 'text-none',
           btnInnerIcon: 'icon-times-circle-o',
@@ -459,7 +557,121 @@ const COMMON_TEMPLATES = {
         { specialStoreId: 'levelcode', value: 'national' }
       ]
     }
-  }
+  },
+  actus: (kpiGroupOptions) => {
+    return {
+      id: `actu-button-simple-${kpiGroupOptions[keyKpiGroupId]}`,
+      help: `global actu buttton for ${kpiGroupOptions[keyKpiGroupName]}`,
+      title: { fr: '' },
+      titleI18n: 'buttons.button01.title',
+      dividers: {
+        before: true,
+        after: false
+      },
+      btnsRowClass: `align-center mx-3 my-2 justify-${kpiGroupOptions.justify ? kpiGroupOptions.justify : 'left'}`,
+      btnsRowClassMobile: 'my-2 py-0',
+      componentButtons: [
+        {
+          id: `actu-button-${kpiGroupOptions[keyKpiGroupId]}`,
+          btnType: 'simpleBtn',
+          title: { fr: "Voir l'actualité du <br/>département" },
+          titleI18n: 'buttons.button01.title',
+          btnClass: `justify-${kpiGroupOptions.justify ? kpiGroupOptions.justify : 'center'} pt-5 pb-0 py-0`,
+          btnInnerClass: 'text-none btn-no-radius py-2 font-weight-bold',
+          block: true,
+          icon: undefined,
+          iconAfterTitle: null,
+          outlined: true,
+          fab: false,
+          color: 'primary',
+          large: false,
+          small: false,
+          dark: false,
+          text: false,
+          tile: false,
+          rounded: false,
+          disabled: false,
+          activatedIf: undefined,
+          height: '60px',
+          functions: [
+            {
+              funcName: 'goToExt',
+              funcParams: {
+                url: kpiGroupOptions[keyKpiGroupExtLink]
+              }
+            }
+          ]
+        }
+      ],
+      hideIfs: [
+        // OR operator
+        { specialStoreId: 'levelcode', value: 'national' },
+        { specialStoreId: 'levelcode', value: 'regional' }
+      ]
+    }
+  },
+  backToDetailedResults: (kpiGroupOptions) => {
+    return {
+      id: `back-detail-button-simple-${kpiGroupOptions[keyKpiGroupId]}`,
+      help: `global back-detail buttton for ${kpiGroupOptions[keyKpiGroupName]}`,
+      title: { fr: '' },
+      titleI18n: 'buttons.button01.title',
+      dividers: {
+        before: false,
+        after: false
+      },
+      btnsRowClass: `align-center mx-0 my-0 justify-${kpiGroupOptions.justify ? kpiGroupOptions.justify : 'left'}`,
+      btnsRowClassMobile: 'my-2 py-0',
+      componentButtons: [
+        {
+          id: `back-detail-button-${kpiGroupOptions[keyKpiGroupId]}`,
+          btnType: 'simpleBtn',
+          title: { fr: "Consulter les résultats détaillés pour XXX" },
+          titleI18n: 'buttons.button01.title',
+          btnClass: `justify-${kpiGroupOptions.justify ? kpiGroupOptions.justify : 'center'} py-0`,
+          btnInnerClass: 'text-none btn-no-radius py-2 font-weight-bold',
+          block: true,
+          icon: undefined,
+          iconAfterTitle: null,
+          outlined: true,
+          fab: false,
+          color: 'primary',
+          large: false,
+          small: false,
+          dark: false,
+          text: false,
+          tile: false,
+          rounded: false,
+          disabled: false,
+          activatedIf: undefined,
+          height: '60px',
+
+          textPrefix: { fr: 'Consulter les résultats détaillés pour ' },
+          textPrefixClass: 'font-weight-regular',
+          textPrefixRules: {
+            fr: COMMON_RULES.fr_prepositions
+          },
+          textSuffix: { fr: '' },
+          textSuffixClass: '',
+          specialStoreId: 'levelname',
+          // specialStoreIdClass: 'font-weight-bold',
+
+          functions: [
+            {
+              funcName: 'goToExt',
+              funcParams: {
+                url: kpiGroupOptions[keyKpiGroupExtLink]
+              }
+            }
+          ]
+        }
+      ],
+      hideIfs: [
+        // OR operator
+        { specialStoreId: 'levelcode', value: 'national' },
+      ]
+    }
+  },
 }
 
 const COMMON_KPI_FAMILY_TEMPLATES = {
@@ -511,6 +723,8 @@ kpiGroupOptionsTerritories[keyKpiGroupId] = 'territoires'
 kpiGroupOptionsTerritories[keyKpiGroupName] = 'territoires'
 kpiGroupOptionsTerritories.justify = 'center'
 const resetBtnTerritories = buildButtons(kpiGroupOptionsTerritories, 'resetSimple')
+const actuBtnTerritories = buildButtons(kpiGroupOptionsTerritories, 'actus')
+const backDetailsBtnTerritories = buildButtons(kpiGroupOptionsTerritories, 'backToDetailedResults')
 
 // - - - - - - - - - - - - - - - - - - - - - //
 // MAIN GLOBAL BUTTONS SETTINGS
@@ -894,7 +1108,7 @@ export const configAppGlobalButtons = {
       ]
     },
 
-    resetBtnTerritories,
+    // resetBtnTerritories,
 
     {
       id: 'global-button-tabs-territoires',
@@ -970,7 +1184,9 @@ export const configAppGlobalButtons = {
 
     },
 
-    resetBtnTerritories
+    resetBtnTerritories,
+    actuBtnTerritories,
+    backDetailsBtnTerritories
 
   ]
 }

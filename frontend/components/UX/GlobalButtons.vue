@@ -5,7 +5,7 @@
   <v-container
     v-show="!isRouteLoading && canShow"
     :id="`globalButtons-${settings.id}`"
-    :class="`${settings.containerClass} ${isMobileWidth ? 'py-0' : ''}`"
+    :class="`${isMobileWidth ? settings.containerClassMobile : settings.containerClass}`"
     :trigger="`${trigger}`"
     >
     <v-divider v-if="viewConfig.dividers.before && !isMobileWidth" />
@@ -189,8 +189,9 @@ export default {
           let valueFromSpecialStore = this.getSpecialStore[
             hideIf.specialStoreId
           ]
-          // this.log && console.log("C-GlobalBtn / getCanShow / valueFromSpecialStore : ", valueFromSpecialStore)
-          let tempBool = hideIf.value == valueFromSpecialStore
+          // this.log && console.log("\nC-GlobalBtn / getCanShow / valueFromSpecialStore : ", valueFromSpecialStore)
+          // this.log && console.log("C-GlobalBtn / getCanShow / hideIf.value : ", hideIf.value)
+          let tempBool = hideIf.value === valueFromSpecialStore
           // this.log && console.log("C-GlobalBtn / getCanShow / tempBool : ", tempBool)
           boolsArray.push(!tempBool)
         }
