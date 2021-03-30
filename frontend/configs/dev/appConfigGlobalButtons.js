@@ -659,9 +659,50 @@ const COMMON_TEMPLATES = {
 
           functions: [
             {
-              funcName: 'goToExt',
+              funcName: 'goToDynamic',
               funcParams: {
-                url: kpiGroupOptions[keyKpiGroupExtLink]
+                // url: kpiGroupOptions[keyKpiGroupExtLink]
+                to: '/par-territoire/',
+                args: [
+                  { arg: 'datasetid',
+                    from: 'mapFromSpecialStore',
+                    field: 'levelcode', // departements
+                    mapper: {
+                      departemental: 'departements',
+                      regional: 'regions'
+                    }
+                  },
+                  { arg: 'field',
+                    from: 'raw',
+                    value: 'code' // code
+                  },
+                  // { arg: 'value',
+                  //   from: 'specialStore',
+                  //   field: 'level' // 02 - level code
+                  // },
+                  { arg: 'value',
+                    from: 'mapFromSpecialStoreAndInit',
+                    mapperInitDataId: {
+                      specialStoreField: 'levelcode',
+                      mapperInitDataField: {
+                        departemental: 'taxo-departements',
+                        regional: 'taxo-regions'
+                      }
+                    },
+                    mapperFind: {
+                      specialStoreField: 'levelname',
+                      initDataFieldFind: 'libelle',
+                      initDataValueFieldMapper: {
+                        departemental: 'dep',
+                        regional: 'reg'
+                      }
+                    }
+                  },
+                  { arg: 'kpifamilies',
+                    from: 'routeConfig',
+                    field: 'kpiFamilyId' // relance-emploi-economie
+                  },
+                ]
               }
             }
           ]

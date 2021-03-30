@@ -133,6 +133,8 @@ export default {
     }),
 
     ...mapGetters({
+      routeConfig: 'getLocalRouteConfig',
+      getInitData:'data/getInitData',
       getSpecialStore:'data/getSpecialStore',
       // getDivCurrentVisibility: "getDivCurrentVisibility",
     }),
@@ -211,6 +213,13 @@ export default {
               let win = window.open(funcParams.url, '_blank')
               win.focus()
               break
+
+            case 'goToDynamic':
+              // this.log && console.log('C-GlobalButton / runBtnFunctions / goTodynamic / funcParams : ', funcParams )
+              let urlTarget = this.buildUrl(funcParams)
+              // this.log && console.log('C-GlobalButton / runBtnFunctions / goTodynamic / urlTarget : ', urlTarget )
+              this.$router.push(urlTarget)
+              break
           }
         }
       }
@@ -285,6 +294,55 @@ export default {
       this.$store.commit('setRouteParams', otherQueries)
       routePath = otherQueries !== '' ? `${routePath}?${otherQueries}` : routePath
       history.pushState({}, null, routePath)
+    },
+
+    buildUrl(funcParams) {
+      // this.log && console.log("C-GlobalButton / buildUrl ... funcParams : ", funcParams )
+      let url = `${funcParams.to}?`
+      // this.log && console.log("C-GlobalButton / buildUrl ... this.getInitData : ", this.getInitData )
+      for (let [idx, argData] of funcParams.args.entries()) {
+        let and = !idx ? '' : '&'
+        let value = 'test'
+        switch (argData.from) {
+          case 'raw':
+            value = argData.value
+            break
+          case 'specialStore':
+            // this.log && console.log("C-GlobalButton / buildUrl / specialStore... this.getSpecialStore : ", this.getSpecialStore )
+            value = this.getSpecialStore[argData.field]
+            break
+          case 'mapFromSpecialStore':
+            // this.log && console.log("C-GlobalButton / buildUrl / mapFromSpecialStore... this.getSpecialStore : ", this.getSpecialStore )
+            value = argData.mapper[ this.getSpecialStore[argData.field] ]
+            break
+          case 'mapFromSpecialStoreAndInit':
+            // this.log && console.log("C-GlobalButton / buildUrl / mapFromSpecialStoreAndInit... this.getInitData : ", this.getInitData )
+            // this.log && console.log("C-GlobalButton / buildUrl / mapFromSpecialStoreAndInit... this.getSpecialStore : ", this.getSpecialStore )
+            // value = argData.mapper[ this.getSpecialStore[argData.field] ]
+            let specialStoreFieldMap = argData.mapperInitDataId.specialStoreField
+            let specialStoreValueMap = this.getSpecialStore[specialStoreFieldMap]
+            let InitDataField = argData.mapperInitDataId.mapperInitDataField[ specialStoreValueMap ]
+            let initDataSet = this.getInitData.find( d => d.id === InitDataField)
+            // this.log && console.log("C-GlobalButton / buildUrl / mapFromSpecialStoreAndInit... initDataSet : ", initDataSet )
+
+            let specialStoreFieldFind = argData.mapperFind.specialStoreField
+            let specialStoreValueFind = this.getSpecialStore[specialStoreFieldFind]
+            let initDataFindField = argData.mapperFind.initDataFieldFind
+            let valueObj = initDataSet.data.find( d => d[initDataFindField] === specialStoreValueFind )
+            // this.log && console.log("C-GlobalButton / buildUrl / mapFromSpecialStoreAndInit... valueObj : ", valueObj )
+
+            let initTargetField = argData.mapperFind.initDataValueFieldMapper[ specialStoreValueMap ]
+            value = valueObj[ initTargetField ]
+            break
+          case 'routeConfig':
+            // this.log && console.log("C-GlobalButton / buildUrl / routeConfig... this.routeConfig : ", this.routeConfig )
+            value = this.routeConfig[argData.field]
+            break
+        }
+        let paramsString = `${and}${argData.arg}=${value}`
+        url += paramsString
+      }
+      return url
     },
 
     resetFitToPolygon() {

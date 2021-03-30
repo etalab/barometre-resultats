@@ -660,6 +660,8 @@ const COMMON_TEMPLATES = {
   mapRoute: (kpiFamilyOptions, kpiGroupOptions) => {
     const route = {
       id: `${kpiGroupOptions[keyKpiGroupId]}`,
+      kpiFamilyId: `${kpiFamilyOptions.kpiFamilyId}`,
+      kpiGroupId: `${kpiGroupOptions[keyKpiGroupId]}`,
       name: `${kpiGroupOptions[keyKpiGroupName]} page`,
       help: `route view for ${kpiGroupOptions[keyKpiGroupName]} dataset`,
       title: { fr: '' },
