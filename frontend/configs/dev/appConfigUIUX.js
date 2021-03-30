@@ -450,12 +450,12 @@ export const configAppUIUX = {
       {
         class: '.btn-no-radius',
         config: `
-          background-color: #fff !important;
           border-bottom: 1px solid #000091 !important;
           border-right: 1px solid #000091 !important;
           margin: .3em !important;
           border-radius: 0 !important;
         `
+          // background-color: #fff !important;
       },
       {
         class: '.btn-gouv-min',

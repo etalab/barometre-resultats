@@ -292,11 +292,11 @@ animation: fadeIn ease 1s;
                 <!-- LINK TO EXTERIOR -->
                 <div
                   v-show="!isLoadingNewData"
-                  :class="`ml-1 ${isMobileWidth ? 'mt-1 text-center' : ''} mb-0`"
+                  :class="`ml-2 ${isMobileWidth ? 'mt-1 text-center' : ''} mb-0`"
                   >
                   <v-btn
-                    :class="`text-none ${isMobileWidth ? 'no-text-transform word-break' : ''}`"
-                    text
+                    :class="`text-none btn-no-radius ${isMobileWidth ? 'no-text-transform word-break' : ''}`"
+                    outlined
                     color="primary"
                     :href="kpi_group.linkExt"
                     :target="`${ isIframe ? '_parent' : '_blank' }`"
@@ -307,13 +307,13 @@ animation: fadeIn ease 1s;
                       >
                       {{ kpi_group.kpiLinkText[locale] }}
                     </span>
-                    <v-icon
+                    <!-- <v-icon
                       small
                       class="pl-2 pb-0"
                       color="primary"
                       >
                       icon-arrow-right
-                    </v-icon>
+                    </v-icon> -->
                   </v-btn>
                 </div>
 

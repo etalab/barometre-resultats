@@ -1023,7 +1023,7 @@ export const configAppGlobalButtons = {
           inputLabel: { fr: 'ex : 33 ou Gironde' },
           inputNoData: { fr: 'cherchez un département' },
 
-          btnClass: 'justify-center pt-0 pb-5 px-0',
+          btnClass: 'justify-center pt-0 pb-2 px-0',
           btnClassMobile: 'justify-center py-0 px-3',
 
           block: true,
