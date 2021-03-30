@@ -1061,7 +1061,7 @@ export const configAppRoutes = {
                   settings: {
                     id: 'global-button-simple-territoires',
                     containerClass: 'py-0 mt-0 mb-5',
-                    containerClassMobile: 'py-0 my-0',
+                    containerClassMobile: 'py-0 mt-0 mb-3',
                     mobileIsVisibleDefault: true,
                     desktopIsVisibleDefault: true
                   }

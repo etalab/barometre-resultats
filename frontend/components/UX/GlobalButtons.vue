@@ -8,7 +8,7 @@
     :class="`${isMobileWidth ? settings.containerClassMobile : settings.containerClass}`"
     :trigger="`${trigger}`"
     >
-    <v-divider v-if="viewConfig.dividers.before && !isMobileWidth" />
+    <v-divider v-if="(viewConfig.dividers.before && !isMobileWidth) || viewConfig.dividers.beforeOnMobile" />
 
     <v-row 
       v-if="!viewConfig.buttonsVertical"

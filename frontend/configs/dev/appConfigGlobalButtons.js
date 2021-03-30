@@ -156,7 +156,7 @@ const COMMON_RULES = {
     rules: [
       {
         add: 'la',
-        class: 'mx-1',
+        class: 'mx-0',
         conditions: [
           {
             specialStoreId: 'levelcode',
@@ -166,7 +166,7 @@ const COMMON_RULES = {
       },
       {
         add: 'la région',
-        class: 'mx-1',
+        class: 'mx-0',
         conditions: [
           {
             specialStoreId: 'levelcode',
@@ -566,6 +566,7 @@ const COMMON_TEMPLATES = {
       titleI18n: 'buttons.button01.title',
       dividers: {
         before: true,
+        beforeOnMobile: true,
         after: false
       },
       btnsRowClass: `align-center mx-3 my-2 justify-${kpiGroupOptions.justify ? kpiGroupOptions.justify : 'left'}`,
@@ -844,7 +845,7 @@ export const configAppGlobalButtons = {
           inputNoData: { fr: 'cherchez une région' },
 
           btnClass: 'justify-left pt-1 px-0',
-          btnClassMobile: 'justify-left pt-1 px-0 pb-0',
+          btnClassMobile: 'justify-left pt-1 px-3 pb-0',
 
           block: true,
           icon: false,
@@ -982,7 +983,7 @@ export const configAppGlobalButtons = {
           inputNoData: { fr: 'cherchez un département' },
 
           btnClass: 'justify-center pt-0 pb-5 px-0',
-          btnClassMobile: 'justify-center pt-0 px-0',
+          btnClassMobile: 'justify-center py-0 px-3',
 
           block: true,
           icon: false,
