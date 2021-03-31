@@ -445,7 +445,15 @@ const COMMON_KPI_COMPONENTS = {
                 filterConfigsBy: [ 'levelcode', 'dataset' ],
                 findConfigBy: [ 'sourceId' ],
               }
-            }
+            },
+
+            kpiMappers: {
+              selectHeaderMainValue: 'latest_value',
+              selectHeaderMainValueDate: 'latest_value_date',
+              selectHeaderSecondValue: 'progression_percentage',
+              selectHeaderSecondValue: 'progression_percentage',
+            },
+
           }
         },
         {
