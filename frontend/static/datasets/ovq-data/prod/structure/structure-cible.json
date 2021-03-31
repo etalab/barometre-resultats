@@ -4853,7 +4853,7 @@
       "nom_indicateur_ditp": "Nombre de jeunes réalisant effectivement leur SNU",
       "nom_indicateur": "Nombre de jeunes réalisant effectivement leur SNU",
       "odm_id": "nb-jeunes-snu",
-      "odm_text": "/ovq-textes/agriculture/assurer-montee-snu/indicateurs/nb-jeunes-snu.md",
+      "odm_text": "/ovq-textes/education/assurer-montee-snu/indicateurs/nb-jeunes-snu.md",
       "odm_text_brief": false,
       "odm_kpi_headers_overwrite": [{
           "text": "En",
@@ -4978,7 +4978,7 @@
       "nom_indicateur_ditp": "Taux de personnes détenues ayant bénéficié d'une formation dans l'année",
       "nom_indicateur": "Taux de personnes détenues ayant bénéficié d'une formation dans l'année",
       "odm_id": "tx-detenus-formation",
-      "odm_text": "/ovq-textes/agriculture/developper-places-tig/indicateurs/tx-detenus-formation.md",
+      "odm_text": "/ovq-textes/justice/developper-places-tig/indicateurs/tx-detenus-formation.md",
       "odm_text_brief": false,
       "odm_kpi_headers_overwrite": [{
           "text": "En",
@@ -5065,7 +5065,7 @@
       "nom_indicateur_ditp": "Nombre de postes de TIG offerts",
       "nom_indicateur": "Nombre de postes de TIG offerts",
       "odm_id": "nb-postes-tig",
-      "odm_text": "/ovq-textes/agriculture/developper-places-tig/indicateurs/nb-postes-tig.md",
+      "odm_text": "/ovq-textes/justice/developper-places-tig/indicateurs/nb-postes-tig.md",
       "odm_text_brief": false,
       "odm_kpi_headers_overwrite": [{
           "text": "En",
@@ -5190,7 +5190,7 @@
       "nom_indicateur_ditp": "Nombre de bénéficiaires dans les structures d'insertion par l'activité économique (SIAE)",
       "nom_indicateur": "Nombre de bénéficiaires dans les structures d'insertion par l'activité économique (SIAE)",
       "odm_id": "nb-beneficiaires-siae",
-      "odm_text": "/ovq-textes/agriculture/pacte-ambition-iae/indicateurs/nb-beneficiaires-siae.md",
+      "odm_text": "/ovq-textes/relance-emploi-economie/pacte-ambition-iae/indicateurs/nb-beneficiaires-siae.md",
       "odm_text_brief": false,
       "odm_kpi_headers_overwrite": [{
           "text": "En",
