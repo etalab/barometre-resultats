@@ -598,7 +598,8 @@ const COMMON_TEMPLATES = {
             {
               funcName: 'goToExt',
               funcParams: {
-                url: kpiGroupOptions[keyKpiGroupExtLink]
+                url: 'https://gouvernement.fr',
+                // url: kpiGroupOptions[keyKpiGroupExtLink]
               }
             }
           ]
