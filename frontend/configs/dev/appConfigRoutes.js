@@ -395,8 +395,8 @@ const COMMON_KPI_COMPONENTS = {
           settings: {
             id: `kpicard-${kpiGroupOptions[keyKpiGroupId]}-${kpi[keyKpiId]}`,
             componentTitle: { fr: kpi[keyKpiName] },
-            containerClass: `mt-0 mb-2 mx-5 kpi-block-carto-${addCharts? 'center' : 'bottom' }`,
-            containerClassMobile: `mt-0 mb-2 mx-4 kpi-block-carto-${addCharts? 'center' : 'bottom' }-mobile`,
+            containerClass: `mt-0 mb-${addCharts? 0 : 2 } mx-5 kpi-block-carto-${addCharts? 'center' : 'bottom' }`,
+            containerClassMobile: `mt-0 mb-${addCharts? 0 : 2 } mx-4 kpi-block-carto-${addCharts? 'center' : 'bottom' }-mobile`,
             mobileIsVisibleDefault: true,
             desktopIsVisibleDefault: true,
             
@@ -411,6 +411,41 @@ const COMMON_KPI_COMPONENTS = {
               kpiGroupsField: 'kpi_groups',
               kpisField: 'kpis',
             },
+
+            kpiDataFrom: {
+              forceLevelCode: { 
+                specialstoreField: 'levelcode', value: 'national'
+              },
+              hideIfs: [
+                { specialstoreField : 'levelcode', value: 'national' }
+              ],
+              sourcesIds: [
+                { levelcode: 'national',
+                  sourceId: `national-${kpiGroupOptions[keyKpiGroupId]}-raw`,
+                  findBy: 'index', index: 0,
+                  returnPathValue: `values.${kpi[keyKpiId]}.value`,
+                  returnPathDate: `values.${kpi[keyKpiId]}.value_date`
+                },
+                { levelcode: 'regional', 
+                  sourceId: `regions-${kpiGroupOptions[keyKpiGroupId]}-raw`,
+                  findBy: 'fieldmatch', fieldSource: 'libelle', fieldTarget : 'levelname',
+                  returnPathValue: `values.${kpi[keyKpiId]}.value`,
+                  returnPathDate: `values.${kpi[keyKpiId]}.value_date`
+                },
+                { levelcode: 'departemental', 
+                  sourceId: `departements-${kpiGroupOptions[keyKpiGroupId]}-raw`,
+                  findBy: 'fieldmatch', fieldSource: 'libelle', fieldTarget : 'levelname',
+                  returnPathValue: `values.${kpi[keyKpiId]}.value`,
+                  returnPathDate: `values.${kpi[keyKpiId]}.value_date`
+                }
+              ],
+              loadFrom: {
+                storeModule: 'configs',
+                modulePath: 'configAppData.routesData.initData.store',
+                filterConfigsBy: [ 'levelcode', 'dataset' ],
+                findConfigBy: [ 'sourceId' ],
+              }
+            }
           }
         },
         {
@@ -827,8 +862,8 @@ const COMMON_TEMPLATES = {
                 // },
 
                 // KPI GROUP'S KPI COMPONENTS
-                ...COMMON_KPI_COMPONENTS.components(kpiFamilyOptions, kpiGroupOptions, false), // true => addCharts to map routes
-                // ...COMMON_KPI_COMPONENTS.components(kpiFamilyOptions, kpiGroupOptions, true),
+                // ...COMMON_KPI_COMPONENTS.components(kpiFamilyOptions, kpiGroupOptions, false), // true => addCharts to map routes
+                ...COMMON_KPI_COMPONENTS.components(kpiFamilyOptions, kpiGroupOptions, true),
 
                 {
                   component: 'infoBox',
