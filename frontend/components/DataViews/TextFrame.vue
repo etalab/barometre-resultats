@@ -63,9 +63,9 @@
             <!-- TEXT TITLE -->
             <p v-if="col.colTitle"
               :class="`${col.colTitleClass} ${isMobileWidth ? 'text-body-1 mb-0 mobile-title' : ''} font-weight-bold`"
+              v-html="col.colTitle[locale]"
               >
-              <!-- v-html="col.colTitle[locale]" -->
-              {{ col.colTitle[locale] }}
+              <!-- {{ col.colTitle[locale] }} -->
             </p>
 
             <!-- TEXT FROM DISPLAYED DATA -->
