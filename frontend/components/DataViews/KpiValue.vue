@@ -1,8 +1,8 @@
 <template>
   <div class=""
     v-if="showValue(itemLocal, header)"
-    :trigger="`${trigger}`"
     >
+    <!-- :trigger="`${trigger}`" -->
 
     <!-- NUMBER VALUE -->
     <span v-if="valueType === 'number'">
@@ -53,9 +53,9 @@
       <!-- {{ stringNumber(formatValue(itemLocal, header), header && header.format) }} -->
       <!-- {{ stringNumber(counter, header && header.format) }} -->
 
-      <span class="main-number">
+      <!-- <span class="main-number"> -->
         {{ stringNumber(counter, itemLocal && itemLocal.odmFormat) }}
-      </span>
+      <!-- </span> -->
 
       <slot name="unit"></slot>
       <span v-if="header && header.unit && formatValue(itemLocal, header) !== noDataText[locale]"

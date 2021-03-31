@@ -1,6 +1,15 @@
+<style scoped>
+  .adapt-flex {
+    flex: 1; 
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+  }
+</style>
+
 <template>
 
-  <div>
+  <div class="adapt-flex">
 
     <!-- KPI / INDICATOR CARD TITLE -->
     <v-card
