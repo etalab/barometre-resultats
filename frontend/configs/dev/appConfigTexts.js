@@ -350,7 +350,8 @@ const COMMON_TEMPLATES = {
       resumes.push(text)
     }
     return resumes
-  }
+  },
+
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - -

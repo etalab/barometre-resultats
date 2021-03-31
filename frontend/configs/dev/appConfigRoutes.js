@@ -359,7 +359,7 @@ const COMMON_TEXTS = {
 // }
 
 const COMMON_KPI_COMPONENTS = {
-  components: (kpiFamilyOptions, kpiGroupOptions, addCharts = false) => {
+  components: (kpiFamilyOptions, kpiGroupOptions, addCharts = false, addKpiCard = true) => {
     const components = []
     for (const kpi of kpiGroupOptions[keyKpiGroupKpis]) {
       const kpiComponents = [
@@ -372,8 +372,8 @@ const COMMON_KPI_COMPONENTS = {
           settings: {
             id: `text-${kpiGroupOptions[keyKpiGroupId]}-${kpi[keyKpiId]}-resume`,
             componentTitle: { fr: kpi[keyKpiName] },
-            containerClass: `mt-0 mb-${addCharts ? 0 : 2 } mx-5 kpi-block-carto-${addCharts ? 'top' : 'alone' }`,
-            containerClassMobile: `mt-0 mb-${addCharts ? 0 : 2 } mx-4 kpi-block-carto-${addCharts ? 'top' : 'alone' }-mobile`,
+            containerClass: `mt-0 mb-${addCharts || addKpiCard ? 0 : 2 } mx-5 kpi-block-carto-${addCharts || addKpiCard ? 'top' : 'alone' }`,
+            containerClassMobile: `mt-0 mb-${addCharts || addKpiCard ? 0 : 2 } mx-4 kpi-block-carto-${addCharts || addKpiCard ? 'top' : 'alone' }-mobile`,
             asDrawer: true,
             drawerOpen: true,
             drawerTitle: { fr: 'Que mesure cet indicateur ?' },
@@ -384,6 +384,33 @@ const COMMON_KPI_COMPONENTS = {
             mobileIsVisibleDefault: true,
             mobileShowMore: false,
             desktopIsVisibleDefault: true
+          }
+        },
+        {
+          component: 'kpicard',
+          activated: addKpiCard,
+          smallScreenVerticalOrder: 1,
+          justify: 'center',
+          align: 'center',
+          settings: {
+            id: `kpicard-${kpiGroupOptions[keyKpiGroupId]}-${kpi[keyKpiId]}`,
+            componentTitle: { fr: kpi[keyKpiName] },
+            containerClass: `mt-0 mb-2 mx-5 kpi-block-carto-${addCharts? 'center' : 'bottom' }`,
+            containerClassMobile: `mt-0 mb-2 mx-4 kpi-block-carto-${addCharts? 'center' : 'bottom' }-mobile`,
+            mobileIsVisibleDefault: true,
+            desktopIsVisibleDefault: true,
+            
+            kpiConfigFrom: {
+              kpiFamilyId: kpiFamilyOptions.kpiFamilyId,
+              kpiGroupId: kpiGroupOptions[keyKpiGroupId],
+              kpiIdFull: `${kpiGroupOptions[keyKpiGroupId]}-${kpi[keyKpiId]}`,
+              kpiId: `${kpi[keyKpiId]}`,
+              dataViewType: 'kpitables',
+              kpiTableId: 'kpi-territoires',
+              kpiFamiliesField: 'kpi_families',
+              kpiGroupsField: 'kpi_groups',
+              kpisField: 'kpis',
+            },
           }
         },
         {
