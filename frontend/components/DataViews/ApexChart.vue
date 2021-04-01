@@ -943,7 +943,7 @@ export default {
         // log && console.log("C-ApexChart / reloadDataFromSource / this.kpiFamilyId : ", this.kpiFamilyId)
         // log && console.log("C-ApexChart / reloadDataFromSource / this.kpiGroupIdDataset : ", this.kpiGroupIdDataset)
         // log && console.log("C-ApexChart / reloadDataFromSource / this.kpiGroupId : ", this.kpiGroupId)
-        log && console.log("C-ApexChart / reloadDataFromSource / this.sourcesIds : ", this.sourcesIds)
+        // log && console.log("C-ApexChart / reloadDataFromSource / this.sourcesIds : ", this.sourcesIds)
 
         if (this.fallbackData && this.fallbackData.rules) {
           // log && console.log("C-ApexChart / reloadDataFromSource / this.fallbackData : ", this.fallbackData)
