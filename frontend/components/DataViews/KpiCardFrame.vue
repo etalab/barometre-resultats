@@ -255,6 +255,13 @@ export default {
         }
         value = valueRewrite
       }
+
+      let forceLevelCode = this.settings.kpiDataFrom.forceLevelCode
+      if (forceLevelCode) {
+        let addonSuffix = forceLevelCode.forceSuffix[this.locale]
+        value = `${value} ${addonSuffix}`
+      }
+
       return value
     },
 
@@ -366,8 +373,8 @@ export default {
       let levelName = this.specialStore.levelname
 
       // force levelcode to overwrite 
-      let levelCode = this.specialStore.levelcode
-      // let levelCode = kpiDataFrom.forceLevelCode ? kpiDataFrom.forceLevelCode.value : this.specialStore.levelcode
+      // let levelCode = this.specialStore.levelcode
+      let levelCode = kpiDataFrom.forceLevelCode ? kpiDataFrom.forceLevelCode.value : this.specialStore.levelcode
       // this.log && console.log("C-KpiCardFrame / reloadDataFromSource / levelCode : ", levelCode)
 
       // this.log && console.log("C-KpiCardFrame / reloadDataFromSource / this.sourcesToLoad : ", this.sourcesToLoad)

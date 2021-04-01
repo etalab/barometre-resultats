@@ -358,6 +358,84 @@ const COMMON_TEXTS = {
 //   }
 // }
 
+const COMMON_KPI_COMPONENTS_TEMPLATE = {
+  kpiCard: (kpiFamilyOptions, kpiGroupOptions, kpi, addCharts, addKpiCard, forceNational = false) => {
+    let kpicard = {
+      component: 'kpicard',
+      activated: addKpiCard,
+      smallScreenVerticalOrder: 1,
+      justify: 'center',
+      align: 'center',
+      settings: {
+        id: `kpicard-${kpiGroupOptions[keyKpiGroupId]}-${kpi[keyKpiId]}`,
+        componentTitle: { fr: kpi[keyKpiName] },
+        containerClass: `mt-0 mb-${addCharts? 0 : 2 } mx-5 kpi-block-carto-${addCharts? 'center' : 'bottom' }`,
+        containerClassMobile: `mt-0 mb-${addCharts? 0 : 2 } mx-4 kpi-block-carto-${addCharts? 'center' : 'bottom' }-mobile`,
+        mobileIsVisibleDefault: true,
+        desktopIsVisibleDefault: true,
+        
+        kpiConfigFrom: {
+          kpiFamilyId: kpiFamilyOptions.kpiFamilyId,
+          kpiGroupId: kpiGroupOptions[keyKpiGroupId],
+          kpiIdFull: `${kpiGroupOptions[keyKpiGroupId]}-${kpi[keyKpiId]}`,
+          kpiId: `${kpi[keyKpiId]}`,
+          dataViewType: 'kpitables',
+          kpiTableId: 'kpi-territoires',
+          kpiFamiliesField: 'kpi_families',
+          kpiGroupsField: 'kpi_groups',
+          kpisField: 'kpis',
+        },
+
+        kpiDataFrom: {
+          sourcesIds: [
+            { levelcode: 'national',
+              sourceId: `national-${kpiGroupOptions[keyKpiGroupId]}-raw`,
+              findBy: 'index', index: 0,
+              returnPathValue: `values.${kpi[keyKpiId]}.value`,
+              returnPathDate: `values.${kpi[keyKpiId]}.value_date`
+            },
+            { levelcode: 'regional', 
+              sourceId: `regions-${kpiGroupOptions[keyKpiGroupId]}-raw`,
+              findBy: 'fieldmatch', fieldSource: 'libelle', fieldTarget : 'levelname',
+              returnPathValue: `values.${kpi[keyKpiId]}.value`,
+              returnPathDate: `values.${kpi[keyKpiId]}.value_date`
+            },
+            { levelcode: 'departemental', 
+              sourceId: `departements-${kpiGroupOptions[keyKpiGroupId]}-raw`,
+              findBy: 'fieldmatch', fieldSource: 'libelle', fieldTarget : 'levelname',
+              returnPathValue: `values.${kpi[keyKpiId]}.value`,
+              returnPathDate: `values.${kpi[keyKpiId]}.value_date`
+            }
+          ],
+          loadFrom: {
+            storeModule: 'configs',
+            modulePath: 'configAppData.routesData.initData.store',
+            filterConfigsBy: [ 'levelcode', 'dataset' ],
+            findConfigBy: [ 'sourceId' ],
+          }
+        },
+
+        kpiMappers: {
+          selectHeaderMainValue: 'latest_value',
+          selectHeaderMainValueDate: 'latest_value_date',
+          selectHeaderSecondValue: 'progression_percentage',
+          selectHeaderSecondValue: 'progression_percentage',
+        },
+      }
+    }
+    if (forceNational) {
+      kpicard.settings.kpiDataFrom.forceLevelCode = {
+        specialstoreField: 'levelcode', value: 'national',
+        forceSuffix: {  fr: 'pour la France entière' }
+      }
+      kpicard.settings.kpiDataFrom.hideIfs = [
+        { specialstoreField : 'levelcode', value: 'national' }
+      ]
+    }
+    return kpicard
+  } 
+}
+
 const COMMON_KPI_COMPONENTS = {
   components: (kpiFamilyOptions, kpiGroupOptions, addCharts = false, addKpiCard = true) => {
     const components = []
@@ -386,76 +464,8 @@ const COMMON_KPI_COMPONENTS = {
             desktopIsVisibleDefault: true
           }
         },
-        {
-          component: 'kpicard',
-          activated: addKpiCard,
-          smallScreenVerticalOrder: 1,
-          justify: 'center',
-          align: 'center',
-          settings: {
-            id: `kpicard-${kpiGroupOptions[keyKpiGroupId]}-${kpi[keyKpiId]}`,
-            componentTitle: { fr: kpi[keyKpiName] },
-            containerClass: `mt-0 mb-${addCharts? 0 : 2 } mx-5 kpi-block-carto-${addCharts? 'center' : 'bottom' }`,
-            containerClassMobile: `mt-0 mb-${addCharts? 0 : 2 } mx-4 kpi-block-carto-${addCharts? 'center' : 'bottom' }-mobile`,
-            mobileIsVisibleDefault: true,
-            desktopIsVisibleDefault: true,
-            
-            kpiConfigFrom: {
-              kpiFamilyId: kpiFamilyOptions.kpiFamilyId,
-              kpiGroupId: kpiGroupOptions[keyKpiGroupId],
-              kpiIdFull: `${kpiGroupOptions[keyKpiGroupId]}-${kpi[keyKpiId]}`,
-              kpiId: `${kpi[keyKpiId]}`,
-              dataViewType: 'kpitables',
-              kpiTableId: 'kpi-territoires',
-              kpiFamiliesField: 'kpi_families',
-              kpiGroupsField: 'kpi_groups',
-              kpisField: 'kpis',
-            },
-
-            kpiDataFrom: {
-              forceLevelCode: { 
-                specialstoreField: 'levelcode', value: 'national'
-              },
-              hideIfs: [
-                { specialstoreField : 'levelcode', value: 'national' }
-              ],
-              sourcesIds: [
-                { levelcode: 'national',
-                  sourceId: `national-${kpiGroupOptions[keyKpiGroupId]}-raw`,
-                  findBy: 'index', index: 0,
-                  returnPathValue: `values.${kpi[keyKpiId]}.value`,
-                  returnPathDate: `values.${kpi[keyKpiId]}.value_date`
-                },
-                { levelcode: 'regional', 
-                  sourceId: `regions-${kpiGroupOptions[keyKpiGroupId]}-raw`,
-                  findBy: 'fieldmatch', fieldSource: 'libelle', fieldTarget : 'levelname',
-                  returnPathValue: `values.${kpi[keyKpiId]}.value`,
-                  returnPathDate: `values.${kpi[keyKpiId]}.value_date`
-                },
-                { levelcode: 'departemental', 
-                  sourceId: `departements-${kpiGroupOptions[keyKpiGroupId]}-raw`,
-                  findBy: 'fieldmatch', fieldSource: 'libelle', fieldTarget : 'levelname',
-                  returnPathValue: `values.${kpi[keyKpiId]}.value`,
-                  returnPathDate: `values.${kpi[keyKpiId]}.value_date`
-                }
-              ],
-              loadFrom: {
-                storeModule: 'configs',
-                modulePath: 'configAppData.routesData.initData.store',
-                filterConfigsBy: [ 'levelcode', 'dataset' ],
-                findConfigBy: [ 'sourceId' ],
-              }
-            },
-
-            kpiMappers: {
-              selectHeaderMainValue: 'latest_value',
-              selectHeaderMainValueDate: 'latest_value_date',
-              selectHeaderSecondValue: 'progression_percentage',
-              selectHeaderSecondValue: 'progression_percentage',
-            },
-
-          }
-        },
+        COMMON_KPI_COMPONENTS_TEMPLATE.kpiCard(kpiFamilyOptions, kpiGroupOptions, kpi, addCharts, addKpiCard, true),
+        COMMON_KPI_COMPONENTS_TEMPLATE.kpiCard(kpiFamilyOptions, kpiGroupOptions, kpi, addCharts, addKpiCard),
         {
           component: 'apexchart',
           activated: addCharts,
