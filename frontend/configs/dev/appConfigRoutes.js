@@ -358,8 +358,86 @@ const COMMON_TEXTS = {
 //   }
 // }
 
+const COMMON_KPI_COMPONENTS_TEMPLATE = {
+  kpiCard: (kpiFamilyOptions, kpiGroupOptions, kpi, addCharts, addKpiCard, forceNational = false) => {
+    let kpicard = {
+      component: 'kpicard',
+      activated: addKpiCard,
+      smallScreenVerticalOrder: 1,
+      justify: 'center',
+      align: 'center',
+      settings: {
+        id: `kpicard-${kpiGroupOptions[keyKpiGroupId]}-${kpi[keyKpiId]}`,
+        componentTitle: { fr: kpi[keyKpiName] },
+        containerClass: `mt-0 mb-${addCharts? 0 : 0 } mx-5 kpi-block-carto-${addCharts? 'center' : 'bottom' }`,
+        containerClassMobile: `mt-0 mb-${addCharts? 0 : 0 } mx-4 kpi-block-carto-${addCharts? 'center' : 'bottom' }-mobile`,
+        mobileIsVisibleDefault: true,
+        desktopIsVisibleDefault: true,
+        
+        kpiConfigFrom: {
+          kpiFamilyId: kpiFamilyOptions.kpiFamilyId,
+          kpiGroupId: kpiGroupOptions[keyKpiGroupId],
+          kpiIdFull: `${kpiGroupOptions[keyKpiGroupId]}-${kpi[keyKpiId]}`,
+          kpiId: `${kpi[keyKpiId]}`,
+          dataViewType: 'kpitables',
+          kpiTableId: 'kpi-territoires',
+          kpiFamiliesField: 'kpi_families',
+          kpiGroupsField: 'kpi_groups',
+          kpisField: 'kpis',
+        },
+
+        kpiDataFrom: {
+          sourcesIds: [
+            { levelcode: 'national',
+              sourceId: `national-${kpiGroupOptions[keyKpiGroupId]}-raw`,
+              findBy: 'index', index: 0,
+              returnPathValue: `values.${kpi[keyKpiId]}.value`,
+              returnPathDate: `values.${kpi[keyKpiId]}.value_date`
+            },
+            { levelcode: 'regional', 
+              sourceId: `regions-${kpiGroupOptions[keyKpiGroupId]}-raw`,
+              findBy: 'fieldmatch', fieldSource: 'libelle', fieldTarget : 'levelname',
+              returnPathValue: `values.${kpi[keyKpiId]}.value`,
+              returnPathDate: `values.${kpi[keyKpiId]}.value_date`
+            },
+            { levelcode: 'departemental', 
+              sourceId: `departements-${kpiGroupOptions[keyKpiGroupId]}-raw`,
+              findBy: 'fieldmatch', fieldSource: 'libelle', fieldTarget : 'levelname',
+              returnPathValue: `values.${kpi[keyKpiId]}.value`,
+              returnPathDate: `values.${kpi[keyKpiId]}.value_date`
+            }
+          ],
+          loadFrom: {
+            storeModule: 'configs',
+            modulePath: 'configAppData.routesData.initData.store',
+            filterConfigsBy: [ 'levelcode', 'dataset' ],
+            findConfigBy: [ 'sourceId' ],
+          }
+        },
+
+        kpiMappers: {
+          selectHeaderMainValue: 'latest_value',
+          selectHeaderMainValueDate: 'latest_value_date',
+          selectHeaderSecondValue: 'progression_percentage',
+          selectHeaderSecondValue: 'progression_percentage',
+        },
+      }
+    }
+    if (forceNational) {
+      kpicard.settings.kpiDataFrom.forceLevelCode = {
+        specialstoreField: 'levelcode', value: 'national',
+        forceSuffix: {  fr: 'pour la France entière' }
+      }
+      kpicard.settings.kpiDataFrom.hideIfs = [
+        { specialstoreField : 'levelcode', value: 'national' }
+      ]
+    }
+    return kpicard
+  } 
+}
+
 const COMMON_KPI_COMPONENTS = {
-  components: (kpiFamilyOptions, kpiGroupOptions, addCharts = false) => {
+  components: (kpiFamilyOptions, kpiGroupOptions, addCharts = false, addKpiCard = true) => {
     const components = []
     for (const kpi of kpiGroupOptions[keyKpiGroupKpis]) {
       const kpiComponents = [
@@ -372,8 +450,8 @@ const COMMON_KPI_COMPONENTS = {
           settings: {
             id: `text-${kpiGroupOptions[keyKpiGroupId]}-${kpi[keyKpiId]}-resume`,
             componentTitle: { fr: kpi[keyKpiName] },
-            containerClass: `mt-0 mb-${addCharts ? 0 : 2 } mx-5 kpi-block-carto-${addCharts ? 'top' : 'alone' }`,
-            containerClassMobile: `mt-0 mb-${addCharts ? 0 : 2 } mx-4 kpi-block-carto-${addCharts ? 'top' : 'alone' }-mobile`,
+            containerClass: `mt-0 mb-${addCharts || addKpiCard ? 0 : 2 } mx-5 kpi-block-carto-${addCharts || addKpiCard ? 'top' : 'alone' }`,
+            containerClassMobile: `mt-0 mb-${addCharts || addKpiCard ? 0 : 2 } mx-4 kpi-block-carto-${addCharts || addKpiCard ? 'top' : 'alone' }-mobile`,
             asDrawer: true,
             drawerOpen: true,
             drawerTitle: { fr: 'Que mesure cet indicateur ?' },
@@ -386,6 +464,8 @@ const COMMON_KPI_COMPONENTS = {
             desktopIsVisibleDefault: true
           }
         },
+        COMMON_KPI_COMPONENTS_TEMPLATE.kpiCard(kpiFamilyOptions, kpiGroupOptions, kpi, addCharts, addKpiCard, true),
+        // COMMON_KPI_COMPONENTS_TEMPLATE.kpiCard(kpiFamilyOptions, kpiGroupOptions, kpi, addCharts, addKpiCard),
         {
           component: 'apexchart',
           activated: addCharts,
@@ -660,6 +740,8 @@ const COMMON_TEMPLATES = {
   mapRoute: (kpiFamilyOptions, kpiGroupOptions) => {
     const route = {
       id: `${kpiGroupOptions[keyKpiGroupId]}`,
+      kpiFamilyId: `${kpiFamilyOptions.kpiFamilyId}`,
+      kpiGroupId: `${kpiGroupOptions[keyKpiGroupId]}`,
       name: `${kpiGroupOptions[keyKpiGroupName]} page`,
       help: `route view for ${kpiGroupOptions[keyKpiGroupName]} dataset`,
       title: { fr: '' },
@@ -740,6 +822,20 @@ const COMMON_TEMPLATES = {
                   component: 'globalButtons',
                   activated: true,
                   smallScreenVerticalOrder: 1,
+                  justify: 'center',
+                  align: 'center',
+                  settings: {
+                    id: 'back-detail-button-simple-territoires',
+                    containerClass: 'ml-0 pl-3 py-0 mb-5',
+                    containerClassMobile: 'py-0 my-0',
+                    mobileIsVisibleDefault: true,
+                    desktopIsVisibleDefault: true
+                  }
+                },
+                {
+                  component: 'globalButtons',
+                  activated: true,
+                  smallScreenVerticalOrder: 1,
                   justify: 'left',
                   align: 'center',
                   settings: {
@@ -785,6 +881,7 @@ const COMMON_TEMPLATES = {
 
                 // KPI GROUP'S KPI COMPONENTS
                 ...COMMON_KPI_COMPONENTS.components(kpiFamilyOptions, kpiGroupOptions, false), // true => addCharts to map routes
+                // ...COMMON_KPI_COMPONENTS.components(kpiFamilyOptions, kpiGroupOptions, true),
 
                 {
                   component: 'infoBox',
@@ -1008,6 +1105,22 @@ export const configAppRoutes = {
                 //   }
                 // },
                 {
+                  component: 'text',
+                  activated: true,
+                  smallScreenVerticalOrder: 1,
+                  textBrief: true,
+                  justify: 'left',
+                  align: 'center',
+                  settings: {
+                    id: 'text-territoires-header-localization',
+                    forceShow: true,
+                    containerClass: 'ml-5 mt-0 mb-0 pt-0 pb-0',
+                    containerClassMobile: 'mt-0 mb-0 py-0 pb-0',
+                    mobileIsVisibleDefault: true,
+                    desktopIsVisibleDefault: true
+                  }
+                },
+                {
                   component: 'globalButtons',
                   activated: true,
                   smallScreenVerticalOrder: 1,
@@ -1030,7 +1143,37 @@ export const configAppRoutes = {
                   settings: {
                     id: 'global-button-simple-territoires',
                     containerClass: 'py-0 mt-0 mb-5',
+                    containerClassMobile: 'py-0 mt-0 mb-3',
+                    mobileIsVisibleDefault: true,
+                    desktopIsVisibleDefault: true
+                  }
+                },
+                {
+                  component: 'globalButtons',
+                  activated: true,
+                  smallScreenVerticalOrder: 1,
+                  justify: 'center',
+                  align: 'center',
+                  settings: {
+                    id: 'actu-button-simple-territoires',
+                    containerClass: 'ml-5 pl-3 py-0 mb-5',
                     containerClassMobile: 'py-0 my-0',
+                    mobileIsVisibleDefault: true,
+                    desktopIsVisibleDefault: true
+                  }
+                },
+                {
+                  component: 'text',
+                  activated: true,
+                  smallScreenVerticalOrder: 1,
+                  textBrief: true,
+                  justify: 'left',
+                  align: 'center',
+                  settings: {
+                    id: 'text-territoires-header-thema',
+                    forceShow: true,
+                    containerClass: 'ml-5 mt-0 mb-0 pt-0 pb-0 pb-0',
+                    containerClassMobile: 'mt-0 mb-0 py-0 pb-0',
                     mobileIsVisibleDefault: true,
                     desktopIsVisibleDefault: true
                   }

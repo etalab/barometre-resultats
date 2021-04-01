@@ -903,8 +903,10 @@
     "odm_kpi_families": ["sante-famille"],
     "odm_url": "/doubler-maisons-sante",
     "odm_urls": ["/doubler-maisons-sante", "/doubler-maisons-sante/"],
-    "odm_ext_link": "https://www.gouvernement.fr/node/10726",
-    "odm_ext_link_text": "Doubler le nombre de maisons de santé pour lutter contre les déserts médicaux et améliorer l’offre de soins coordonnés",
+    "odm_ext_link": "https://sante.fr",
+    "odm_ext_link_backup": "https://www.gouvernement.fr/node/10726",
+    "odm_ext_link_text": "Trouver une maison de santé",
+    "odm_ext_link_text_backup": "Doubler le nombre de maisons de santé pour lutter contre les déserts médicaux et améliorer l’offre de soins coordonnés",
     "odm_image_activate": false,
     "odm_image": "/ovq-textes/sante-famille/images/test-image.png",
     "odm_text": "/ovq-textes/sante-famille/doubler-maisons-sante/sante_famille-doubler_maisons_sante-resume.md",
@@ -2247,7 +2249,7 @@
     "odm_image_activate": false,
     "odm_image": "/ovq-textes/securite/images/test-image.png",
     "odm_text": "/ovq-textes/securite/lutter-violences-femmes/securite-lutter_violences_femmes-resume.md",
-    "odm_text_brief": true,
+    "odm_text_brief": false,
     "indicateurs": [{
       "active": true,
       "id_indicateur_ditp": "7d62118a16a4498e93d37d2e2f6b127d",
@@ -2257,6 +2259,7 @@
       "odm_id": "nb-ordonnances-delivrees",
       "odm_text": "/ovq-textes/securite/lutter-violences-femmes/indicateurs/securite-lutter_violences_femmes-nb_ordonnances_delivrees-resume.md",
       "odm_text_brief": false,
+      "odm_text_open": true,
       "odm_kpi_headers_overwrite": [{
           "text": "En",
           "text_default": "En 2017",
@@ -2382,6 +2385,7 @@
       "odm_id": "nb-heures-patrouille",
       "odm_text": "/ovq-textes/securite/renforcer-securite-quotidien/indicateurs/securite-renforcer_securite_quotidien-nb_heures_patrouille-resume.md",
       "odm_text_brief": false,
+      "odm_text_open": true,
       "odm_kpi_headers_overwrite": [{
           "text": "En",
           "text_default": "En 2017",
@@ -2497,7 +2501,7 @@
     "odm_image_activate": false,
     "odm_image": "/ovq-textes/securite/images/test-image.png",
     "odm_text": "/ovq-textes/securite/lutte-stupefiants/securite-lutte_stupefiants-resume.md",
-    "odm_text_brief": true,
+    "odm_text_brief": false,
     "indicateurs": [{
       "active": true,
       "id_indicateur_ditp": "daabbe7212e1426a82ce2082f5e298ea",
@@ -2507,6 +2511,7 @@
       "odm_id": "nb-amendes-delictuelles-dressees",
       "odm_text": "/ovq-textes/securite/lutte-stupefiants/indicateurs/securite-lutte_stupefiants-nb_amendes_delictuelles_dressees-resume.md",
       "odm_text_brief": false,
+      "odm_text_open": true,
       "odm_kpi_headers_overwrite": [{
           "text": "En",
           "text_default": "En 2017",
@@ -2622,7 +2627,7 @@
     "odm_image_activate": false,
     "odm_image": "/ovq-textes/securite/images/test-image.png",
     "odm_text": "/ovq-textes/securite/lutter-contre-principes-republicains/securite-lutter_contre_principes_republicains-resume.md",
-    "odm_text_brief": true,
+    "odm_text_brief": false,
     "indicateurs": [{
       "active": true,
       "id_indicateur_ditp": "a805cb02eace4ab5ba1b1bc68eb8e371",
@@ -2632,6 +2637,7 @@
       "odm_id": "nb-controles-clir",
       "odm_text": "/ovq-textes/securite/lutter-contre-principes-republicains/indicateurs/securite-lutter_contre_principes_republicains-nb_controles_clir-resume.md",
       "odm_text_brief": false,
+      "odm_text_open": true,
       "odm_kpi_headers_overwrite": [{
           "text": "En",
           "text_default": "En 2017",
@@ -2757,6 +2763,7 @@
       "odm_id": "nb-morts-routes",
       "odm_text": "/ovq-textes/securite/reduire-mortalite-routes/indicateurs/securite-reduire_mortalite_routes-nb_morts_routes-resume.md",
       "odm_text_brief": false,
+      "odm_text_open": true,
       "odm_kpi_headers_overwrite": [{
           "text": "En",
           "text_default": "En 2017",
@@ -3117,8 +3124,10 @@
     "odm_kpi_families": ["services-publics-et-territoires"],
     "odm_url": "/france-services",
     "odm_urls": ["/france-services", "/france-services/"],
-    "odm_ext_link": "https://www.gouvernement.fr/node/10697",
-    "odm_ext_link_text": "France Services : un programme pour garantir les mêmes services publics partout en France",
+    "odm_ext_link": "https://www.maisondeservicesaupublic.fr/",
+    "odm_ext_link_backup": "https://www.gouvernement.fr/node/10697",
+    "odm_ext_link_text": "Trouver une maison France Services ",
+    "odm_ext_link_text_backup": "France Services : un programme pour garantir les mêmes services publics partout en France",
     "odm_image_activate": false,
     "odm_image": "/ovq-textes/services-publics-et-territoires/images/test-image.png",
     "odm_text": "/ovq-textes/services-publics-et-territoires/france-services/services_publics_et_territoires-france_services-resume.md",

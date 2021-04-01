@@ -292,11 +292,11 @@ animation: fadeIn ease 1s;
                 <!-- LINK TO EXTERIOR -->
                 <div
                   v-show="!isLoadingNewData"
-                  :class="`ml-1 ${isMobileWidth ? 'mt-1 text-center' : ''} mb-0`"
+                  :class="`ml-2 ${isMobileWidth ? 'mt-1 text-center' : ''} mb-0`"
                   >
                   <v-btn
-                    :class="`text-none ${isMobileWidth ? 'no-text-transform word-break' : ''}`"
-                    text
+                    :class="`text-none btn-no-radius ${isMobileWidth ? 'no-text-transform word-break' : ''}`"
+                    outlined
                     color="primary"
                     :href="kpi_group.linkExt"
                     :target="`${ isIframe ? '_parent' : '_blank' }`"
@@ -307,13 +307,13 @@ animation: fadeIn ease 1s;
                       >
                       {{ kpi_group.kpiLinkText[locale] }}
                     </span>
-                    <v-icon
+                    <!-- <v-icon
                       small
                       class="pl-2 pb-0"
                       color="primary"
                       >
                       icon-arrow-right
-                    </v-icon>
+                    </v-icon> -->
                   </v-btn>
                 </div>
 
@@ -498,112 +498,17 @@ animation: fadeIn ease 1s;
                               class="d-flex flex-column pt-0"
                               :cols="`${isMobileWidth ? '12' : ''}`"
                               >
-                              
-                              <!-- KPI / INDICATOR CARD TITLE -->
-                              <v-card
-                                class="elevation-0"
-                                :color="getBlockHeaderData(blockHeaders, 'data-main-value').blockTitleColor"
-                                tile
-                                >
-                                <v-card-title
-                                  :class="`d-flex ${getBlockHeaderData(blockHeaders, 'data-main-value').blockTitleClass} word-break`"
-                                  >
-                                  <!-- {{ isMainValueNull(getPropsItemValue(props.items, kpi.fromDatasetKeyValue), getBlockHeaderData(blockHeaders, 'data-main-value')) }} -->
-                                  <span
-                                    v-html="getBlockHeaderDynamicData(blockHeaders, 'data-main-value', kpi.fromDatasetKeyValue, props.items)"
-                                    >
-                                  </span>
-                                </v-card-title>
-                              </v-card>
 
-                              <!-- KPI / INDICATOR CARD VALUE(S) -->
-                              <v-card
-                                class="elevation-0 d-flex align-self-stretch flex-grow-1"
-                                :color="getBlockHeaderData(blockHeaders, 'data-main-value').blockColor"
-                                tile
-                                >
-                                <v-card-text 
-                                  :class="`py-${isMobileWidth ? 1 : 3}`"
-                                  >
-
-                                  <!-- KPI MAIN VALUE -->
-                                  <div class="mt-1">
-                                    <!-- kpi.kpiUnit[locale] : <code>{{ kpi.kpiUnit[locale] }}</code><br> -->
-                                    <p
-                                      :class="`text-left ${kpi.kpiClasses.mainValue} ${ kpi.kpiUnit ? 'mb-0' : '' } font-weight-bold black--text`">
-                                      <kpiValue
-                                        :item="getPropsItemValue(props.items, kpi.fromDatasetKeyValue) "
-                                        :header="getBlockHeaderData(blockHeaders, 'data-main-value')"
-                                        :trigger="triggerTabBtn"
-                                        >
-                                        <!-- <template 
-                                          v-if="!isMobileWidth"
-                                          v-slot:unit
-                                          >
-                                          %
-                                        </template> -->
-
-                                        <template
-                                          v-slot:unit
-                                          >
-                                          <span>
-                                            <span
-                                              v-if="!isMobileWidth && kpi.kpiUnit[locale].includes('%')"
-                                              >
-                                              %
-                                            </span>
-                                            <span
-                                              v-if="isMobileWidth"
-                                              :class="`${isMobileWidth ? 'body-2' :'body-1'} font-weigth-bold`"
-                                              >
-                                              {{ kpi.kpiUnit[locale] }}
-                                              <!-- ADD SUFFIX FROM SPECIAL STORE -->
-                                              <span
-                                                v-if="kpi.textSuffixRules"
-                                                :class="`${kpi.textSuffixClass ? kpi.textSuffixClass : ''} ${isMobileWidth ? 'body-2' :'body-1'}`"
-                                                v-html="getRuleValue(getPropsItemValue(props.items, kpi.fromDatasetKeyValue), kpi.textSuffixRules)"
-                                              />
-                                            </span>
-                                          </span>
-                                        </template>
-
-                                      </kpiValue>
-                                    </p>
-
-                                    <p
-                                      v-if="kpi.kpiUnit && !isMobileWidth"
-                                      :class="`${kpi.kpiClasses.secondValue} mt-0 black--text`"
-                                      >
-                                      <span v-if="!kpi.kpiUnit[locale].includes('%')">
-                                        {{ kpi.kpiUnit[locale] }}
-                                      </span>
-                                      <span v-else>
-                                        {{ kpi.kpiUnit[locale].replace('%','') }}
-                                      </span>
-                                      <!-- ADD SUFFIX FROM SPECIAL STORE -->
-                                      <span
-                                        v-if="kpi.textSuffixRules"
-                                        :class="`${kpi.textSuffixClass ? kpi.textSuffixClass : ''}`"
-                                        v-html="getRuleValue(getPropsItemValue(props.items, kpi.fromDatasetKeyValue), kpi.textSuffixRules)"
-                                      />
-                                    </p>
-                                  </div>
-
-                                  <!-- KPI SECOND VALUE -->
-                                  <div 
-                                    :class="`mt-${isMobileWidth ? 1 : 4}`">
-                                    <p 
-                                      :class="`text-left mb-1`">
-                                      <kpiValue
-                                        :item="getPropsItemValue(props.items, kpi.fromDatasetKeyValue) "
-                                        :header="getBlockHeaderData(blockHeaders, 'data-second-value')"
-                                        :trigger="triggerTabBtn"
-                                      />
-                                    </p>
-                                  </div>
-
-                                </v-card-text> 
-                              </v-card>
+                              <KpiCard 
+                                :kpi="kpi"
+                                :blockHeaderDataMainValue="getBlockHeaderData(blockHeaders, 'data-main-value')"
+                                :blockHeaderDynamicData="getBlockHeaderDynamicData(blockHeaders, 'data-main-value', kpi.fromDatasetKeyValue, props.items)"
+                                :propsItemValue="getPropsItemValue(props.items, kpi.fromDatasetKeyValue)"
+                                :ruleValue="getRuleValue(getPropsItemValue(props.items, kpi.fromDatasetKeyValue), kpi.textSuffixRules)"
+                                :blockHeaderDataSecondValue="getBlockHeaderData(blockHeaders, 'data-second-value')"
+                                :triggerTabBtn="triggerTabBtn"
+                                :isMobileWidth="isMobileWidth"
+                              />
 
                             </v-col>
 

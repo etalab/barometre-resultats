@@ -5,10 +5,10 @@
   <v-container
     v-show="!isRouteLoading && canShow"
     :id="`globalButtons-${settings.id}`"
-    :class="`${settings.containerClass} ${isMobileWidth ? 'py-0' : ''}`"
+    :class="`${isMobileWidth ? settings.containerClassMobile : settings.containerClass}`"
     :trigger="`${trigger}`"
     >
-    <v-divider v-if="viewConfig.dividers.before && !isMobileWidth" />
+    <v-divider v-if="(viewConfig.dividers.before && !isMobileWidth) || viewConfig.dividers.beforeOnMobile" />
 
     <v-row 
       v-if="!viewConfig.buttonsVertical"
@@ -47,7 +47,7 @@
 
     <v-row 
       v-else
-      :class="`${viewConfig.btnsRowClass} ${isMobileWidth ? viewConfig.btnsRowClassMobile : 'mt-5 mx-4'}`"
+      :class="`${viewConfig.btnsRowClass} ${isMobileWidth ? viewConfig.btnsRowClassMobile : 'mt-1 mx-3'}`"
       v-for="(btn, index) in viewConfig.componentButtons"
       :key="`B-${btn.id}-${index}-vertical`"
       :id="`B-${btn.id}-${index}-vertical`"
@@ -189,8 +189,9 @@ export default {
           let valueFromSpecialStore = this.getSpecialStore[
             hideIf.specialStoreId
           ]
-          // this.log && console.log("C-GlobalBtn / getCanShow / valueFromSpecialStore : ", valueFromSpecialStore)
-          let tempBool = hideIf.value == valueFromSpecialStore
+          // this.log && console.log("\nC-GlobalBtn / getCanShow / valueFromSpecialStore : ", valueFromSpecialStore)
+          // this.log && console.log("C-GlobalBtn / getCanShow / hideIf.value : ", hideIf.value)
+          let tempBool = hideIf.value === valueFromSpecialStore
           // this.log && console.log("C-GlobalBtn / getCanShow / tempBool : ", tempBool)
           boolsArray.push(!tempBool)
         }
