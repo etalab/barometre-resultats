@@ -216,6 +216,7 @@ animation: fadeIn ease 1s;
                 max-width="100%"
                 :lazy-src="kpiFamily.image"
                 :src="kpiFamily.image"
+                v-on:load="onLoadImg"
               ></v-img>
             </v-row>
             <br>
@@ -429,12 +430,17 @@ animation: fadeIn ease 1s;
                                 <!-- ICON -->
                                 <v-icon
                                   x-small
-                                  class="pr-2"
+                                  :class="`pr-${isMobileWidth ? 1 : 2}`"
                                   :color="levelnameIconColor"
                                   >
                                   icon-map-pin
                                 </v-icon>
-                                <v-divider vertical light inset class="mr-2" ></v-divider>
+                                <v-divider 
+                                  vertical
+                                  light
+                                  inset
+                                  :class="`mr-${isMobileWidth ? 1 : 2}`" 
+                                ></v-divider>
 
                                 <!-- RULE == FALSE -->
                                 <div
@@ -476,7 +482,7 @@ animation: fadeIn ease 1s;
                                   <!-- LEVEL NAME / WARNING -->
                                   <span
                                     class="font-weight-bold"
-                                    v-html="getRuleValue(getPropsItemValue(props.items, kpi.fromDatasetKeyValue), kpi.textSuffixRules)"
+                                    v-html="capitalizeIfMobile(getRuleValue(getPropsItemValue(props.items, kpi.fromDatasetKeyValue), kpi.textSuffixRules))"
                                   />
                                 </div>
 
@@ -1233,8 +1239,6 @@ export default {
       }
 
       if (!returnFallback) {
-        // this.log && console.log("C-KpiTableBlocks / fix (end) : ", fix)
-        // this.log && console.log("C-KpiTableBlocks / value (end) : ", value)
         return `${fix} ${value}`
       } else {
         // this.log && console.log("C-KpiTableBlocks / rulesToApply (end) : ", rulesToApply)
@@ -1249,7 +1253,21 @@ export default {
           }
         }
       }
+    },
+    capitalizeIfMobile(string) {
+      string = this.isMobileWidth ? `${string.charAt(0).toUpperCase()}${string.slice(1)}` : string
+      return string
+    },
+
+    onLoadImg(){
+      var self = this
+      console.log("img loaded")
+      setTimeout(function(){
+        self.$store.commit('toggleTriggerResizeNoScroll')
+      },100)
     }
+
   },
+
 }
 </script>
