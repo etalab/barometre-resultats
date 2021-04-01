@@ -369,8 +369,8 @@ const COMMON_KPI_COMPONENTS_TEMPLATE = {
       settings: {
         id: `kpicard-${kpiGroupOptions[keyKpiGroupId]}-${kpi[keyKpiId]}`,
         componentTitle: { fr: kpi[keyKpiName] },
-        containerClass: `mt-0 mb-${addCharts? 0 : 0 } mx-5 kpi-block-carto-${addCharts? 'center' : 'bottom' }`,
-        containerClassMobile: `mt-0 mb-${addCharts? 0 : 0 } mx-4 kpi-block-carto-${addCharts? 'center' : 'bottom' }-mobile`,
+        containerClass: `mt-0 mb-${addCharts? 0 :4 } mx-5 kpi-block-carto-${addCharts? 'center' : 'bottom' }`,
+        containerClassMobile: `mt-0 mb-${addCharts? 0 : 2 } mx-4 kpi-block-carto-${addCharts? 'center' : 'bottom' }-mobile`,
         mobileIsVisibleDefault: true,
         desktopIsVisibleDefault: true,
         
