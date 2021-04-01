@@ -13,7 +13,7 @@
       >
       
       <v-row>
-        <v-col>
+        <v-col class="py-0">
 
           <!-- <br> - settings : <code><pre>{{settings}}</pre></code> -->
           <!-- <div v-if="kpi && rawDataSerie"> -->
@@ -57,6 +57,7 @@
 
               :triggerTabBtn="trigger"
               :isMobileWidth="isMobileWidth"
+              :addCardClass="'borders-b-only'"
             />
 
           </div>

@@ -9,7 +9,9 @@
 
 <template>
 
-  <div class="adapt-flex">
+  <div 
+    :class="`adapt-flex ${addCardClass ? addCardClass : ''}`"
+    >
 
     <!-- KPI / INDICATOR CARD TITLE -->
     <v-card
@@ -142,6 +144,7 @@ export default {
     'blockHeaderDataSecondValue', // getBlockHeaderData(blockHeaders, 'data-second-value')
     'triggerTabBtn',
     'isMobileWidth',
+    'addCardClass',
   ],
 
   computed: {
