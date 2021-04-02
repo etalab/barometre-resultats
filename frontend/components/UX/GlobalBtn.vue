@@ -214,6 +214,14 @@ export default {
               win.focus()
               break
 
+            case 'goToExtFromData':
+              // this.log && console.log('C-GlobalButton / runBtnFunctions / goTo / funcParams : ', funcParams )
+              let url = this.getUrlFromData(funcParams)
+              // this.log && console.log('C-GlobalButton / runBtnFunctions / goTo / url : ', url )
+              let winExt = window.open(url, '_blank')
+              winExt.focus()
+              break
+
             case 'goToDynamic':
               // this.log && console.log('C-GlobalButton / runBtnFunctions / goTodynamic / funcParams : ', funcParams )
               let urlTarget = this.buildUrl(funcParams)
@@ -342,6 +350,26 @@ export default {
         let paramsString = `${and}${argData.arg}=${value}`
         url += paramsString
       }
+      return url
+    },
+
+    getUrlFromData(funcParams) {
+
+      // this.log && console.log("C-GlobalButton / getUrlFromData ... funcParams : ", funcParams )
+
+      // this.log && console.log("C-GlobalButton / getUrlFromData ... this.getSpecialStore : ", this.getSpecialStore )
+      let storeMatchFrom = this.getSpecialStore[funcParams.matchFromSpecialStoreField]
+      // this.log && console.log("C-GlobalButton / getUrlFromData ... storeMatchFrom : ", storeMatchFrom )
+
+      // this.log && console.log("C-GlobalButton / getUrlFromData ... this.getInitData : ", this.getInitData )
+      let initDataSet = this.getInitData.find( d => d.id === funcParams.dataFromInitData)
+      // this.log && console.log("C-GlobalButton / getUrlFromData ... initDataSet : ", initDataSet )
+      
+      let resultObject = initDataSet.data.find( ds => ds[ funcParams.matchToDataField ] === storeMatchFrom )
+      // this.log && console.log("C-GlobalButton / getUrlFromData ... resultObject : ", resultObject )
+      
+      let url = resultObject.url.startsWith('http') ? resultObject.url : funcParams.defaultUrl
+
       return url
     },
 
