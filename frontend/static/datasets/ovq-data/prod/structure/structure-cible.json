@@ -4021,7 +4021,7 @@
     }]
   },
   {
-    "active": false,
+    "active": true,
     "id_ovq": "OVQ-LPT",
     "nom_ovq_ditp": "Localisation/Relocalisation de la production sur le territoire national",
     "nom_ovq": "Aide de France Relance aux entreprises",
@@ -4058,7 +4058,7 @@
     "odm_text": "/ovq-textes/relance-emploi-economie/france-relance-entreprises/relance_emploi_economie-france_relance_entreprises-resume.md",
     "odm_text_brief": true,
     "indicateurs": [{
-      "active": true,
+      "active": false,
       "id_indicateur_ditp": "32fdf5f6d09c4025b063a9a6350e3a82",
       "id_indicateur_fr": "montant-investissements-industriels",
       "nom_indicateur_ditp": "Montant total des investissements industriels correspondant aux projets soutenus",
@@ -4556,8 +4556,8 @@
       "odm_kpi_format": "integer",
       "odm_kpi_unit": "dossiers validés",
       "odm_chart_title": "Nombre de dossiers MaPrimeRénov validés",
-      "odm_chart_type": "line",
-      "odm_chart_template": "categVertH390",
+      "odm_chart_type": "histo",
+      "odm_chart_template": "categVertH390_histo",
       "odm_chart_colors": ["#00AC8C"],
       "odm_chart_xaxis_type": "datetime",
       "odm_chart_marker_size": 0,
