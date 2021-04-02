@@ -1,4 +1,5 @@
 import { copyData, storeData } from '~/utils/utilsStore.js'
+import { csvJSON } from '~/utils/getData.js'
 
 import axios from 'axios'
 
@@ -68,6 +69,15 @@ export default function ({ store }) {
         const initDataFromUrlPromise = axios
           .get(dataRef.url)
           .then((resp) => {
+            // log && console.log('\n-MW- getDataInit / from URL / dataRef.from :', dataRef.from)
+            // log && console.log('-MW- getDataInit / from URL / resp :', resp)
+            if (dataRef.format && dataRef.format === 'csv' ) {
+              // convert csv to object
+              // log && console.log('-MW- getDataInit / from URL / dataRef.format :', dataRef.format)
+              // log && console.log('-MW- getDataInit / from URL / resp.data :', resp.data)
+              let json = csvJSON(resp.data)
+              resp.data = json
+            }
             storeData(dataset, dataRef, resp, store, log)
           })
           .catch((err) => {
@@ -85,6 +95,10 @@ export default function ({ store }) {
                     '-MW- trying to load fro backupUrl / initDataFromBackupUrlPromise / resp : ',
                     resp
                   )
+                  if (dataRef.format && dataRef.format === 'csv' ) {
+                    let json = csvJSON(resp.data)
+                    resp.data = json
+                  }
                   storeData(dataset, dataRef, resp, store, log)
                 })
               backupPromises.push(initDataFromBackupUrlPromise)

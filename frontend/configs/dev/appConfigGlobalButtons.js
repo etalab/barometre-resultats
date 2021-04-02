@@ -596,10 +596,15 @@ const COMMON_TEMPLATES = {
           height: '60px',
           functions: [
             {
-              funcName: 'goToExt',
+              // funcName: 'goToExt',
+              funcName: 'goToExtFromData',
               funcParams: {
-                url: 'https://gouvernement.fr',
+                defaultUrl: 'https://gouvernement.fr',
                 // url: kpiGroupOptions[keyKpiGroupExtLink]
+                dataFromInitData: 'taxo-prefectures-urls',
+                matchFromSpecialStoreField: 'levelname',
+                matchToDataField: 'Département',
+                returnField: 'url'
               }
             }
           ]
