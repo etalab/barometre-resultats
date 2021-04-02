@@ -4027,7 +4027,7 @@
     "nom_ovq": "Aide de France Relance aux entreprises",
     "nom_ovq_bis": "Aide de France Relance aux entreprises",
     "odm_id": "france-relance-entreprises",
-    "odm_activate": true,
+    "odm_activate": false,
     "odm_sources_ids": [{
         "odm_source_id": "national-france-relance-entreprises-raw",
         "odm_source_level": "national",
@@ -4058,7 +4058,7 @@
     "odm_text": "/ovq-textes/relance-emploi-economie/france-relance-entreprises/relance_emploi_economie-france_relance_entreprises-resume.md",
     "odm_text_brief": true,
     "indicateurs": [{
-      "active": false,
+      "active": true,
       "id_indicateur_ditp": "32fdf5f6d09c4025b063a9a6350e3a82",
       "id_indicateur_fr": "montant-investissements-industriels",
       "nom_indicateur_ditp": "Montant total des investissements industriels correspondant aux projets soutenus",
