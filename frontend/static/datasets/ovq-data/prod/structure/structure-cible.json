@@ -2571,7 +2571,7 @@
       "isNatTarget": true,
       "isCumulative": false,
       "toAggregateReg": false,
-      "toAggregateNat": false,
+      "toAggregateNat": true,
       "toCumulateGlobally": false,
       "toCumulateEachYear": true,
       "toMakeDeltaGlobally": true,
