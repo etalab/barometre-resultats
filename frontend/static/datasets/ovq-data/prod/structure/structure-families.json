@@ -1,5 +1,5 @@
 [{
-    "id_ovq": ["OVQ-PVL","OVQ-PUU","OVQ-VPA","OVQ-ZFE"],
+    "id_ovq": ["OVQ-PVL","OVQ-PUU","OVQ-VPA","OVQ-ZFE","OVQ-REL"],
     "nom_ovq": "Transition écologique",
     "odm_id": "transition-ecologique",
     "odm_kpi_family_activate": true,
@@ -13,7 +13,7 @@
     "odm_text": "/ovq-textes/transition-ecologique/transition_ecologique-resume.md"
   },
   {
-    "id_ovq": ["OVQ-APP","OVQ-NTS","OVQ-THR"],
+    "id_ovq": ["OVQ-APP","OVQ-NTS","OVQ-THR","OVQ-ATN","OVQ-IAE","OVQ-LPT"],
     "nom_ovq": "Economie - Emploi",
     "odm_id": "relance-emploi-economie",
     "odm_kpi_family_activate": true,
@@ -27,7 +27,7 @@
     "odm_text": "/ovq-textes/relance-emploi-economie/relance_emploi_economie-resume.md"
   },
   {
-    "id_ovq": ["OVQ-DMS","OVQ-DCP","OVQ-DPH","OVQ-OAD"],
+    "id_ovq": ["OVQ-DMS","OVQ-DCP","OVQ-DPH","OVQ-OAD","OVQ-IPA"],
     "nom_ovq": "Santé - Famille - Handicap",
     "odm_id": "sante-famille",
     "odm_kpi_family_activate": true,
@@ -41,7 +41,7 @@
     "odm_text": "/ovq-textes/sante-famille/sante_famille-resume.md"
   },
   {
-    "id_ovq": ["OVQ-DEI","OVQ-LEC","OVQ-REP","OVQ-SUP"],
+    "id_ovq": ["OVQ-DEI","OVQ-LEC","OVQ-REP","OVQ-SUP","OVQ-PDF","OVQ-SNU"],
     "nom_ovq": "Education",
     "odm_id": "education",
     "odm_kpi_family_activate": true,
@@ -83,7 +83,7 @@
     "odm_text": "/ovq-textes/jeunesse-culture-engagement/jeunesse_culture_engagement-resume.md"
   },
   {
-    "id_ovq": ["OVQ-THD","OVQ-OFS","OVQ-PSP"],
+    "id_ovq": ["OVQ-THD","OVQ-OFS","OVQ-PSP","OVQ-ACV"],
     "nom_ovq": "Services publics et territoires",
     "odm_id": "services-publics-et-territoires",
     "odm_kpi_family_activate": true,
@@ -97,7 +97,7 @@
     "odm_text": "/ovq-textes/services-publics-et-territoires/services_publics_et_territoires-resume.md"
   },
   {
-    "id_ovq": ["OVQ-LDA","OVQ-REL"],
+    "id_ovq": ["OVQ-LDA"],
     "nom_ovq": "Logement",
     "odm_id": "logement-ville",
     "odm_kpi_family_activate": true,
@@ -107,7 +107,35 @@
     "odm_image": "/ovq-textes/logement-ville/images/img-logement_ville.jpg",
     "odm_tab_icon": "icon-home_filled",
     "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement",
-    "odm_url_aliases": ["/","/par-ovq","/logement-d-abord","/accelerer-renovation-energetique-logements"],
+    "odm_url_aliases": ["/","/par-ovq","/logement-d-abord"],
     "odm_text": "/ovq-textes/logement-villes/logement_ville-resume.md"
+  },
+  {
+    "id_ovq": ["OVQ-PAC","OVQ-RUP"],
+    "nom_ovq": "Agriculture",
+    "odm_id": "agriculture",
+    "odm_kpi_family_activate": true,
+    "odm_kpi_families": ["agriculture"],
+    "odm_url": "/agriculture",
+    "odm_image_activate": true,
+    "odm_image": "/ovq-textes/agriculture/images/img-agriculture.jpg",
+    "odm_tab_icon": "icon-home_filled",
+    "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement",
+    "odm_url_aliases": ["/","/par-ovq","/agriculture"],
+    "odm_text": "/ovq-textes/agriculture/agriculture-resume.md"
+  },
+  {
+    "id_ovq": ["OVQ-TIG"],
+    "nom_ovq": "Justice",
+    "odm_id": "justice",
+    "odm_kpi_family_activate": true,
+    "odm_kpi_families": ["justice"],
+    "odm_url": "/justice",
+    "odm_image_activate": true,
+    "odm_image": "/ovq-textes/justice/images/img-justice.jpg",
+    "odm_tab_icon": "icon-home_filled",
+    "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement",
+    "odm_url_aliases": ["/","/par-ovq","/justice"],
+    "odm_text": "/ovq-textes/justice/justice-resume.md"
   }
 ]
