@@ -4680,7 +4680,7 @@
         "odm_source_display": false
       }
     ],
-    "odm_kpi_families": ["transition-ecologique"],
+    "odm_kpi_families": ["logement-ville"],
     "odm_url": "/accelerer-renovation-energetique",
     "odm_urls": ["/accelerer-renovation-energetique", "/accelerer-renovation-energetique/"],
     "odm_ext_link": "https://www.gouvernement.fr/node/10692",
