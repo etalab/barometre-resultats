@@ -1,8 +1,5 @@
 <p>
   <span id="brief">
-	Cette mesure vise à offrir aux élèves les plus fragiles des conditions d’apprentissage optimales et un encadrement renforcé par le dédoublement des classes en éducation prioritaire.
+	Après d'importants retards constatés dans le paiement des aides de la PAC de 2014 à 2017, l'Etat est parvenu à rétablir un calendrier normal du paiement des aides depuis 2018 et à le consolider depuis. Cette mesure permet de suivre le rétablissement du calendrier des paiements depuis cette date.
   </span>
-</p>
-</p>
-La bonne maîtrise des apprentissages savoirs fondamentaux (Lire, écrire, compter et respecter autrui)est l’un des principaux leviers de réduction des inégalités sociales. La mise en œuvre de cette réforme a d’abord ciblé les niveaux CP et CE1. Face aux bons résultats du dédoublement sur les conditions d’apprentissage des élèves, il a été décidé d’étendre la mesure aux niveaux « grande section » : ce déploiement a débuté à la rentrée 2020 et se poursuivra lors des années suivantes.
 </p>

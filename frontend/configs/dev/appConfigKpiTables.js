@@ -20,6 +20,8 @@ const {
   keyKpiGroupUrl,
   // keyKpiGroupUrls,
   keyKpiGroupExtLink,
+  keyKpiGroupExtLink2,
+  keyKpiGroupExtLinkTxt2,
   // keyKpiGroupText,
   keyKpiGroupName,
   // keyKpiGroupSourcesId,
@@ -816,6 +818,14 @@ const COMMON_KPI_GROUP_TEMPLATES = {
           }
         ]
       }
+
+      if ( kpiGroupOptions[keyKpiGroupExtLink2] ) {
+        kpiGroup.linkExt2 = kpiGroupOptions[keyKpiGroupExtLink2]
+        kpiGroup.kpiLinkText2 = {
+          fr: kpiGroupOptions[keyKpiGroupExtLinkTxt2]
+        }
+      }
+
       // console.log('kpiGroup : ', kpiGroup)
       kpiGroupsData.push(kpiGroup)
     }

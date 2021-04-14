@@ -120,7 +120,9 @@
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2022-03-31",
       "dataPeriod": "year",
-      "multiplier": null
+      "multiplier": null,
+      "progressionLastUpdate": 1,
+      "progressionLastUpdateDate": "2020-09-30"
     }]
   },
   {
@@ -245,7 +247,9 @@
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "semi",
-      "multiplier": 1000000
+      "multiplier": 1000000,
+      "progressionLastUpdate": 1,
+      "progressionLastUpdateDate": "2020-09-30"
     }]
   },
   {
@@ -370,7 +374,9 @@
       "minDateValue": "2018-03-31",
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "quarter",
-      "multiplier": null
+      "multiplier": null,
+      "progressionLastUpdate": 1,
+      "progressionLastUpdateDate": "2020-09-30"
     }]
   },
   {
@@ -495,7 +501,9 @@
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2022-05-31",
       "dataPeriod": "year",
-      "multiplier": null
+      "multiplier": null,
+      "progressionLastUpdate": 1,
+      "progressionLastUpdateDate": "2020-09-30"
     }]
   },
   {
@@ -620,7 +628,9 @@
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "year",
-      "multiplier": null
+      "multiplier": null,
+      "progressionLastUpdate": 1,
+      "progressionLastUpdateDate": "2020-09-30"
     }]
   },
   {
@@ -745,7 +755,9 @@
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "year",
-      "multiplier": null
+      "multiplier": null,
+      "progressionLastUpdate": 1,
+      "progressionLastUpdateDate": "2020-09-30"
     }]
   },
   {
@@ -869,7 +881,97 @@
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "year",
-      "multiplier": null
+      "multiplier": null,
+      "progressionLastUpdate": 1,
+      "progressionLastUpdateDate": "2020-09-30"
+    },
+    {
+      "active": true,
+      "id_indicateur_ditp": "0b42a16c703e41b9806501a4b981e969",
+      "id_indicateur_fr": "nb-beneficiaires-partiel-taxe-habitation",
+      "nom_indicateur_ditp": "Nombre de bénéficiaires d'une exonération partielle de taxe d'habitation sur la résidence principale",
+      "nom_indicateur": "Nombre de bénéficiaires d'une exonération partielle de taxe d'habitation sur la résidence principale",
+      "odm_id": "nb-beneficiaires-partiel-taxe-habitation",
+      "odm_text": "/ovq-textes/relance-emploi-economie/supprimer-taxe-habitation-residences-principales/indicateurs/relance_emploi_economie-supprimer_taxe_habitation_residences_principales-nb_beneficiaires_suppression_taxe_habitation-resume.md",
+      "odm_text_brief": false,
+      "odm_kpi_headers_overwrite": [{
+          "text": "En",
+          "text_default": "En 2017",
+          "text_format": "datetime",
+          "text_value": "initial_value_date",
+          "value": "initial_value",
+          "hide_if_main_is_null": true
+        },
+        {
+          "text": "En",
+          "text_default": "Aujourd'hui",
+          "text_format": "datetime",
+          "text_value": "latest_value_date",
+          "value": "latest_value"
+        },
+        {
+          "text": "Cible à atteindre en 2023",
+          "text_default": null,
+          "text_format": null,
+          "text_value": null,
+          "value": "target",
+          "hide_if_main_is_null": true
+        }
+      ],
+      "odm_kpi_format": "integer",
+      "odm_kpi_unit": "bénéficiaires",
+      "odm_chart_title": "Nombre de bénéficiaires d'une exonération partielle de taxe d'habitation sur la résidence principale",
+      "odm_chart_type": "line",
+      "odm_chart_template": "categVertH390",
+      "odm_chart_colors": ["#00AC8C"],
+      "odm_chart_xaxis_type": "datetime",
+      "odm_chart_marker_size": 6,
+      "odm_chart_serie_name": "Nombre de bénéficiaires d'une exonération partielle de taxe d'habitation sur la résidence principale",
+      "odm_chart_format": "integer",
+      "odm_chart_unit": "bénéficiaires",
+      "odm_chart_annotation": false,
+      "odm_chart_annotation_key": "targets",
+      "odm_chart_y_annotation_key": "target",
+      "odm_chart_y_annotation_text": "cible",
+      "odm_map_is_default": false,
+      "odm_map_fill_color": "#00AC8C",
+      "odm_map_highlight_color": "#96ded1",
+      "odm_map_only_national": false,
+      "odm_map_has_regional_level": true,
+      "odm_map_has_departement_level": true,
+      "odm_map_region_max": 3300000,
+      "odm_map_departement_max": 900000,
+      "odm_map_label": "Bénéficiaires partiellement exonérés",
+      "odm_map_legend_subtitle": "<i>Données 2020</i>",
+      "odm_map_default_layer": false,
+      "isDep": true,
+      "isReg": true,
+      "isNat": true,
+      "isDepTarget": true,
+      "isRegTarget": true,
+      "isNatTarget": true,
+      "isCumulative": true,
+      "toAggregateReg": false,
+      "toAggregateNat": false,
+      "toCumulateGlobally": false,
+      "toCumulateEachYear": false,
+      "toMakeDeltaGlobally": false,
+      "toMakeDeltaEachYear": false,
+      "removeFirstValueDelta": false,
+      "removeSecondValueDelta": false,
+      "toPopulateDep": false,
+      "toPopulateReg": false,
+      "initialValue": true,
+      "toRound": 0,
+      "initialValueDate": "2017-01-01",
+      "actualValueDate": null,
+      "initialValueZero": true,
+      "minDateValue": "2017-01-01",
+      "maxDateTarget": "2030-01-01",
+      "dataPeriod": "year",
+      "multiplier": null,
+      "progressionLastUpdate": 1,
+      "progressionLastUpdateDate": "2020-09-30"
     }]
   },
   {
@@ -903,10 +1005,12 @@
     "odm_kpi_families": ["sante-famille"],
     "odm_url": "/doubler-maisons-sante",
     "odm_urls": ["/doubler-maisons-sante", "/doubler-maisons-sante/"],
-    "odm_ext_link": "https://sante.fr",
-    "odm_ext_link_backup": "https://www.gouvernement.fr/node/10726",
-    "odm_ext_link_text": "Trouver une maison de santé",
-    "odm_ext_link_text_backup": "Doubler le nombre de maisons de santé pour lutter contre les déserts médicaux et améliorer l’offre de soins coordonnés",
+    "odm_ext_link": "https://www.gouvernement.fr/node/10726",
+    "odm_ext_link_text": "Doubler le nombre de maisons de santé pour lutter contre les déserts médicaux et améliorer l’offre de soins coordonnés",
+    "odm_ext_link_2": "https://sante.fr",
+    "odm_ext_link_text_2": "Localiser mon service",
+    "odm_ext_link_backup": "https://sante.fr",
+    "odm_ext_link_text_backup": "Trouver une maison de santé",
     "odm_image_activate": false,
     "odm_image": "/ovq-textes/sante-famille/images/test-image.png",
     "odm_text": "/ovq-textes/sante-famille/doubler-maisons-sante/sante_famille-doubler_maisons_sante-resume.md",
@@ -996,7 +1100,9 @@
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "semi",
-      "multiplier": null
+      "multiplier": null,
+      "progressionLastUpdate": 1,
+      "progressionLastUpdateDate": "2020-09-30"
     }]
   },
   {
@@ -1120,7 +1226,9 @@
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "quarter",
-      "multiplier": null
+      "multiplier": null,
+      "progressionLastUpdate": 1,
+      "progressionLastUpdateDate": "2020-09-30"
     }]
   },
   {
@@ -1244,7 +1352,9 @@
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "year",
-      "multiplier": null
+      "multiplier": null,
+      "progressionLastUpdate": 1,
+      "progressionLastUpdateDate": "2020-09-30"
     }]
   },
   {
@@ -1368,7 +1478,9 @@
         "minDateValue": "2019-01-01",
         "maxDateTarget": "2030-01-01",
         "dataPeriod": "month",
-        "multiplier": null
+        "multiplier": null,
+        "progressionLastUpdate": 1,
+        "progressionLastUpdateDate": "2020-09-30"
       },
       {
         "active": true,
@@ -1454,7 +1566,9 @@
         "minDateValue": "2017-01-01",
         "maxDateTarget": "2030-01-01",
         "dataPeriod": "month",
-        "multiplier": null
+        "multiplier": null,
+        "progressionLastUpdate": 1,
+        "progressionLastUpdateDate": "2020-09-30"
       },
       {
         "active": true,
@@ -1540,7 +1654,9 @@
         "minDateValue": "2017-01-01",
         "maxDateTarget": "2030-01-01",
         "dataPeriod": "month",
-        "multiplier": null
+        "multiplier": null,
+        "progressionLastUpdate": 1,
+        "progressionLastUpdateDate": "2020-09-30"
       }
     ]
   },
@@ -1665,7 +1781,9 @@
         "minDateValue": "2017-01-01",
         "maxDateTarget": "2030-01-01",
         "dataPeriod": "year",
-        "multiplier": null
+        "multiplier": null,
+        "progressionLastUpdate": 1,
+        "progressionLastUpdateDate": "2020-09-30"
       },
       {
         "active": true,
@@ -1751,7 +1869,9 @@
         "minDateValue": "2017-01-01",
         "maxDateTarget": "2030-01-01",
         "dataPeriod": "year",
-        "multiplier": null
+        "multiplier": null,
+        "progressionLastUpdate": 1,
+        "progressionLastUpdateDate": "2020-09-30"
       }
     ]
   },
@@ -1876,7 +1996,9 @@
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "year",
-      "multiplier": null
+      "multiplier": null,
+      "progressionLastUpdate": 1,
+      "progressionLastUpdateDate": "2020-09-30"
     }]
   },
   {
@@ -1999,7 +2121,9 @@
         "minDateValue": "2017-01-01",
         "maxDateTarget": "2030-01-01",
         "dataPeriod": "year",
-        "multiplier": null
+        "multiplier": null,
+        "progressionLastUpdate": 1,
+        "progressionLastUpdateDate": "2020-09-30"
       },
       {
         "active": true,
@@ -2084,7 +2208,9 @@
         "minDateValue": "2017-01-01",
         "maxDateTarget": "2030-01-01",
         "dataPeriod": "year",
-        "multiplier": null
+        "multiplier": null,
+        "progressionLastUpdate": 1,
+        "progressionLastUpdateDate": "2020-09-30"
       }
     ]
   },
@@ -2210,7 +2336,9 @@
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "year",
-      "multiplier": null
+      "multiplier": null,
+      "progressionLastUpdate": 1,
+      "progressionLastUpdateDate": "2020-09-30"
     }]
   },
   {
@@ -2336,7 +2464,9 @@
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "quarter",
-      "multiplier": null
+      "multiplier": null,
+      "progressionLastUpdate": 1,
+      "progressionLastUpdateDate": "2020-09-30"
     }]
   },
   {
@@ -2462,7 +2592,9 @@
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
-      "multiplier": null
+      "multiplier": null,
+      "progressionLastUpdate": 1,
+      "progressionLastUpdateDate": "2020-09-30"
     }]
   },
   {
@@ -2588,7 +2720,9 @@
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
-      "multiplier": null
+      "multiplier": null,
+      "progressionLastUpdate": 1,
+      "progressionLastUpdateDate": "2020-09-30"
     }]
   },
   {
@@ -2714,7 +2848,9 @@
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
-      "multiplier": null
+      "multiplier": null,
+      "progressionLastUpdate": 1,
+      "progressionLastUpdateDate": "2020-09-30"
     }]
   },
   {
@@ -2840,7 +2976,9 @@
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
-      "multiplier": null
+      "multiplier": null,
+      "progressionLastUpdate": 1,
+      "progressionLastUpdateDate": "2020-09-30"
     }]
   },
   {
@@ -2965,7 +3103,9 @@
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
-      "multiplier": null
+      "multiplier": null,
+      "progressionLastUpdate": 1,
+      "progressionLastUpdateDate": "2020-09-30"
     }]
   },
   {
@@ -3090,7 +3230,9 @@
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "quarter",
-      "multiplier": null
+      "multiplier": null,
+      "progressionLastUpdate": 1,
+      "progressionLastUpdateDate": "2020-09-30"
     }]
   },
   {
@@ -3124,10 +3266,12 @@
     "odm_kpi_families": ["services-publics-et-territoires"],
     "odm_url": "/france-services",
     "odm_urls": ["/france-services", "/france-services/"],
-    "odm_ext_link": "https://www.maisondeservicesaupublic.fr/",
-    "odm_ext_link_backup": "https://www.gouvernement.fr/node/10697",
-    "odm_ext_link_text": "Trouver une maison France Services ",
-    "odm_ext_link_text_backup": "France Services : un programme pour garantir les mêmes services publics partout en France",
+    "odm_ext_link": "https://www.gouvernement.fr/node/10697",
+    "odm_ext_link_2": "https://agence-cohesion-territoires.gouv.fr/france-services-36",
+    "odm_ext_link_backup": "https://www.maisondeservicesaupublic.fr/",
+    "odm_ext_link_text": "France Services : un programme pour garantir les mêmes services publics partout en France",
+    "odm_ext_link_text_2": "Localiser mon service",
+    "odm_ext_link_text_backup": "Trouver une maison France Services ",
     "odm_image_activate": false,
     "odm_image": "/ovq-textes/services-publics-et-territoires/images/test-image.png",
     "odm_text": "/ovq-textes/services-publics-et-territoires/france-services/services_publics_et_territoires-france_services-resume.md",
@@ -3217,7 +3361,9 @@
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
-      "multiplier": null
+      "multiplier": null,
+      "progressionLastUpdate": 1,
+      "progressionLastUpdateDate": "2020-09-30"
     }]
   },
   {
@@ -3342,7 +3488,9 @@
         "minDateValue": "2017-01-01",
         "maxDateTarget": "2030-01-01",
         "dataPeriod": "year",
-        "multiplier": null
+        "multiplier": null,
+        "progressionLastUpdate": 1,
+        "progressionLastUpdateDate": "2020-09-30"
       },
       {
         "active": true,
@@ -3429,7 +3577,9 @@
         "minDateValue": "2017-01-01",
         "maxDateTarget": "2030-01-01",
         "dataPeriod": "year",
-        "multiplier": null
+        "multiplier": null,
+        "progressionLastUpdate": 1,
+        "progressionLastUpdateDate": "2020-09-30"
       }
     ]
   },
@@ -3536,13 +3686,13 @@
       "isDepTarget": false,
       "isRegTarget": true,
       "isNatTarget": true,
-      "isCumulative": true,
+      "isCumulative": false,
       "toAggregateReg": false,
       "toAggregateNat": false,
       "toCumulateGlobally": false,
-      "toCumulateEachYear": false,
+      "toCumulateEachYear": true,
       "toMakeDeltaGlobally": false,
-      "toMakeDeltaEachYear": true,
+      "toMakeDeltaEachYear": false,
       "removeFirstValueDelta": true,
       "removeSecondValueDelta": true,
       "toPopulateDep": false,
@@ -3555,11 +3705,13 @@
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
-      "multiplier": null
+      "multiplier": null,
+      "progressionLastUpdate": 1,
+      "progressionLastUpdateDate": "2020-09-30"
     }]
   },
   {
-    "active": false,
+    "active": true,
     "id_ovq": "OVQ-ACV",
     "nom_ovq_ditp": "Déployer le programme Action Cœur de ville",
     "nom_ovq": "Redynamiser les cœurs de ville",
@@ -3591,6 +3743,8 @@
     "odm_urls": ["/action-coeur-ville", "/action-coeur-ville/"],
     "odm_ext_link": "https://www.gouvernement.fr/node/10692",
     "odm_ext_link_text": "Redynamiser les cœurs de ville",
+    "odm_ext_link_2": "https://agence-cohesion-territoires.gouv.fr/action-coeur-de-ville-42",
+    "odm_ext_link_text_2": "Localiser mon service",
     "odm_image_activate": false,
     "odm_image": "/ovq-textes/services-publics-et-territoires/images/test-image.png",
     "odm_text": "/ovq-textes/services-publics-et-territoires/action-coeur-ville/services_publics_et_territoires-action_coeur_ville-resume.md",
@@ -3636,7 +3790,7 @@
       "odm_chart_template": "categVertH390",
       "odm_chart_colors": ["#00AC8C"],
       "odm_chart_xaxis_type": "datetime",
-      "odm_chart_marker_size": 0,
+      "odm_chart_marker_size": 6,
       "odm_chart_serie_name": "obtention de logement",
       "odm_chart_format": "integer",
       "odm_chart_unit": "logements",
@@ -3680,7 +3834,9 @@
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
-      "multiplier": null
+      "multiplier": null,
+      "progressionLastUpdate": 1,
+      "progressionLastUpdateDate": "2020-09-30"
     }]
   },
   {
@@ -3805,7 +3961,9 @@
     "minDateValue": "2017-01-01",
     "maxDateTarget": "2030-01-01",
     "dataPeriod": "month",
-    "multiplier": null
+    "multiplier": null,
+    "progressionLastUpdate": 1,
+    "progressionLastUpdateDate": "2020-09-30"
   },
   {
     "active": true,
@@ -3892,7 +4050,9 @@
   "minDateValue": "2017-01-01",
   "maxDateTarget": "2030-01-01",
   "dataPeriod": "month",
-  "multiplier": null
+  "multiplier": null,
+  "progressionLastUpdate": 1,
+  "progressionLastUpdateDate": "2020-09-30"
 }]
   },
   {
@@ -4017,7 +4177,9 @@
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
-      "multiplier": null
+      "multiplier": null,
+      "progressionLastUpdate": 1,
+      "progressionLastUpdateDate": "2020-09-30"
     }]
   },
   {
@@ -4142,7 +4304,9 @@
     "minDateValue": "2017-01-01",
     "maxDateTarget": "2030-01-01",
     "dataPeriod": "month",
-    "multiplier": null
+    "multiplier": null,
+    "progressionLastUpdate": 1,
+    "progressionLastUpdateDate": "2020-09-30"
   },
   {
     "active": true,
@@ -4229,7 +4393,9 @@
   "minDateValue": "2017-01-01",
   "maxDateTarget": "2030-01-01",
   "dataPeriod": "month",
-  "multiplier": null
+  "multiplier": null,
+  "progressionLastUpdate": 1,
+  "progressionLastUpdateDate": "2020-09-30"
 }]
   },
   {
@@ -4274,7 +4440,7 @@
       "id_indicateur_ditp": "2dae804f24924d5b81e5cf2c2e8044db",
       "id_indicateur_fr": "taux-paiement-dpb",
       "nom_indicateur_ditp": "Taux de paiement au 31 décembre de l'aide découplée de la campagne (DPB)",
-      "nom_indicateur": "Taux de paiement au 31 décembre de l'aide découplée de la campagne (DPB)",
+      "nom_indicateur": "Taux de bénéficiaires payés dans les délais prévus",
       "odm_id": "taux-paiement-dpb",
       "odm_text": "/ovq-textes/agriculture/securiser-paiement-pac/indicateurs/taux-paiement-dpb.md",
       "odm_text_brief": false,
@@ -4305,12 +4471,12 @@
       ],
       "odm_kpi_format": "integer",
       "odm_kpi_unit": "%",
-      "odm_chart_title": "Taux de paiement au 31 décembre de l'aide découplée de la campagne (DPB)",
+      "odm_chart_title": "Taux de bénéficiaires payés dans les délais prévus",
       "odm_chart_type": "line",
       "odm_chart_template": "categVertH390",
       "odm_chart_colors": ["#00AC8C"],
       "odm_chart_xaxis_type": "datetime",
-      "odm_chart_marker_size": 0,
+      "odm_chart_marker_size": 6,
       "odm_chart_serie_name": "paiement au 31 décembre",
       "odm_chart_format": "integer",
       "odm_chart_unit": "%",
@@ -4326,7 +4492,7 @@
       "odm_map_has_departement_level": true,
       "odm_map_region_max": 100,
       "odm_map_departement_max": 100,
-      "odm_map_label": "Taux de paiement au 31 décembre de l'aide découplée de la campagne (DPB)",
+      "odm_map_label": "Taux de bénéficiaires payés dans les délais prévus",
       "odm_map_legend_subtitle": "<i>Données décembre 2020</i>",
       "odm_map_default_layer": true,
       "isDep": true,
@@ -4347,14 +4513,16 @@
       "toPopulateDep": false,
       "toPopulateReg": false,
       "initialValue": true,
-      "toRound": 0,
+      "toRound": 1,
       "initialValueDate": null,
       "actualValueDate": null,
       "initialValueZero": false,
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "year",
-      "multiplier": null
+      "multiplier": null,
+      "progressionLastUpdate": 1,
+      "progressionLastUpdateDate": "2020-09-30"
     }]
   },
   {
@@ -4479,7 +4647,9 @@
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "year",
-      "multiplier": null
+      "multiplier": null,
+      "progressionLastUpdate": 1,
+      "progressionLastUpdateDate": "2020-09-30"
     }]
   },
   {
@@ -4599,12 +4769,14 @@
       "initialValue": true,
       "toRound": 0,
       "initialValueDate": null,
-      "actualValueDate": "2020-12-31",
+      "actualValueDate": null,
       "initialValueZero": true,
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
-      "multiplier": null
+      "multiplier": null,
+      "progressionLastUpdate": 1,
+      "progressionLastUpdateDate": "2020-09-30"
     }]
   },
   {
@@ -4685,9 +4857,9 @@
       "odm_chart_template": "categVertH390",
       "odm_chart_colors": ["#00AC8C"],
       "odm_chart_xaxis_type": "datetime",
-      "odm_chart_marker_size": 0,
+      "odm_chart_marker_size": 6,
       "odm_chart_serie_name": "% de surface agricole",
-      "odm_chart_format": "integer",
+      "odm_chart_format": "float",
       "odm_chart_unit": "% de surface agricole",
       "odm_chart_annotation": false,
       "odm_chart_annotation_key": "targets",
@@ -4722,14 +4894,16 @@
       "toPopulateDep": false,
       "toPopulateReg": false,
       "initialValue": true,
-      "toRound": 0,
+      "toRound": 1,
       "initialValueDate": null,
       "actualValueDate": null,
       "initialValueZero": false,
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
-      "multiplier": null
+      "multiplier": null,
+      "progressionLastUpdate": 1,
+      "progressionLastUpdateDate": "2020-09-30"
     },{
       "active": true,
       "id_indicateur_ditp": "90092de72ae24053994ee3f40ac3c780",
@@ -4771,7 +4945,7 @@
       "odm_chart_template": "categVertH390",
       "odm_chart_colors": ["#00AC8C"],
       "odm_chart_xaxis_type": "datetime",
-      "odm_chart_marker_size": 0,
+      "odm_chart_marker_size": 6,
       "odm_chart_serie_name": "agriculteurs",
       "odm_chart_format": "integer",
       "odm_chart_unit": "agriculteurs",
@@ -4815,15 +4989,17 @@
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "year",
-      "multiplier": null
+      "multiplier": null,
+      "progressionLastUpdate": 1,
+      "progressionLastUpdateDate": "2020-09-30"
     }]
   },
   {
     "active": true,
     "id_ovq": "OVQ-SNU",
     "nom_ovq_ditp": "Assurer la montée en charge du SNU",
-    "nom_ovq": "Assurer la montée en charge du SNU",
-    "nom_ovq_bis": "Assurer la montée en charge du SNU",
+    "nom_ovq": "Promouvoir l'engagement chez les jeunes",
+    "nom_ovq_bis": "Promouvoir l'engagement chez les jeunes",
     "odm_id": "assurer-montee-snu",
     "odm_activate": true,
     "odm_sources_ids": [{
@@ -4860,7 +5036,7 @@
       "id_indicateur_ditp": "a75b19c00274495f9f245cfa3cf8f2f9",
       "id_indicateur_fr": "nb-jeunes-snu",
       "nom_indicateur_ditp": "Nombre de jeunes réalisant effectivement leur SNU",
-      "nom_indicateur": "Nombre de jeunes réalisant effectivement leur SNU",
+      "nom_indicateur": "Nombre de volontaires ayant réalisé au moins un jour de mission du Service civique",
       "odm_id": "nb-jeunes-snu",
       "odm_text": "/ovq-textes/education/assurer-montee-snu/indicateurs/nb-jeunes-snu.md",
       "odm_text_brief": false,
@@ -4891,7 +5067,7 @@
       ],
       "odm_kpi_format": "integer",
       "odm_kpi_unit": "jeunes",
-      "odm_chart_title": "Nombre de jeunes réalisant effectivement leur SNU",
+      "odm_chart_title": "Nombre de volontaires ayant réalisé au moins un jour de mission du Service civique",
       "odm_chart_type": "histo",
       "odm_chart_template": "categVertH390_histo",
       "odm_chart_colors": ["#00AC8C"],
@@ -4912,7 +5088,7 @@
       "odm_map_has_departement_level": false,
       "odm_map_region_max": 200,
       "odm_map_departement_max": 275,
-      "odm_map_label": "Nombre de jeunes réalisant effectivement leur SNU",
+      "odm_map_label": "Nombre de volontaires ayant réalisé au moins un jour de mission du Service civique",
       "odm_map_legend_subtitle": "<i>Données 2020</i>",
       "odm_map_default_layer": true,
       "isDep": false,
@@ -4940,7 +5116,9 @@
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "year",
-      "multiplier": null
+      "multiplier": null,
+      "progressionLastUpdate": 1,
+      "progressionLastUpdateDate": "2020-09-30"
     }]
   },
   {
@@ -5034,9 +5212,9 @@
       "odm_map_highlight_color": "#96ded1",
       "odm_map_only_national": false,
       "odm_map_has_regional_level": true,
-      "odm_map_has_departement_level": true,
-      "odm_map_region_max": 1000,
-      "odm_map_departement_max": 275,
+      "odm_map_has_departement_level": false,
+      "odm_map_region_max": 16,
+      "odm_map_departement_max": 16,
       "odm_map_label": "Taux de personnes détenues ayant bénéficié d'une formation dans l'année",
       "odm_map_legend_subtitle": "<i>Données septembre 2020</i>",
       "odm_map_default_layer": true,
@@ -5045,7 +5223,7 @@
       "isNat": true,
       "isDepTarget": false,
       "isRegTarget": false,
-      "isNatTarget": false,
+      "isNatTarget": true,
       "isCumulative": true,
       "toAggregateReg": false,
       "toAggregateNat": false,
@@ -5057,7 +5235,7 @@
       "removeSecondValueDelta": false,
       "toPopulateDep": false,
       "toPopulateReg": false,
-      "initialValue": true,
+      "initialValue": false,
       "toRound": 0,
       "initialValueDate": null,
       "actualValueDate": null,
@@ -5065,7 +5243,9 @@
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
-      "multiplier": null
+      "multiplier": null,
+      "progressionLastUpdate": 1,
+      "progressionLastUpdateDate": "2020-09-30"
     },
     {
       "active": true,
@@ -5116,23 +5296,23 @@
       "odm_chart_annotation_key": "targets",
       "odm_chart_y_annotation_key": "target",
       "odm_chart_y_annotation_text": "cible",
-      "odm_map_is_default": true,
+      "odm_map_is_default": false,
       "odm_map_fill_color": "#00AC8C",
       "odm_map_highlight_color": "#96ded1",
       "odm_map_only_national": false,
-      "odm_map_has_regional_level": true,
+      "odm_map_has_regional_level": false,
       "odm_map_has_departement_level": true,
-      "odm_map_region_max": 1000,
-      "odm_map_departement_max": 275,
+      "odm_map_region_max": 1500,
+      "odm_map_departement_max": 1500,
       "odm_map_label": "Nombre de postes de TIG offerts",
       "odm_map_legend_subtitle": "<i>Données septembre 2020</i>",
-      "odm_map_default_layer": true,
+      "odm_map_default_layer": false,
       "isDep": true,
       "isReg": true,
       "isNat": true,
       "isDepTarget": false,
       "isRegTarget": false,
-      "isNatTarget": false,
+      "isNatTarget": true,
       "isCumulative": true,
       "toAggregateReg": false,
       "toAggregateNat": false,
@@ -5144,7 +5324,7 @@
       "removeSecondValueDelta": false,
       "toPopulateDep": false,
       "toPopulateReg": false,
-      "initialValue": true,
+      "initialValue": false,
       "toRound": 0,
       "initialValueDate": null,
       "actualValueDate": null,
@@ -5152,7 +5332,9 @@
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
-      "multiplier": null
+      "multiplier": null,
+      "progressionLastUpdate": 1,
+      "progressionLastUpdateDate": "2020-09-30"
     }]
   },
   {
@@ -5277,7 +5459,9 @@
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
-      "multiplier": null
+      "multiplier": null,
+      "progressionLastUpdate": 1,
+      "progressionLastUpdateDate": "2020-09-30"
     }]
   }
 ]

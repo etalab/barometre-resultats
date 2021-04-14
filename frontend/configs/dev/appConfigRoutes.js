@@ -11,6 +11,8 @@ const {
   // keyKpiGroupNameBis,
   keyKpiGroupExtLink,
   keyKpiGroupExtLinkTxt,
+  keyKpiGroupExtLink2,
+  keyKpiGroupExtLinkTxt2,
   keyKpiGroupImageActivate,
   keyKpiGroupKpis,
   keyKpiId,
