@@ -2670,7 +2670,7 @@
         }
       ],
       "odm_kpi_format": "integer",
-      "odm_kpi_unit": "amendes dressées dans l'année",
+      "odm_kpi_unit": "amendes dressées dans le mois",
       "odm_chart_title": "Nombre d'amendes forfaitaires délictuelles dressées",
       "odm_chart_type": "histo",
       "odm_chart_template": "categVertH390_histo",
@@ -2701,7 +2701,7 @@
       "isDepTarget": false,
       "isRegTarget": false,
       "isNatTarget": true,
-      "isCumulative": false,
+      "isCumulative": true,
       "toAggregateReg": false,
       "toAggregateNat": true,
       "toCumulateGlobally": false,
@@ -3686,7 +3686,7 @@
       "isDepTarget": false,
       "isRegTarget": true,
       "isNatTarget": true,
-      "isCumulative": false,
+      "isCumulative": true,
       "toAggregateReg": false,
       "toAggregateNat": false,
       "toCumulateGlobally": false,
@@ -3830,7 +3830,7 @@
       "toRound": 0,
       "initialValueDate": null,
       "actualValueDate": null,
-      "initialValueZero": false,
+      "initialValueZero": true,
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
@@ -4680,7 +4680,7 @@
         "odm_source_display": false
       }
     ],
-    "odm_kpi_families": ["transition-ecologique"],
+    "odm_kpi_families": ["logement-ville"],
     "odm_url": "/accelerer-renovation-energetique",
     "odm_urls": ["/accelerer-renovation-energetique", "/accelerer-renovation-energetique/"],
     "odm_ext_link": "https://www.gouvernement.fr/node/10692",
@@ -4850,7 +4850,7 @@
           "hide_day_on_date": true
         }
       ],
-      "odm_kpi_format": "integer",
+      "odm_kpi_format": "float",
       "odm_kpi_unit": "% de surface agricole",
       "odm_chart_title": "Surface agricole cultivée en agriculture biologique",
       "odm_chart_type": "line",
@@ -4969,7 +4969,7 @@
       "isNat": true,
       "isDepTarget": false,
       "isRegTarget": false,
-      "isNatTarget": true,
+      "isNatTarget": false,
       "isCumulative": true,
       "toAggregateReg": false,
       "toAggregateNat": false,

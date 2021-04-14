@@ -71,6 +71,13 @@
       {{ formatValue(itemLocal, header, true) }}
     </span>
 
+    <!-- VALUE DATE -->
+    <span v-if="itemLocal && header && header.valueDate" class="caption">
+      <!-- PREFIX -->
+      {{ header.textPrefix[locale]}} 
+      <!-- DATE -->
+      {{ formatDate(itemLocal[header.valueDate]) }}
+    </span>
 
     <v-tooltip v-if="header" bottom>
       <template v-slot:activator="{ on, attrs }">
@@ -109,6 +116,7 @@
           </span>
         </div>
       </template>
+
       <!-- TOOLTIP TTEXT -->
       <span v-if="header.tooltip">
         {{ header.tooltipText[locale] }}
@@ -248,6 +256,12 @@ export default {
       }
       // this.log && console.log("\nC-KpiValue / formatValue / value : ", value)
       return value
+    },
+
+    formatDate (dateString) {
+      let date = new Date(dateString)
+      let dateOptions = {  year: 'numeric', month: 'long' }
+      return date.toLocaleDateString('fr-FR',dateOptions)
     },
 
     showValue(item, header) {

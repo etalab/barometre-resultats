@@ -388,6 +388,18 @@ const COMMON_HEADERS = {
         class: 'light-green darken-2 white--text caption font-weight-medium',
         color: 'light-green darken-2'
       },
+      // {
+      //   text: { fr: 'Progression depuis' },
+      //   value: 'progression_last_update_percentage',
+      //   align: 'center',
+      //   cols: 1,
+      //   format: 'integer',
+      //   addSign: true,
+      //   asChip: true,
+      //   unit: '%',
+      //   class: 'light-green darken-2 white--text caption font-weight-medium',
+      //   color: 'light-green darken-2'
+      // },
       {
         text: { fr: 'Cible 2022' },
         value: 'target',
@@ -515,7 +527,9 @@ const COMMON_HEADERS = {
       },
       {
         text: { fr: 'Progression' },
+        textPrefix: { fr: 'depuis' },
         value: 'progression_percentage',
+        valueDate: 'initial_value_date',
         hideIfNull: true,
         align: 'center',
         cols: 1,
@@ -531,6 +545,27 @@ const COMMON_HEADERS = {
         blockId: 'block-1',
         blockColor: undefined,
         blockInnerTarget: 'data-second-value'
+      },
+      {
+        text: { fr: 'Progression depuis la dernière mise à jour' },
+        textPrefix: { fr: 'depuis' },
+        value: 'progression_last_update_percentage',
+        valueDate: 'progression_last_update_date',
+        hideIfNull: true,
+        align: 'center',
+        cols: 1,
+        addSign: true,
+        addArrow: true,
+        asChip: true,
+        animate: false,
+        format: 'integer',
+        kpiValueComponent: 'number',
+        unit: '%',
+        class: 'light-green darken-2 white--text caption font-weight-medium',
+        color: 'light-green darken-2',
+        blockId: 'block-1',
+        blockColor: undefined,
+        blockInnerTarget: 'data-third-value'
       },
       {
         text: { fr: 'Cible 2022' },
