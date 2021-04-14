@@ -3,7 +3,9 @@ const {
   dataStructure,
   keyKpiGroupId,
   keyKpiGroupName,
-  keyKpiGroupExtLink
+  keyKpiGroupExtLink,
+  keyKpiGroupExtLink2,
+  keyKpiGroupExtLinkTxt2
 } = require('../../nuxt_loadStructure_fromJSON.js')
 // console.log( '>>> appConfigGlobalButtons.js (start) / dataStructure : ', dataStructure.slice(0, 1) )
 // console.log( '...' )
