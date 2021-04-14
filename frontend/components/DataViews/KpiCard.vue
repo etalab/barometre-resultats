@@ -122,7 +122,7 @@
 
         <!-- KPI THIRD VALUE -->
         <div 
-          :class="`mt-${isMobileWidth ? 1 : 4}`">
+          :class="`mt-1`">
           <p 
             :class="`text-left mb-1`">
             <kpiValue

@@ -527,6 +527,7 @@ const COMMON_HEADERS = {
       },
       {
         text: { fr: 'Progression' },
+        textPrefix: { fr: 'depuis' },
         value: 'progression_percentage',
         valueDate: 'initial_value_date',
         hideIfNull: true,
@@ -547,6 +548,7 @@ const COMMON_HEADERS = {
       },
       {
         text: { fr: 'Progression depuis la dernière mise à jour' },
+        textPrefix: { fr: 'depuis' },
         value: 'progression_last_update_percentage',
         valueDate: 'progression_last_update_date',
         hideIfNull: true,
