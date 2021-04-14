@@ -87,11 +87,6 @@ export const keyKpiMapDefaultLayer = 'odm_map_default_layer'
 export const keyKpiTableFormat = 'odm_kpi_format'
 export const keyKpiTableUnit = 'odm_kpi_unit'
 
-// export const keyKpiLastUpdatePercentage = 'progression_last_update_percentage'
-// export const keyKpiLastUpdateDate = 'progression_last_update_date'
-// export const keyKpiLastUpdate = 'progression_last_update'
-
-
 // group by kpi family
 // console.log( '>>> nuxt_loadStructure_fromJSON.js (start) / structureKpiFamilies : ', structureKpiFamilies )
 const structureData = []
