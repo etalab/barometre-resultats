@@ -292,10 +292,10 @@ animation: fadeIn ease 1s;
                 <!-- LINK TO EXTERIOR -->
                 <div
                   v-show="!isLoadingNewData"
-                  :class="`ml-2 ${isMobileWidth ? 'mt-1 text-center' : ''} mb-0`"
+                  :class="`ml-2 row wrap ${isMobileWidth ? 'mt-1 text-center' : ''} mb-0`"
                   >
                   <v-btn
-                    :class="`text-none btn-no-radius ${isMobileWidth ? 'no-text-transform word-break' : ''}`"
+                    :class="`text-none mr-2 btn-no-radius ${isMobileWidth ? 'no-text-transform word-break' : ''}`"
                     outlined
                     color="primary"
                     :href="kpi_group.linkExt"
@@ -315,6 +315,28 @@ animation: fadeIn ease 1s;
                       icon-arrow-right
                     </v-icon> -->
                   </v-btn>
+                  <v-btn
+                      v-if="kpi_group.linkExt2"
+                      :class="`text-none mr-2 btn-no-radius ${isMobileWidth ? 'no-text-transform word-break' : ''}`"
+                      outlined
+                      color="primary"
+                      :href="kpi_group.linkExt2"
+                      :target="`${ isIframe ? '_parent' : '_blank' }`"
+                      >
+                      <span 
+                        :style="`${isMobileWidth ? 'white-space: normal;' : ''}`"
+                        v-if="kpi_group.kpiLinkText2"
+                        >
+                        {{ kpi_group.kpiLinkText2[locale] }}
+                      </span>
+                      <!-- <v-icon
+                        small
+                        class="pl-2 pb-0"
+                        color="primary"
+                        >
+                        icon-arrow-right
+                      </v-icon> -->
+                    </v-btn>
                 </div>
 
               </v-col>
