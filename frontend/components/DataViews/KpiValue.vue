@@ -73,11 +73,6 @@
 
     <!-- VALUE DATE -->
     <span v-if="itemLocal && header && header.valueDate" class="caption">
-      <!-- <br>--- header.valueDate : {{ header.valueDate }} <br> -->
-      <!-- <br>--- header.textPrefix[locale] : {{ header.textPrefix[locale] }} <br> -->
-      <!-- <br>--- itemLocal[header.valueDate] : {{ itemLocal[header.valueDate] }} <br> -->
-      <!-- <br>--- formatDate(itemLocal[header.valueDate]) : {{ formatDate(itemLocal[header.valueDate]) }} <br> -->
-      <!-- --- itemLocal : {{ itemLocal }} -->
       <!-- PREFIX -->
       {{ header.textPrefix[locale]}} 
       <!-- DATE -->
