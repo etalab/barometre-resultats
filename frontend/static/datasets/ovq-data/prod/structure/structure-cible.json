@@ -2670,7 +2670,7 @@
         }
       ],
       "odm_kpi_format": "integer",
-      "odm_kpi_unit": "amendes dressées dans l'année",
+      "odm_kpi_unit": "amendes dressées dans le mois",
       "odm_chart_title": "Nombre d'amendes forfaitaires délictuelles dressées",
       "odm_chart_type": "histo",
       "odm_chart_template": "categVertH390_histo",
@@ -2701,7 +2701,7 @@
       "isDepTarget": false,
       "isRegTarget": false,
       "isNatTarget": true,
-      "isCumulative": false,
+      "isCumulative": true,
       "toAggregateReg": false,
       "toAggregateNat": true,
       "toCumulateGlobally": false,
@@ -4850,7 +4850,7 @@
           "hide_day_on_date": true
         }
       ],
-      "odm_kpi_format": "integer",
+      "odm_kpi_format": "float",
       "odm_kpi_unit": "% de surface agricole",
       "odm_chart_title": "Surface agricole cultivée en agriculture biologique",
       "odm_chart_type": "line",
