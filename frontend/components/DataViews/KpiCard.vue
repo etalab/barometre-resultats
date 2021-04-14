@@ -120,6 +120,19 @@
           </p>
         </div>
 
+        <!-- KPI THIRD VALUE -->
+        <div 
+          :class="`mt-${isMobileWidth ? 1 : 4}`">
+          <p 
+            :class="`text-left mb-1`">
+            <kpiValue
+              :item="propsItemValue"
+              :header="blockHeaderDataThirdValue"
+              :trigger="triggerTabBtn"
+            />
+          </p>
+        </div>
+
       </v-card-text> 
     </v-card>    
 
@@ -142,6 +155,7 @@ export default {
     'propsItemValue', // getPropsItemValue(props.items, kpi.fromDatasetKeyValue) 
     'ruleValue', // getRuleValue(getPropsItemValue(props.items, kpi.fromDatasetKeyValue), kpi.textSuffixRules)
     'blockHeaderDataSecondValue', // getBlockHeaderData(blockHeaders, 'data-second-value')
+    'blockHeaderDataThirdValue',
     'triggerTabBtn',
     'isMobileWidth',
     'addCardClass',

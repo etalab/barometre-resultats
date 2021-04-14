@@ -528,6 +528,7 @@ animation: fadeIn ease 1s;
                                 :propsItemValue="getPropsItemValue(props.items, kpi.fromDatasetKeyValue)"
                                 :ruleValue="getRuleValue(getPropsItemValue(props.items, kpi.fromDatasetKeyValue), kpi.textSuffixRules)"
                                 :blockHeaderDataSecondValue="getBlockHeaderData(blockHeaders, 'data-second-value')"
+                                :blockHeaderDataThirdValue="getBlockHeaderData(blockHeaders, 'data-third-value')"
                                 :triggerTabBtn="triggerTabBtn"
                                 :isMobileWidth="isMobileWidth"
                               />
