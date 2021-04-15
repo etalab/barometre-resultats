@@ -48,7 +48,7 @@
       @click.stop="toogleNavbarItem('fixed')"
       >
       <v-icon>
-        icon-minus
+        icon-minus1
       </v-icon>
     </v-btn>
 

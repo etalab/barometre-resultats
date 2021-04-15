@@ -23,7 +23,7 @@
     "odm_image": "/ovq-textes/relance-emploi-economie/images/img-relance_emploi_economie.jpg",
     "odm_tab_icon": "icon-work",
     "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement",
-    "odm_url_aliases": ["/apprentissage","/un-jeune-une-solution","/supprimer-taxe-habitation-residences-principales"],
+    "odm_url_aliases": ["/apprentissage","/un-jeune-une-solution","/supprimer-taxe-habitation-residences-principales","/accompagner-transformation-numerique","/pacte-ambition-iae"],
     "odm_text": "/ovq-textes/relance-emploi-economie/relance_emploi_economie-resume.md"
   },
   {
@@ -37,7 +37,7 @@
     "odm_image": "/ovq-textes/sante-famille/images/img-sante_famille.jpg",
     "odm_tab_icon": "icon-aid-kit",
     "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement",
-    "odm_url_aliases": ["/doubler-maisons-sante","/deployer-conge-paternite","/simplifier-acces-droits-personnes-handicapees","/lunettes-auditifs-dentaires"],
+    "odm_url_aliases": ["/doubler-maisons-sante","/deployer-conge-paternite","/simplifier-acces-droits-personnes-handicapees","/lunettes-auditifs-dentaires","/lutter-impayes-alimentaires"],
     "odm_text": "/ovq-textes/sante-famille/sante_famille-resume.md"
   },
   {
@@ -51,7 +51,7 @@
     "odm_image": "/ovq-textes/education/images/img-education.jpg",
     "odm_tab_icon": "icon-graduation-cap",
     "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement",
-    "odm_url_aliases": ["/ecole-inclusive","/limiter-effectifs-cp-ce1","/dedoubler-classes-rep","/deployer-parcoursup"],
+    "odm_url_aliases": ["/ecole-inclusive","/limiter-effectifs-cp-ce1","/dedoubler-classes-rep","/deployer-parcoursup","/deployer-devoirs-faits","/assurer-montee-snu"],
     "odm_text": "/ovq-textes/education/education-resume.md"
   },
   {
@@ -93,7 +93,7 @@
     "odm_image": "/ovq-textes/services-publics-et-territoires/images/img-services_publics_et_territoires.jpg",
     "odm_tab_icon": "icon-bank",
     "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement",
-    "odm_url_aliases": ["/thd","/france-services","/ameliorer-qualite-service"],
+    "odm_url_aliases": ["/thd","/france-services","/ameliorer-qualite-service","/action-coeur-ville"],
     "odm_text": "/ovq-textes/services-publics-et-territoires/services_publics_et_territoires-resume.md"
   },
   {
@@ -107,7 +107,7 @@
     "odm_image": "/ovq-textes/logement-ville/images/img-logement_ville.jpg",
     "odm_tab_icon": "icon-home_filled",
     "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement",
-    "odm_url_aliases": ["/","/par-ovq","/logement-d-abord"],
+    "odm_url_aliases": ["/","/par-ovq","/logement-d-abord","/accelerer-renovation-energetique"],
     "odm_text": "/ovq-textes/logement-villes/logement_ville-resume.md"
   },
   {
@@ -116,12 +116,12 @@
     "odm_id": "agriculture",
     "odm_kpi_family_activate": true,
     "odm_kpi_families": ["agriculture"],
-    "odm_url": "/agriculture",
+    "odm_url": "/securiser-paiement-pac",
     "odm_image_activate": true,
     "odm_image": "/ovq-textes/agriculture/images/img-agriculture.jpg",
-    "odm_tab_icon": "icon-home_filled",
+    "odm_tab_icon": "icon-agriculture",
     "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement",
-    "odm_url_aliases": ["/agriculture"],
+    "odm_url_aliases": ["/securiser-paiement-pac","/reduire-phytosanitaires"],
     "odm_text": "/ovq-textes/agriculture/agriculture-resume.md"
   },
   {
@@ -130,12 +130,12 @@
     "odm_id": "justice",
     "odm_kpi_family_activate": true,
     "odm_kpi_families": ["justice"],
-    "odm_url": "/justice",
+    "odm_url": "/developper-places-tig",
     "odm_image_activate": true,
     "odm_image": "/ovq-textes/justice/images/img-justice.jpg",
-    "odm_tab_icon": "icon-home_filled",
+    "odm_tab_icon": "icon-balance-scale",
     "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement",
-    "odm_url_aliases": ["/justice"],
+    "odm_url_aliases": ["/developper-places-tig"],
     "odm_text": "/ovq-textes/justice/justice-resume.md"
   }
 ]
