@@ -1,6 +1,5 @@
 <template>
   <div 
-    class=""
     v-if="showValue(itemLocal, header)"
     >
     <!-- :trigger="`${trigger}`" -->
@@ -33,7 +32,7 @@
           class="pl-0 pb-1"
           color="black"
           >
-          icon-arrow-right
+          icon-arrow-right1
         </v-icon>
         <v-icon
           v-else
@@ -151,7 +150,6 @@ export default {
     return {
       itemLocal: undefined,
       animate: true,
-      // resizeTrigger: 0,
       valueType: undefined,
       counter: 0,
       noDataText: {
@@ -173,16 +171,12 @@ export default {
     // this.log && console.log("C-KpiValue / mounted / maxValue : ", maxValue)
     if (maxValue && !Number.isNaN(maxValue)) {
       if (this.valueType === 'number' && this.header.animate) {
-      // if (this.valueType === 'number') {
         this.animateValue(maxValue)
       } else {
         this.counter = maxValue
-        // this.stringValue = val
       }
     } else {
       this.counter = 0
-      // this.valIsNan = true
-      // this.stringValue = val
     }
     this.$store.commit('toggleTriggerComponentLoaded')
   },
@@ -217,12 +211,6 @@ export default {
         }
       }
     },
-    // resizeTrigger(next, prev) {
-    //   var self = this
-    //   setTimeout(function(){
-    //     self.$store.commit('toggleTriggerResizeNoScroll')
-    //   },100)
-    // }
   },
   methods: {
 
@@ -272,7 +260,6 @@ export default {
         let value = this.formatValue(item, header)
         showVal = value === this.noDataText[this.locale] ? false : true
       }
-      // this.resizeTrigger = this.resizeTrigger + 1
       return showVal
     },
 
