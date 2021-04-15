@@ -312,7 +312,7 @@ animation: fadeIn ease 1s;
                       class="pl-2 pb-0"
                       color="primary"
                       >
-                      icon-arrow-right
+                      icon-arrow-right1
                     </v-icon> -->
                   </v-btn>
                   <v-btn
@@ -334,7 +334,7 @@ animation: fadeIn ease 1s;
                         class="pl-2 pb-0"
                         color="primary"
                         >
-                        icon-arrow-right
+                        icon-arrow-right1
                       </v-icon> -->
                     </v-btn>
                 </div>
@@ -597,7 +597,7 @@ animation: fadeIn ease 1s;
                       class="pl-2 pb-0"
                       color="primary"
                       >
-                      icon-arrow-right
+                      icon-arrow-right1
                     </v-icon>
                   </v-btn>
                 </div>

@@ -140,13 +140,13 @@ export default {
     // this.log && console.log("C-KpiCardFrame / beforeMount / this.configs : ", this.configs)
 
     this.kpiFamilyId = this.settings.kpiConfigFrom.kpiFamilyId
-    this.log && console.log("C-KpiCardFrame / beforeMount / this.kpiFamilyId : ", this.kpiFamilyId)
+    // this.log && console.log("C-KpiCardFrame / beforeMount / this.kpiFamilyId : ", this.kpiFamilyId)
 
     this.kpiGroupId = this.settings.kpiConfigFrom.kpiGroupId
-    this.log && console.log("C-KpiCardFrame / beforeMount / this.kpiGroupId : ", this.kpiGroupId)
+    // this.log && console.log("C-KpiCardFrame / beforeMount / this.kpiGroupId : ", this.kpiGroupId)
 
     this.kpiId = this.settings.kpiConfigFrom.kpiId
-    this.log && console.log("C-KpiCardFrame / beforeMount / this.kpiId : ", this.kpiId)
+    // this.log && console.log("C-KpiCardFrame / beforeMount / this.kpiId : ", this.kpiId)
 
     // this.log && console.log("C-KpiCardFrame / beforeMount / this.sourcesToLoad :", this.sourcesToLoad)
     this.updateGlobal()

@@ -119,7 +119,7 @@
     "odm_url": "/agriculture",
     "odm_image_activate": true,
     "odm_image": "/ovq-textes/agriculture/images/img-agriculture.jpg",
-    "odm_tab_icon": "icon-home_filled",
+    "odm_tab_icon": "icon-agriculture",
     "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement",
     "odm_url_aliases": ["/agriculture"],
     "odm_text": "/ovq-textes/agriculture/agriculture-resume.md"
@@ -133,7 +133,7 @@
     "odm_url": "/justice",
     "odm_image_activate": true,
     "odm_image": "/ovq-textes/justice/images/img-justice.jpg",
-    "odm_tab_icon": "icon-home_filled",
+    "odm_tab_icon": "icon-balance-scale",
     "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement",
     "odm_url_aliases": ["/justice"],
     "odm_text": "/ovq-textes/justice/justice-resume.md"
