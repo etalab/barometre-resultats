@@ -86,20 +86,6 @@ export default {
   mounted() {
     // this.log && console.log("\nC-KpiProgressBar / mounted / this.val : ", this.val)
     this.setValues(this.val)
-    // const maxValue = Math.abs(this.val)
-    // this.log && console.log("C-KpiProgressBar / mounted / maxValue : ", maxValue)
-    // if (maxValue && !Number.isNaN(maxValue)) {
-    //   if (this.animate) {
-    //     this.animateValue(maxValue)
-    //   } else {
-    //     this.counter = maxValue
-    //     this.stringValue = numberToStringBasic(this.val)
-    //   }
-    // } else {
-    //   this.counter = 0
-    //   this.valIsNan = true
-    //   this.stringValue = this.val
-    // }
     this.heightBar = this.height ? this.height : this.heightBar
     this.stripedBar = this.striped ? this.striped : false
     this.darkBar = this.dark ? this.dark : false
