@@ -1,5 +1,6 @@
 <template>
-  <div class=""
+  <div 
+    class=""
     v-if="showValue(itemLocal, header)"
     >
     <!-- :trigger="`${trigger}`" -->
@@ -180,7 +181,7 @@ export default {
       }
     } else {
       this.counter = 0
-      this.valIsNan = true
+      // this.valIsNan = true
       // this.stringValue = val
     }
     this.$store.commit('toggleTriggerComponentLoaded')
