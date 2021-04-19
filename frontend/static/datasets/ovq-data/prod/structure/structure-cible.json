@@ -3942,7 +3942,7 @@
     "isDepTarget": true,
     "isRegTarget": true,
     "isNatTarget": true,
-    "isCumulative": false,
+    "isCumulative": true,
     "toAggregateReg": true,
     "toAggregateNat": false,
     "toCumulateGlobally": false,
