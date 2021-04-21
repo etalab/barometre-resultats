@@ -1,11 +1,11 @@
 <p>
   <span id="brief">
-    Promouvoir l’apprentissage est une des priorités du quinquennat en matière d’emploi des jeunes. La loi « avenir professionnel » de 2018 a permis de faciliter l’accès à l’apprentissage pour les jeunes, mieux répondre aux besoins des entreprises, simplifier les procédures,  et donc d’en accélérer le développement.  
+    Promouvoir l’apprentissage est une des priorités du quinquennat en matière d’emploi des jeunes. La loi « avenir professionnel » de 2018 a permis de faciliter l’accès à l’apprentissage pour les jeunes, mieux répondre aux besoins des entreprises,  simplifier les procédures,  et donc d’en accélérer le développement.  
   </span>
 </p>
 
 <p>
-  Par ailleurs, un engagement fort du Gouvernement a permis d’améliorer l’image de l’apprentissage. En 2019, les résultats étaient là : une hausse de 25% des contrats d’apprentissage pour atteindre 368 199.
+  Par ailleurs, un engagement fort du Gouvernement a permis d’améliorer l’image de l’apprentissage. En 2020 les résultats sont là : le nombre de contrats d’apprentissage a en effet atteint un niveau historique avec plus de 516 000 contrats signés.
 </p>
 
 <p>
