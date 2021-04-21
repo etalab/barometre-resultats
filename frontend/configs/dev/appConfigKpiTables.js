@@ -548,7 +548,7 @@ const COMMON_HEADERS = {
       },
       {
         text: { fr: 'Progression depuis la dernière mise à jour' },
-        textPrefix: { fr: 'depuis' },
+        textPrefix: { fr: 'depuis la première publication du baromètre' },
         value: 'progression_last_update_percentage',
         valueDate: 'progression_last_update_date',
         hideIfNull: true,
