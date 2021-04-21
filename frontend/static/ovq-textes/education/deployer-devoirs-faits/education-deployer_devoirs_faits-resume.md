@@ -1,13 +1,6 @@
 <p id="brief">
-  Avec Parcoursup, le MESRI a engagé une profonde transformation de l’accès à l’enseignement supérieur pour lutter contre l’échec dans le premier cycle de l’enseignement supérieur.
+  Déployé au collège depuis 2018, le programme "Devoirs faits" répond à l’enjeu de réduction des inégalités d’accès aux savoirs et de réussite de tous les élèves.
 </p>
 <p>
-  Le nouveau dispositif d'orientation permet de  :
-  <ul>
-    <li>supprimer le tirage au sort pour l'accès à l'enseignement supérieur ;</li>
-    <li>rendre aux candidats la liberté de formuler librement leurs vœux afin d’accéder aux formations de leur choix et leur donner le dernier mot ;</li>
-    <li>lutter contre les inégalités d’accès à l’information et lever les freins à la démocratisation de l’accès à l’enseignement supérieur ;</li>
-    <li>favoriser la mobilité géographique des étudiants, en particulier des plus modestes ;</li>
-    <li>développer la personnalisation des parcours et accompagner la réussite des étudiants, en créant des parcours adaptés à ceux qui ne disposent pas de tous les atouts pour réussir.</li>
-  </ul>
+Encadrés par des professeurs et des intervenants en dehors des heures de classe, les collégiens volontaires peuvent ainsi bénéficier gratuitement d’un temps de travail personnel accompagné, au sein de leur établissement, pour effectuer leurs devoirs, réviser et conforter leurs acquis, et progresser en autonomie
 </p>

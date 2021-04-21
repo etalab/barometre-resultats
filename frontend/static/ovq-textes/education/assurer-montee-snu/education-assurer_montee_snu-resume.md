@@ -1,13 +1,6 @@
 <p id="brief">
-  Avec Parcoursup, le MESRI a engagé une profonde transformation de l’accès à l’enseignement supérieur pour lutter contre l’échec dans le premier cycle de l’enseignement supérieur.
+  Ouvert sans aucune condition de diplôme aux jeunes de 16 à 25 ans (jusqu’à 30 ans en cas de situation de handicap), le Service Civique leur offre ainsi l’opportunité de s’engager, de donner de leur temps pour l’intérêt général et ainsi de vivre une expérience unique formatrice, apprenante et valorisante, d’une durée de 6 à 12 mois, en choisissant parmi de nombreuses missions, dans des domaines très divers.
 </p>
 <p>
-  Le nouveau dispositif d'orientation permet de  :
-  <ul>
-    <li>supprimer le tirage au sort pour l'accès à l'enseignement supérieur ;</li>
-    <li>rendre aux candidats la liberté de formuler librement leurs vœux afin d’accéder aux formations de leur choix et leur donner le dernier mot ;</li>
-    <li>lutter contre les inégalités d’accès à l’information et lever les freins à la démocratisation de l’accès à l’enseignement supérieur ;</li>
-    <li>favoriser la mobilité géographique des étudiants, en particulier des plus modestes ;</li>
-    <li>développer la personnalisation des parcours et accompagner la réussite des étudiants, en créant des parcours adaptés à ceux qui ne disposent pas de tous les atouts pour réussir.</li>
-  </ul>
+Le Service Civique a également pour objectif de renforcer la cohésion nationale et la mixité sociale.
 </p>
