@@ -502,8 +502,8 @@
       "maxDateTarget": "2022-05-31",
       "dataPeriod": "year",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   },
   {
@@ -605,13 +605,13 @@
       "odm_map_default_layer": true,
       "isDep": true,
       "isReg": true,
-      "isNat": false,
+      "isNat": true,
       "isDepTarget": false,
       "isRegTarget": false,
       "isNatTarget": true,
       "isCumulative": false,
       "toAggregateReg": false,
-      "toAggregateNat": true,
+      "toAggregateNat": false,
       "toCumulateGlobally": false,
       "toCumulateEachYear": true,
       "toMakeDeltaGlobally": false,
@@ -756,8 +756,8 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "year",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   },
   {
@@ -882,8 +882,8 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "year",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     },
     {
       "active": true,
@@ -970,8 +970,8 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "year",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   },
   {
@@ -1190,8 +1190,8 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "year",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   },
   {
@@ -1871,8 +1871,8 @@
         "maxDateTarget": "2030-01-01",
         "dataPeriod": "year",
         "multiplier": null,
-        "progressionLastUpdate": 1,
-        "progressionLastUpdateDate": "2020-09-30"
+        "progressionLastUpdate": 0,
+        "progressionLastUpdateDate": null
       },
       {
         "active": true,
@@ -1959,8 +1959,8 @@
         "maxDateTarget": "2030-01-01",
         "dataPeriod": "year",
         "multiplier": null,
-        "progressionLastUpdate": 1,
-        "progressionLastUpdateDate": "2020-09-30"
+        "progressionLastUpdate": 0,
+        "progressionLastUpdateDate": null
       }
     ]
   },
@@ -2086,8 +2086,8 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "year",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   },
   {
@@ -2211,8 +2211,8 @@
         "maxDateTarget": "2030-01-01",
         "dataPeriod": "year",
         "multiplier": null,
-        "progressionLastUpdate": 1,
-        "progressionLastUpdateDate": "2020-09-30"
+        "progressionLastUpdate": 0,
+        "progressionLastUpdateDate": null
       },
       {
         "active": true,
@@ -2298,8 +2298,8 @@
         "maxDateTarget": "2030-01-01",
         "dataPeriod": "year",
         "multiplier": null,
-        "progressionLastUpdate": 1,
-        "progressionLastUpdateDate": "2020-09-30"
+        "progressionLastUpdate": 0,
+        "progressionLastUpdateDate": null
       }
     ]
   },
@@ -2426,8 +2426,8 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "year",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   },
   {
@@ -2554,8 +2554,8 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "quarter",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   },
   {
@@ -2682,8 +2682,8 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   },
   {
@@ -2810,8 +2810,8 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   },
   {
@@ -2939,7 +2939,7 @@
       "dataPeriod": "month",
       "multiplier": null,
       "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdateDate": "2019-12-31"
     }]
   },
   {
@@ -3066,8 +3066,8 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   },
   {
@@ -3194,7 +3194,7 @@
       "dataPeriod": "month",
       "multiplier": null,
       "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdateDate": "2020-10-31"
     }]
   },
   {
@@ -3924,8 +3924,8 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   },
   {
@@ -4051,8 +4051,8 @@
     "maxDateTarget": "2030-01-01",
     "dataPeriod": "month",
     "multiplier": null,
-    "progressionLastUpdate": 1,
-    "progressionLastUpdateDate": "2020-09-30"
+    "progressionLastUpdate": 0,
+    "progressionLastUpdateDate": null
   },
   {
     "active": true,
@@ -4140,8 +4140,8 @@
   "maxDateTarget": "2030-01-01",
   "dataPeriod": "month",
   "multiplier": null,
-  "progressionLastUpdate": 1,
-  "progressionLastUpdateDate": "2020-09-30"
+  "progressionLastUpdate": 0,
+  "progressionLastUpdateDate": null
 }]
   },
   {
@@ -4267,12 +4267,12 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   },
   {
-    "active": true,
+    "active": false,
     "id_ovq": "OVQ-LPT",
     "nom_ovq_ditp": "Localisation/Relocalisation de la production sur le territoire national",
     "nom_ovq": "Aide de France Relance aux entreprises",
@@ -4394,8 +4394,8 @@
     "maxDateTarget": "2030-01-01",
     "dataPeriod": "month",
     "multiplier": null,
-    "progressionLastUpdate": 1,
-    "progressionLastUpdateDate": "2020-09-30"
+    "progressionLastUpdate": 0,
+    "progressionLastUpdateDate": null
   },
   {
     "active": true,
@@ -4483,8 +4483,8 @@
   "maxDateTarget": "2030-01-01",
   "dataPeriod": "month",
   "multiplier": null,
-  "progressionLastUpdate": 1,
-  "progressionLastUpdateDate": "2020-09-30"
+  "progressionLastUpdate": 0,
+  "progressionLastUpdateDate": null
 }]
   },
   {
@@ -4610,8 +4610,8 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "year",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   },
   {
@@ -4737,8 +4737,8 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "year",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   },
   {
@@ -4864,8 +4864,8 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   },
   {
@@ -4991,8 +4991,8 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     },{
       "active": true,
       "id_indicateur_ditp": "90092de72ae24053994ee3f40ac3c780",
@@ -5079,8 +5079,8 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "year",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   },
   {
@@ -5206,8 +5206,8 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "year",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   },
   {
@@ -5333,8 +5333,8 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     },
     {
       "active": true,
@@ -5422,8 +5422,8 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   },
   {
@@ -5549,8 +5549,8 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   }
 ]
