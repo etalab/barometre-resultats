@@ -4558,7 +4558,7 @@
           "hide_day_on_date": true
         }
       ],
-      "odm_kpi_format": "integer",
+      "odm_kpi_format": "float",
       "odm_kpi_unit": "%",
       "odm_chart_title": "Taux de bénéficiaires payés dans les délais prévus",
       "odm_chart_type": "line",
@@ -5118,7 +5118,7 @@
     "odm_ext_link_text": "Développer l’engagement des jeunes",
     "odm_image_activate": false,
     "odm_image": "/ovq-textes/education/images/test-image.png",
-    "odm_text": "/ovq-textes/education/promouvoir-engagement-jeunes/education-developper_engagement_jeunes-resume.md",
+    "odm_text": "/ovq-textes/education/promouvoir-engagement-jeunes/promouvoir-engagement-jeunes-resume.md",
     "odm_text_brief": true,
     "indicateurs": [{
       "active": true,
@@ -5299,8 +5299,8 @@
       "odm_map_is_default": true,
       "odm_map_fill_color": "#00AC8C",
       "odm_map_highlight_color": "#96ded1",
-      "odm_map_only_national": false,
-      "odm_map_has_regional_level": true,
+      "odm_map_only_national": true,
+      "odm_map_has_regional_level": false,
       "odm_map_has_departement_level": false,
       "odm_map_region_max": 16,
       "odm_map_departement_max": 16,
@@ -5389,7 +5389,7 @@
       "odm_map_fill_color": "#00AC8C",
       "odm_map_highlight_color": "#96ded1",
       "odm_map_only_national": false,
-      "odm_map_has_regional_level": false,
+      "odm_map_has_regional_level": true,
       "odm_map_has_departement_level": true,
       "odm_map_region_max": 1500,
       "odm_map_departement_max": 1500,
