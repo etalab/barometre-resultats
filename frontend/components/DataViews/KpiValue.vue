@@ -1,12 +1,9 @@
 <template>
-  <div class=""
-    v-if="showValue(item, header)"
+  <div 
+    v-if="showValue(itemLocal, header)"
     >
+    <!-- :trigger="`${trigger}`" -->
 
-    <!-- {{ item }} -->
-    <!-- {{ header }} -->
-    <!-- {{ valueType }} -->
-    <!-- {{ animate }} -->
     <!-- NUMBER VALUE -->
     <span v-if="valueType === 'number'">
 
@@ -14,7 +11,7 @@
         class="mr-3"
         >
         <v-icon
-          v-if="formatValue(item, header) > 0"
+          v-if="formatValue(itemLocal, header) > 0"
           small
           class="pl-0 pb-1"
           color="black"
@@ -22,7 +19,7 @@
           icon-arrow-up-right
         </v-icon>
         <v-icon
-          v-else-if="formatValue(item, header) < 0"
+          v-else-if="formatValue(itemLocal, header) < 0"
           small
           class="pl-0 pb-1"
           color="black"
@@ -30,12 +27,12 @@
           icon-arrow-down-right
         </v-icon>
         <v-icon
-          v-else-if="formatValue(item, header) === 0"
+          v-else-if="formatValue(itemLocal, header) === 0"
           small
           class="pl-0 pb-1"
           color="black"
           >
-          icon-arrow-right
+          icon-arrow-right1
         </v-icon>
         <v-icon
           v-else
@@ -47,17 +44,21 @@
         </v-icon>
       </span>
 
-      <span v-if="header && header.addSign && formatValue(item, header) < 0">
+      <span v-if="header && header.addSign && formatValue(itemLocal, header) < 0">
         - 
       </span>
-      <span v-if="header && header.addSign && formatValue(item, header) > 0">
+      <span v-if="header && header.addSign && formatValue(itemLocal, header) > 0">
         + 
       </span>
-      <!-- {{ stringNumber(formatValue(item, header), header && header.format) }} -->
+      <!-- {{ stringNumber(formatValue(itemLocal, header), header && header.format) }} -->
       <!-- {{ stringNumber(counter, header && header.format) }} -->
-      {{ stringNumber(counter, item && item.odmFormat) }}
+
+      <!-- <span class="main-number"> -->
+        {{ stringNumber(counter, itemLocal && itemLocal.odmFormat) }}
+      <!-- </span> -->
+
       <slot name="unit"></slot>
-      <span v-if="header && header.unit && formatValue(item, header) !== noDataText[locale]"
+      <span v-if="header && header.unit && formatValue(itemLocal, header) !== noDataText[locale]"
         v-html="header.unit">
       </span>
     </span>
@@ -67,7 +68,17 @@
       v-if="valueType === 'simple'"
       class=""
       >
-      {{ formatValue(item, header, true) }}
+      {{ formatValue(itemLocal, header, true) }}
+    </span>
+
+    <!-- VALUE DATE -->
+    <span v-if="itemLocal && header && header.valueDate" class="caption">
+      <!-- PREFIX -->
+      {{ header.textPrefix[locale]}} 
+      <!-- DATE -->
+      <span v-if="header.textPrefix[locale]!='depuis la première publication du baromètre'">
+        {{ formatDate(itemLocal[header.valueDate]) }}
+      </span>
     </span>
 
     <v-tooltip v-if="header" bottom>
@@ -79,10 +90,10 @@
           <!-- LINEAR PROGRESS BAR -->
           <span v-if="header && valueType === 'progress-bar'">
             <KpiProgressBar
-              :color="getColor(formatValue(item, header), header)"
+              :color="getColor(formatValue(itemLocal, header), header)"
               :addSign="header.addSign"
               :unit="header.unit"
-              :val="formatValue(item, header)"
+              :val="formatValue(itemLocal, header)"
               :format="header.format"
               :noDataText="noDataText"
               :animate="header.animate"
@@ -96,10 +107,10 @@
           <!-- PROGRESS PIE -->
           <span v-if="header && valueType === 'progress-pie'">
             <KpiProgressPie
-              :color="getColor(formatValue(item, header), header)"
+              :color="getColor(formatValue(itemLocal, header), header)"
               :addSign="header.addSign"
               :unit="header.unit"
-              :val="formatValue(item, header)"
+              :val="formatValue(itemLocal, header)"
               :animate="header.animate"
               :tooltip="header.tooltip"
               :trigger="trigger"
@@ -107,11 +118,20 @@
           </span>
         </div>
       </template>
+
       <!-- TOOLTIP TTEXT -->
       <span v-if="header.tooltip">
         {{ header.tooltipText[locale] }}
       </span>
     </v-tooltip>
+
+    <!-- <div class="text-body-1"> -->
+      <!-- <hr>DEBUGGING<hr> -->
+      <!-- itemLocal : <code>{{ itemLocal }}</code><hr> -->
+      <!-- header : <code>{{ header }}</code><hr> -->
+      <!-- valueType : <code>{{ valueType }}</code><hr> -->
+      <!-- animate : <code>{{ animate }}</code><hr> -->
+    <!-- </div> -->
 
   </div>
 </template>
@@ -130,8 +150,8 @@ export default {
   ],
   data() {
     return {
+      itemLocal: undefined,
       animate: true,
-      // resizeTrigger: 0,
       valueType: undefined,
       counter: 0,
       noDataText: {
@@ -147,21 +167,18 @@ export default {
     this.valueType = this.header && this.header.kpiValueComponent ? this.header.kpiValueComponent : 'simple'
   },
   mounted() {
-    let val = this.formatValue(this.item, this.header)
+    this.itemLocal = this.item
+    let val = this.formatValue(this.itemLocal, this.header)
     const maxValue = Math.abs(val)
     // this.log && console.log("C-KpiValue / mounted / maxValue : ", maxValue)
     if (maxValue && !Number.isNaN(maxValue)) {
       if (this.valueType === 'number' && this.header.animate) {
-      // if (this.valueType === 'number') {
         this.animateValue(maxValue)
       } else {
         this.counter = maxValue
-        // this.stringValue = val
       }
     } else {
       this.counter = 0
-      this.valIsNan = true
-      // this.stringValue = val
     }
     this.$store.commit('toggleTriggerComponentLoaded')
   },
@@ -178,8 +195,16 @@ export default {
     },
   },
   watch: {
+
+    item(next, prev) {
+      this.itemLocal = next
+      let val = this.formatValue(this.itemLocal, this.header)
+      const maxValue = Math.abs(val)
+      this.counter = maxValue
+    },
+
     trigger(next, prev) {
-      let val = this.formatValue(this.item, this.header)
+      let val = this.formatValue(this.itemLocal, this.header)
       if (this.valueType === 'number' && this.header.animate) {
         this.counter = 0
         const maxValue = Math.abs(val)
@@ -188,12 +213,6 @@ export default {
         }
       }
     },
-    // resizeTrigger(next, prev) {
-    //   var self = this
-    //   setTimeout(function(){
-    //     self.$store.commit('toggleTriggerResizeNoScroll')
-    //   },100)
-    // }
   },
   methods: {
 
@@ -230,6 +249,12 @@ export default {
       return value
     },
 
+    formatDate (dateString) {
+      let date = new Date(dateString)
+      let dateOptions = {  year: 'numeric', month: 'long' }
+      return date.toLocaleDateString('fr-FR',dateOptions)
+    },
+
     showValue(item, header) {
       let showVal = true
       let hideIfNull = header && header.hideIfNull
@@ -237,11 +262,12 @@ export default {
         let value = this.formatValue(item, header)
         showVal = value === this.noDataText[this.locale] ? false : true
       }
-      // this.resizeTrigger = this.resizeTrigger + 1
       return showVal
     },
 
     stringNumber (number, format) {
+      // this.log && console.log("C-KpiValue / formatValue / number : ", number)
+      // this.log && console.log("C-KpiValue / formatValue / format : ", format)
       return numberToStringBasic(number, format, true)
     },
 

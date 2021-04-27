@@ -76,7 +76,7 @@
               class="pl-2 pb-0 black--text"
               color="primary"
               >
-              icon-arrow-right
+              icon-arrow-right1
             </v-icon>
           </div>
         </nuxt-link>
@@ -97,7 +97,7 @@
               class="pl-2 pb-0 black--text"
               color="primary"
               >
-              icon-arrow-right
+              icon-arrow-right1
             </v-icon>
           </div>
         </a>

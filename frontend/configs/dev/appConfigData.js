@@ -192,6 +192,19 @@ export const configAppData = {
         },
 
         // ============================================================= //
+        // CORRRESPONDANCES
+        // ============================================================= //
+        {
+          id: 'taxo-prefectures-urls',
+          help: '',
+          from: 'static',
+          format: 'csv',
+          url: `${DATASETS_FOLDER}/prod/correspondances/OVQ-listing-sites-pref-pas-a-jour.csv`,
+          backupUrl: `${DATASETS_FOLDER}/prod/correspondances/OVQ-listing-sites-pref-pas-a-jour.csv`,
+          displayed: false
+        },
+
+        // ============================================================= //
         // GEOJSON (NO NEED EXCEPT CENTERS : SOURCES LOADED IN MAPBOX COMPONENT )
         // ============================================================= //
         {

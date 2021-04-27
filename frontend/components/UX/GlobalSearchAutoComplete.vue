@@ -7,7 +7,7 @@
 <template>
 
   <v-row
-    :class="`align-center ${btn.btnClass}`"
+    :class="`align-center ${isMobileWidth ? btn.btnClassMobile : btn.btnClass}`"
     >
 
     <v-col

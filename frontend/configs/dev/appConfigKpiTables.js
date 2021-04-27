@@ -20,6 +20,8 @@ const {
   keyKpiGroupUrl,
   // keyKpiGroupUrls,
   keyKpiGroupExtLink,
+  keyKpiGroupExtLink2,
+  keyKpiGroupExtLinkTxt2,
   // keyKpiGroupText,
   keyKpiGroupName,
   // keyKpiGroupSourcesId,
@@ -27,7 +29,9 @@ const {
 
   keyKpiId,
   // keyKpiText,
+  keyKpiGroupTextOpen,
   keyKpiTextBrief,
+  keyKpiTextOpen,
   // keyKpiName,
 
   keyKpiChartTitleRaw,
@@ -384,6 +388,18 @@ const COMMON_HEADERS = {
         class: 'light-green darken-2 white--text caption font-weight-medium',
         color: 'light-green darken-2'
       },
+      // {
+      //   text: { fr: 'Progression depuis' },
+      //   value: 'progression_last_update_percentage',
+      //   align: 'center',
+      //   cols: 1,
+      //   format: 'integer',
+      //   addSign: true,
+      //   asChip: true,
+      //   unit: '%',
+      //   class: 'light-green darken-2 white--text caption font-weight-medium',
+      //   color: 'light-green darken-2'
+      // },
       {
         text: { fr: 'Cible 2022' },
         value: 'target',
@@ -511,7 +527,9 @@ const COMMON_HEADERS = {
       },
       {
         text: { fr: 'Progression' },
+        textPrefix: { fr: 'depuis' },
         value: 'progression_percentage',
+        valueDate: 'initial_value_date',
         hideIfNull: true,
         align: 'center',
         cols: 1,
@@ -527,6 +545,27 @@ const COMMON_HEADERS = {
         blockId: 'block-1',
         blockColor: undefined,
         blockInnerTarget: 'data-second-value'
+      },
+      {
+        text: { fr: 'Progression depuis la dernière mise à jour' },
+        textPrefix: { fr: 'depuis la première publication du baromètre' },
+        value: 'progression_last_update_percentage',
+        valueDate: 'progression_last_update_date',
+        hideIfNull: true,
+        align: 'center',
+        cols: 1,
+        addSign: true,
+        addArrow: true,
+        asChip: true,
+        animate: false,
+        format: 'integer',
+        kpiValueComponent: 'number',
+        unit: '%',
+        class: 'light-green darken-2 white--text caption font-weight-medium',
+        color: 'light-green darken-2',
+        blockId: 'block-1',
+        blockColor: undefined,
+        blockInnerTarget: 'data-third-value'
       },
       {
         text: { fr: 'Cible 2022' },
@@ -647,8 +686,9 @@ const COMMON_KPI_TEMPLATES = {
               containerClassMobile: 'pa-0 ma-0',
               asDrawer: true,
               drawerIcon: 'icon-plus',
-              drawerIconOff: 'icon-minus1',
+              drawerIconOff: 'icon-minus',
               drawerTitle: { fr: 'Que mesure cet indicateur ?' },
+              drawerOpen: kpi[keyKpiTextOpen],
               mobileIsVisibleDefault: true,
               desktopIsVisibleDefault: true
             }
@@ -723,7 +763,7 @@ const COMMON_KPI_TEMPLATES = {
               drawerOpen: false,
               drawerTitle: { fr: 'Voir le graphique' },
               drawerIcon: 'icon-plus',
-              drawerIconOff: 'icon-minus1',
+              drawerIconOff: 'icon-minus',
               drawerClassOverride: 'borders-y-only',
               drawerTextClassOverride: false,
               // sizeRefClass: 'kpi-block-carto-top',
@@ -813,6 +853,14 @@ const COMMON_KPI_GROUP_TEMPLATES = {
           }
         ]
       }
+
+      if ( kpiGroupOptions[keyKpiGroupExtLink2] ) {
+        kpiGroup.linkExt2 = kpiGroupOptions[keyKpiGroupExtLink2]
+        kpiGroup.kpiLinkText2 = {
+          fr: kpiGroupOptions[keyKpiGroupExtLinkTxt2]
+        }
+      }
+
       // console.log('kpiGroup : ', kpiGroup)
       kpiGroupsData.push(kpiGroup)
     }

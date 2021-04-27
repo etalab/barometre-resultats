@@ -11,6 +11,7 @@ const {
   keyKpiGroupKpis,
   keyKpiId,
   keyKpiText,
+  keyKpiTextOpen,
   keyKpiName
   // keyKpiChartColors
 } = require('../../nuxt_loadStructure_fromJSON.js')
@@ -349,7 +350,8 @@ const COMMON_TEMPLATES = {
       resumes.push(text)
     }
     return resumes
-  }
+  },
+
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - -
@@ -445,6 +447,62 @@ export const configAppTexts = {
     // ////////////////////////////////////////////////////////////////
     // >>> PAR TERRITOIRE
     // ////////////////////////////////////////////////////////////////
+    {
+      id: 'text-territoires-header-localization',
+      help: '',
+      title: { fr: '' },
+      titleI18n: 'texts.text01.header',
+      dividers: {
+        before: false,
+        after: false
+      },
+      componentRows: [
+        {
+          rowNumber: 1,
+          help: '',
+          columns: [
+            {
+              colName: '',
+              colTitle: { fr: 'Filtrer par localisation' },
+              colTitleClass: 'text-left text-h6 mb-0 mt-2 pl-3',
+              cols: 12,
+              textClass: 'text-left',
+              subTextClass: '',
+              sizeDesktop: 'mb-0 ml-5 pl-5',
+              sizeMobile: 'body-1 mt-1 mb-0 ml-0 pl-0',
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: 'text-territoires-header-thema',
+      help: '',
+      title: { fr: '' },
+      titleI18n: 'texts.text01.header',
+      dividers: {
+        before: true,
+        after: false
+      },
+      componentRows: [
+        {
+          rowNumber: 1,
+          help: '',
+          columns: [
+            {
+              colName: '',
+              colTitle: { fr: 'Filtrer par thématique' },
+              colTitleClass: 'text-left text-h6 mb-0 mt-2 pl-3',
+              cols: 12,
+              textClass: 'text-left',
+              subTextClass: '',
+              sizeDesktop: 'mb-0 ml-5 pl-5',
+              sizeMobile: 'body-1 mt-1 mb-0 ml-0 pl-0',
+            }
+          ]
+        }
+      ]
+    },
     {
       id: 'text-territoires-title',
       help: '',
