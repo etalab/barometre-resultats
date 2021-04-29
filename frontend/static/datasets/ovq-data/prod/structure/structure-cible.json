@@ -3574,7 +3574,7 @@
         "initialValueDate": "2020-09-30",
         "actualValueDate": null,
         "initialValueZero": false,
-        "minDateValue": "2017-01-01",
+        "minDateValue": "2020-09-01",
         "maxDateTarget": "2030-01-01",
         "dataPeriod": "year",
         "multiplier": null,
@@ -3795,8 +3795,8 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
       "multiplier": null,
-      "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdate": 1,
+      "progressionLastUpdateDate": "2019-12-31"
     }]
   },
   {
@@ -5145,7 +5145,7 @@
           "value": "latest_value"
         },
         {
-          "text": "Cible à atteindre en 2022",
+          "text": "Cible à atteindre en 2021",
           "text_default": null,
           "text_format": null,
           "text_value": null,
