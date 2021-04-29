@@ -1,8 +1,6 @@
 <p>
   <span id="brief">
-	Cette mesure vise à offrir aux élèves les plus fragiles des conditions d’apprentissage optimales et un encadrement renforcé par le dédoublement des classes en éducation prioritaire.
-  </span>
+La France s’est fixé un objectif de réduction de l’utilisation des produits phytosanitaires  de 50 % en 2025. Pour atteindre cet objectif, il faut mettre en oeuvre une stratégie plus vaste qui passe par la transformation de nos modes de production. </span>
 </p>
 </p>
-La bonne maîtrise des apprentissages savoirs fondamentaux (Lire, écrire, compter et respecter autrui)est l’un des principaux leviers de réduction des inégalités sociales. La mise en œuvre de cette réforme a d’abord ciblé les niveaux CP et CE1. Face aux bons résultats du dédoublement sur les conditions d’apprentissage des élèves, il a été décidé d’étendre la mesure aux niveaux « grande section » : ce déploiement a débuté à la rentrée 2020 et se poursuivra lors des années suivantes.
-</p>
+La priorité est d’accompagner les agriculteurs dans la transition vers ce nouveau modèle, en  accompagnant techniquement et financièrement leur transition. Il s’agit notamment d’encourager les conversions à l’agriculture biologique, pour atteindre 15% de la SAU d’ici 2022, et d’accompagner le développement de la certification « Haute Valeur Environnementale » (HVE).  </p>

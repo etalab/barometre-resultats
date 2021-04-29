@@ -630,7 +630,7 @@
       "dataPeriod": "year",
       "multiplier": null,
       "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdateDate": "2019-12-31"
     }]
   },
   {
@@ -1307,9 +1307,9 @@
       "removeSecondValueDelta": false,
       "toPopulateDep": false,
       "toPopulateReg": false,
-      "initialValue": false,
+      "initialValue": true,
       "toRound": 0,
-      "initialValueDate": null,
+      "initialValueDate": "2019-12-31",
       "actualValueDate": "2020-12-31",
       "initialValueZero": false,
       "minDateValue": "2017-01-01",
@@ -3571,7 +3571,7 @@
         "toPopulateReg": true,
         "initialValue": true,
         "toRound": 0,
-        "initialValueDate": "2017-12-31",
+        "initialValueDate": "2020-09-30",
         "actualValueDate": null,
         "initialValueZero": false,
         "minDateValue": "2017-01-01",
@@ -5199,8 +5199,8 @@
       "toPopulateReg": false,
       "initialValue": true,
       "toRound": 0,
-      "initialValueDate": null,
-      "actualValueDate": null,
+      "initialValueDate": "2017-12-31",
+      "actualValueDate": "2020-12-31",
       "initialValueZero": false,
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
