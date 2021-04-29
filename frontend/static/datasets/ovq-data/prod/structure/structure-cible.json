@@ -3356,7 +3356,7 @@
     "odm_url": "/france-services",
     "odm_urls": ["/france-services", "/france-services/"],
     "odm_ext_link": "https://www.gouvernement.fr/node/10697",
-    "odm_ext_link_2": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement/services-publics-et-territoires/france-services-un-programme-pour#carte_fs",
+    "odm_ext_link_2": "https://agence-cohesion-territoires.gouv.fr/france-services-36",
     "odm_ext_link_backup": "https://www.maisondeservicesaupublic.fr/",
     "odm_ext_link_text": "France Services : un programme pour garantir les mêmes services publics partout en France",
     "odm_ext_link_text_2": "Localiser mon service",
@@ -3795,8 +3795,8 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
       "multiplier": null,
-      "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdate": 1,
+      "progressionLastUpdateDate": "2019-12-31"
     }]
   },
   {
