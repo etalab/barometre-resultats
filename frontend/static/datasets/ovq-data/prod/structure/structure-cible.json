@@ -93,7 +93,7 @@
       "odm_map_region_max": 10000,
       "odm_map_departement_max": 2300,
       "odm_map_label": "Kilomètres d'aménagements cyclables sécurisés",
-      "odm_map_legend_subtitle": "<i>Données décembre 2020</i>",
+      "odm_map_legend_subtitle": "<i>Données mars 2021</i>",
       "odm_map_default_layer": true,
       "isDep": true,
       "isReg": true,
@@ -347,7 +347,7 @@
       "odm_map_region_max": 120000,
       "odm_map_departement_max": 32000,
       "odm_map_label": "Nombre de primes à la conversion et de bonus écologiques",
-      "odm_map_legend_subtitle": "<i>Données décembre 2020</i>",
+      "odm_map_legend_subtitle": "<i>Données mars 2021</i>",
       "odm_map_default_layer": true,
       "isDep": true,
       "isReg": true,
@@ -499,11 +499,11 @@
       "actualValueDate": null,
       "initialValueZero": false,
       "minDateValue": "2017-01-01",
-      "maxDateTarget": "2022-05-31",
+      "maxDateTarget": "2030-12-31",
       "dataPeriod": "year",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   },
   {
@@ -605,13 +605,13 @@
       "odm_map_default_layer": true,
       "isDep": true,
       "isReg": true,
-      "isNat": false,
+      "isNat": true,
       "isDepTarget": false,
       "isRegTarget": false,
       "isNatTarget": true,
       "isCumulative": false,
       "toAggregateReg": false,
-      "toAggregateNat": true,
+      "toAggregateNat": false,
       "toCumulateGlobally": false,
       "toCumulateEachYear": true,
       "toMakeDeltaGlobally": false,
@@ -630,7 +630,7 @@
       "dataPeriod": "year",
       "multiplier": null,
       "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdateDate": "2019-12-31"
     }]
   },
   {
@@ -705,7 +705,7 @@
         }
       ],
       "odm_kpi_format": "integer",
-      "odm_kpi_unit": "recrutements entre août et novembre",
+      "odm_kpi_unit": "recrutements entre août et février",
       "odm_chart_title": "Nombre de recrutements de jeunes",
       "odm_chart_type": "histo",
       "odm_chart_template": "categVertH390_histo",
@@ -714,7 +714,7 @@
       "odm_chart_marker_size": 6,
       "odm_chart_serie_name": "nombre",
       "odm_chart_format": "integer",
-      "odm_chart_unit": "recrutements entre août et novembre",
+      "odm_chart_unit": "recrutements entre août et février",
       "odm_chart_annotation": false,
       "odm_chart_annotation_key": "targets",
       "odm_chart_y_annotation_key": "target",
@@ -742,22 +742,22 @@
       "toCumulateGlobally": false,
       "toCumulateEachYear": false,
       "toMakeDeltaGlobally": false,
-      "toMakeDeltaEachYear": true,
+      "toMakeDeltaEachYear": false,
       "removeFirstValueDelta": false,
       "removeSecondValueDelta": false,
       "toPopulateDep": false,
       "toPopulateReg": false,
       "initialValue": true,
       "toRound": 0,
-      "initialValueDate": null,
+      "initialValueDate": "2019-02-28",
       "actualValueDate": null,
       "initialValueZero": false,
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "year",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   },
   {
@@ -882,8 +882,8 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "year",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     },
     {
       "active": true,
@@ -910,7 +910,7 @@
           "value": "latest_value"
         },
         {
-          "text": "Cible à atteindre en 2023",
+          "text": "Cible à atteindre en 2022",
           "text_default": null,
           "text_format": null,
           "text_value": null,
@@ -970,8 +970,8 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "year",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   },
   {
@@ -1103,6 +1103,95 @@
       "multiplier": null,
       "progressionLastUpdate": 1,
       "progressionLastUpdateDate": "2020-09-30"
+    },
+    {
+      "active": true,
+      "id_indicateur_ditp": "15e1cae7eeaa4ca4add89edcc812f9d6",
+      "id_indicateur_fr": "nb-centres-sante",
+      "nom_indicateur_ditp": "Nombre de centres de santé",
+      "nom_indicateur": "Nombre de centres de santé",
+      "odm_id": "nb-centres-sante",
+      "odm_text": "/ovq-textes/sante-famille/doubler-maisons-sante/indicateurs/sante_famille-doubler_maisons_sante-nb_centres_sante-resume.md",
+      "odm_text_brief": false,
+      "odm_kpi_headers_overwrite": [{
+          "text": "En",
+          "text_default": "En 2017",
+          "text_format": "datetime",
+          "text_value": "initial_value_date",
+          "value": "initial_value",
+          "hide_if_main_is_null": true
+        },
+        {
+          "text": "En",
+          "text_default": "Aujourd'hui",
+          "text_format": "datetime",
+          "text_value": "latest_value_date",
+          "value": "latest_value"
+        },
+        {
+          "text": "Cible à atteindre en 2022",
+          "text_default": null,
+          "text_format": null,
+          "text_value": null,
+          "value": "target",
+          "hide_if_main_is_null": true,
+          "hide_day_on_date": true
+        }
+      ],
+      "odm_kpi_format": "integer",
+      "odm_kpi_unit": "centres de santé",
+      "odm_chart_title": "Nombre de centres de santé",
+      "odm_chart_type": "line",
+      "odm_chart_template": "categVertH390",
+      "odm_chart_colors": ["#00AC8C"],
+      "odm_chart_xaxis_type": "datetime",
+      "odm_chart_marker_size": 6,
+      "odm_chart_serie_name": "Nombre de centres de santé",
+      "odm_chart_format": "integer",
+      "odm_chart_unit": "centres de santé",
+      "odm_chart_annotation": false,
+      "odm_chart_annotation_key": "targets",
+      "odm_chart_y_annotation_key": "target",
+      "odm_chart_y_annotation_text": "cible",
+      "odm_map_is_default": false,
+      "odm_map_fill_color": "#00AC8C",
+      "odm_map_highlight_color": "#96ded1",
+      "odm_map_only_national": false,
+      "odm_map_has_regional_level": true,
+      "odm_map_has_departement_level": true,
+      "odm_map_region_max": 190,
+      "odm_map_departement_max": 60,
+      "odm_map_label": "Nombre de centres de santé",
+      "odm_map_legend_subtitle": "<i>Données décembre 2020</i>",
+      "odm_map_default_layer": false,
+      "isDep": true,
+      "isReg": true,
+      "isNat": true,
+      "isDepTarget": false,
+      "isRegTarget": false,
+      "isNatTarget": true,
+      "isCumulative": true,
+      "toAggregateReg": false,
+      "toAggregateNat": false,
+      "toCumulateGlobally": false,
+      "toCumulateEachYear": false,
+      "toMakeDeltaGlobally": false,
+      "toMakeDeltaEachYear": false,
+      "removeFirstValueDelta": false,
+      "removeSecondValueDelta": false,
+      "toPopulateDep": false,
+      "toPopulateReg": false,
+      "initialValue": true,
+      "toRound": 0,
+      "initialValueDate": "2017-06-30",
+      "actualValueDate": null,
+      "initialValueZero": false,
+      "minDateValue": "2017-01-01",
+      "maxDateTarget": "2030-01-01",
+      "dataPeriod": "year",
+      "multiplier": null,
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   },
   {
@@ -1199,12 +1288,12 @@
       "odm_map_region_max": 12000,
       "odm_map_departement_max": 2300,
       "odm_map_label": "Nombre de pères / conjoints prenant un congé de paternité et d’accueil de l’enfant",
-      "odm_map_legend_subtitle": "<i>Données troisième 2020</i>",
+      "odm_map_legend_subtitle": "<i>Données décembre 2020</i>",
       "odm_map_default_layer": true,
       "isDep": true,
       "isReg": false,
       "isNat": true,
-      "isDepTarget": false,
+      "isDepTarget": true,
       "isRegTarget": false,
       "isNatTarget": true,
       "isCumulative": false,
@@ -1218,10 +1307,10 @@
       "removeSecondValueDelta": false,
       "toPopulateDep": false,
       "toPopulateReg": false,
-      "initialValue": false,
+      "initialValue": true,
       "toRound": 0,
-      "initialValueDate": null,
-      "actualValueDate": "2019-12-31",
+      "initialValueDate": "2019-12-31",
+      "actualValueDate": "2020-12-31",
       "initialValueZero": false,
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
@@ -1782,8 +1871,8 @@
         "maxDateTarget": "2030-01-01",
         "dataPeriod": "year",
         "multiplier": null,
-        "progressionLastUpdate": 1,
-        "progressionLastUpdateDate": "2020-09-30"
+        "progressionLastUpdate": 0,
+        "progressionLastUpdateDate": null
       },
       {
         "active": true,
@@ -1870,8 +1959,8 @@
         "maxDateTarget": "2030-01-01",
         "dataPeriod": "year",
         "multiplier": null,
-        "progressionLastUpdate": 1,
-        "progressionLastUpdateDate": "2020-09-30"
+        "progressionLastUpdate": 0,
+        "progressionLastUpdateDate": null
       }
     ]
   },
@@ -1997,8 +2086,8 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "year",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   },
   {
@@ -2122,8 +2211,8 @@
         "maxDateTarget": "2030-01-01",
         "dataPeriod": "year",
         "multiplier": null,
-        "progressionLastUpdate": 1,
-        "progressionLastUpdateDate": "2020-09-30"
+        "progressionLastUpdate": 0,
+        "progressionLastUpdateDate": null
       },
       {
         "active": true,
@@ -2209,8 +2298,8 @@
         "maxDateTarget": "2030-01-01",
         "dataPeriod": "year",
         "multiplier": null,
-        "progressionLastUpdate": 1,
-        "progressionLastUpdateDate": "2020-09-30"
+        "progressionLastUpdate": 0,
+        "progressionLastUpdateDate": null
       }
     ]
   },
@@ -2337,8 +2426,8 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "year",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   },
   {
@@ -2452,7 +2541,7 @@
       "toCumulateEachYear": true,
       "toMakeDeltaGlobally": false,
       "toMakeDeltaEachYear": true,
-      "removeFirstValueDelta": true,
+      "removeFirstValueDelta": false,
       "removeSecondValueDelta": false,
       "toPopulateDep": true,
       "toPopulateReg": false,
@@ -2465,8 +2554,8 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "quarter",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   },
   {
@@ -2532,7 +2621,7 @@
           "value": "latest_value"
         },
         {
-          "text": "Cible à atteindre en 2022",
+          "text": "Cible en mars 2021",
           "text_default": null,
           "text_format": null,
           "text_value": null,
@@ -2565,7 +2654,7 @@
       "odm_map_region_max": 1000000,
       "odm_map_departement_max": 150000,
       "odm_map_label": "Nombre d'heures de patrouille de voie publique",
-      "odm_map_legend_subtitle": "<i>Données janvier 2021</i>",
+      "odm_map_legend_subtitle": "<i>Données mars 2021</i>",
       "odm_map_default_layer": true,
       "isDep": true,
       "isReg": true,
@@ -2573,28 +2662,28 @@
       "isDepTarget": false,
       "isRegTarget": false,
       "isNatTarget": true,
-      "isCumulative": false,
+      "isCumulative": true,
       "toAggregateReg": false,
       "toAggregateNat": false,
       "toCumulateGlobally": false,
-      "toCumulateEachYear": true,
+      "toCumulateEachYear": false,
       "toMakeDeltaGlobally": false,
-      "toMakeDeltaEachYear": true,
+      "toMakeDeltaEachYear": false,
       "removeFirstValueDelta": false,
       "removeSecondValueDelta": false,
       "toPopulateDep": false,
       "toPopulateReg": false,
-      "initialValue": false,
+      "initialValue": true,
       "toRound": 0,
-      "initialValueDate": null,
+      "initialValueDate": "2017-03-31",
       "actualValueDate": null,
       "initialValueZero": false,
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   },
   {
@@ -2670,7 +2759,7 @@
         }
       ],
       "odm_kpi_format": "integer",
-      "odm_kpi_unit": "amendes dressées dans le mois",
+      "odm_kpi_unit": "amendes dressées dans l'année",
       "odm_chart_title": "Nombre d'amendes forfaitaires délictuelles dressées",
       "odm_chart_type": "histo",
       "odm_chart_template": "categVertH390_histo",
@@ -2693,7 +2782,7 @@
       "odm_map_region_max": 2500,
       "odm_map_departement_max": 900,
       "odm_map_label": "Nombre d'amendes forfaitaires délictuelles dressées",
-      "odm_map_legend_subtitle": "<i>Données octobre 2020</i>",
+      "odm_map_legend_subtitle": "<i>Données février 2021</i>",
       "odm_map_default_layer": true,
       "isDep": true,
       "isReg": true,
@@ -2701,7 +2790,7 @@
       "isDepTarget": false,
       "isRegTarget": false,
       "isNatTarget": true,
-      "isCumulative": true,
+      "isCumulative": false,
       "toAggregateReg": false,
       "toAggregateNat": true,
       "toCumulateGlobally": false,
@@ -2716,13 +2805,13 @@
       "toRound": 0,
       "initialValueDate": null,
       "actualValueDate": null,
-      "initialValueZero": false,
+      "initialValueZero": true,
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   },
   {
@@ -2849,8 +2938,8 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   },
   {
@@ -2977,8 +3066,8 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   },
   {
@@ -3105,7 +3194,7 @@
       "dataPeriod": "month",
       "multiplier": null,
       "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdateDate": "2020-10-31"
     }]
   },
   {
@@ -3203,7 +3292,7 @@
       "odm_map_region_max": 100,
       "odm_map_departement_max": 100,
       "odm_map_label": "Taux de déploiement de la fibre",
-      "odm_map_legend_subtitle": "<i>Données juin 2020</i>",
+      "odm_map_legend_subtitle": "<i>Données décembre 2020</i>",
       "odm_map_default_layer": true,
       "isDep": true,
       "isReg": true,
@@ -3334,7 +3423,7 @@
       "odm_map_region_max": 250,
       "odm_map_departement_max": 50,
       "odm_map_label": "Nombre de labellisations",
-      "odm_map_legend_subtitle": "<i>Données février 2021</i>",
+      "odm_map_legend_subtitle": "<i>Données avril 2021</i>",
       "odm_map_default_layer": true,
       "isDep": true,
       "isReg": true,
@@ -3482,10 +3571,10 @@
         "toPopulateReg": true,
         "initialValue": true,
         "toRound": 0,
-        "initialValueDate": "2017-12-31",
+        "initialValueDate": "2020-09-30",
         "actualValueDate": null,
         "initialValueZero": false,
-        "minDateValue": "2017-01-01",
+        "minDateValue": "2020-09-01",
         "maxDateTarget": "2030-01-01",
         "dataPeriod": "year",
         "multiplier": null,
@@ -3578,8 +3667,8 @@
         "maxDateTarget": "2030-01-01",
         "dataPeriod": "year",
         "multiplier": null,
-        "progressionLastUpdate": 1,
-        "progressionLastUpdateDate": "2020-09-30"
+        "progressionLastUpdate": 0,
+        "progressionLastUpdateDate": null
       }
     ]
   },
@@ -3678,7 +3767,7 @@
       "odm_map_region_max": 1000,
       "odm_map_departement_max": 275,
       "odm_map_label": "Nombre de personnes sans-abri ou en hébergement ayant obtenu un logement social",
-      "odm_map_legend_subtitle": "<i>Données septembre 2020</i>",
+      "odm_map_legend_subtitle": "<i>Données janvier à mars 2021</i>",
       "odm_map_default_layer": true,
       "isDep": true,
       "isReg": true,
@@ -3707,7 +3796,7 @@
       "dataPeriod": "month",
       "multiplier": null,
       "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdateDate": "2019-12-31"
     }]
   },
   {
@@ -3741,9 +3830,9 @@
     "odm_kpi_families": ["services-publics-et-territoires"],
     "odm_url": "/action-coeur-ville",
     "odm_urls": ["/action-coeur-ville", "/action-coeur-ville/"],
-    "odm_ext_link": "https://www.gouvernement.fr/node/10692",
+    "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement/services-publics-et-territoires/faire-battre-le-coeur-de-nos-villes",
     "odm_ext_link_text": "Redynamiser les cœurs de ville",
-    "odm_ext_link_2": "https://agence-cohesion-territoires.gouv.fr/action-coeur-de-ville-42",
+    "odm_ext_link_2": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement/services-publics-et-territoires/faire-battre-le-coeur-de-nos-villes#carte",
     "odm_ext_link_text_2": "Localiser mon service",
     "odm_image_activate": false,
     "odm_image": "/ovq-textes/services-publics-et-territoires/images/test-image.png",
@@ -3807,7 +3896,7 @@
       "odm_map_region_max": 6000,
       "odm_map_departement_max": 2300,
       "odm_map_label": "Nombre de logements ayant bénéficié d'un accompagnement (réhabilitation ou subvention)",
-      "odm_map_legend_subtitle": "<i>Données février 2021</i>",
+      "odm_map_legend_subtitle": "<i>Données mars 2021</i>",
       "odm_map_default_layer": true,
       "isDep": true,
       "isReg": true,
@@ -3835,8 +3924,8 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   },
   {
@@ -3870,7 +3959,7 @@
     "odm_kpi_families": ["relance-emploi-economie"],
     "odm_url": "/accompagner-transformation-numerique",
     "odm_urls": ["/accompagner-transformation-numerique", "/accompagner-transformation-numerique/"],
-    "odm_ext_link": "https://www.gouvernement.fr/node/10692",
+    "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement/economie-emploi/on-vous-aide-dans-la-numerisation-de-votre-tpepme",
     "odm_ext_link_text": "Redynamiser les cœurs de ville",
     "odm_image_activate": false,
     "odm_image": "/ovq-textes/relance-emploi-economie/images/test-image.png",
@@ -3942,7 +4031,7 @@
     "isDepTarget": true,
     "isRegTarget": true,
     "isNatTarget": true,
-    "isCumulative": false,
+    "isCumulative": true,
     "toAggregateReg": true,
     "toAggregateNat": false,
     "toCumulateGlobally": false,
@@ -3958,12 +4047,12 @@
     "initialValueDate": null,
     "actualValueDate": null,
     "initialValueZero": false,
-    "minDateValue": "2017-01-01",
+    "minDateValue": "2021-02-28",
     "maxDateTarget": "2030-01-01",
     "dataPeriod": "month",
     "multiplier": null,
-    "progressionLastUpdate": 1,
-    "progressionLastUpdateDate": "2020-09-30"
+    "progressionLastUpdate": 0,
+    "progressionLastUpdateDate": null
   },
   {
     "active": true,
@@ -4047,12 +4136,12 @@
   "initialValueDate": null,
   "actualValueDate": null,
   "initialValueZero": false,
-  "minDateValue": "2017-01-01",
+  "minDateValue": "2021-01-31",
   "maxDateTarget": "2030-01-01",
   "dataPeriod": "month",
   "multiplier": null,
-  "progressionLastUpdate": 1,
-  "progressionLastUpdateDate": "2020-09-30"
+  "progressionLastUpdate": 0,
+  "progressionLastUpdateDate": null
 }]
   },
   {
@@ -4086,7 +4175,7 @@
     "odm_kpi_families": ["sante-famille"],
     "odm_url": "/lutter-impayes-alimentaires",
     "odm_urls": ["/lutter-impayes-alimentaires", "/lutter-impayes-alimentaires/"],
-    "odm_ext_link": "https://www.gouvernement.fr/node/10692",
+    "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement/economie-emploi/le-versement-de-ma-pension-alimentaire-garanti",
     "odm_ext_link_text": "Lutter contre les impayés de pensions alimentaires",
     "odm_image_activate": false,
     "odm_image": "/ovq-textes/sante-famille/images/test-image.png",
@@ -4178,12 +4267,12 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   },
   {
-    "active": true,
+    "active": false,
     "id_ovq": "OVQ-LPT",
     "nom_ovq_ditp": "Localisation/Relocalisation de la production sur le territoire national",
     "nom_ovq": "Aide de France Relance aux entreprises",
@@ -4213,7 +4302,7 @@
     "odm_kpi_families": ["relance-emploi-economie"],
     "odm_url": "/france-relance-entreprises",
     "odm_urls": ["/france-relance-entreprises", "/france-relance-entreprises/"],
-    "odm_ext_link": "https://www.gouvernement.fr/node/10692",
+    "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement/economie-emploi/un-plan-d-investissement-pour-tous-les-francais-pour",
     "odm_ext_link_text": "Aide de France Relance aux entreprises",
     "odm_image_activate": false,
     "odm_image": "/ovq-textes/relance-emploi-economie/images/test-image.png",
@@ -4305,8 +4394,8 @@
     "maxDateTarget": "2030-01-01",
     "dataPeriod": "month",
     "multiplier": null,
-    "progressionLastUpdate": 1,
-    "progressionLastUpdateDate": "2020-09-30"
+    "progressionLastUpdate": 0,
+    "progressionLastUpdateDate": null
   },
   {
     "active": true,
@@ -4394,8 +4483,8 @@
   "maxDateTarget": "2030-01-01",
   "dataPeriod": "month",
   "multiplier": null,
-  "progressionLastUpdate": 1,
-  "progressionLastUpdateDate": "2020-09-30"
+  "progressionLastUpdate": 0,
+  "progressionLastUpdateDate": null
 }]
   },
   {
@@ -4429,7 +4518,7 @@
     "odm_kpi_families": ["agriculture"],
     "odm_url": "/securiser-paiement-pac",
     "odm_urls": ["/securiser-paiement-pac", "/securiser-paiement-pac/"],
-    "odm_ext_link": "https://www.gouvernement.fr/node/10692",
+    "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement/agriculture/les-aides-de-la-pac-versees-aux-agriculteurs-dans-les-delais",
     "odm_ext_link_text": "Sécuriser le paiement des aides PAC",
     "odm_image_activate": false,
     "odm_image": "/ovq-textes/agriculture/images/test-image.png",
@@ -4469,7 +4558,7 @@
           "hide_day_on_date": true
         }
       ],
-      "odm_kpi_format": "integer",
+      "odm_kpi_format": "float",
       "odm_kpi_unit": "%",
       "odm_chart_title": "Taux de bénéficiaires payés dans les délais prévus",
       "odm_chart_type": "line",
@@ -4521,8 +4610,8 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "year",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   },
   {
@@ -4556,7 +4645,7 @@
     "odm_kpi_families": ["education"],
     "odm_url": "/deployer-devoirs-faits",
     "odm_urls": ["/deployer-devoirs-faits", "/deployer-devoirs-faits/"],
-    "odm_ext_link": "https://www.gouvernement.fr/node/10692",
+    "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement/education/une-aide-pour-accompagner-votre-enfant-a-faire-ses-devoirs",
     "odm_ext_link_text": "Déployer le programme \"devoirs faits\"",
     "odm_image_activate": false,
     "odm_image": "/ovq-textes/education/images/test-image.png",
@@ -4648,8 +4737,8 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "year",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   },
   {
@@ -4683,7 +4772,7 @@
     "odm_kpi_families": ["logement-ville"],
     "odm_url": "/accelerer-renovation-energetique",
     "odm_urls": ["/accelerer-renovation-energetique", "/accelerer-renovation-energetique/"],
-    "odm_ext_link": "https://www.gouvernement.fr/node/10692",
+    "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement/transition-ecologique/renover-son-logement-grace-a-maprimerenov",
     "odm_ext_link_text": "Accélérer la rénovation énergétique des logements",
     "odm_image_activate": false,
     "odm_image": "/ovq-textes/transition-ecologique/images/test-image.png",
@@ -4775,8 +4864,8 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   },
   {
@@ -4810,7 +4899,7 @@
     "odm_kpi_families": ["agriculture"],
     "odm_url": "/reduire-phytosanitaires",
     "odm_urls": ["/reduire-phytosanitaires", "/reduire-phytosanitaires/"],
-    "odm_ext_link": "https://www.gouvernement.fr/node/10692",
+    "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement/agriculture/reduire-l-utilisation-des-produits-phytosanitaires-et",
     "odm_ext_link_text": "Réduire l'utilisation des produits phytosanitaires et accélérer la transition écologique",
     "odm_image_activate": false,
     "odm_image": "/ovq-textes/agriculture/images/test-image.png",
@@ -4879,8 +4968,8 @@
       "isDep": true,
       "isReg": true,
       "isNat": true,
-      "isDepTarget": false,
-      "isRegTarget": false,
+      "isDepTarget": true,
+      "isRegTarget": true,
       "isNatTarget": true,
       "isCumulative": true,
       "toAggregateReg": false,
@@ -4902,8 +4991,8 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     },{
       "active": true,
       "id_indicateur_ditp": "90092de72ae24053994ee3f40ac3c780",
@@ -4969,7 +5058,7 @@
       "isNat": true,
       "isDepTarget": false,
       "isRegTarget": false,
-      "isNatTarget": false,
+      "isNatTarget": true,
       "isCumulative": true,
       "toAggregateReg": false,
       "toAggregateNat": false,
@@ -4990,55 +5079,55 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "year",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   },
   {
     "active": true,
-    "id_ovq": "OVQ-SNU",
-    "nom_ovq_ditp": "Assurer la montée en charge du SNU",
+    "id_ovq": "OVQ-SPA",
+    "nom_ovq_ditp": "Développer l’engagement des jeunes",
     "nom_ovq": "Promouvoir l'engagement chez les jeunes",
     "nom_ovq_bis": "Promouvoir l'engagement chez les jeunes",
-    "odm_id": "assurer-montee-snu",
+    "odm_id": "promouvoir-engagement-jeunes",
     "odm_activate": true,
     "odm_sources_ids": [{
-        "odm_source_id": "national-assurer-montee-snu-raw",
+        "odm_source_id": "national-promouvoir-engagement-jeunes-raw",
         "odm_source_level": "national",
-        "odm_source_file": "/datasets/ovq-data/prod/par_thematique/education/assurer-montee-snu/OVQ-SNU-national.json",
+        "odm_source_file": "/datasets/ovq-data/prod/par_thematique/education/promouvoir-engagement-jeunes/OVQ-SPA-national.json",
         "odm_source_display": true,
         "odm_source_copy": true
       },
       {
-        "odm_source_id": "regions-assurer-montee-snu-raw",
+        "odm_source_id": "regions-promouvoir-engagement-jeunes-raw",
         "odm_source_level": "regional",
-        "odm_source_file": "/datasets/ovq-data/prod/par_thematique/education/assurer-montee-snu/OVQ-SNU-regional.json",
+        "odm_source_file": "/datasets/ovq-data/prod/par_thematique/education/promouvoir-engagement-jeunes/OVQ-SPA-regional.json",
         "odm_source_display": true
       },
       {
-        "odm_source_id": "departements-assurer-montee-snu-raw",
+        "odm_source_id": "departements-promouvoir-engagement-jeunes-raw",
         "odm_source_level": "departemental",
-        "odm_source_file": "/datasets/ovq-data/prod/par_thematique/education/assurer-montee-snu/OVQ-SNU-departemental.json",
+        "odm_source_file": "/datasets/ovq-data/prod/par_thematique/education/promouvoir-engagement-jeunes/OVQ-SPA-departemental.json",
         "odm_source_display": false
       }
     ],
     "odm_kpi_families": ["education"],
-    "odm_url": "/assurer-montee-snu",
-    "odm_urls": ["/assurer-montee-snu", "/assurer-montee-snu/"],
-    "odm_ext_link": "https://www.gouvernement.fr/node/10692",
-    "odm_ext_link_text": "Assurer la montée en charge du SNU",
+    "odm_url": "/promouvoir-engagement-jeunes",
+    "odm_urls": ["/promouvoir-engagement-jeunes", "/promouvoir-engagement-jeunes/"],
+    "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement/education/m-engager-pour-une-societe-plus-resiliente-et-solidaire",
+    "odm_ext_link_text": "Développer l’engagement des jeunes",
     "odm_image_activate": false,
     "odm_image": "/ovq-textes/education/images/test-image.png",
-    "odm_text": "/ovq-textes/education/assurer-montee-snu/education-assurer_montee_snu-resume.md",
+    "odm_text": "/ovq-textes/education/promouvoir-engagement-jeunes/promouvoir-engagement-jeunes-resume.md",
     "odm_text_brief": true,
     "indicateurs": [{
       "active": true,
-      "id_indicateur_ditp": "a75b19c00274495f9f245cfa3cf8f2f9",
-      "id_indicateur_fr": "nb-jeunes-snu",
-      "nom_indicateur_ditp": "Nombre de jeunes réalisant effectivement leur SNU",
+      "id_indicateur_ditp": "7fc2b24322c744cd97ff67f091a74bc6",
+      "id_indicateur_fr": "nb-jeunes-engages",
+      "nom_indicateur_ditp": "Nombre de jeunes engagés dans le service civique au cours de l’année",
       "nom_indicateur": "Nombre de volontaires ayant réalisé au moins un jour de mission du Service civique",
-      "odm_id": "nb-jeunes-snu",
-      "odm_text": "/ovq-textes/education/assurer-montee-snu/indicateurs/nb-jeunes-snu.md",
+      "odm_id": "nb-jeunes-engages",
+      "odm_text": "/ovq-textes/education/promouvoir-engagement-jeunes/indicateurs/nb-jeunes-engages.md",
       "odm_text_brief": false,
       "odm_kpi_headers_overwrite": [{
           "text": "En",
@@ -5056,7 +5145,7 @@
           "value": "latest_value"
         },
         {
-          "text": "Cible à atteindre en 2022",
+          "text": "Cible à atteindre en 2021",
           "text_default": null,
           "text_format": null,
           "text_value": null,
@@ -5091,11 +5180,11 @@
       "odm_map_label": "Nombre de volontaires ayant réalisé au moins un jour de mission du Service civique",
       "odm_map_legend_subtitle": "<i>Données 2020</i>",
       "odm_map_default_layer": true,
-      "isDep": false,
+      "isDep": true,
       "isReg": true,
       "isNat": true,
-      "isDepTarget": false,
-      "isRegTarget": false,
+      "isDepTarget": true,
+      "isRegTarget": true,
       "isNatTarget": true,
       "isCumulative": true,
       "toAggregateReg": false,
@@ -5106,19 +5195,19 @@
       "toMakeDeltaEachYear": false,
       "removeFirstValueDelta": false,
       "removeSecondValueDelta": false,
-      "toPopulateDep": true,
+      "toPopulateDep": false,
       "toPopulateReg": false,
       "initialValue": true,
       "toRound": 0,
-      "initialValueDate": null,
-      "actualValueDate": null,
+      "initialValueDate": "2017-12-31",
+      "actualValueDate": "2020-12-31",
       "initialValueZero": false,
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "year",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   },
   {
@@ -5152,7 +5241,7 @@
     "odm_kpi_families": ["justice"],
     "odm_url": "/developper-places-tig",
     "odm_urls": ["/developper-places-tig", "/developper-places-tig/"],
-    "odm_ext_link": "https://www.gouvernement.fr/node/10692",
+    "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement/justice/reprendre-confiance-en-soi-et-construire-son-avenir-grace-au",
     "odm_ext_link_text": "Développer les places de TIG",
     "odm_image_activate": false,
     "odm_image": "/ovq-textes/justice/images/test-image.png",
@@ -5196,7 +5285,7 @@
       "odm_kpi_unit": "% de détenus",
       "odm_chart_title": "Taux de personnes détenues ayant bénéficié d'une formation dans l'année",
       "odm_chart_type": "line",
-      "odm_chart_template": "categVertH390",
+      "odm_chart_template": "categVertH390_histo",
       "odm_chart_colors": ["#00AC8C"],
       "odm_chart_xaxis_type": "datetime",
       "odm_chart_marker_size": 0,
@@ -5210,8 +5299,8 @@
       "odm_map_is_default": true,
       "odm_map_fill_color": "#00AC8C",
       "odm_map_highlight_color": "#96ded1",
-      "odm_map_only_national": false,
-      "odm_map_has_regional_level": true,
+      "odm_map_only_national": true,
+      "odm_map_has_regional_level": false,
       "odm_map_has_departement_level": false,
       "odm_map_region_max": 16,
       "odm_map_departement_max": 16,
@@ -5240,12 +5329,12 @@
       "initialValueDate": null,
       "actualValueDate": null,
       "initialValueZero": false,
-      "minDateValue": "2017-01-01",
+      "minDateValue": "2021-01-01",
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     },
     {
       "active": true,
@@ -5285,7 +5374,7 @@
       "odm_kpi_unit": "postes",
       "odm_chart_title": "Nombre de postes de TIG offerts",
       "odm_chart_type": "histo",
-      "odm_chart_template": "categVertH390_histo",
+      "odm_chart_template": "categVertH390",
       "odm_chart_colors": ["#00AC8C"],
       "odm_chart_xaxis_type": "datetime",
       "odm_chart_marker_size": 0,
@@ -5300,7 +5389,7 @@
       "odm_map_fill_color": "#00AC8C",
       "odm_map_highlight_color": "#96ded1",
       "odm_map_only_national": false,
-      "odm_map_has_regional_level": false,
+      "odm_map_has_regional_level": true,
       "odm_map_has_departement_level": true,
       "odm_map_region_max": 1500,
       "odm_map_departement_max": 1500,
@@ -5324,7 +5413,7 @@
       "removeSecondValueDelta": false,
       "toPopulateDep": false,
       "toPopulateReg": false,
-      "initialValue": false,
+      "initialValue": true,
       "toRound": 0,
       "initialValueDate": null,
       "actualValueDate": null,
@@ -5333,8 +5422,8 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   },
   {
@@ -5368,7 +5457,7 @@
     "odm_kpi_families": ["relance-emploi-economie"],
     "odm_url": "/pacte-ambition-iae",
     "odm_urls": ["/pacte-ambition-iae", "/pacte-ambition-iae/"],
-    "odm_ext_link": "https://www.gouvernement.fr/node/10692",
+    "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement/economie-emploi/retrouver-un-emploi-grace-aux-parcours-d-insertion",
     "odm_ext_link_text": "Pacte d'ambition pour l'insertion par l'activité économique",
     "odm_image_activate": false,
     "odm_image": "/ovq-textes/relance-emploi-economie/images/test-image.png",
@@ -5460,8 +5549,8 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
       "multiplier": null,
-      "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdate": 0,
+      "progressionLastUpdateDate": null
     }]
   }
 ]
