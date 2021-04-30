@@ -1,7 +1,6 @@
 <p>
   <span id="brief">
-    Le plan Logement d’abord a pour ambition de diminuer le nombre de personnes à la rue d’ici 2022. 
+ La rénovation énergétique des bâtiments constitue une priorité pour atteindre les objectifs climatiques de la France.
   </span>
-  Il s’agit de passer d’une réponse s’appuyant surtout sur des places d’hébergement d’urgence, à un accès direct au logement avec un accompagnement social adapté aux besoins de ces personnes.
-</p>
+ Dans ce cadre, le Gouvernement a mis en place en janvier 2020 une prime de transition énergétique – MaPrimeRénov’ – afin de permettre à l’ensemble des propriétaires occupants (quels que soient leurs revenus et qu’ils occupent ou louent leur logement) et à toutes les copropriétés de bénéficier d’un financement adapté à leur situation pour la réalisation de travaux performants de rénovation énergétique de leur logement.</p>
 

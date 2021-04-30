@@ -21,7 +21,7 @@
         class="pr-2 pb-0"
         color="primary"
         >
-        icon-arrow-left
+        icon-arrow-left1
       </v-icon>
       <span 
        :class="`primary--text ${isMobileWidth ? 'body-2' : ''}`">

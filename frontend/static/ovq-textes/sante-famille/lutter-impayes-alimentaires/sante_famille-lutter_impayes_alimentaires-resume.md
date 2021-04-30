@@ -1,9 +1,9 @@
 <p>
   <span id="brief">
-Depuis 2017, le Gouvernement conduit une politique volontariste pour simplifier durablement l’accès aux droits des personnes en situation de handicap et assurer une équité territoriale quel que soit le lieu de résidence des personnes.
+Les parents séparés peuvent bénéficier d’un nouveau dispositif pour le paiement de leur pension alimentaire. Il s’agit d’un service offert par l’agence d’intermédiation et de recouvrement des pensions alimentaires (ARIPA) qui récupèrera tous les mois le montant de la pension alimentaire auprès du parent qui la doit avant de la reverser à l’autre parent.
   </span>
 </p>
 
 <p>
-La feuille de route « MDPH 2022 » vise notamment à accélérer l’attribution des droits à vie dans tous les territoires, pour toutes les personnes dont le handicap n’est pas susceptible d’évoluer favorablement. Elle permettra aussi d’améliorer les délais de traitement, pour que chaque personne reçoive une réponse de sa MDPH en moins de quatre mois, et en moins de trois mois pour les demandes d’allocation adulte handicapé (AAH), contre 4,5 mois en moyenne aujourd’hui.
+En cas d’impayé, l’ARIPA engagera immédiatement une procédure de recouvrement de la pension et versera au parent créancier éligible l’allocation de soutien familial (ASF) de 116€ par enfant et par mois. L’objectif est de prévenir le risque d’impayé notamment pour les familles monoparentales et de permettre aux parents de se concentrer sur les aspects essentiels de l’éducation et du développement des enfants.
 </p>

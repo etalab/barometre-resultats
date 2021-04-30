@@ -102,6 +102,12 @@
                   :route-id="routeConfig.id"
                 />
 
+                <KpiCardFrame
+                  v-if="colRow.activated && colRow.component == 'kpicard'"
+                  :settings="colRow.settings"
+                  :route-id="routeConfig.id"
+                />
+
                 <InfoBox
                   v-if="colRow.activated && colRow.component == 'infoBox'"
                   :settings="colRow.settings"

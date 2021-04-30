@@ -549,8 +549,8 @@ export default {
         // get serie values
         let rawDataSerie
 
+        // this.log && console.log('C-ApexChart / getSeries / this.reloadData : ', this.reloadData )
         if (this.reloadData) {
-          // this.log && console.log('C-ApexChart / getSeries / this.viewConfig.sourcesIds : ', this.viewConfig.sourcesIds )
           rawDataSerie = this.rawDataSerie[fromDatasetKey]
         } else {
           rawDataSerie = this.getSpecialStoreData({
@@ -919,16 +919,16 @@ export default {
     async reloadDataFromSource() {
       
       const kpiFamilies = this.specialStore.kpifamilies
-      let specialStore = this.specialStore
-      let levelValue = this.specialStore.value
+      // let specialStore = this.specialStore
+      // let levelValue = this.specialStore.value
       let levelCode = this.specialStore.levelcode
-      let levelName = this.specialStore.levelname
-      const fromSpecialStoreKey = this.datasetMappers.fromSpecialStoreKey
-      const fromDatasetKey = this.datasetMappers.fromDatasetKey
+      // let levelName = this.specialStore.levelname
+      // const fromSpecialStoreKey = this.datasetMappers.fromSpecialStoreKey
+      // const fromDatasetKey = this.datasetMappers.fromDatasetKey
       const reloadRules = this.datasetMappers.reloadRules
 
       const log = this.log && this.fallbackData.rules
-      let rawDataSerie = this.rawDataSerie
+      // let rawDataSerie = this.rawDataSerie
 
       let newLevelCodeObj
       let newLevel
@@ -975,7 +975,7 @@ export default {
           // log && console.log("C-ApexChart / reloadDataFromSource / fromDatasetKey : ", fromDatasetKey)
           // log && console.log("C-ApexChart / reloadDataFromSource / reloadRules : ", reloadRules)
 
-          let rawResponse = resp[0] && resp[0][0]
+          // let rawResponse = resp[0] && resp[0][0]
           // log && console.log("C-ApexChart / reloadDataFromSource / rawResponse : ", rawResponse)
 
           let currrentRule = reloadRules[levelCode]
