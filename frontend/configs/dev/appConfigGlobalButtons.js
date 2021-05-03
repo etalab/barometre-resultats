@@ -583,6 +583,7 @@ const COMMON_TEMPLATES = {
           btnInnerClass: 'text-none btn-no-radius py-2 font-weight-bold',
           block: true,
           icon: undefined,
+          btnInnerIcon: 'icon-map-pin',
           iconAfterTitle: null,
           outlined: true,
           fab: false,
