@@ -978,8 +978,8 @@
     "active": true,
     "id_ovq": "OVQ-DMS",
     "nom_ovq_ditp": "Doubler le nombre de maisons de santé",
-    "nom_ovq": "Doubler le nombre de maisons de santé",
-    "nom_ovq_bis": "Doubler le nombre de maisons de santé",
+    "nom_ovq": "Doubler le nombre de maisons de santé et de centres de santé dans les territoires",
+    "nom_ovq_bis": "Doubler le nombre de maisons de santé et de centres de santé dans les territoires",
     "odm_id": "doubler-maisons-sante",
     "odm_activate": true,
     "odm_sources_ids": [{
