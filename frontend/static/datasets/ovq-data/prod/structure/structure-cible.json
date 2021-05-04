@@ -1658,7 +1658,7 @@
     "odm_text_brief": true,
     "indicateurs": [{
       "active": true,
-      "id_indicateur_ditp": "d11cb6a6ddd44271856f69dfffce08ad",
+      "id_indicateur_ditp": "eadb267207df47408cff6e003ba37088",
       "id_indicateur_fr": "nombre-recrutements-jeunes",
       "nom_indicateur_ditp": "Nombre de recrutements de jeunes",
       "nom_indicateur": "Nombre de recrutements de jeunes",
@@ -1735,7 +1735,7 @@
       "toPopulateReg": false,
       "initialValue": true,
       "toRound": 0,
-      "initialValueDate": "2019-02-28",
+      "initialValueDate": "2017-01-01",
       "actualValueDate": null,
       "initialValueZero": false,
       "minDateValue": "2017-01-01",
