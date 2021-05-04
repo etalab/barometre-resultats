@@ -3741,7 +3741,7 @@
       "odm_kpi_unit": "postes",
       "odm_chart_title": "Nombre de postes de TIG offerts",
       "odm_chart_type": "histo",
-      "odm_chart_template": "categVertH390",
+      "odm_chart_template": "categVertH390_histo",
       "odm_chart_colors": ["#00AC8C"],
       "odm_chart_xaxis_type": "datetime",
       "odm_chart_marker_size": 0,
