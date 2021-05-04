@@ -1735,7 +1735,7 @@
       "toPopulateReg": false,
       "initialValue": true,
       "toRound": 0,
-      "initialValueDate": "2017-01-01",
+      "initialValueDate": null,
       "actualValueDate": null,
       "initialValueZero": false,
       "minDateValue": "2017-01-01",
