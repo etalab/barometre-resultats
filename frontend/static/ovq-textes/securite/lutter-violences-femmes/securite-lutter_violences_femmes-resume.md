@@ -1,9 +1,9 @@
 <p>
   <span id="brief">
-Le Grenelle des violences conjugales porte une ambition élevée en matière de lutte contre les violences faites aux femmes. C’est l’ensemble du gouvernement qui est mobilisé pour mettre fin au cycle de ces violences. 
+L’ensemble du Gouvernement est pleinement mobilisé contre les violences faites aux femmes. Plusieurs mesures concrètes ont été mises en place pour en finir avec ces violences : saisie des armes du conjoint violent, mise en place d'un bracelet anti-rapprochement, création du délit d'outrage sexiste, création de nouvelles solutions d’hébergement.
   </span>
 <p>
-Cette priorité se concrétise pour les femmes victimes, partout sur le territoire national : se signaler et être protégées sont leurs premières attentes.  
-Les ordonnances de protection sont désormais délivrées par le juge dans un délai de six jours. Un recours accru (hausse des demandes d’ordonnances de protection comme du taux d’acceptation) est ainsi l’enjeu. 
+Enfin, les moyens ont été renforcés pour protéger les victimes de violences conjugales, particulièrement vulnérables et en grave danger, en accélérant la procédure de délivrance des ordonnances de protection par les magistrats. 
+Pour que chacun agisse contre ce fléau, plusieurs outils sont à la disposition des victimes et des témoins de ces actes, notamment le 3919, numéro d’aide et d’écoute anonyme et gratuit ainsi que la plateforme de signalement en ligne <a target="_blank" href="https://arretonslesviolences.gouv.fr/">ArretonsLesViolences.gouv.fr</a>.
 </p>
 </p>
