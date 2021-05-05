@@ -598,7 +598,7 @@ const COMMON_HEADERS = {
         kpiValueComponent: 'progress-bar',
         tooltip: true,
         tooltipText: {
-          fr: "Taux de réalisation de la cible par rapport à la valeur initiale"
+          fr: "Taux de réalisation de la cible par rapport à la valeur initiale [(valeur actuelle - valeur initiale) / (valeur cible - valeur initiale) * 100)]"
         },
         animate: false,
         striped: false,
