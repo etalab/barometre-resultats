@@ -3485,8 +3485,8 @@
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
       "multiplier": null,
-      "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdate": 1,
+      "progressionLastUpdateDate": "2019-12-31"
     }]
   },
   {
