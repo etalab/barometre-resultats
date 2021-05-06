@@ -1,6 +1,6 @@
 [  {
     "id_ovq": ["OVQ-DEI","OVQ-LEC","OVQ-REP","OVQ-SUP","OVQ-PDF","OVQ-SNU"],
-    "nom_ovq": "Education",
+    "nom_ovq": "Education - Jeunesse",
     "odm_id": "education",
     "odm_kpi_family_activate": true,
     "odm_kpi_families": ["education"],
