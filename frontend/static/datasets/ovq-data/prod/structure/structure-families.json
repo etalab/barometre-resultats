@@ -13,7 +13,7 @@
     "odm_text": "/ovq-textes/education/education-resume.md"
   },
   {
-    "id_ovq": ["OVQ-APP","OVQ-NTS","OVQ-THR","OVQ-ATN","OVQ-IAE","OVQ-LPT","OVQ-DPR"],
+    "id_ovq": ["OVQ-APP","OVQ-NTS","OVQ-THR","OVQ-ATN","OVQ-IAE","OVQ-DPR"],
     "nom_ovq": "Economie - Emploi",
     "odm_id": "relance-emploi-economie",
     "odm_kpi_family_activate": true,
