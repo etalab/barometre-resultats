@@ -3926,7 +3926,7 @@
         "odm_map_region_max": 40,
         "odm_map_departement_max": 35,
         "odm_map_label": "Part des équipements/soins 100% santé dans le total des soins auditifs",
-        "odm_map_legend_subtitle": "<i>Données octobre 2020</i>",
+        "odm_map_legend_subtitle": "<i>Données décembre 2020</i>",
         "odm_map_default_layer": true,
         "isDep": true,
         "isReg": true,
