@@ -85,20 +85,7 @@ export default {
   },
   mounted() {
     // this.log && console.log("\nC-KpiProgressBar / mounted / this.val : ", this.val)
-    const maxValue = Math.abs(this.val)
-    // this.log && console.log("C-KpiProgressBar / mounted / maxValue : ", maxValue)
-    if (maxValue && !Number.isNaN(maxValue)) {
-      if (this.animate) {
-        this.animateValue(maxValue)
-      } else {
-        this.counter = maxValue
-        this.stringValue = numberToStringBasic(this.val)
-      }
-    } else {
-      this.counter = 0
-      this.valIsNan = true
-      this.stringValue = this.val
-    }
+    this.setValues(this.val)
     this.heightBar = this.height ? this.height : this.heightBar
     this.stripedBar = this.striped ? this.striped : false
     this.darkBar = this.dark ? this.dark : false
@@ -106,6 +93,9 @@ export default {
     this.$store.commit('toggleTriggerComponentLoaded')
   },
   watch: {
+    val(next, prev) {
+      this.setValues(next)
+    },
     trigger(next, prev) {
       if (this.animate) {
         this.counter = 0
@@ -123,6 +113,22 @@ export default {
     }),
   },
   methods: {
+    setValues(val) {
+      const maxValue = Math.abs(val)
+      // this.log && console.log("C-KpiProgressBar / setValues / maxValue : ", maxValue)
+      if (maxValue && !Number.isNaN(maxValue)) {
+        if (this.animate) {
+          this.animateValue(maxValue)
+        } else {
+          this.counter = maxValue
+          this.stringValue = numberToStringBasic(val)
+        }
+      } else {
+        this.counter = 0
+        this.valIsNan = true
+        this.stringValue = this.val
+      }
+    },
     animateValue(maxValue) {
       var self = this
       if (this.counter < maxValue && this.counter < 100) {

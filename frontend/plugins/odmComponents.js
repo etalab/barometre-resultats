@@ -16,7 +16,9 @@ const components = {
 
   KpiProgressBar: () => import(/* webpackChunkName: "KpiProgressBar" */ '@/components/DataViews/KpiProgressBar.vue'),
   KpiProgressPie: () => import(/* webpackChunkName: "KpiProgressPie" */ '@/components/DataViews/KpiProgressPie.vue'),
-  KpiValue: () => import(/* webpackChunkName: "KpiValue" */ '@/components/DataViews/KpiValue.vue')
+  KpiValue: () => import(/* webpackChunkName: "KpiValue" */ '@/components/DataViews/KpiValue.vue'),
+  KpiCard: () => import(/* webpackChunkName: "KpiCard" */ '@/components/DataViews/KpiCard.vue'),
+  KpiCardFrame: () => import(/* webpackChunkName: "KpiCardFrame" */ '@/components/DataViews/KpiCardFrame.vue')
 
 }
 

@@ -37,10 +37,11 @@
       </v-col>
     </v-row>
 
-    <v-row
-      no-gutters
-      class="d-flex"
+    <a
+      class="row no-gutters d-flex text-none infobox-link"
       justify-left
+      :href="settings.link"
+      :target="`${ isIframe ? '_parent' : '_blank' }`"
       >
 
       <!-- IMAGE -->
@@ -76,16 +77,16 @@
               class="pl-2 pb-0 black--text"
               color="primary"
               >
-              icon-arrow-right
+              icon-arrow-right1
             </v-icon>
           </div>
         </nuxt-link>
-        <a
-          v-if="settings.linkExt"
-          :class="`text-none infobox-link black--text font-weight-bold ${isMobileWidth ? 'text-body-2' : 'text-body-1'}`"
-          :href="settings.link"
-          :target="`${ isIframe ? '_parent' : '_blank' }`"
+        <span
+          :class="`text-none black--text font-weight-bold ${isMobileWidth ? 'text-body-2' : 'text-body-1'}`"
           >
+          <!-- v-if="settings.linkExt" -->
+          <!-- :href="settings.link" -->
+          <!-- :target="`${ isIframe ? '_parent' : '_blank' }`" -->
           <div 
             :class="`${isMobileWidth ? 'ma-0 px-1' : 'px-2'}`">
             <span class="">
@@ -97,13 +98,13 @@
               class="pl-2 pb-0 black--text"
               color="primary"
               >
-              icon-arrow-right
+              icon-arrow-right1
             </v-icon>
           </div>
-        </a>
+        </span>
       </v-col>
 
-    </v-row>
+    </a>
 
     <!-- DEBUGGING -->
     <!-- settings : <code><pre>{{ settings }}</pre></code> -->
