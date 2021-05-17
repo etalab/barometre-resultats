@@ -1602,7 +1602,7 @@
         }
       ],
       "odm_kpi_format": "integer",
-      "odm_kpi_unit": "bénéficiaires",
+      "odm_kpi_unit": "bénéficiaires*",
       "odm_chart_title": "Nombre de bénéficiaires en structures d'insertion par l'activité économique",
       "odm_chart_type": "histo",
       "odm_chart_template": "categVertH390_histo",
@@ -4588,7 +4588,7 @@
         }
       ],
       "odm_kpi_format": "integer",
-      "odm_kpi_unit": "personnes dans l'année",
+      "odm_kpi_unit": "personnes dans l'année*",
       "odm_chart_title": "Nombre de personnes sans-abri ou en hébergement ayant obtenu un logement social",
       "odm_chart_type": "histo",
       "odm_chart_template": "categVertH390_histo",
