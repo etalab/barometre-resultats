@@ -1,6 +1,6 @@
 <p>
   <span id="brief">
-    Promouvoir l’apprentissage est une des priorités du quinquennat en matière d’emploi des jeunes. La loi « avenir professionnel » de 2018 a permis de faciliter l’accès à l’apprentissage pour les jeunes, mieux répondre aux besoins des entreprises,  simplifier les procédures,  et donc d’en accélérer le développement.  
+    Promouvoir l’apprentissage est une des priorités du quinquennat en matière d’emploi des jeunes. La loi « avenir professionnel » de 2018 a permis de faciliter l’accès à l’apprentissage pour les jeunes, mieux répondre aux besoins des employeurs,  simplifier les procédures,  et donc d’en accélérer le développement.  
   </span>
 </p>
 
