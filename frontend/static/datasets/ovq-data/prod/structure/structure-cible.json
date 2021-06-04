@@ -121,7 +121,8 @@
         "dataPeriod": "year",
         "multiplier": null,
         "progressionLastUpdate": 0,
-        "progressionLastUpdateDate": null
+        "progressionLastUpdateDate": null,
+        "trendType": "increasing"
       },
       {
         "active": true,
@@ -209,7 +210,8 @@
         "dataPeriod": "year",
         "multiplier": null,
         "progressionLastUpdate": 0,
-        "progressionLastUpdateDate": null
+        "progressionLastUpdateDate": null,
+        "trendType": "increasing"
       }
     ]
   },
@@ -336,7 +338,8 @@
       "dataPeriod": "year",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -463,7 +466,8 @@
       "dataPeriod": "year",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -588,7 +592,8 @@
         "dataPeriod": "year",
         "multiplier": null,
         "progressionLastUpdate": 0,
-        "progressionLastUpdateDate": null
+        "progressionLastUpdateDate": null,
+        "trendType": "increasing"
       },
       {
         "active": true,
@@ -675,7 +680,8 @@
         "dataPeriod": "year",
         "multiplier": null,
         "progressionLastUpdate": 0,
-        "progressionLastUpdateDate": null
+        "progressionLastUpdateDate": null,
+        "trendType": "increasing"
       }
     ]
   },
@@ -803,7 +809,8 @@
       "dataPeriod": "year",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -930,7 +937,8 @@
       "dataPeriod": "year",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -1028,7 +1036,7 @@
       "odm_map_region_max": 175,
       "odm_map_departement_max": 50,
       "odm_map_label": "Nombre d'entreprises industrielles et organismes agricoles bénéficiaires des aides à l'investissement de France Relance",
-      "odm_map_legend_subtitle": "<i>Données mars 2021</i>",
+      "odm_map_legend_subtitle": "<i>Données septembre 2020</i>",
       "odm_map_default_layer": true,
       "isDep": true,
       "isReg": true,
@@ -1057,7 +1065,8 @@
       "dataPeriod": "month",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -1155,7 +1164,7 @@
     "odm_map_region_max": 750,
     "odm_map_departement_max": 350,
     "odm_map_label": "Nombre d'entreprises ayant bénéficié d'un chèque numérique de 500€",
-    "odm_map_legend_subtitle": "<i>Données avril 2021</i>",
+    "odm_map_legend_subtitle": "<i>Données février 2021</i>",
     "odm_map_default_layer": true,
     "isDep": true,
     "isReg": false,
@@ -1184,7 +1193,8 @@
     "dataPeriod": "month",
     "multiplier": null,
     "progressionLastUpdate": 0,
-    "progressionLastUpdateDate": null
+    "progressionLastUpdateDate": null,
+    "trendType": "increasing"
   },
   {
     "active": true,
@@ -1273,7 +1283,8 @@
   "dataPeriod": "month",
   "multiplier": null,
   "progressionLastUpdate": 0,
-  "progressionLastUpdateDate": null
+  "progressionLastUpdateDate": null,
+  "trendType": "increasing"
 }]
   },
   {
@@ -1400,7 +1411,8 @@
       "dataPeriod": "year",
       "multiplier": null,
       "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2019-12-31"
+      "progressionLastUpdateDate": "2019-12-31",
+      "trendType": "increasing"
     }]
   },
   {
@@ -1527,7 +1539,8 @@
       "dataPeriod": "year",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -1625,7 +1638,7 @@
       "odm_map_region_max": 1000,
       "odm_map_departement_max": 275,
       "odm_map_label": "Nombre de bénéficiaires en structures d'insertion par l'activité économique",
-      "odm_map_legend_subtitle": "<i>Données décembre 2020</i>",
+      "odm_map_legend_subtitle": "<i>Données septembre 2020</i>",
       "odm_map_default_layer": true,
       "isDep": true,
       "isReg": true,
@@ -1654,7 +1667,8 @@
       "dataPeriod": "month",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -1780,7 +1794,8 @@
       "dataPeriod": "year",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -1907,7 +1922,8 @@
       "dataPeriod": "year",
       "multiplier": null,
       "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdateDate": "2020-09-30",
+      "trendType": "increasing"
     }]
   },
   {
@@ -2034,7 +2050,8 @@
       "dataPeriod": "year",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -2161,7 +2178,8 @@
       "dataPeriod": "quarter",
       "multiplier": null,
       "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdateDate": "2020-09-30",
+      "trendType": "increasing"
     }]
   },
   {
@@ -2288,7 +2306,8 @@
       "dataPeriod": "semi",
       "multiplier": 1000000,
       "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdateDate": "2020-09-30",
+      "trendType": "increasing"
     }]
   },
   {
@@ -2391,9 +2410,9 @@
       "isDep": true,
       "isReg": true,
       "isNat": true,
-      "isDepTarget": false,
-      "isRegTarget": false,
-      "isNatTarget": false,
+      "isDepTarget": true,
+      "isRegTarget": true,
+      "isNatTarget": true,
       "isCumulative": true,
       "toAggregateReg": false,
       "toAggregateNat": false,
@@ -2415,7 +2434,8 @@
       "dataPeriod": "month",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     },{
       "active": true,
       "id_indicateur_ditp": "90092de72ae24053994ee3f40ac3c780",
@@ -2503,7 +2523,8 @@
       "dataPeriod": "year",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -2630,7 +2651,8 @@
       "dataPeriod": "year",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -2706,7 +2728,7 @@
         }
       ],
       "odm_kpi_format": "integer",
-      "odm_kpi_unit": "heures de patrouille dans l'année",
+      "odm_kpi_unit": "heures de patrouille dans l'année*",
       "odm_chart_title": "Nombre d'heures de patrouille de voie publique",
       "odm_chart_type": "line",
       "odm_chart_template": "categVertH390_histo",
@@ -2758,7 +2780,8 @@
       "dataPeriod": "month",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -2886,7 +2909,8 @@
       "dataPeriod": "month",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -3014,7 +3038,8 @@
       "dataPeriod": "quarter",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -3142,7 +3167,8 @@
       "dataPeriod": "month",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -3270,7 +3296,8 @@
       "dataPeriod": "month",
       "multiplier": null,
       "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2019-12-31"
+      "progressionLastUpdateDate": "2019-12-31",
+      "trendType": "decreasing"
     }]
   },
   {
@@ -3397,7 +3424,8 @@
       "dataPeriod": "month",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     },
     {
       "active": true,
@@ -3486,7 +3514,8 @@
       "dataPeriod": null,
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -3613,7 +3642,8 @@
       "dataPeriod": "month",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -3739,7 +3769,8 @@
         "dataPeriod": "month",
         "multiplier": null,
         "progressionLastUpdate": 1,
-        "progressionLastUpdateDate": "2020-09-30"
+        "progressionLastUpdateDate": "2020-09-30",
+        "trendType": "increasing"
       },
       {
         "active": true,
@@ -3827,7 +3858,8 @@
         "dataPeriod": "month",
         "multiplier": null,
         "progressionLastUpdate": 1,
-        "progressionLastUpdateDate": "2020-09-30"
+        "progressionLastUpdateDate": "2020-09-30",
+        "trendType": "increasing"
       },
       {
         "active": true,
@@ -3915,7 +3947,8 @@
         "dataPeriod": "month",
         "multiplier": null,
         "progressionLastUpdate": 1,
-        "progressionLastUpdateDate": "2020-09-30"
+        "progressionLastUpdateDate": "2020-09-30",
+        "trendType": "increasing"
       }
     ]
   },
@@ -4045,7 +4078,8 @@
       "dataPeriod": "semi",
       "multiplier": null,
       "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdateDate": "2020-09-30",
+      "trendType": "increasing"
     },
     {
       "active": true,
@@ -4134,7 +4168,8 @@
       "dataPeriod": "year",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -4260,7 +4295,8 @@
       "dataPeriod": "quarter",
       "multiplier": null,
       "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdateDate": "2020-09-30",
+      "trendType": "increasing"
     }]
   },
   {
@@ -4386,7 +4422,8 @@
       "dataPeriod": "year",
       "multiplier": null,
       "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdateDate": "2020-09-30",
+      "trendType": "decreasing"
     }]
   },
   {
@@ -4513,7 +4550,8 @@
       "dataPeriod": "month",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -4640,7 +4678,8 @@
       "dataPeriod": "month",
       "multiplier": null,
       "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2019-12-31"
+      "progressionLastUpdateDate": "2019-12-31",
+      "trendType": "increasing"
     }]
   },
   {
@@ -4767,7 +4806,8 @@
         "dataPeriod": "year",
         "multiplier": null,
         "progressionLastUpdate": 0,
-        "progressionLastUpdateDate": null
+        "progressionLastUpdateDate": null,
+        "trendType": "increasing"
       },
       {
         "active": true,
@@ -4856,7 +4896,8 @@
         "dataPeriod": "year",
         "multiplier": null,
         "progressionLastUpdate": 0,
-        "progressionLastUpdateDate": null
+        "progressionLastUpdateDate": null,
+        "trendType": "increasing"
       }
     ]
   },
@@ -4984,7 +5025,8 @@
       "dataPeriod": "quarter",
       "multiplier": null,
       "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdateDate": "2020-09-30",
+      "trendType": "increasing"
     }]
   },
   {
@@ -5115,7 +5157,8 @@
       "dataPeriod": "month",
       "multiplier": null,
       "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdateDate": "2020-09-30",
+      "trendType": "increasing"
     }]
   },
   {
@@ -5244,7 +5287,8 @@
       "dataPeriod": "month",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -5371,7 +5415,8 @@
       "dataPeriod": "month",
       "multiplier": null,
       "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-10-31"
+      "progressionLastUpdateDate": "2020-10-31",
+      "trendType": "increasing"
     }]
   }
 ]
