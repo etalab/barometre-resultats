@@ -2728,7 +2728,7 @@
         }
       ],
       "odm_kpi_format": "integer",
-      "odm_kpi_unit": "heures de patrouille dans l'année",
+      "odm_kpi_unit": "heures de patrouille dans l'année*",
       "odm_chart_title": "Nombre d'heures de patrouille de voie publique",
       "odm_chart_type": "line",
       "odm_chart_template": "categVertH390_histo",
