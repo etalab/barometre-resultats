@@ -3,6 +3,6 @@ L’indicateur départemental représente le nombre d’heures consacrées par l
 L’indicateur national représente le cumul du nombre d’heures de présence sur la voie publique effectuées par les unités territoriales de police et les militaires de la gendarmerie et le volume d’heures effectuées par les forces mobiles (compagnies républicaines de sécurité et escadrons de gendarmes mobiles) et les services spécialisés. La cible fixée pour 2022 est une hausse de 5% par rapport à 2017.
 </p>
 <p>
-* Ne pas tenir compte du taux d’évolution : les périodes comparées ne sont pas les mêmes – affichage en cours de modification.
+* Ne pas tenir compte du taux d’évolution au niveau départemental et régional : les périodes comparées ne sont pas les mêmes – affichage en cours de modification.
 </p>
 <p class="font-italic body-2">Source : Service statistique ministériel de la sécurité intérieure - DGGN, DGPN, PP <br> Consulter les données sur <a target="_blank" href="https://www.data.gouv.fr/fr/datasets/barometre-des-resultats-de-laction-publique/">www.data.gouv.fr</a></p>
