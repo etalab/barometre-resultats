@@ -26,7 +26,7 @@
     "odm_url_aliases": ["/apprentissage","/un-jeune-une-solution","/supprimer-taxe-habitation-residences-principales","/accompagner-transformation-numerique","/pacte-ambition-iae"],
     "odm_text": "/ovq-textes/relance-emploi-economie/relance_emploi_economie-resume.md"
   },
-    {
+  {
     "id_ovq": ["OVQ-PVL","OVQ-PUU","OVQ-VPA","OVQ-ZFE"],
     "nom_ovq": "Transition écologique",
     "odm_id": "transition-ecologique",
