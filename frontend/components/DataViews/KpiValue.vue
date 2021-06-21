@@ -79,6 +79,9 @@
       <span v-if="header.textPrefix[locale]!='depuis la première publication du baromètre'">
         {{ formatDate(itemLocal[header.valueDate]) }}
       </span>
+      <span v-if="header.textPrefix[locale]=='depuis la première publication du baromètre'">
+        (données de {{ formatDate(itemLocal[header.valueDate]) }})
+      </span>
     </span>
 
     <v-tooltip v-if="header" bottom>
