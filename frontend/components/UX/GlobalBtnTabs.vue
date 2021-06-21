@@ -319,7 +319,7 @@ export default {
 
     changeOpenTabs(id) {
       var self = this
-      this.log && console.log('C-GlobalBtnTbs / changeOpenTabs / id : ', id )
+      // this.log && console.log('C-GlobalBtnTbs / changeOpenTabs / id : ', id )
       if (this.openTabBtns.includes(id)) {
         if (this.openTabBtns.length > 1) {
           this.openTabBtns = this.openTabBtns.filter(btn => btn !== id)
