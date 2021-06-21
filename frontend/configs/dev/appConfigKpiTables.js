@@ -288,26 +288,10 @@ const COMMON_RULES = {
       },
 
       {
-        add: 'la France et au niveau départemental',
-        conditions: [
-          { hasDepKpi: true },
-          // { noRegKpi: true },
-          {
-            specialStoreId: 'levelcode',
-            specialStoreValue: 'regional'
-          },
-          {
-            itemId: 'from_level',
-            itemValue: 'nat'
-          }
-        ]
-      },
-
-      {
         add: 'en France',
         conditions: [
           // { specialStoreId: 'levelcode',
-          //   specialStoreValue: 'regional',
+          //   specialStoreValue: 'departemental',
           // },
           // { noDepKpi: true },
           // { noRegKpi: true },
@@ -318,6 +302,16 @@ const COMMON_RULES = {
         ]
       },
 
+      {
+        add: ' et au niveau départemental',
+        conditions: [
+          { hasDepKpi: true },
+          {
+            itemId: 'from_level',
+            itemValue: 'nat'
+          }
+        ]
+      },
 
     ]
   }

@@ -467,7 +467,13 @@ animation: fadeIn ease 1s;
                                 <!-- /// SUFFIX RULES /// -->
                                 <!-- RULE == FALSE -->
                                 <div
-                                  v-if="getRuleValue(getPropsItemValue(props.items, kpi.fromDatasetKeyValue), kpi.textSuffixRules, false, false, kpi) === ' '"
+                                  v-if="getRuleValue(getPropsItemValue(
+                                      props.items, kpi.fromDatasetKeyValue),
+                                      kpi.textSuffixRules,
+                                      false,
+                                      false,
+                                      kpi
+                                    ) === ' '"
                                   class="no-warning"
                                   >
                                   <span
@@ -480,7 +486,11 @@ animation: fadeIn ease 1s;
                                   <span
                                     v-show="!isMobileWidth"
                                     v-if="kpi.textLevelNameRules"
-                                    :class="`${levelnameTextColor} ${getRuleValue(getPropsItemValue(props.items, kpi.fromDatasetKeyValue), kpi.textLevelNameRules, true)}`"
+                                    :class="`${levelnameTextColor} ${getRuleValue(
+                                        getPropsItemValue(props.items, kpi.fromDatasetKeyValue),
+                                        kpi.textLevelNameRules,
+                                        true
+                                      )}`"
                                     v-html="getRuleValue(getPropsItemValue(props.items, kpi.fromDatasetKeyValue), kpi.textLevelNameRules)"
                                   />
 
@@ -493,7 +503,13 @@ animation: fadeIn ease 1s;
 
                                 <!-- RULE == TRUE -->
                                 <div
-                                  v-if="kpi.textSuffixRules && getRuleValue(getPropsItemValue(props.items, kpi.fromDatasetKeyValue), kpi.textSuffixRules, false, false, kpi) !== ' '"
+                                  v-if="kpi.textSuffixRules && getRuleValue(
+                                    getPropsItemValue(props.items, kpi.fromDatasetKeyValue),
+                                      kpi.textSuffixRules,
+                                      false,
+                                      false,
+                                      kpi
+                                    ) !== ' '"
                                   class="has-warning mb-0"
                                   >
                                   <!-- ADD WARNING SUFFIX FROM SPECIAL STORE -->
@@ -505,7 +521,13 @@ animation: fadeIn ease 1s;
                                   <!-- LEVEL NAME / WARNING -->
                                   <span
                                     class="font-weight-bold"
-                                    v-html="capitalizeIfMobile(getRuleValue(getPropsItemValue(props.items, kpi.fromDatasetKeyValue), kpi.textSuffixRules, false, false, kpi))"
+                                    v-html="capitalizeIfMobile(
+                                      getRuleValue(getPropsItemValue(props.items, kpi.fromDatasetKeyValue),
+                                      kpi.textSuffixRules, 
+                                      false, 
+                                      false, 
+                                      kpi
+                                    ))"
                                   />
                                 </div>
 
@@ -1068,9 +1090,9 @@ export default {
       const specialStore = this.getSpecialStore
       const initData = this.getInitData
       const getFromInitData = this.getFromInitData
-      isKpi && this.log && console.log("\n.....C-KpiTableBlocks / getRuleValue / specialStore : ", specialStore)
+      // isKpi && this.log && console.log("\n.....C-KpiTableBlocks / getRuleValue / specialStore : ", specialStore)
       // isKpi && this.log && console.log("C-KpiTableBlocks / getRuleValue / item : ", item)
-      isKpi && this.log && console.log("C-KpiTableBlocks / getRuleValue / kpi : ", kpi)
+      // isKpi && this.log && console.log("C-KpiTableBlocks / getRuleValue / kpi : ", kpi)
       // isKpi && this.log && console.log("C-KpiTableBlocks / getRuleValue / initData : ", initData)
 
       let localeRules = rules && rules[this.locale]
@@ -1089,27 +1111,27 @@ export default {
           if (cond.itemId) {
             boolVal = item[cond.itemId] === cond.itemValue
           }
-          // if (kpi && cond.noRegKpi) {
-          //   boolVal = !kpi.hasRegion
-          // }
-          // if (kpi && cond.noDepKpi) {
-          //   boolVal = !kpi.hasDepartement
-          // }
-          // if (kpi && cond.hasDepKpi) {
-          //   boolVal = kpi.hasDepartement
-          // }
+          if (kpi && cond.noRegKpi) {
+            boolVal = !kpi.hasRegion
+          }
+          if (kpi && cond.noDepKpi) {
+            boolVal = !kpi.hasDepartement
+          }
+          if (kpi && cond.hasDepKpi) {
+            boolVal = kpi.hasDepartement
+          }
           boolArray.push(boolVal)
         }
         return boolArray.every(v => v === true)
       })
-      isKpi && this.log && console.log("C-KpiTableBlocks / getRuleValue / rulesToApply : ", rulesToApply)
+      // isKpi && this.log && console.log("C-KpiTableBlocks / getRuleValue / rulesToApply : ", rulesToApply)
 
       // apply rules to value
       for (const rule of rulesToApply) {
         // this.log && console.log("\n.......\nC-KpiTableBlocks / getRuleValue / initData : ", initData)
-        isKpi && this.log && console.log("C-KpiTableBlocks / getRuleValue / rule : ", rule)
+        // isKpi && this.log && console.log("C-KpiTableBlocks / getRuleValue / rule : ", rule)
 
-        fix = rule.add
+        fix += rule.add
         if (returnClass) {
           fix = rule.class
         }
@@ -1173,7 +1195,7 @@ export default {
 
           value = lastVal
           // this.log && console.log("C-KpiTableBlocks / lastValReload (end) : ", lastValReload)
-          isKpi && this.log && console.log("C-KpiTableBlocks / lastVal (end) : ", lastVal)
+          // isKpi && this.log && console.log("C-KpiTableBlocks / lastVal (end) : ", lastVal)
 
         }
 
@@ -1181,7 +1203,7 @@ export default {
 
       if (!returnFallback) {
         let resultText = `${fix} ${value}`
-        isKpi && this.log && console.log("C-KpiTableBlocks / resultText (end) : ", resultText)
+        // isKpi && this.log && console.log("C-KpiTableBlocks / resultText (end) : ", resultText)
         return resultText
       } else {
         // this.log && console.log("C-KpiTableBlocks / rulesToApply (end) : ", rulesToApply)
