@@ -74,37 +74,16 @@
           {{ tab[tabsTitleKey][locale] }}
         </v-btn>
       </v-badge>
-
-      <!-- SOLE TAB SELECTED -->
-      <v-btn
-        v-else-if="openTabBtns.includes(tab.id) && openTabBtns.length === 1 "
-        :class="`${btn.btnInnerClass} white--text mb-2`"
-        :block="btn.block"
-        :icon="btn.icon"
-        :outlined="btn.outlined"
-        :fab="btn.fab"
-        :color="btn.color"
-        :large="isMobileWidth ? false : btn.large"
-        :small="isMobileWidth ? true : btn.small"
-        :text="btn.text"
-        :dark="btn.dark"
-        :tile="btn.tile"
-        :rounded="btn.rounded"
-        :disabled="btn.disabled"
-        @click="runBtnFunctions(btn, tab.id)"
-        >
-        {{ tab[tabsTitleKey][locale] }}
-      </v-btn>
     
-      <!-- UNSELECTED TABS -->
+      <!-- UNSELECTED TABS || SOLE SELECTED TAB -->
       <v-btn
         v-else
-        :class="`${btn.btnInnerClass} mb-2`"
+        :class="`${btn.btnInnerClass} ${openTabBtns.includes(tab.id) && openTabBtns.length === 1 ? 'white--text' : ''} mb-2`"
         :block="btn.block"
         :icon="btn.icon"
         :outlined="btn.outlined"
         :fab="btn.fab"
-        :color="`btn.colorDepressed`"
+        :color="`${openTabBtns.includes(tab.id) && openTabBtns.length === 1 ? btn.color : btn.colorDepressed}`"
         :large="isMobileWidth ? false : btn.large"
         :small="isMobileWidth ? true : btn.small"
         :text="btn.text"
@@ -115,11 +94,6 @@
         @click="runBtnFunctions(btn, tab.id)"
         >
         {{ tab[tabsTitleKey][locale] }}
-        <div class="unselect_icon" v-if="openTabBtns.includes(tab.id) && openTabBtns.length > 1">
-          <v-icon>
-            icon-times-circle-o
-          </v-icon>
-        </div>
       </v-btn>
 
     </span>
