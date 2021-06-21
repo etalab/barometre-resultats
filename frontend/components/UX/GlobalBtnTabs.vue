@@ -28,15 +28,6 @@
   font-size: 18px !important;
   color: #000091 !important;
 }
-/* .info {
-  padding: 1px 1px !important;
-  background-color: grey !important;
-  border-color: #000091 !important;
-} */
-/* .v-badge__badge .v-icon {
-  font-size: 16px !important;
-  margin: 0px 0px !important;
-} */
 .unselectable{
   pointer-events: none;
 }
