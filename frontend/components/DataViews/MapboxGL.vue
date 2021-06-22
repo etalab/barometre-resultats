@@ -14,12 +14,22 @@
   width: 100%;
   position: relative;
 }
+
 .map-blocks {
   height: 200px;
   /* height: calc(100vh); */
   width: 100%;
   position: relative;
 }
+.hide-map-blocks{
+  visibility: hidden;
+  height: 200px;
+  width: 100%;
+  position: absolute; 
+  top: 0; 
+  z-index: -1;
+}
+
 .map-block {
   border: 2px solid white;
 }
@@ -34,6 +44,7 @@
 .layers-switch-btn {
   background-color: #fff;
 }
+
 </style>
 
 <template>
@@ -51,9 +62,9 @@
       :class="`map ${isMobileWidth ? 'map-mobile' : ''}`"
       :trigger="`${trigger}`"
       :triggerVis="`${triggerVis}`"
-      :style="`height:${mapHeight}px!important;`"
+      :style="`height:${mapHeight}px!important;max-height:${mapHeight}px`"
       >
-      <!-- :style="`height:${mapHeight}px!important;max-height:${mapHeight}px`" -->
+      <!-- :style="`height:${mapHeight}px!important;`" -->
       <v-col
         :id="`mainMapColumn`"
         class="pa-0"
@@ -101,7 +112,10 @@
           <div class="content mx-4" v-if="log">
             <p><code>version :<br> {{ appVersion }}</code></p>
             <!-- <p><code>routeParams :<br> {{ routeParams }}</code></p> -->
-            <p><code>selectedStateId :<br> {{ selectedStateId }}</code></p>
+            <p><code>selectedStateId : {{ selectedStateId }}</code></p>
+            <p><code>mapHeight : {{ mapHeight }}</code></p>
+            <p><code>mapBlocksHeight : {{ mapBlocksHeight }}</code></p>
+            <p><code>showMapBlocks : {{ showMapBlocks }}</code></p>
             <!-- <p><code>currentZoom : {{ currentZoom }}</code></p> -->
             <!-- <p><code>getCurrentZoom() : {{ getCurrentZoom() }}</code></p> -->
             
@@ -228,8 +242,20 @@
         </v-layout>
 
         <!-- MAIN MAP WITH MAPBOX GL -->
+            <!-- height: 100% !important; -->
+        <!-- <style>
+          .mapboxgl-canvas {
+            height: {{ mapHeight }}px!important;
+          }
+        </style> -->
+        <!-- <style>
+          .odamap-main-map .mapboxgl-canvas-container .mapboxgl-canvas {
+            height: 100% !important;
+          }
+        </style> -->
         <client-only>
           <MglMap
+            class="odamap-main-map"
             ref="mapboxMainDiv"
             access-token=""
             :map-style.sync="mapOptions.mapStyle"
@@ -239,45 +265,52 @@
             :min-zoom="mapOptions.minZoom"
             @load="onMapLoaded($event, mapOptions.mapId, true)"
             >
+            <!-- :height="mapHeight" -->
             <!-- CONTROLS -->
             <MglNavigationControl
               v-if="!isMobileWidth"
               position="bottom-right"
-              />
+            />
           </MglMap>
         </client-only>
       </v-col>
     </v-row>
     
     <!-- MAP BLOCKS ROW -->
-    <client-only>
+    <client-only
+      >
+        <!-- v-show="showMapBlocks" -->
+        <!-- :class="`justify-center map-blocks my-2`" -->
       <v-row
-        v-if="map && mapOtionsBlocks.length && !isMobileWidth"
+        v-if="map && mapOptionsBlocks.length && !isMobileWidth"
+        :class="`justify-center ${showMapBlocks ? 'map-blocks my-2' : 'hide-map-blocks'}`"
         no-gutters
         id="blockMapsRow"
-        :class="`map-blocks justify-center my-2`"
         :trigger="`${trigger}`"
         :triggerVis="`${triggerVis}`"
         :style="`height:${mapBlocksHeight}px!important;max-height:${mapBlocksHeight}px;`"
         class="mx-0"
         >
+        <!-- visibility:${showMapBlocks ? '' : 'hidden'} -->
+        <!-- display:${showMapBlocks ? '' : 'none'} -->
         <v-col
           v-show="canShow"
-          v-for="mapBlock in mapOtionsBlocks"
+          v-for="mapBlock in mapOptionsBlocks"
           :key="mapBlock.mapName"
           :id="`blockMapColumn-${mapBlock.mapId}`"
           class="map-block"
-          :style="`width:${100/mapOtionsBlocks.length}%!important;`"
+          :style="`width:${100/mapOptionsBlocks.length}%!important;`"
           >
           <p
             class="map-block-name text-center"
-            :style="`width:${100/mapOtionsBlocks.length}%!important;`"
+            :style="`width:${100/mapOptionsBlocks.length}%!important;`"
             >
             {{ mapBlock.mapName }}
           </p>
           <MglMap
+            :class="`odamap-block-map-${mapBlock.mapId}`"
             :ref="`mapboxBlockDiv${mapBlock.mapId}`"
-            :style="`width:${(100/mapOtionsBlocks.length)-1}%!important;`"
+            :style="`width:${(100/mapOptionsBlocks.length)-1}%!important;`"
             access-token=""
             :map-style.sync="mapBlock.mapStyle"
             :center="mapBlock.center"
@@ -288,6 +321,7 @@
             :scrollZoom="!mapBlock.noScroll"
             :dragRotate="!mapBlock.noScroll"
             @load="onMapLoaded($event, mapBlock.mapId, false)"
+            @resize="handleResize"
             >
           </MglMap>
         </v-col>
@@ -308,10 +342,12 @@ let _maps = []
 import bbox from '@turf/bbox'
 
 import axios from 'axios'
-import { getDataFromUrl } from '~/utils/getData.js'
-import { transformDataset, buildProperties } from '~/utils/mapbox.js'
+// import { getDataFromUrl } from '~/utils/getData.js'
+// import { transformDataset, buildProperties } from '~/utils/mapbox.js'
+import { transformDataset } from '~/utils/mapbox.js'
 
-import { objectFromPath, switchFormatFunctions, objectToUrlParams } from '~/utils/utils.js'
+// import { objectFromPath, switchFormatFunctions, objectToUrlParams } from '~/utils/utils.js'
+import { switchFormatFunctions, objectToUrlParams } from '~/utils/utils.js'
 
 import { StylesOSM } from '~/configs/mapboxVectorStyles.js'
 
@@ -325,7 +361,7 @@ export default {
       dataViewType: 'maps',
       viewConfig: undefined,
       canShow: undefined,
-      showVersion: false,
+      showVersion: true,
 
       // available styles : EtalabFile | EtalabPositronFile | testRasterVoyager | RasterVoyager
       // defaultMapStyle: StylesOSM[ 'EtalabUrl' ],
@@ -340,6 +376,7 @@ export default {
       // defaultMapStyle: StylesOSM[ 'Basic' ],
       // defaultMapStyle: StylesOSM[ 'OSMliberty' ],
 
+      canvasHeight: undefined,
       mapHeight: undefined,
       mapBlocksHeight: 200,
       showLoader: true,
@@ -352,6 +389,9 @@ export default {
       currentZoom: undefined,
 
       // MAPBOX MAP BLOCKS OBJECTS
+      activateShowMapBlocks: undefined,
+      showMapBlocksOptions: undefined,
+      showMapBlocks: true,
       mapBlocks: undefined,
       mapOptions: {
         mapStyle: undefined,
@@ -362,7 +402,7 @@ export default {
         center: undefined,
         currentCenter: undefined,
       },
-      mapOtionsBlocks: [],
+      mapOptionsBlocks: [],
 
       // DRAWERS
       legendActivated: undefined,
@@ -390,33 +430,59 @@ export default {
 
   watch: {
     triggerVis(next, prev) {
+      this.log && console.log('C-MapboxGL / watch - triggerVis / next :', next)
       this.getCanShow()
       this.handleResize()
     },
 
     triggerBtn(next, prev) {
+      this.log && console.log('C-MapboxGL / watch - triggerBtn / next :', next)
       this.handleResize()
+    },
+
+    showMapBlocks(next, prev) {
+      let isMapLoaded = this.map
+      let areAllBlocksAreLoaded = this.mapOptionsBlocks.every( m => m.isLoaded === true)  
+      if (isMapLoaded && areAllBlocksAreLoaded) {
+        this.log && console.log("C-MapboxGL / watch - showMapBlocks... ")
+        // this.log && console.log("C-MapboxGL / watch - showMapBlocks > need redraw ??? ")
+
+        this.handleResize()
+        // let evt = window.document.createEvent('UIEvents')
+        // evt.initUIEvent('resize', true, false, window, 0)
+        // window.dispatchEvent(evt)
+        // window.dispatchEvent(new Event('resize'))
+        this.$store.commit('toggleVisTrigger')
+        
+        // _map.resize()
+        // this.handleResize()
+        // let mapbox = _map
+        // this.log && console.log("C-MapboxGL / watch - showMapBlocks - > mapbox : ", mapbox)
+        // if (mapbox) {
+        //   mapbox.resize()
+        // }
+      }
     },
 
     map(next, prev) {
       this.handleResize()
       if (next && !prev) {
-        // this.log && console.log("C-MapboxGL / watch - map - has changed... ")
+        this.log && console.log("C-MapboxGL / watch - map - has changed... ")
         this.redraw(true)
       }
     },
     mapBlocks(next, prev) {
       this.handleResize()
-      // this.log && console.log("\nC-MapboxGL / watch - mapBlocks - has changed... next :", next)
-      // this.log && console.log("C-MapboxGL / watch - mapBlocks - this.mapOtionsBlocks : ", this.mapOtionsBlocks)
-      let areAllBlocksAreLoaded = this.mapOtionsBlocks.every( m => m.isLoaded === true)  
+      this.log && console.log("\nC-MapboxGL / watch - mapBlocks - has changed... next :", next)
+      this.log && console.log("C-MapboxGL / watch - mapBlocks - this.mapOptionsBlocks : ", this.mapOptionsBlocks)
+      let areAllBlocksAreLoaded = this.mapOptionsBlocks.every( m => m.isLoaded === true)  
       // this.log && console.log("C-MapboxGL / watch - mapBlocks - areAllBlocksAreLoaded : ", areAllBlocksAreLoaded)
       if (areAllBlocksAreLoaded) {
         this.redraw(false)
       }
     },
     getResetZoomTrigger(next, prev) {
-      // this.log && console.log('C-MapboxGL / watch - getResetZoomTrigger / next :', next)
+      this.log && console.log('C-MapboxGL / watch - getResetZoomTrigger / next :', next)
       this.handleResize()
       this.resetZoom()
       this.resetAllSelected()
@@ -432,8 +498,8 @@ export default {
   },
 
   created() {
-    // this.log && console.log("C-MapboxGL / created ...")
-    window.addEventListener('resize', this.handleResize)
+    this.log && console.log("C-MapboxGL / created ...")
+    window.addEventListener('resize', this.handleResize(true))
   },
 
   destroyed() {
@@ -441,9 +507,8 @@ export default {
   },
 
   beforeMount() {
-    // this.log &&
-    //   console.log("\n- + - MapboxGL component - + - + - + - + - + - + ")
-    // this.log && console.log("C-MapboxGL / beforeMount ... ")
+    this.log && console.log("\n- + - MapboxGL component - + - + - + - + - + - + ")
+    this.log && console.log("C-MapboxGL / beforeMount ... ")
 
     // reset internal map objects
     _map = undefined
@@ -451,8 +516,8 @@ export default {
 
     // set up view config
     this.viewConfig = this.getLocalConfig
-    // this.log && console.log("C-MapboxGL / beforeMount / this.viewConfig : ", this.viewConfig)
-    this.handleResize()
+    this.log && console.log("C-MapboxGL / beforeMount / this.viewConfig : ", this.viewConfig)
+    this.handleResize(true)
 
     // set div visibility in store
     this.$store.commit('setDivVisibility', this.settings)
@@ -460,8 +525,11 @@ export default {
     // set up MAPBOX options
     const mapOptionsRoute = this.viewConfig.map_options
     const mapOptionsBlocksRoute = this.viewConfig.map_blocks
-    // this.log && console.log("C-MapboxGL / beforeMount / mapOptionsRoute : ", mapOptionsRoute)
-    // this.log && console.log("C-MapboxGL / beforeMount / mapOptionsBlocksRoute : ", mapOptionsBlocksRoute)
+    this.log && console.log("C-MapboxGL / beforeMount / mapOptionsRoute : ", mapOptionsRoute)
+    this.log && console.log("C-MapboxGL / beforeMount / mapOptionsBlocksRoute : ", mapOptionsBlocksRoute)
+
+    this.activateShowMapBlocks = this.viewConfig.maps_blocks_toogle_show
+    this.showMapBlocksOptions = this.viewConfig.maps_blocks_toggle_options
 
     // Main map
     let mapOptions = {
@@ -498,7 +566,7 @@ export default {
         isLoaded: false,
         isDrawn: false
       }
-      this.mapOtionsBlocks.push(mapOptionsBlock)
+      this.mapOptionsBlocks.push(mapOptionsBlock)
       // this.log && console.log("C-MapboxGL / beforeMount / this.mapBlocks : ", this.mapBlocks)
     }
     this.mapBlocks = -1
@@ -534,8 +602,8 @@ export default {
   },
 
   mounted() {
-    // this.log && console.log("C-MapboxGL / mounted ...")
-    this.handleResize()
+    this.log && console.log("C-MapboxGL / mounted ...")
+    this.handleResize(true)
     this.getCanShow()
     this.$store.commit('toggleTriggerComponentLoaded')
   },
@@ -565,6 +633,7 @@ export default {
       // routeConfig: 'getLocalRouteConfig',
       getDataViewConfig: 'getDataViewConfig',
       getStoreSourceData: 'data/getStoreSourceData',
+      getSpecialStore: 'data/getSpecialStore',
       windowSize: 'getWindowsSize',
       getCurrentNavbarFooter: 'getCurrentNavbarFooter',
       getDivCurrentVisibility: 'getDivCurrentVisibility',
@@ -614,9 +683,45 @@ export default {
       // this.log && console.log("C-MapboxGL / canShow ... isVisible : ", isVisible )
       this.canShow = isVisible
     },
-    handleResize() {
-      // this.log && console.log("\nC-MapboxGL / handleResize ... " )
+    getShowBlocks() {
+      // hide / show map blocks row
+      let boolArray = []
+      let showMapBlocks = true
+      if( this.activateShowMapBlocks ) {
+        for (let showOption of this.showMapBlocksOptions) {
+          // this.log && console.log("......C-MapboxGL / handleResize ... showOption : ", showOption )
+          let canShow = [true]
+          showOption.rules.forEach(rule => {
+            // this.log && console.log("C-MapboxGL / handleResize ... rule : ", rule )
+            let condition = rule.specialStoreValues.includes(this.getSpecialStore[rule.specialStoreField])
+            condition = showOption.behavior === 'hide' ? !condition : condition
+            // this.log && console.log("C-MapboxGL / handleResize ... condition : ", condition )
+            canShow.push(condition)
+            // this.log && console.log("C-MapboxGL / handleResize ... canShow : ", canShow )
+          })
+          let isRuleFulfilled = canShow.every(v => v === true)
+          boolArray.push(isRuleFulfilled)
+        }
+        // this.log && console.log("C-MapboxGL / handleResize ... boolArray : ", boolArray )
+        showMapBlocks = boolArray.some(v => v === true)
+      }
+      this.log && console.log("C-MapboxGL / handleResize ... showMapBlocks : ", showMapBlocks )
+      return showMapBlocks
+    },
+    handleResize(ignoreBlocks = false) {
+      let mapbox = _map
+      let mapboxBlocks = _maps
+      this.log && console.log("\nC-MapboxGL / handleResize ... " )
+      this.log && console.log("C-MapboxGL / handleResize / ignoreBlocks : ", ignoreBlocks )
+      // this.log && console.log("C-MapboxGL / handleResize ... this.getSpecialStore : ", this.getSpecialStore )
+      // this.log && console.log("C-MapboxGL / handleResize ... this.activateShowMapBlocks : ", this.activateShowMapBlocks )
+      // this.log && console.log("C-MapboxGL / handleResize ... this.showMapBlocksOptions : ", this.showMapBlocksOptions )
 
+      // hide / show map blocks row
+      let showMapBlocks = this.getShowBlocks()
+      this.log && console.log("C-MapboxGL / handleResize ... showMapBlocks : ", showMapBlocks )
+
+      // compute maps heigths
       let mapHeight = 0
 
       let ODAMAP_height = document.getElementById('ODAMAP-root') ? document.getElementById('ODAMAP-root').clientHeight : undefined 
@@ -643,29 +748,41 @@ export default {
       // this.log && console.log("C-MapboxGL / handleResize ... mapHeight (A): ", mapHeight )
 
       let mapsBlocksHeights = 0
-      if (this.mapOtionsBlocks.length > 0) {
+      if (this.mapOptionsBlocks.length > 0) {
         mapsBlocksHeights = this.mapBlocksHeight
       }
 
       if (this.isMobileWidth) {
         let docComponents = document.querySelectorAll(`.odm-colrow:not(.odm-colrow-map)`)
-        // this.log && console.log("C-MapboxGL / handleResize ... docComponents : ", docComponents )
+        this.log && console.log("C-MapboxGL / handleResize ... docComponents : ", docComponents )
         let docComponentsArray = Array.prototype.slice.call(docComponents)
         let sumComponentsHeights = docComponentsArray
           .map((i) => i.offsetHeight)
           .reduce((prev, curr) => prev + curr, 0)
-        // this.log && console.log("C-MapboxGL / handleResize ... sumComponentsHeights : ", sumComponentsHeights )
+        this.log && console.log("C-MapboxGL / handleResize ... sumComponentsHeights : ", sumComponentsHeights )
 
         mapHeight = mapHeight - sumNavbarsHeights - sumComponentsHeights - 100 //- navbarsHeights
+        // this.canvasHeight = mapHeight
       } else {
+        // this.canvasHeight = mapHeight - sumNavbarsHeights
         mapHeight = mapHeight - sumNavbarsHeights - mapsBlocksHeights
+        // mapHeight = showMapBlocks ? mapHeight - sumNavbarsHeights - mapsBlocksHeights : mapHeight - sumNavbarsHeights
       }
 
-      // this.log && console.log("C-MapboxGL / handleResize ... mapHeight (end): ", mapHeight )
       if (this.isMobileWidth && this.settings.mobileHeight) {
         mapHeight = this.settings.mobileHeight
       }
-      this.mapHeight = mapHeight
+      // this.showMapBlocks = ignoreBlocks ? false : showMapBlocks
+      this.showMapBlocks = showMapBlocks
+      // this.mapHeight = (this.isMobileWidth && this.settings.mobileHeight) ? mapHeight : mapHeight + mapsBlocksHeights
+      this.mapHeight = this.showMapBlocks || (this.isMobileWidth && this.settings.mobileHeight) ? mapHeight : mapHeight + mapsBlocksHeights
+      this.log && console.log("C-MapboxGL / handleResize ... this.mapHeight (end): ", this.mapHeight )
+      // this.log && console.log("C-MapboxGL / handleResize ... mapbox (end): ", mapbox )
+
+      // if (mapbox) mapbox.resize()
+      // mapboxBlocks.forEach( mapBlock => {
+      //   if (mapBlock) mapBlock.map.resize()
+      // })
 
       // little hack to redraw window on safari IOS
       // let isMobileOrTablet = this.$device.isMobileOrTablet
@@ -681,7 +798,7 @@ export default {
     getCurrentCenter() {
       // let mapbox = this.map
       let mapbox = _map
-      let mapboxBlocks = _maps
+      // let mapboxBlocks = _maps
 
       let currrentCenter = mapbox.getCenter()
       // this.log && console.log("C-MapboxGL / getCurrentCenter ... currrentCenter : ", currrentCenter )
@@ -692,7 +809,7 @@ export default {
     getCurrentZoom() {
       // let mapbox = this.map
       let mapbox = _map
-      let mapboxBlocks = _maps
+      // let mapboxBlocks = _maps
 
       let currentZoom = mapbox.getZoom()
       // this.log && console.log("C-MapboxGL / getCurrentZoom ... currentZoom : ", currentZoom )
@@ -733,8 +850,8 @@ export default {
           map: blockMap
         })
 
-        // this.log && console.log("C-MapboxGL / onMapLoaded / this.mapOtionsBlocks : ", this.mapOtionsBlocks)
-        let mapBlockInfo = this.mapOtionsBlocks.find((mapBlock) => mapBlock.mapId === mapId)
+        // this.log && console.log("C-MapboxGL / onMapLoaded / this.mapOptionsBlocks : ", this.mapOptionsBlocks)
+        let mapBlockInfo = this.mapOptionsBlocks.find((mapBlock) => mapBlock.mapId === mapId)
         mapBlockInfo.isLoaded = true
         // this.log && console.log("C-MapboxGL / onMapLoaded / mapBlockInfo : ", mapBlockInfo)
 
@@ -748,6 +865,9 @@ export default {
       // this.log && console.log("C-MapboxGL / redraw - this.mainMapId : ", this.mainMapId)
       let storeSourcesArray = this.sources.filter((s) => s.from === "store")
       let urlSourcesArray = this.sources.filter((s) => s.from === "url")
+      
+      // TO DO - reset sources and layers from previous maps
+      
       this.loadStoreSources(storeSourcesArray, mainMap)
       this.loadUrlSources(urlSourcesArray, mainMap).then(() => {
         this.loadLayers(this.layers, mainMap)
@@ -944,7 +1064,7 @@ export default {
             //   )
             // this.log && console.log("C-MapboxGL / loadClicEvents ... clicEvent : ", clicEvent)
 
-            let clicFunctions = clicEvent.functions
+            let clickFunctions = clicEvent.functions
             
             if (mainMap) {            
               mapbox.on(clicEvent.event, clicEvent.layer, (e) => {
@@ -972,7 +1092,7 @@ export default {
                     // this.log && console.log( "... itemSource : ", itemSource )
                   // }
 
-                  for (let fn of clicFunctions) {
+                  for (let fn of clickFunctions) {
                     // this.log && console.log( "... fn : ", fn )
                     let funcParams = fn.funcParams
                     // this.log && console.log( "... funcParams : ", funcParams )
@@ -1029,7 +1149,10 @@ export default {
                       //   break ;
                     }
                   }
-                  this.handleResize()
+                  // this.handleResize()
+                  if (clicEvent.event === 'click') {
+                    this.handleResize()
+                  }
                 }
               })
             } else {
@@ -1048,7 +1171,7 @@ export default {
                     let itemLayer = item.layer
                     let itemProps = item.properties
 
-                    for (let fn of clicFunctions) {
+                    for (let fn of clickFunctions) {
                       let funcParams = fn.funcParams
 
                       let params = funcParams && {
@@ -1098,7 +1221,9 @@ export default {
                           break
                       }
                     }
-                    this.handleResize()
+                    if (clicEvent.event === 'click') {
+                      this.handleResize()
+                    }
                   }
                 })
               })
@@ -1151,6 +1276,7 @@ export default {
     updateData(params, toggleTriger = false) {
       // this.log && console.log("\nC-MapboxGL / updateData  : ", "+ ".repeat(10) )
       // this.log && console.log("C-MapboxGL / updateData ... params : ", params )
+      // this.log && console.log("C-MapboxGL / updateData ... this.getSpecialStore : ", this.getSpecialStore )
       let isFnInZoomRange = this.isInZoomRange(params.zoomRange)
       if (isFnInZoomRange) {
         for (let targetParams of params.targets) {
