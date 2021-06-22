@@ -2711,8 +2711,8 @@
           "hide_if_main_is_null": true
         },
         {
-          "text": "En",
-          "text_default": "En février 2021 *",
+          "text": "En février 2021 *",
+          "text_default": null,
           "text_format": null,
           "text_value": null,
           "value": "latest_value"
