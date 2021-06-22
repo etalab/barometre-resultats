@@ -363,7 +363,7 @@ export default {
       dataViewType: 'maps',
       viewConfig: undefined,
       canShow: undefined,
-      showVersion: true,
+      showVersion: false,
 
       // available styles : EtalabFile | EtalabPositronFile | testRasterVoyager | RasterVoyager
       // defaultMapStyle: StylesOSM[ 'EtalabUrl' ],
