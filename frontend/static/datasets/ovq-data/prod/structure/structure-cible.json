@@ -2712,13 +2712,13 @@
         },
         {
           "text": "En",
-          "text_default": "Aujourd'hui",
-          "text_format": "datetime",
-          "text_value": "latest_value_date",
+          "text_default": "En février 2021 *",
+          "text_format": null,
+          "text_value": null,
           "value": "latest_value"
         },
         {
-          "text": "Cible en mars 2022",
+          "text": "Cible à atteindre en 2022",
           "text_default": null,
           "text_format": null,
           "text_value": null,
