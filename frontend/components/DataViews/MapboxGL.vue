@@ -257,6 +257,7 @@
           <MglMap
             class="odamap-main-map"
             ref="mapboxMainDiv"
+            :key="mainMapKey"
             access-token=""
             :map-style.sync="mapOptions.mapStyle"
             :center="mapOptions.center"
@@ -264,6 +265,7 @@
             :max-zoom="mapOptions.maxZoom"
             :min-zoom="mapOptions.minZoom"
             @load="onMapLoaded($event, mapOptions.mapId, true)"
+            @resize="handleResize"
             >
             <!-- :height="mapHeight" -->
             <!-- CONTROLS -->
@@ -283,7 +285,7 @@
         <!-- :class="`justify-center map-blocks my-2`" -->
       <v-row
         v-if="map && mapOptionsBlocks.length && !isMobileWidth"
-        :class="`justify-center ${showMapBlocks ? 'map-blocks my-2' : 'hide-map-blocks'}`"
+        :class="`justify-center ${showMapBlocks ? 'map-blocks mt-2' : 'hide-map-blocks'}`"
         no-gutters
         id="blockMapsRow"
         :trigger="`${trigger}`"
@@ -382,6 +384,7 @@ export default {
       showLoader: true,
 
       // MAPBOX MAP OBJECT
+      mainMapKey: 0,
       map: undefined,
       mainMapId: undefined,
       originalCenter: undefined,
@@ -447,13 +450,22 @@ export default {
         this.log && console.log("C-MapboxGL / watch - showMapBlocks... ")
         // this.log && console.log("C-MapboxGL / watch - showMapBlocks > need redraw ??? ")
 
-        this.handleResize()
+        this.$nextTick().then(() => {
+          this.log && console.log("C-MapboxGL / watch - showMapBlocks / nextTick... ")
+          // this.handleResize()
+          _map.resize()
+        })
+
+        // this.$store.commit('toggleVisTrigger')
         // let evt = window.document.createEvent('UIEvents')
-        // evt.initUIEvent('resize', true, false, window, 0)
+        // evt.initUIEvent('resize', true, false, window, -1)
         // window.dispatchEvent(evt)
         // window.dispatchEvent(new Event('resize'))
-        this.$store.commit('toggleVisTrigger')
-        
+        // let evt2 = window.document.createEvent('UIEvents')
+        // evt2.initUIEvent('resize', true, false, window, 1)
+        // window.dispatchEvent(evt2)
+        // window.dispatchEvent(new Event('resize'))
+
         // _map.resize()
         // this.handleResize()
         // let mapbox = _map
@@ -761,11 +773,11 @@ export default {
           .reduce((prev, curr) => prev + curr, 0)
         this.log && console.log("C-MapboxGL / handleResize ... sumComponentsHeights : ", sumComponentsHeights )
 
-        mapHeight = mapHeight - sumNavbarsHeights - sumComponentsHeights - 100 //- navbarsHeights
+        mapHeight = mapHeight - sumNavbarsHeights - sumComponentsHeights - 110 //- navbarsHeights
         // this.canvasHeight = mapHeight
       } else {
         // this.canvasHeight = mapHeight - sumNavbarsHeights
-        mapHeight = mapHeight - sumNavbarsHeights - mapsBlocksHeights
+        mapHeight = mapHeight - sumNavbarsHeights - mapsBlocksHeights - 10
         // mapHeight = showMapBlocks ? mapHeight - sumNavbarsHeights - mapsBlocksHeights : mapHeight - sumNavbarsHeights
       }
 
