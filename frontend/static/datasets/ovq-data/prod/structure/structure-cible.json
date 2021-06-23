@@ -121,7 +121,8 @@
         "dataPeriod": "year",
         "multiplier": null,
         "progressionLastUpdate": 0,
-        "progressionLastUpdateDate": null
+        "progressionLastUpdateDate": null,
+        "trendType": "increasing"
       },
       {
         "active": true,
@@ -209,7 +210,8 @@
         "dataPeriod": "year",
         "multiplier": null,
         "progressionLastUpdate": 0,
-        "progressionLastUpdateDate": null
+        "progressionLastUpdateDate": null,
+        "trendType": "increasing"
       }
     ]
   },
@@ -336,7 +338,8 @@
       "dataPeriod": "year",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -431,8 +434,8 @@
       "odm_map_only_national": false,
       "odm_map_has_regional_level": true,
       "odm_map_has_departement_level": true,
-      "odm_map_region_max": 400,
-      "odm_map_departement_max": 40,
+      "odm_map_region_max": 100,
+      "odm_map_departement_max": 52,
       "odm_map_label": "Part de collégiens bénéficiant du dispositif (en %)",
       "odm_map_legend_subtitle": "<i>Données 2020</i>",
       "odm_map_default_layer": true,
@@ -463,7 +466,8 @@
       "dataPeriod": "year",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -558,7 +562,7 @@
         "odm_map_has_regional_level": true,
         "odm_map_has_departement_level": true,
         "odm_map_region_max": 1500,
-        "odm_map_departement_max": 300,
+        "odm_map_departement_max": 500,
         "odm_map_label": "Nombre d’unités locales d’inclusion scolaire (ULIS) pour les élèves en situation de handicap à l’école maternelle, à l’école élémentaire, au collège et au lycée",
         "odm_map_legend_subtitle": "<i>Données 2020</i>",
         "odm_map_default_layer": true,
@@ -588,7 +592,8 @@
         "dataPeriod": "year",
         "multiplier": null,
         "progressionLastUpdate": 0,
-        "progressionLastUpdateDate": null
+        "progressionLastUpdateDate": null,
+        "trendType": "increasing"
       },
       {
         "active": true,
@@ -675,7 +680,8 @@
         "dataPeriod": "year",
         "multiplier": null,
         "progressionLastUpdate": 0,
-        "progressionLastUpdateDate": null
+        "progressionLastUpdateDate": null,
+        "trendType": "increasing"
       }
     ]
   },
@@ -772,7 +778,7 @@
       "odm_map_has_regional_level": false,
       "odm_map_has_departement_level": true,
       "odm_map_region_max": 100,
-      "odm_map_departement_max": 300,
+      "odm_map_departement_max": 200,
       "odm_map_label": "Taux de réussite aux examens de licence 1",
       "odm_map_legend_subtitle": "<i>Données 2019</i>",
       "odm_map_default_layer": true,
@@ -803,7 +809,8 @@
       "dataPeriod": "year",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -898,8 +905,8 @@
       "odm_map_only_national": false,
       "odm_map_has_regional_level": true,
       "odm_map_has_departement_level": false,
-      "odm_map_region_max": 200,
-      "odm_map_departement_max": 275,
+      "odm_map_region_max": 11000,
+      "odm_map_departement_max": 1000,
       "odm_map_label": "Nombre de volontaires ayant réalisé au moins un jour de mission de service civique dans l'année",
       "odm_map_legend_subtitle": "<i>Données 2020</i>",
       "odm_map_default_layer": true,
@@ -930,7 +937,8 @@
       "dataPeriod": "year",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -1025,10 +1033,10 @@
       "odm_map_only_national": false,
       "odm_map_has_regional_level": true,
       "odm_map_has_departement_level": true,
-      "odm_map_region_max": 175,
-      "odm_map_departement_max": 50,
+      "odm_map_region_max": 1650,
+      "odm_map_departement_max": 400,
       "odm_map_label": "Nombre d'entreprises industrielles et organismes agricoles bénéficiaires des aides à l'investissement de France Relance",
-      "odm_map_legend_subtitle": "<i>Données septembre 2020</i>",
+      "odm_map_legend_subtitle": "<i>Données mars 2021</i>",
       "odm_map_default_layer": true,
       "isDep": true,
       "isReg": true,
@@ -1057,7 +1065,8 @@
       "dataPeriod": "month",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -1152,10 +1161,10 @@
     "odm_map_only_national": false,
     "odm_map_has_regional_level": true,
     "odm_map_has_departement_level": true,
-    "odm_map_region_max": 750,
-    "odm_map_departement_max": 350,
+    "odm_map_region_max": 4100,
+    "odm_map_departement_max": 2000,
     "odm_map_label": "Nombre d'entreprises ayant bénéficié d'un chèque numérique de 500€",
-    "odm_map_legend_subtitle": "<i>Données février 2021</i>",
+    "odm_map_legend_subtitle": "<i>Données avril 2021</i>",
     "odm_map_default_layer": true,
     "isDep": true,
     "isReg": false,
@@ -1184,7 +1193,8 @@
     "dataPeriod": "month",
     "multiplier": null,
     "progressionLastUpdate": 0,
-    "progressionLastUpdateDate": null
+    "progressionLastUpdateDate": null,
+    "trendType": "increasing"
   },
   {
     "active": true,
@@ -1241,8 +1251,8 @@
   "odm_map_only_national": false,
   "odm_map_has_regional_level": true,
   "odm_map_has_departement_level": true,
-  "odm_map_region_max": 700,
-  "odm_map_departement_max": 350,
+  "odm_map_region_max": 2400,
+  "odm_map_departement_max": 550,
   "odm_map_label": "Nombre d'entreprises ayant disposé d'un diagnostic numérique et un plan d'action individualisé",
   "odm_map_legend_subtitle": "<i>Données février 2021</i>",
   "odm_map_default_layer": true,
@@ -1273,7 +1283,8 @@
   "dataPeriod": "month",
   "multiplier": null,
   "progressionLastUpdate": 0,
-  "progressionLastUpdateDate": null
+  "progressionLastUpdateDate": null,
+  "trendType": "increasing"
 }]
   },
   {
@@ -1368,8 +1379,8 @@
       "odm_map_only_national": false,
       "odm_map_has_regional_level": true,
       "odm_map_has_departement_level": true,
-      "odm_map_region_max": 90000,
-      "odm_map_departement_max": 22000,
+      "odm_map_region_max": 110000,
+      "odm_map_departement_max": 34000,
       "odm_map_label": "Nombre de contrats d'apprentissage",
       "odm_map_legend_subtitle": "<i>Données 2020</i>",
       "odm_map_default_layer": true,
@@ -1400,7 +1411,8 @@
       "dataPeriod": "year",
       "multiplier": null,
       "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2019-12-31"
+      "progressionLastUpdateDate": "2019-12-31",
+      "trendType": "increasing"
     }]
   },
   {
@@ -1495,8 +1507,8 @@
       "odm_map_only_national": false,
       "odm_map_has_regional_level": true,
       "odm_map_has_departement_level": true,
-      "odm_map_region_max": 310000,
-      "odm_map_departement_max": 6000,
+      "odm_map_region_max": 350000,
+      "odm_map_departement_max": 92000,
       "odm_map_label": "Nombre de recrutements de jeunes",
       "odm_map_legend_subtitle": "<i>département : recrutements entre août et décembre, national : recrutements entre août et février Données 2020</i>",
       "odm_map_default_layer": true,
@@ -1527,7 +1539,8 @@
       "dataPeriod": "year",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -1592,7 +1605,7 @@
           "value": "latest_value"
         },
         {
-          "text": "Cible à atteindre en 2022",
+          "text": "Cible à atteindre en décembre 2022",
           "text_default": null,
           "text_format": null,
           "text_value": null,
@@ -1602,7 +1615,7 @@
         }
       ],
       "odm_kpi_format": "integer",
-      "odm_kpi_unit": "bénéficiaires",
+      "odm_kpi_unit": "bénéficiaires*",
       "odm_chart_title": "Nombre de bénéficiaires en structures d'insertion par l'activité économique",
       "odm_chart_type": "histo",
       "odm_chart_template": "categVertH390_histo",
@@ -1622,10 +1635,10 @@
       "odm_map_only_national": false,
       "odm_map_has_regional_level": true,
       "odm_map_has_departement_level": true,
-      "odm_map_region_max": 1000,
-      "odm_map_departement_max": 275,
+      "odm_map_region_max": 21000,
+      "odm_map_departement_max": 9000,
       "odm_map_label": "Nombre de bénéficiaires en structures d'insertion par l'activité économique",
-      "odm_map_legend_subtitle": "<i>Données septembre 2020</i>",
+      "odm_map_legend_subtitle": "<i>Données décembre 2020</i>",
       "odm_map_default_layer": true,
       "isDep": true,
       "isReg": true,
@@ -1654,7 +1667,8 @@
       "dataPeriod": "month",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -1780,7 +1794,8 @@
       "dataPeriod": "year",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -1875,8 +1890,8 @@
       "odm_map_only_national": false,
       "odm_map_has_regional_level": true,
       "odm_map_has_departement_level": true,
-      "odm_map_region_max": 10000,
-      "odm_map_departement_max": 2300,
+      "odm_map_region_max": 7000,
+      "odm_map_departement_max": 2600,
       "odm_map_label": "Kilomètres d'aménagements cyclables sécurisés",
       "odm_map_legend_subtitle": "<i>Données mars 2021</i>",
       "odm_map_default_layer": true,
@@ -1907,7 +1922,8 @@
       "dataPeriod": "year",
       "multiplier": null,
       "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdateDate": "2020-09-30",
+      "trendType": "increasing"
     }]
   },
   {
@@ -2003,7 +2019,7 @@
       "odm_map_has_regional_level": true,
       "odm_map_has_departement_level": true,
       "odm_map_region_max": 4000000,
-      "odm_map_departement_max": 2500000,
+      "odm_map_departement_max": 2300000,
       "odm_map_label": "Nombre d'habitants vivant à l'intérieur d'une zone à faibles émissions",
       "odm_map_legend_subtitle": "<i>Données 2020</i>",
       "odm_map_default_layer": true,
@@ -2034,7 +2050,8 @@
       "dataPeriod": "year",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -2129,8 +2146,8 @@
       "odm_map_only_national": false,
       "odm_map_has_regional_level": true,
       "odm_map_has_departement_level": true,
-      "odm_map_region_max": 120000,
-      "odm_map_departement_max": 32000,
+      "odm_map_region_max": 140000,
+      "odm_map_departement_max": 40000,
       "odm_map_label": "Nombre de primes à la conversion et de bonus écologiques",
       "odm_map_legend_subtitle": "<i>Données mars 2021</i>",
       "odm_map_default_layer": true,
@@ -2161,7 +2178,8 @@
       "dataPeriod": "quarter",
       "multiplier": null,
       "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdateDate": "2020-09-30",
+      "trendType": "increasing"
     }]
   },
   {
@@ -2288,7 +2306,8 @@
       "dataPeriod": "semi",
       "multiplier": 1000000,
       "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdateDate": "2020-09-30",
+      "trendType": "increasing"
     }]
   },
   {
@@ -2391,9 +2410,9 @@
       "isDep": true,
       "isReg": true,
       "isNat": true,
-      "isDepTarget": false,
-      "isRegTarget": false,
-      "isNatTarget": false,
+      "isDepTarget": true,
+      "isRegTarget": true,
+      "isNatTarget": true,
       "isCumulative": true,
       "toAggregateReg": false,
       "toAggregateNat": false,
@@ -2415,7 +2434,8 @@
       "dataPeriod": "month",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     },{
       "active": true,
       "id_indicateur_ditp": "90092de72ae24053994ee3f40ac3c780",
@@ -2471,8 +2491,8 @@
       "odm_map_only_national": false,
       "odm_map_has_regional_level": true,
       "odm_map_has_departement_level": true,
-      "odm_map_region_max": 5600,
-      "odm_map_departement_max": 1300,
+      "odm_map_region_max": 12000,
+      "odm_map_departement_max": 2200,
       "odm_map_label": "Nombre d’agriculteurs engagés dans une démarche certifiée de transition agro-écologique",
       "odm_map_legend_subtitle": "<i>Données 2019</i>",
       "odm_map_default_layer": true,
@@ -2503,7 +2523,8 @@
       "dataPeriod": "year",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -2630,7 +2651,8 @@
       "dataPeriod": "year",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -2689,14 +2711,14 @@
           "hide_if_main_is_null": true
         },
         {
-          "text": "En",
-          "text_default": "Aujourd'hui",
-          "text_format": "datetime",
-          "text_value": "latest_value_date",
+          "text": "En février 2021 *",
+          "text_default": null,
+          "text_format": null,
+          "text_value": null,
           "value": "latest_value"
         },
         {
-          "text": "Cible en mars 2022",
+          "text": "Cible à atteindre en 2022",
           "text_default": null,
           "text_format": null,
           "text_value": null,
@@ -2726,10 +2748,10 @@
       "odm_map_only_national": false,
       "odm_map_has_regional_level": true,
       "odm_map_has_departement_level": true,
-      "odm_map_region_max": 1000000,
-      "odm_map_departement_max": 150000,
+      "odm_map_region_max": 11000000,
+      "odm_map_departement_max": 3500000,
       "odm_map_label": "Nombre d'heures de patrouille de voie publique",
-      "odm_map_legend_subtitle": "<i>Données mars 2021</i>",
+      "odm_map_legend_subtitle": "<i>Données février 2021</i>",
       "odm_map_default_layer": true,
       "isDep": true,
       "isReg": true,
@@ -2737,28 +2759,29 @@
       "isDepTarget": false,
       "isRegTarget": false,
       "isNatTarget": true,
-      "isCumulative": false,
+      "isCumulative": true,
       "toAggregateReg": false,
       "toAggregateNat": false,
       "toCumulateGlobally": false,
-      "toCumulateEachYear": true,
+      "toCumulateEachYear": false,
       "toMakeDeltaGlobally": false,
-      "toMakeDeltaEachYear": true,
+      "toMakeDeltaEachYear": false,
       "removeFirstValueDelta": false,
       "removeSecondValueDelta": false,
       "toPopulateDep": false,
       "toPopulateReg": false,
       "initialValue": true,
       "toRound": 0,
-      "initialValueDate": "2017-03-31",
-      "actualValueDate": null,
+      "initialValueDate": "2017-12-31",
+      "actualValueDate": "2021-02-28",
       "initialValueZero": false,
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
-      "dataPeriod": "month",
+      "dataPeriod": "year",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -2854,8 +2877,8 @@
       "odm_map_only_national": false,
       "odm_map_has_regional_level": true,
       "odm_map_has_departement_level": true,
-      "odm_map_region_max": 2500,
-      "odm_map_departement_max": 900,
+      "odm_map_region_max": 3100,
+      "odm_map_departement_max": 850,
       "odm_map_label": "Nombre d'amendes forfaitaires délictuelles dressées",
       "odm_map_legend_subtitle": "<i>Données février 2021</i>",
       "odm_map_default_layer": true,
@@ -2886,7 +2909,8 @@
       "dataPeriod": "month",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -3014,7 +3038,8 @@
       "dataPeriod": "quarter",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -3110,8 +3135,8 @@
       "odm_map_only_national": false,
       "odm_map_has_regional_level": true,
       "odm_map_has_departement_level": true,
-      "odm_map_region_max": 500,
-      "odm_map_departement_max": 50,
+      "odm_map_region_max": 200,
+      "odm_map_departement_max": 85,
       "odm_map_label": "Nombre de contrôles réalisés dans le cadre des CLIR ou des dispositifs existant localement avant la mise en place progressive des CLIR",
       "odm_map_legend_subtitle": "<i>Données février 2021</i>",
       "odm_map_default_layer": true,
@@ -3142,7 +3167,8 @@
       "dataPeriod": "month",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -3238,8 +3264,8 @@
       "odm_map_only_national": false,
       "odm_map_has_regional_level": true,
       "odm_map_has_departement_level": true,
-      "odm_map_region_max": 50,
-      "odm_map_departement_max": 15,
+      "odm_map_region_max": 30,
+      "odm_map_departement_max": 10,
       "odm_map_label": "Nombre de morts sur les routes",
       "odm_map_legend_subtitle": "<i>Données octobre 2020</i>",
       "odm_map_default_layer": true,
@@ -3270,7 +3296,8 @@
       "dataPeriod": "month",
       "multiplier": null,
       "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2019-12-31"
+      "progressionLastUpdateDate": "2019-12-31",
+      "trendType": "decreasing"
     }]
   },
   {
@@ -3397,7 +3424,8 @@
       "dataPeriod": "month",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     },
     {
       "active": true,
@@ -3486,7 +3514,8 @@
       "dataPeriod": null,
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -3581,8 +3610,8 @@
       "odm_map_only_national": false,
       "odm_map_has_regional_level": true,
       "odm_map_has_departement_level": true,
-      "odm_map_region_max": 600,
-      "odm_map_departement_max": 100,
+      "odm_map_region_max": 900,
+      "odm_map_departement_max": 270,
       "odm_map_label": "Nombre de familles bénéficiaires d'une pension alimentaire versée par l'intermédiaire du service public des pensions alimentaires",
       "odm_map_legend_subtitle": "<i>Données février 2021</i>",
       "odm_map_default_layer": true,
@@ -3613,7 +3642,8 @@
       "dataPeriod": "month",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -3707,8 +3737,8 @@
         "odm_map_only_national": false,
         "odm_map_has_regional_level": true,
         "odm_map_has_departement_level": true,
-        "odm_map_region_max": 40,
-        "odm_map_departement_max": 35,
+        "odm_map_region_max": 55,
+        "odm_map_departement_max": 25,
         "odm_map_label": "Part des équipements/soins 100% santé dans le total des soins auditifs",
         "odm_map_legend_subtitle": "<i>Données décembre 2020</i>",
         "odm_map_default_layer": true,
@@ -3739,7 +3769,8 @@
         "dataPeriod": "month",
         "multiplier": null,
         "progressionLastUpdate": 1,
-        "progressionLastUpdateDate": "2020-09-30"
+        "progressionLastUpdateDate": "2020-09-30",
+        "trendType": "increasing"
       },
       {
         "active": true,
@@ -3827,7 +3858,8 @@
         "dataPeriod": "month",
         "multiplier": null,
         "progressionLastUpdate": 1,
-        "progressionLastUpdateDate": "2020-09-30"
+        "progressionLastUpdateDate": "2020-09-30",
+        "trendType": "increasing"
       },
       {
         "active": true,
@@ -3915,7 +3947,8 @@
         "dataPeriod": "month",
         "multiplier": null,
         "progressionLastUpdate": 1,
-        "progressionLastUpdateDate": "2020-09-30"
+        "progressionLastUpdateDate": "2020-09-30",
+        "trendType": "increasing"
       }
     ]
   },
@@ -4013,7 +4046,7 @@
       "odm_map_only_national": false,
       "odm_map_has_regional_level": true,
       "odm_map_has_departement_level": true,
-      "odm_map_region_max": 250,
+      "odm_map_region_max": 260,
       "odm_map_departement_max": 60,
       "odm_map_label": "Nombre de maisons de santé pluri-professionnelles",
       "odm_map_legend_subtitle": "<i>Données décembre 2020</i>",
@@ -4045,7 +4078,8 @@
       "dataPeriod": "semi",
       "multiplier": null,
       "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdateDate": "2020-09-30",
+      "trendType": "increasing"
     },
     {
       "active": true,
@@ -4134,7 +4168,8 @@
       "dataPeriod": "year",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -4228,8 +4263,8 @@
       "odm_map_only_national": false,
       "odm_map_has_regional_level": true,
       "odm_map_has_departement_level": true,
-      "odm_map_region_max": 12000,
-      "odm_map_departement_max": 2300,
+      "odm_map_region_max": 15500,
+      "odm_map_departement_max": 3100,
       "odm_map_label": "Nombre de pères / conjoints prenant un congé de paternité et d’accueil de l’enfant",
       "odm_map_legend_subtitle": "<i>Données décembre 2020</i>",
       "odm_map_default_layer": true,
@@ -4260,7 +4295,8 @@
       "dataPeriod": "quarter",
       "multiplier": null,
       "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdateDate": "2020-09-30",
+      "trendType": "increasing"
     }]
   },
   {
@@ -4386,7 +4422,8 @@
       "dataPeriod": "year",
       "multiplier": null,
       "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdateDate": "2020-09-30",
+      "trendType": "decreasing"
     }]
   },
   {
@@ -4481,8 +4518,8 @@
       "odm_map_only_national": false,
       "odm_map_has_regional_level": true,
       "odm_map_has_departement_level": true,
-      "odm_map_region_max": 1000,
-      "odm_map_departement_max": 350,
+      "odm_map_region_max": 30000,
+      "odm_map_departement_max": 13000,
       "odm_map_label": "Nombre de dossiers MaPrimeRénov' validés",
       "odm_map_legend_subtitle": "<i>Données mars 2021</i>",
       "odm_map_default_layer": true,
@@ -4513,7 +4550,8 @@
       "dataPeriod": "month",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -4588,7 +4626,7 @@
         }
       ],
       "odm_kpi_format": "integer",
-      "odm_kpi_unit": "personnes dans l'année",
+      "odm_kpi_unit": "personnes dans l'année*",
       "odm_chart_title": "Nombre de personnes sans-abri ou en hébergement ayant obtenu un logement social",
       "odm_chart_type": "histo",
       "odm_chart_template": "categVertH390_histo",
@@ -4608,8 +4646,8 @@
       "odm_map_only_national": false,
       "odm_map_has_regional_level": true,
       "odm_map_has_departement_level": true,
-      "odm_map_region_max": 1000,
-      "odm_map_departement_max": 275,
+      "odm_map_region_max": 3600,
+      "odm_map_departement_max": 850,
       "odm_map_label": "Nombre de personnes sans-abri ou en hébergement ayant obtenu un logement social",
       "odm_map_legend_subtitle": "<i>Données janvier à mars 2021</i>",
       "odm_map_default_layer": true,
@@ -4640,7 +4678,8 @@
       "dataPeriod": "month",
       "multiplier": null,
       "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2019-12-31"
+      "progressionLastUpdateDate": "2019-12-31",
+      "trendType": "increasing"
     }]
   },
   {
@@ -4767,7 +4806,8 @@
         "dataPeriod": "year",
         "multiplier": null,
         "progressionLastUpdate": 0,
-        "progressionLastUpdateDate": null
+        "progressionLastUpdateDate": null,
+        "trendType": "increasing"
       },
       {
         "active": true,
@@ -4856,7 +4896,8 @@
         "dataPeriod": "year",
         "multiplier": null,
         "progressionLastUpdate": 0,
-        "progressionLastUpdateDate": null
+        "progressionLastUpdateDate": null,
+        "trendType": "increasing"
       }
     ]
   },
@@ -4984,7 +5025,8 @@
       "dataPeriod": "quarter",
       "multiplier": null,
       "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdateDate": "2020-09-30",
+      "trendType": "increasing"
     }]
   },
   {
@@ -5083,8 +5125,8 @@
       "odm_map_only_national": false,
       "odm_map_has_regional_level": true,
       "odm_map_has_departement_level": true,
-      "odm_map_region_max": 250,
-      "odm_map_departement_max": 50,
+      "odm_map_region_max": 200,
+      "odm_map_departement_max": 35,
       "odm_map_label": "Nombre de labellisations",
       "odm_map_legend_subtitle": "<i>Données avril 2021</i>",
       "odm_map_default_layer": true,
@@ -5115,7 +5157,8 @@
       "dataPeriod": "month",
       "multiplier": null,
       "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-09-30"
+      "progressionLastUpdateDate": "2020-09-30",
+      "trendType": "increasing"
     }]
   },
   {
@@ -5212,8 +5255,8 @@
       "odm_map_only_national": false,
       "odm_map_has_regional_level": true,
       "odm_map_has_departement_level": true,
-      "odm_map_region_max": 6000,
-      "odm_map_departement_max": 2300,
+      "odm_map_region_max": 6500,
+      "odm_map_departement_max": 2350,
       "odm_map_label": "Nombre de logements rénovés dans les villes moyennes (+ de 20 000 habitants)",
       "odm_map_legend_subtitle": "<i>Données mars 2021</i>",
       "odm_map_default_layer": true,
@@ -5244,7 +5287,8 @@
       "dataPeriod": "month",
       "multiplier": null,
       "progressionLastUpdate": 0,
-      "progressionLastUpdateDate": null
+      "progressionLastUpdateDate": null,
+      "trendType": "increasing"
     }]
   },
   {
@@ -5339,8 +5383,8 @@
       "odm_map_only_national": false,
       "odm_map_has_regional_level": true,
       "odm_map_has_departement_level": true,
-      "odm_map_region_max": 55000,
-      "odm_map_departement_max": 20000,
+      "odm_map_region_max": 62000,
+      "odm_map_departement_max": 22000,
       "odm_map_label": "Nombre d’utilisateurs du Pass culture",
       "odm_map_legend_subtitle": "<i>Données octobre 2020</i>",
       "odm_map_default_layer": true,
@@ -5371,7 +5415,8 @@
       "dataPeriod": "month",
       "multiplier": null,
       "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2020-10-31"
+      "progressionLastUpdateDate": "2020-10-31",
+      "trendType": "increasing"
     }]
   }
 ]
