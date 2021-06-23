@@ -1371,6 +1371,31 @@ const COMMON_TEMPLATES = {
       // MAPS
       // - - - - - - - - - - - - - - - - - - //
       maps: [...buildMaps(kpiGroupOptions)],
+      maps_blocks_toogle_show : true,
+      maps_blocks_toggle_options : [
+        { 
+          behavior: 'show',
+          rules: [
+            { 
+              specialStoreField: 'levelcode',
+              specialStoreValues: ['regional', 'departemental'],
+            },
+            { 
+              specialStoreField: 'levelname',
+              specialStoreValues: ['Guadeloupe', 'Guyane', 'Martinique', 'Mayotte', 'La Réunion'],
+            },
+          ]
+        },
+        { 
+          behavior: 'show',
+          rules: [
+            { 
+              specialStoreField: 'levelcode',
+              specialStoreValues: ['national'],
+            },
+          ]
+        },
+      ],
 
       // - - - - - - - - - - - - - - - - - - //
       // LAYERS VISIBILITY DRAWER
