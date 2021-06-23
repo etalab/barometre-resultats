@@ -707,12 +707,12 @@ export default {
 
   beforeMount() {
     this.kpiFamilies = this.viewConfig.kpi_families
-    this.log && console.log("\nC-KpiTableBlocks / beforeMount / this.kpiFamilies : ", this.kpiFamilies)
+    // this.log && console.log("\nC-KpiTableBlocks / beforeMount / this.kpiFamilies : ", this.kpiFamilies)
   },
 
   mounted() {
     this.openTabBtns = this.openTabs()
-    this.log && console.log("C-KpiTableBlocks / mounted / this.openTabBtns : ", this.openTabBtns)
+    // this.log && console.log("C-KpiTableBlocks / mounted / this.openTabBtns : ", this.openTabBtns)
   },
 
   computed: {
