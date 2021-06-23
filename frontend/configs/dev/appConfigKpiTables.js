@@ -312,7 +312,7 @@ const COMMON_RULES = {
       // },
 
       {
-        add: ' et départementale',
+        add: ' et à la maille départementale',
         conditions: [
           { hasDepKpi: true },
           {
