@@ -270,8 +270,7 @@
     <!-- MAP BLOCKS ROW -->
     <client-only
       >
-        <!-- v-show="showMapBlocks" -->
-        <!-- :class="`justify-center map-blocks my-2`" -->
+      <!-- v-show="showMapBlocks" -->
       <v-row
         v-if="map && mapOptionsBlocks.length && !isMobileWidth"
         :class="`justify-center ${showMapBlocks ? 'map-blocks mt-2' : 'hide-map-blocks'}`"
@@ -282,8 +281,6 @@
         :style="`height:${mapBlocksHeight}px!important;max-height:${mapBlocksHeight}px;`"
         class="mx-0"
         >
-        <!-- visibility:${showMapBlocks ? '' : 'hidden'} -->
-        <!-- display:${showMapBlocks ? '' : 'none'} -->
         <v-col
           v-show="canShow"
           v-for="mapBlock in mapOptionsBlocks"
@@ -422,13 +419,13 @@ export default {
 
   watch: {
     triggerVis(next, prev) {
-      this.log && console.log('C-MapboxGL / watch - triggerVis / next :', next)
+      // this.log && console.log('C-MapboxGL / watch - triggerVis / next :', next)
       this.getCanShow()
       this.handleResize()
     },
 
     triggerBtn(next, prev) {
-      this.log && console.log('C-MapboxGL / watch - triggerBtn / next :', next)
+      // this.log && console.log('C-MapboxGL / watch - triggerBtn / next :', next)
       this.handleResize()
     },
 
@@ -436,13 +433,19 @@ export default {
       let isMapLoaded = this.map
       let areAllBlocksAreLoaded = this.mapOptionsBlocks.every( m => m.isLoaded === true)  
       if (isMapLoaded && areAllBlocksAreLoaded) {
-        this.log && console.log("C-MapboxGL / watch - showMapBlocks... ")
+        // this.log && console.log("\nC-MapboxGL / watch - showMapBlocks... ")
         // this.log && console.log("C-MapboxGL / watch - showMapBlocks > need redraw ??? ")
 
         this.$nextTick().then(() => {
-          this.log && console.log("C-MapboxGL / watch - showMapBlocks / nextTick... ")
+          // this.log && console.log("C-MapboxGL / watch - showMapBlocks / nextTick... ")
           // this.handleResize()
           _map.resize()
+          if (next) {
+            _maps.forEach( mapBlock => {
+              // this.log && console.log("C-MapboxGL / watch - showMapBlocks / nextTick... mapBlock : ", mapBlock)
+              mapBlock.map.resize()
+            })
+          }
         })
 
         // this.$store.commit('toggleVisTrigger')
@@ -468,14 +471,14 @@ export default {
     map(next, prev) {
       this.handleResize()
       if (next && !prev) {
-        this.log && console.log("C-MapboxGL / watch - map - has changed... ")
+        // this.log && console.log("C-MapboxGL / watch - map - has changed... ")
         this.redraw(true)
       }
     },
     mapBlocks(next, prev) {
       this.handleResize()
-      this.log && console.log("\nC-MapboxGL / watch - mapBlocks - has changed... next :", next)
-      this.log && console.log("C-MapboxGL / watch - mapBlocks - this.mapOptionsBlocks : ", this.mapOptionsBlocks)
+      // this.log && console.log("\nC-MapboxGL / watch - mapBlocks - has changed... next :", next)
+      // this.log && console.log("C-MapboxGL / watch - mapBlocks - this.mapOptionsBlocks : ", this.mapOptionsBlocks)
       let areAllBlocksAreLoaded = this.mapOptionsBlocks.every( m => m.isLoaded === true)  
       // this.log && console.log("C-MapboxGL / watch - mapBlocks - areAllBlocksAreLoaded : ", areAllBlocksAreLoaded)
       if (areAllBlocksAreLoaded) {
@@ -483,7 +486,7 @@ export default {
       }
     },
     getResetZoomTrigger(next, prev) {
-      this.log && console.log('C-MapboxGL / watch - getResetZoomTrigger / next :', next)
+      // this.log && console.log('C-MapboxGL / watch - getResetZoomTrigger / next :', next)
       this.handleResize()
       this.resetZoom()
       this.resetAllSelected()
@@ -499,7 +502,7 @@ export default {
   },
 
   created() {
-    this.log && console.log("C-MapboxGL / created ...")
+    // this.log && console.log("C-MapboxGL / created ...")
     window.addEventListener('resize', this.handleResize(true))
   },
 
@@ -508,8 +511,8 @@ export default {
   },
 
   beforeMount() {
-    this.log && console.log("\n- + - MapboxGL component - + - + - + - + - + - + ")
-    this.log && console.log("C-MapboxGL / beforeMount ... ")
+    // this.log && console.log("\n- + - MapboxGL component - + - + - + - + - + - + ")
+    // this.log && console.log("C-MapboxGL / beforeMount ... ")
 
     // reset internal map objects
     _map = undefined
@@ -517,7 +520,7 @@ export default {
 
     // set up view config
     this.viewConfig = this.getLocalConfig
-    this.log && console.log("C-MapboxGL / beforeMount / this.viewConfig : ", this.viewConfig)
+    // this.log && console.log("C-MapboxGL / beforeMount / this.viewConfig : ", this.viewConfig)
     this.handleResize(true)
 
     // set div visibility in store
@@ -526,8 +529,8 @@ export default {
     // set up MAPBOX options
     const mapOptionsRoute = this.viewConfig.map_options
     const mapOptionsBlocksRoute = this.viewConfig.map_blocks
-    this.log && console.log("C-MapboxGL / beforeMount / mapOptionsRoute : ", mapOptionsRoute)
-    this.log && console.log("C-MapboxGL / beforeMount / mapOptionsBlocksRoute : ", mapOptionsBlocksRoute)
+    // this.log && console.log("C-MapboxGL / beforeMount / mapOptionsRoute : ", mapOptionsRoute)
+    // this.log && console.log("C-MapboxGL / beforeMount / mapOptionsBlocksRoute : ", mapOptionsBlocksRoute)
 
     this.activateShowMapBlocks = this.viewConfig.maps_blocks_toogle_show
     this.showMapBlocksOptions = this.viewConfig.maps_blocks_toggle_options
@@ -603,7 +606,7 @@ export default {
   },
 
   mounted() {
-    this.log && console.log("C-MapboxGL / mounted ...")
+    // this.log && console.log("C-MapboxGL / mounted ...")
     this.handleResize(true)
     this.getCanShow()
     this.$store.commit('toggleTriggerComponentLoaded')
@@ -706,21 +709,21 @@ export default {
         // this.log && console.log("C-MapboxGL / handleResize ... boolArray : ", boolArray )
         showMapBlocks = boolArray.some(v => v === true)
       }
-      this.log && console.log("C-MapboxGL / handleResize ... showMapBlocks : ", showMapBlocks )
+      // this.log && console.log("C-MapboxGL / handleResize ... showMapBlocks : ", showMapBlocks )
       return showMapBlocks
     },
     handleResize(ignoreBlocks = false) {
       let mapbox = _map
       let mapboxBlocks = _maps
-      this.log && console.log("\nC-MapboxGL / handleResize ... " )
-      this.log && console.log("C-MapboxGL / handleResize / ignoreBlocks : ", ignoreBlocks )
+      // this.log && console.log("\nC-MapboxGL / handleResize ... " )
+      // this.log && console.log("C-MapboxGL / handleResize / ignoreBlocks : ", ignoreBlocks )
       // this.log && console.log("C-MapboxGL / handleResize ... this.getSpecialStore : ", this.getSpecialStore )
       // this.log && console.log("C-MapboxGL / handleResize ... this.activateShowMapBlocks : ", this.activateShowMapBlocks )
       // this.log && console.log("C-MapboxGL / handleResize ... this.showMapBlocksOptions : ", this.showMapBlocksOptions )
 
       // hide / show map blocks row
       let showMapBlocks = this.getShowBlocks()
-      this.log && console.log("C-MapboxGL / handleResize ... showMapBlocks : ", showMapBlocks )
+      // this.log && console.log("C-MapboxGL / handleResize ... showMapBlocks : ", showMapBlocks )
 
       // compute maps heigths
       let mapHeight = 0
@@ -755,12 +758,12 @@ export default {
 
       if (this.isMobileWidth) {
         let docComponents = document.querySelectorAll(`.odm-colrow:not(.odm-colrow-map)`)
-        this.log && console.log("C-MapboxGL / handleResize ... docComponents : ", docComponents )
+        // this.log && console.log("C-MapboxGL / handleResize ... docComponents : ", docComponents )
         let docComponentsArray = Array.prototype.slice.call(docComponents)
         let sumComponentsHeights = docComponentsArray
           .map((i) => i.offsetHeight)
           .reduce((prev, curr) => prev + curr, 0)
-        this.log && console.log("C-MapboxGL / handleResize ... sumComponentsHeights : ", sumComponentsHeights )
+        // this.log && console.log("C-MapboxGL / handleResize ... sumComponentsHeights : ", sumComponentsHeights )
 
         mapHeight = mapHeight - sumNavbarsHeights - sumComponentsHeights - 110 //- navbarsHeights
         // this.canvasHeight = mapHeight
@@ -777,7 +780,7 @@ export default {
       this.showMapBlocks = showMapBlocks
       // this.mapHeight = (this.isMobileWidth && this.settings.mobileHeight) ? mapHeight : mapHeight + mapsBlocksHeights
       this.mapHeight = this.showMapBlocks || (this.isMobileWidth && this.settings.mobileHeight) ? mapHeight : mapHeight + mapsBlocksHeights
-      this.log && console.log("C-MapboxGL / handleResize ... this.mapHeight (end): ", this.mapHeight )
+      // this.log && console.log("C-MapboxGL / handleResize ... this.mapHeight (end): ", this.mapHeight )
       // this.log && console.log("C-MapboxGL / handleResize ... mapbox (end): ", mapbox )
 
       // if (mapbox) mapbox.resize()
@@ -867,7 +870,7 @@ export default {
       let storeSourcesArray = this.sources.filter((s) => s.from === "store")
       let urlSourcesArray = this.sources.filter((s) => s.from === "url")
       
-      // TO DO - reset sources and layers from previous maps
+      // TO DO - reset sources and layers from previous maps if route change
       
       this.loadStoreSources(storeSourcesArray, mainMap)
       this.loadUrlSources(urlSourcesArray, mainMap).then(() => {
