@@ -242,17 +242,6 @@
         </v-layout>
 
         <!-- MAIN MAP WITH MAPBOX GL -->
-            <!-- height: 100% !important; -->
-        <!-- <style>
-          .mapboxgl-canvas {
-            height: {{ mapHeight }}px!important;
-          }
-        </style> -->
-        <!-- <style>
-          .odamap-main-map .mapboxgl-canvas-container .mapboxgl-canvas {
-            height: 100% !important;
-          }
-        </style> -->
         <client-only>
           <MglMap
             class="odamap-main-map"
