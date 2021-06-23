@@ -1080,7 +1080,7 @@ export default {
     },
 
     getRuleValue(item, rules, returnClass = false, returnFallback = false, kpi = undefined) {
-      let isKpi = !!kpi
+      // let isKpi = !!kpi
       let fix = ''
       let value = ''
 
