@@ -287,8 +287,17 @@ const COMMON_RULES = {
         ]
       },
 
+      // {
+      //   add: 'en France',
+      //   conditions: [
+      //     {
+      //       itemId: 'from_level',
+      //       itemValue: 'nat'
+      //     }
+      //   ]
+      // },
       {
-        add: 'en France',
+        add: 'à la maille nationale',
         conditions: [
           // { specialStoreId: 'levelcode',
           //   specialStoreValue: 'departemental',
@@ -303,7 +312,7 @@ const COMMON_RULES = {
       },
 
       {
-        add: ' et au niveau départemental',
+        add: ' et départementale',
         conditions: [
           { hasDepKpi: true },
           {
@@ -762,8 +771,8 @@ const COMMON_KPI_TEMPLATES = {
           // fr: COMMON_RULES.fr_levelname_prepositions,
           fr: COMMON_RULES.fr_prepositions
         },
-        suffixRulesWarningText: { fr: 'Données uniquement disponibles pour ' },
-        suffixRulesWarningTextDep: { fr: 'et au niveau départemental' },
+        suffixRulesWarningText: { fr: 'Données uniquement disponibles ' },
+        // suffixRulesWarningTextDep: { fr: 'et au niveau départemental' },
         charts: [
           {
             component: 'apexchart',
