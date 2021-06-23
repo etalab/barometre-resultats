@@ -1033,7 +1033,7 @@
       "odm_map_only_national": false,
       "odm_map_has_regional_level": true,
       "odm_map_has_departement_level": true,
-      "odm_map_region_max": 1600,
+      "odm_map_region_max": 1650,
       "odm_map_departement_max": 400,
       "odm_map_label": "Nombre d'entreprises industrielles et organismes agricoles bénéficiaires des aides à l'investissement de France Relance",
       "odm_map_legend_subtitle": "<i>Données mars 2021</i>",
