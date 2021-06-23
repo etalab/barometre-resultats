@@ -41,7 +41,7 @@ const {
 
   keyKpiMapDefaultLayer,
   keyKpiMapOnlyNational,
-  // keyKpiMapHasRegion,
+  keyKpiMapHasRegion,
   keyKpiMapHasDepartement
 
 } = require('../../nuxt_loadStructure_fromJSON.js')
@@ -293,12 +293,25 @@ const COMMON_RULES = {
           // { specialStoreId: 'levelcode',
           //   specialStoreValue: 'departemental',
           // },
+          // { noDepKpi: true },
+          // { noRegKpi: true },
           {
             itemId: 'from_level',
             itemValue: 'nat'
           }
         ]
-      }
+      },
+
+      {
+        add: ' et au niveau départemental',
+        conditions: [
+          { hasDepKpi: true },
+          {
+            itemId: 'from_level',
+            itemValue: 'nat'
+          }
+        ]
+      },
 
     ]
   }
@@ -669,7 +682,9 @@ const COMMON_KPI_TEMPLATES = {
       const kpiUnit = kpi[keyKpiTableUnit]
       const kpiData = {
         id: `${kpiGroupOptions[keyKpiGroupId]}-${kpi[keyKpiId]}`,
+
         onlyNational: kpi[keyKpiMapOnlyNational],
+        hasRegion: kpi[keyKpiMapHasRegion],
         hasDepartement: kpi[keyKpiMapHasDepartement],
 
         afterTitleComponents: [
@@ -748,6 +763,7 @@ const COMMON_KPI_TEMPLATES = {
           fr: COMMON_RULES.fr_prepositions
         },
         suffixRulesWarningText: { fr: 'Données uniquement disponibles pour ' },
+        suffixRulesWarningTextDep: { fr: 'et au niveau départemental' },
         charts: [
           {
             component: 'apexchart',
