@@ -287,29 +287,29 @@ const COMMON_RULES = {
         ]
       },
 
-      // {
-      //   add: 'en France',
-      //   conditions: [
-      //     {
-      //       itemId: 'from_level',
-      //       itemValue: 'nat'
-      //     }
-      //   ]
-      // },
       {
-        add: 'à la maille nationale',
+        add: 'en France',
         conditions: [
-          // { specialStoreId: 'levelcode',
-          //   specialStoreValue: 'departemental',
-          // },
-          // { noDepKpi: true },
-          // { noRegKpi: true },
           {
             itemId: 'from_level',
             itemValue: 'nat'
           }
         ]
       },
+      // {
+      //   add: 'à la maille nationale',
+      //   conditions: [
+      //     // { specialStoreId: 'levelcode',
+      //     //   specialStoreValue: 'departemental',
+      //     // },
+      //     // { noDepKpi: true },
+      //     // { noRegKpi: true },
+      //     {
+      //       itemId: 'from_level',
+      //       itemValue: 'nat'
+      //     }
+      //   ]
+      // },
 
       {
         add: ' et départementale',
