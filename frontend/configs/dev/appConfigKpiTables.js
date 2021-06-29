@@ -288,7 +288,7 @@ const COMMON_RULES = {
       },
 
       {
-        add: 'en France',
+        add: 'pour la France',
         conditions: [
           {
             itemId: 'from_level',
@@ -312,7 +312,7 @@ const COMMON_RULES = {
       // },
 
       {
-        add: ' et à la maille départementale',
+        add: ' entière et à la maille départementale',
         conditions: [
           { hasDepKpi: true },
           {
