@@ -6339,7 +6339,7 @@
       "nom_indicateur": "Nombre d’enfants ayant suivi un cycle d’Aisance Aquatique",
       "odm_id": "nb-cycle-aisance-aquatique",
       "odm_text": "/ovq-textes/education/renforcer-competences-nation/indicateurs/education-savoir_nager_rouler-nb_cycle_aisance_aquatique.md",
-      "odm_text_brief": false,
+      "odm_text_brief": true,
       "odm_kpi_headers_overwrite": [{
           "text": "En",
           "text_default": "En 2017",
@@ -6429,7 +6429,7 @@
     "nom_indicateur": "Nombre d’attestations « savoir rouler à vélo » délivrées",
     "odm_id": "nb-attestations-savoir-rouler-velo",
     "odm_text": "/ovq-textes/education/savoir-nager-rouler/indicateurs/education-savoir_nager_rouler-nb_attestations_savoir_rouler_velo.md",
-    "odm_text_brief": false,
+    "odm_text_brief": true,
     "odm_kpi_headers_overwrite": [{
         "text": "En",
         "text_default": "En 2017",
