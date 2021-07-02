@@ -58,7 +58,7 @@
     "id_ovq": ["OVQ-RLS","OVQ-LCS","OVQ-LVF","OVQ-APR","OVQ-RSQ"],
     "nom_ovq": "Sécurité",
     "odm_id": "securite",
-    "odm_kpi_family_activate": false,
+    "odm_kpi_family_activate": true,
     "odm_kpi_families": ["securite"],
     "odm_url": "/lutte-stupefiants",
     "odm_image_activate": true,
