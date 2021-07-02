@@ -6338,7 +6338,7 @@
       "nom_indicateur_ditp": "Nombre d’enfants ayant suivi un cycle d’Aisance Aquatique",
       "nom_indicateur": "Nombre d’enfants ayant suivi un cycle d’Aisance Aquatique",
       "odm_id": "nb-cycle-aisance-aquatique",
-      "odm_text": "/ovq-textes/jeunesse-culture-engagement/indicateurs/jeunesse_culture_engagement-savoir_nager_rouler-nb_cycle_aisance_aquatique.md",
+      "odm_text": "/ovq-textes/jeunesse-culture-engagement/savoir-nager-rouler/indicateurs/jeunesse_culture_engagement-savoir_nager_rouler-nb_cycle_aisance_aquatique.md",
       "odm_text_brief": true,
       "odm_kpi_headers_overwrite": [{
           "text": "En",
