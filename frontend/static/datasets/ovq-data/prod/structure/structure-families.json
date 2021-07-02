@@ -209,7 +209,7 @@
       "OVQ-ACV",
       "OVQ-PVD"
     ],
-    "odm_kpi_family_activate": false,
+    "odm_kpi_family_activate": true,
     "odm_kpi_families": ["services-publics-et-territoires"],
     "odm_url": "/ameliorer-qualite-service",
     "odm_image_activate": true,
