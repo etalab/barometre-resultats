@@ -1,1 +1,18 @@
-[{"values":{"nb-aide-juridictionnelle-dematerialisee":{"value":15,"value_date":"2022-12-31"}},"nb-aide-juridictionnelle-dematerialisee":[{"date":"2022-12-31","value":15}],"targets":{"nb-aide-juridictionnelle-dematerialisee":{"target":990,"target_date":"2022-03-31"}}}]
+[{
+  "values": {
+    "nb-aide-juridictionnelle-dematerialisee": {
+      "value": 15,
+      "value_date": "2022-12-31"
+    }
+  },
+  "nb-aide-juridictionnelle-dematerialisee": [{
+    "date": "2022-12-31",
+    "value": 15
+  }],
+  "targets": {
+    "nb-aide-juridictionnelle-dematerialisee": {
+      "target": 990,
+      "target_date": "2022-03-31"
+    }
+  }
+}]
