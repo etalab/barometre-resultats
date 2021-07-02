@@ -6104,7 +6104,7 @@
         "text_default": null,
         "text_format": null,
         "text_value": null,
-        "value": null,
+        "value": "target",
         "hide_if_main_is_null": true,
         "hide_day_on_date": true
       }
@@ -6232,7 +6232,7 @@
         "text_default": null,
         "text_format": null,
         "text_value": null,
-        "value": null,
+        "value": "target",
         "hide_if_main_is_null": true,
         "hide_day_on_date": true
       }
@@ -6297,9 +6297,9 @@
 {
   "active": true,
   "id_ovq": "OVQ-SNR",
-  "nom_ovq_ditp": "Savoir nager et savoir rouler",
-  "nom_ovq": "Savoir nager et savoir rouler",
-  "nom_ovq_bis": "Savoir nager et savoir rouler",
+  "nom_ovq_ditp": "SApprendre à nager et à circuler à vélo en toute sécurité",
+  "nom_ovq": "Apprendre à nager et à circuler à vélo en toute sécurité",
+  "nom_ovq_bis": "Apprendre à nager et à circuler à vélo en toute sécurité",
   "odm_id": "savoir-nager-rouler",
   "odm_activate": true,
   "odm_sources_ids": [{
@@ -6328,8 +6328,8 @@
   "odm_ext_link": "https://www.gouvernement.fr/node/10684",
   "odm_ext_link_text": "Apprendre à nager et à circuler à vélo en toute sécurité",
   "odm_image_activate": false,
-  "odm_image": "/ovq-textes/education/images/test-image.png",
-  "odm_text": "/ovq-textes/education/savoir-nager-rouler/education-savoir_nager_rouler-resume.md",
+  "odm_image": "/ovq-textes/jeunesse-culture-engagement/images/test-image.png",
+  "odm_text": "/ovq-textes/jeunesse-culture-engagement/savoir-nager-rouler/jeunesse_culture_engagement-savoir_nager_rouler-resume.md",
   "odm_text_brief": false,
   "indicateurs": [{
       "active": true,
@@ -6338,7 +6338,7 @@
       "nom_indicateur_ditp": "Nombre d’enfants ayant suivi un cycle d’Aisance Aquatique",
       "nom_indicateur": "Nombre d’enfants ayant suivi un cycle d’Aisance Aquatique",
       "odm_id": "nb-cycle-aisance-aquatique",
-      "odm_text": "/ovq-textes/education/renforcer-competences-nation/indicateurs/education-savoir_nager_rouler-nb_cycle_aisance_aquatique.md",
+      "odm_text": "/ovq-textes/jeunesse-culture-engagement/indicateurs/jeunesse_culture_engagement-savoir_nager_rouler-nb_cycle_aisance_aquatique.md",
       "odm_text_brief": true,
       "odm_kpi_headers_overwrite": [{
           "text": "En",
@@ -6428,7 +6428,7 @@
     "nom_indicateur_ditp": "Nombre d’attestations « savoir rouler à vélo » délivrées",
     "nom_indicateur": "Nombre d’attestations « savoir rouler à vélo » délivrées",
     "odm_id": "nb-attestations-savoir-rouler-velo",
-    "odm_text": "/ovq-textes/education/savoir-nager-rouler/indicateurs/education-savoir_nager_rouler-nb_attestations_savoir_rouler_velo.md",
+    "odm_text": "/ovq-textes/jeunesse-culture-engagement/savoir-nager-rouler/indicateurs/jeunesse_culture_engagement-savoir_nager_rouler-nb_attestations_savoir_rouler_velo.md",
     "odm_text_brief": true,
     "odm_kpi_headers_overwrite": [{
         "text": "En",
