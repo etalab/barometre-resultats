@@ -6202,7 +6202,7 @@
   "odm_image_activate": false,
   "odm_image": "/ovq-textes/relance-emploi-economie/images/test-image.png",
   "odm_text": "/ovq-textes/relance-emploi-economie/renforcer-competences-nation/relance_emploi_economie-renforcer_competences_nation-resume.md",
-  "odm_text_brief": false,
+  "odm_text_brief": true,
   "indicateurs": [{
     "active": true,
     "id_indicateur_ditp": "17a8281666d5478c9358029d2df442f1",
@@ -6330,7 +6330,7 @@
   "odm_image_activate": false,
   "odm_image": "/ovq-textes/jeunesse-culture-engagement/images/test-image.png",
   "odm_text": "/ovq-textes/jeunesse-culture-engagement/savoir-nager-rouler/jeunesse_culture_engagement-savoir_nager_rouler-resume.md",
-  "odm_text_brief": false,
+  "odm_text_brief": true,
   "indicateurs": [{
       "active": true,
       "id_indicateur_ditp": "14df03e0e36047c78d83c8f61b22b787",
@@ -6548,7 +6548,7 @@
   "odm_image_activate": false,
   "odm_image": "/ovq-textes/services-publics-et-territoires/images/test-image.png",
   "odm_text": "/ovq-textes/services-publics-et-territoires/etat-civil-numerique/services_publics_et_territoires-etat_civil_numerique-resume.md",
-  "odm_text_brief": false,
+  "odm_text_brief": true,
   "indicateurs": [{
     "active": true,
     "id_indicateur_ditp": "f236bbda736d48e3a226d370b366d6b8",
