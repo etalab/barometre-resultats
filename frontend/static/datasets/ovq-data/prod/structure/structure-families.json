@@ -61,7 +61,6 @@
     "odm_id": "transition-ecologique",
     "id_ovq": [
       "OVQ-PVL",
-      "OVQ-PLF",
       "OVQ-VPA",
       "OVQ-ZFE",
       "OVQ-PUU"
@@ -75,7 +74,6 @@
     "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement",
     "odm_url_aliases": [
       "/plan-velo",
-      "/petites-lignes-ferroviaires",
       "/verdir-parc-automobile",
       "/zones-faible-emission",
       "plastique-usage-unique"
