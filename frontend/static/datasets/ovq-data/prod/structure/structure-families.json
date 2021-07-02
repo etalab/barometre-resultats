@@ -38,7 +38,7 @@
       "OVQ-IAE",
       "OVQ-THR"
     ],
-    "odm_kpi_family_activate": false,
+    "odm_kpi_family_activate": true,
     "odm_kpi_families": ["relance-emploi-economie"],
     "odm_url": "/france-relance-entreprises",
     "odm_image_activate": true,
