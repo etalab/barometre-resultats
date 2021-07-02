@@ -135,7 +135,7 @@
       "OVQ-SAJ",
       "OVQ-TIG"
     ],
-    "odm_kpi_family_activate": false,
+    "odm_kpi_family_activate": true,
     "odm_kpi_families": ["justice"],
     "odm_url": "/simplifier-aide-juridictionnelle",
     "odm_image_activate": true,
