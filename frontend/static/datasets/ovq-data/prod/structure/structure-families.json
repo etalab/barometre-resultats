@@ -1,7 +1,14 @@
 [  {
-    "id_ovq": ["OVQ-REP","OVQ-LEC","OVQ-DEI","OVQ-SUP","OVQ-PDF","OVQ-SPA"],
     "nom_ovq": "Education - Jeunesse",
     "odm_id": "education",
+    "id_ovq": [
+      "OVQ-REP",
+      "OVQ-LEC",
+      "OVQ-PDF",
+      "OVQ-DEI",
+      "OVQ-SUP",
+      "OVQ-SPA"
+    ],
     "odm_kpi_family_activate": true,
     "odm_kpi_families": ["education"],
     "odm_url": "/dedoubler-classes-rep",
@@ -9,13 +16,28 @@
     "odm_image": "/ovq-textes/education/images/img-education.jpg",
     "odm_tab_icon": "icon-graduation-cap",
     "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement",
-    "odm_url_aliases": ["/dedoubler-classes-rep","/limiter-effectifs-cp-ce1","/deployer-devoirs-faits","/ecole-inclusive","/deployer-parcoursup","/promouvoir-engagement-jeunes"],
+    "odm_url_aliases": [
+      "/dedoubler-classes-rep",
+      "/limiter-effectifs-cp-ce1",
+      "/deployer-devoirs-faits",
+      "/ecole-inclusive",
+      "/deployer-parcoursup",
+      "/promouvoir-engagement-jeunes"
+    ],
     "odm_text": "/ovq-textes/education/education-resume.md"
   },
   {
-    "id_ovq": ["OVQ-DPR","OVQ-ATN","OVQ-APP","OVQ-NTS","OVQ-RCN","OVQ-IAE","OVQ-THR"],
     "nom_ovq": "Economie - Emploi",
     "odm_id": "relance-emploi-economie",
+    "id_ovq": [
+      "OVQ-DPR",
+      "OVQ-ATN",
+      "OVQ-APP",
+      "OVQ-NTS",
+      "OVQ-RCN",
+      "OVQ-IAE",
+      "OVQ-THR"
+    ],
     "odm_kpi_family_activate": true,
     "odm_kpi_families": ["relance-emploi-economie"],
     "odm_url": "/france-relance-entreprises",
@@ -23,13 +45,27 @@
     "odm_image": "/ovq-textes/relance-emploi-economie/images/img-relance_emploi_economie.jpg",
     "odm_tab_icon": "icon-work",
     "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement",
-    "odm_url_aliases": ["/france-relance-entreprises","/accompagner-transformation-numerique","/apprentissage","/un-jeune-une-solution","/renforcer-competences-nation","/pacte-ambition-iae","/supprimer-taxe-habitation-residences-principales"],
+    "odm_url_aliases": [
+      "/france-relance-entreprises",
+      "/accompagner-transformation-numerique",
+      "/apprentissage",
+      "/un-jeune-une-solution",
+      "/renforcer-competences-nation",
+      "/pacte-ambition-iae",
+      "/supprimer-taxe-habitation-residences-principales"
+    ],
     "odm_text": "/ovq-textes/relance-emploi-economie/relance_emploi_economie-resume.md"
   },
-    {
-    "id_ovq": ["OVQ-PVL","OVQ-PLF","OVQ-VPA","OVQ-ZFE","OVQ-PUU"],
+  {
     "nom_ovq": "Transition écologique",
     "odm_id": "transition-ecologique",
+    "id_ovq": [
+      "OVQ-PVL",
+      "OVQ-PLF",
+      "OVQ-VPA",
+      "OVQ-ZFE",
+      "OVQ-PUU"
+    ],
     "odm_kpi_family_activate": true,
     "odm_kpi_families": ["transition-ecologique"],
     "odm_url": "/plan-velo",
@@ -37,13 +73,22 @@
     "odm_image": "/ovq-textes/transition-ecologique/images/img-transition-ecologique.jpg",
     "odm_tab_icon": "icon-leaf",
     "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement",
-    "odm_url_aliases": ["/plan-velo","/petites-lignes-ferroviaires","/verdir-parc-automobile","/zones-faible-emission","plastique-usage-unique"],
+    "odm_url_aliases": [
+      "/plan-velo",
+      "/petites-lignes-ferroviaires",
+      "/verdir-parc-automobile",
+      "/zones-faible-emission",
+      "plastique-usage-unique"
+    ],
     "odm_text": "/ovq-textes/transition-ecologique/transition_ecologique-resume.md"
   },
   {
-    "id_ovq": ["OVQ-RUP","OVQ-PAC"],
     "nom_ovq": "Agriculture",
     "odm_id": "agriculture",
+    "id_ovq": [
+      "OVQ-RUP",
+      "OVQ-PAC"
+    ],
     "odm_kpi_family_activate": false,
     "odm_kpi_families": ["agriculture"],
     "odm_url": "/reduire-phytosanitaires",
@@ -51,13 +96,22 @@
     "odm_image": "/ovq-textes/agriculture/images/img-agriculture.jpg",
     "odm_tab_icon": "icon-agriculture",
     "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement",
-    "odm_url_aliases": ["/reduire-phytosanitaires","/securiser-paiement-pac"],
+    "odm_url_aliases": [
+      "/reduire-phytosanitaires",
+      "/securiser-paiement-pac"
+    ],
     "odm_text": "/ovq-textes/agriculture/agriculture-resume.md"
   },
   {
-    "id_ovq": ["OVQ-RSQ","OVQ-RLS","OVQ-LVF","OVQ-LCS","OVQ-APR"],
     "nom_ovq": "Sécurité",
     "odm_id": "securite",
+    "id_ovq": [
+      "OVQ-RSQ",
+      "OVQ-RLS",
+      "OVQ-LVF",
+      "OVQ-LCS",
+      "OVQ-APR"
+    ],
     "odm_kpi_family_activate": true,
     "odm_kpi_families": ["securite"],
     "odm_url": "/renforcer-securite-quotidien",
@@ -65,13 +119,22 @@
     "odm_image": "/ovq-textes/securite/images/img-securite.jpg",
     "odm_tab_icon": "icon-shield",
     "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement",
-    "odm_url_aliases": ["/renforcer-securite-quotidien","/lutte-stupefiants","/lutter-violences-femmes","/lutter-contre-principes-republicains","/reduire-mortalite-routes"],
+    "odm_url_aliases": [
+      "/renforcer-securite-quotidien",
+      "/lutte-stupefiants",
+      "/lutter-violences-femmes",
+      "/lutter-contre-principes-republicains",
+      "/reduire-mortalite-routes"
+    ],
     "odm_text": "/ovq-textes/securite/securite-resume.md"
   },
   {
-    "id_ovq": ["OVQ-SAJ","OVQ-TIG"],
     "nom_ovq": "Justice",
     "odm_id": "justice",
+    "id_ovq": [
+      "OVQ-SAJ",
+      "OVQ-TIG"
+    ],
     "odm_kpi_family_activate": true,
     "odm_kpi_families": ["justice"],
     "odm_url": "/simplifier-aide-juridictionnelle",
@@ -79,13 +142,23 @@
     "odm_image": "/ovq-textes/justice/images/img-justice.jpg",
     "odm_tab_icon": "icon-balance-scale",
     "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement",
-    "odm_url_aliases": ["/simplifier-aide-juridictionnelle","/developper-places-tig"],
+    "odm_url_aliases": [
+      "/simplifier-aide-juridictionnelle",
+      "/developper-places-tig"
+    ],
     "odm_text": "/ovq-textes/justice/justice-resume.md"
   },
   {
-    "id_ovq": ["OVQ-DMS","OVQ-DCP","OVQ-DPH","OVQ-OAD","OVQ-IPA","OVQ-MAA"],
     "nom_ovq": "Santé - Famille - Handicap",
     "odm_id": "sante-famille",
+    "id_ovq": [
+      "OVQ-MAA",
+      "OVQ-IPA",
+      "OVQ-OAD",
+      "OVQ-DMS",
+      "OVQ-DPH",
+      "OVQ-DCP"
+    ],
     "odm_kpi_family_activate": true,
     "odm_kpi_families": ["sante-famille"],
     "odm_url": "/doubler-maisons-sante",
@@ -93,41 +166,73 @@
     "odm_image": "/ovq-textes/sante-famille/images/img-sante_famille.jpg",
     "odm_tab_icon": "icon-aid-kit",
     "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement",
-    "odm_url_aliases": ["/doubler-maisons-sante","/deployer-conge-paternite","/simplifier-acces-droits-personnes-handicapees","/lunettes-auditifs-dentaires","/lutter-impayes-alimentaires","/accompagner-aidants"],
+    "odm_url_aliases": [
+      "/accompagner-aidants",
+      "/lutter-impayes-alimentaires",
+      "/lunettes-auditifs-dentaires",
+      "/doubler-maisons-sante",
+      "/simplifier-acces-droits-personnes-handicapees",
+      "/deployer-conge-paternite"
+    ],
     "odm_text": "/ovq-textes/sante-famille/sante_famille-resume.md"
   },
   {
-    "id_ovq": ["OVQ-LDA","OVQ-REL"],
     "nom_ovq": "Logement",
     "odm_id": "logement-ville",
+    "id_ovq": [
+      "OVQ-REL",
+      "OVQ-LDA"
+    ],
     "odm_kpi_family_activate": true,
     "odm_kpi_families": ["logement-ville"],
-    "odm_url": "/logement-d-abord",
+    "odm_url": "/accelerer-renovation-energetique",
     "odm_image_activate": true,
     "odm_image": "/ovq-textes/logement-ville/images/img-logement_ville.jpg",
     "odm_tab_icon": "icon-home_filled",
     "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement",
-    "odm_url_aliases": ["/","/par-ovq","/logement-d-abord","/accelerer-renovation-energetique"],
+    "odm_url_aliases": [
+      "/",
+      "/par-ovq",
+      "/accelerer-renovation-energetique",
+      "/logement-d-abord"
+    ],
     "odm_text": "/ovq-textes/logement-villes/logement_ville-resume.md"
   },
   {
-    "id_ovq": ["OVQ-THD","OVQ-OFS","OVQ-PSP","OVQ-ACV","OVQ-PVD","OVQ-ECN"],
     "nom_ovq": "Services publics et territoires",
     "odm_id": "services-publics-et-territoires",
+    "id_ovq": [
+      "OVQ-PSP",
+      "OVQ-ECN",
+      "OVQ-THD",
+      "OVQ-OFS",
+      "OVQ-ACV",
+      "OVQ-PVD"
+    ],
     "odm_kpi_family_activate": true,
     "odm_kpi_families": ["services-publics-et-territoires"],
-    "odm_url": "/thd",
+    "odm_url": "/ameliorer-qualite-service",
     "odm_image_activate": true,
     "odm_image": "/ovq-textes/services-publics-et-territoires/images/img-services_publics_et_territoires.jpg",
     "odm_tab_icon": "icon-bank",
     "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement",
-    "odm_url_aliases": ["/thd","/france-services","/ameliorer-qualite-service","/action-coeur-ville","/petites-villes-demain","/etat-civil-numerique"],
+    "odm_url_aliases": [
+      "/ameliorer-qualite-service",
+      "/etat-civil-numerique",
+      "/thd",
+      "/france-services",
+      "/action-coeur-ville",
+      "/petites-villes-demain"
+    ],
     "odm_text": "/ovq-textes/services-publics-et-territoires/services_publics_et_territoires-resume.md"
   },
   {
-    "id_ovq": ["OVQ-EAC","OVQ-DPC", "OVQ-SNR"],
     "nom_ovq": "Culture - sports",
     "odm_id": "jeunesse-culture-engagement",
+    "id_ovq": [
+      "OVQ-DPC",
+      "OVQ-SNR"
+    ],
     "odm_kpi_family_activate": true,
     "odm_kpi_families": ["jeunesse-culture-engagement"],
     "odm_url": "/deployer-pass-culture",
@@ -135,7 +240,10 @@
     "odm_image": "/ovq-textes/jeunesse-culture-engagement/images/img-jeunesse_culture_engagement.jpg",
     "odm_tab_icon": "icon-quill",
     "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement",
-    "odm_url_aliases": ["/deployer-pass-culture", "/savoir-nager-rouler"],
+    "odm_url_aliases": [
+      "/deployer-pass-culture",
+      "/savoir-nager-rouler"
+    ],
     "odm_text": "/ovq-textes/jeunesse-culture-engagement/jeunesse_culture_engagement-resume.md"
   }
 ]
