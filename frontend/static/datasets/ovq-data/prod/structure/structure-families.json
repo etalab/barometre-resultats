@@ -69,7 +69,7 @@
     "odm_text": "/ovq-textes/securite/securite-resume.md"
   },
   {
-    "id_ovq": ["OVQ-TIG"],
+    "id_ovq": ["OVQ-TIG","OVQ-SAJ"],
     "nom_ovq": "Justice",
     "odm_id": "justice",
     "odm_kpi_family_activate": true,
@@ -79,7 +79,7 @@
     "odm_image": "/ovq-textes/justice/images/img-justice.jpg",
     "odm_tab_icon": "icon-balance-scale",
     "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement",
-    "odm_url_aliases": ["/developper-places-tig"],
+    "odm_url_aliases": ["/developper-places-tig","/simplifier-aide-juridictionnelle"],
     "odm_text": "/ovq-textes/justice/justice-resume.md"
   },
   {
@@ -111,7 +111,7 @@
     "odm_text": "/ovq-textes/logement-villes/logement_ville-resume.md"
   },
   {
-    "id_ovq": ["OVQ-THD","OVQ-OFS","OVQ-PSP","OVQ-ACV","OVQ-PVD"],
+    "id_ovq": ["OVQ-THD","OVQ-OFS","OVQ-PSP","OVQ-ACV","OVQ-PVD","OVQ-ECN"],
     "nom_ovq": "Services publics et territoires",
     "odm_id": "services-publics-et-territoires",
     "odm_kpi_family_activate": true,
@@ -121,7 +121,7 @@
     "odm_image": "/ovq-textes/services-publics-et-territoires/images/img-services_publics_et_territoires.jpg",
     "odm_tab_icon": "icon-bank",
     "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement",
-    "odm_url_aliases": ["/thd","/france-services","/ameliorer-qualite-service","/action-coeur-ville","/petites-villes-demain"],
+    "odm_url_aliases": ["/thd","/france-services","/ameliorer-qualite-service","/action-coeur-ville","/petites-villes-demain","/etat-civil-numerique"],
     "odm_text": "/ovq-textes/services-publics-et-territoires/services_publics_et_territoires-resume.md"
   },
   {
