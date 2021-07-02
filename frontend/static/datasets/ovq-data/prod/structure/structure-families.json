@@ -30,7 +30,7 @@
     "id_ovq": ["OVQ-PVL","OVQ-PUU","OVQ-VPA","OVQ-ZFE","OVQ-PLF"],
     "nom_ovq": "Transition écologique",
     "odm_id": "transition-ecologique",
-    "odm_kpi_family_activate": false,
+    "odm_kpi_family_activate": true,
     "odm_kpi_families": ["transition-ecologique"],
     "odm_url": "/plan-velo",
     "odm_image_activate": true,
