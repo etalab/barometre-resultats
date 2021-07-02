@@ -1496,7 +1496,7 @@
     "odm_chart_marker_size": 6,
     "odm_chart_serie_name": "nombre",
     "odm_chart_format": "integer",
-    "odm_chart_unit": "département : recrutements entre août et décembre, national : recrutements entre août et février",
+    "odm_chart_unit": "département : recrutements entre août et février, national : recrutements entre août et avril",
     "odm_chart_annotation": false,
     "odm_chart_annotation_key": "targets",
     "odm_chart_y_annotation_key": "target",
@@ -1510,7 +1510,7 @@
     "odm_map_region_max": 350000,
     "odm_map_departement_max": 92000,
     "odm_map_label": "Nombre de recrutements de jeunes",
-    "odm_map_legend_subtitle": "<i>département : recrutements entre août et décembre, national : recrutements entre août et février Données 2020</i>",
+    "odm_map_legend_subtitle": "<i>département : recrutements entre août et février, national : recrutements entre août et avril Données 2021</i>",
     "odm_map_default_layer": true,
     "isDep": true,
     "isReg": true,
@@ -5946,7 +5946,7 @@
   "odm_image_activate": false,
   "odm_image": "/ovq-textes/transition-ecologique/images/test-image.png",
   "odm_text": "/ovq-textes/transition-ecologique/petites-lignes-ferroviaires/transition_ecologique-petites_lignes_ferroviaires-resume.md",
-  "odm_text_brief": false,
+  "odm_text_brief": true,
   "indicateurs": [{
     "active": true,
     "id_indicateur_ditp": "92478fe69601472d9443594b52950ac3",
@@ -5955,7 +5955,7 @@
     "nom_indicateur": "Nombre de km de lignes régénérées depuis le début du quinquennat",
     "odm_id": "nb-km-lignes-regenerees",
     "odm_text": "/ovq-textes/transition-ecologique/petites-lignes-ferroviaires/indicateurs/transition_ecologique-petites_lignes_ferroviaires-nb_km_lignes_regenerees.md",
-    "odm_text_brief": false,
+    "odm_text_brief": true,
     "odm_kpi_headers_overwrite": [{
         "text": "En",
         "text_default": "En 2017",
@@ -6004,7 +6004,7 @@
     "odm_map_has_departement_level": false,
     "odm_map_region_max": 200,
     "odm_map_departement_max": 100,
-    "odm_map_label": "km de lignes regénérées",
+    "odm_map_label": "Nombre de km de lignes régénérées depuis le début du quinquennat",
     "odm_map_legend_subtitle": "<i>Données mai 2021</i>",
     "odm_map_default_layer": true,
     "isDep": false,
@@ -6104,7 +6104,7 @@
         "text_default": null,
         "text_format": null,
         "text_value": null,
-        "value": null,
+        "value": "target",
         "hide_if_main_is_null": true,
         "hide_day_on_date": true
       }
@@ -6232,7 +6232,7 @@
         "text_default": null,
         "text_format": null,
         "text_value": null,
-        "value": null,
+        "value": "target",
         "hide_if_main_is_null": true,
         "hide_day_on_date": true
       }
@@ -6297,9 +6297,9 @@
 {
   "active": true,
   "id_ovq": "OVQ-SNR",
-  "nom_ovq_ditp": "Savoir nager et savoir rouler",
-  "nom_ovq": "Savoir nager et savoir rouler",
-  "nom_ovq_bis": "Savoir nager et savoir rouler",
+  "nom_ovq_ditp": "Apprendre à nager et à circuler à vélo en toute sécurité",
+  "nom_ovq": "Apprendre à nager et à circuler à vélo en toute sécurité",
+  "nom_ovq_bis": "Apprendre à nager et à circuler à vélo en toute sécurité",
   "odm_id": "savoir-nager-rouler",
   "odm_activate": true,
   "odm_sources_ids": [{
@@ -6326,10 +6326,10 @@
   "odm_url": "/savoir-nager-rouler",
   "odm_urls": ["/savoir-nager-rouler", "/savoir-nager-rouler/"],
   "odm_ext_link": "https://www.gouvernement.fr/node/10684",
-  "odm_ext_link_text": "Savoir nager et savoir rouler",
+  "odm_ext_link_text": "Apprendre à nager et à circuler à vélo en toute sécurité",
   "odm_image_activate": false,
-  "odm_image": "/ovq-textes/education/images/test-image.png",
-  "odm_text": "/ovq-textes/education/savoir-nager-rouler/education-savoir_nager_rouler-resume.md",
+  "odm_image": "/ovq-textes/jeunesse-culture-engagement/images/test-image.png",
+  "odm_text": "/ovq-textes/jeunesse-culture-engagement/savoir-nager-rouler/jeunesse_culture_engagement-savoir_nager_rouler-resume.md",
   "odm_text_brief": false,
   "indicateurs": [{
       "active": true,
@@ -6338,8 +6338,8 @@
       "nom_indicateur_ditp": "Nombre d’enfants ayant suivi un cycle d’Aisance Aquatique",
       "nom_indicateur": "Nombre d’enfants ayant suivi un cycle d’Aisance Aquatique",
       "odm_id": "nb-cycle-aisance-aquatique",
-      "odm_text": "/ovq-textes/education/renforcer-competences-nation/indicateurs/education-savoir_nager_rouler-nb_cycle_aisance_aquatique.md",
-      "odm_text_brief": false,
+      "odm_text": "/ovq-textes/jeunesse-culture-engagement/indicateurs/jeunesse_culture_engagement-savoir_nager_rouler-nb_cycle_aisance_aquatique.md",
+      "odm_text_brief": true,
       "odm_kpi_headers_overwrite": [{
           "text": "En",
           "text_default": "En 2017",
@@ -6366,7 +6366,7 @@
         }
       ],
       "odm_kpi_format": "integer",
-      "odm_kpi_unit": "attestations",
+      "odm_kpi_unit": "enfants",
       "odm_chart_title": "Nombre d’enfants ayant suivi un cycle d’Aisance Aquatique",
       "odm_chart_type": "histo",
       "odm_chart_template": "categVertH390_histo",
@@ -6428,8 +6428,8 @@
     "nom_indicateur_ditp": "Nombre d’attestations « savoir rouler à vélo » délivrées",
     "nom_indicateur": "Nombre d’attestations « savoir rouler à vélo » délivrées",
     "odm_id": "nb-attestations-savoir-rouler-velo",
-    "odm_text": "/ovq-textes/education/savoir-nager-rouler/indicateurs/education-savoir_nager_rouler-nb_attestations_savoir_rouler_velo.md",
-    "odm_text_brief": false,
+    "odm_text": "/ovq-textes/jeunesse-culture-engagement/savoir-nager-rouler/indicateurs/jeunesse_culture_engagement-savoir_nager_rouler-nb_attestations_savoir_rouler_velo.md",
+    "odm_text_brief": true,
     "odm_kpi_headers_overwrite": [{
         "text": "En",
         "text_default": "En 2017",
@@ -6515,7 +6515,7 @@
 {
   "active": true,
   "id_ovq": "OVQ-ECN",
-  "nom_ovq_ditp": "Créer un état civil numérique",
+  "nom_ovq_ditp": "Mettre en place un état civil numérique",
   "nom_ovq": "Mettre en place un état civil numérique",
   "nom_ovq_bis": "Mettre en place un état civil numérique",
   "odm_id": "etat-civil-numerique",
@@ -6606,7 +6606,7 @@
     "odm_map_has_departement_level": false,
     "odm_map_region_max": 100,
     "odm_map_departement_max": 100,
-    "odm_map_label": "%",
+    "odm_map_label": "Taux d’adhésion des usagers à la délivrance dématérialisée d’actes d’état civil",
     "odm_map_legend_subtitle": "<i>Données mai 2021</i>",
     "odm_map_default_layer": true,
     "isDep": false,
