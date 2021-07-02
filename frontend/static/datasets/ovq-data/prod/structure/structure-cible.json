@@ -6515,7 +6515,7 @@
 {
   "active": true,
   "id_ovq": "OVQ-ECN",
-  "nom_ovq_ditp": "Créer un état civil numérique",
+  "nom_ovq_ditp": "Mettre en place un état civil numérique",
   "nom_ovq": "Mettre en place un état civil numérique",
   "nom_ovq_bis": "Mettre en place un état civil numérique",
   "odm_id": "etat-civil-numerique",
