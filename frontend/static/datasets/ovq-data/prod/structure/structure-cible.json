@@ -2182,7 +2182,7 @@
     "trendType": "increasing"
   },
   {
-    "active": true,
+    "active": false,
     "id_indicateur_ditp": "4251e0df0f0f4320bece464fe2f8ac7e",
     "id_indicateur_fr": "nb-points-recharge",
     "nom_indicateur_ditp": "Nombre de points de recharge ouverts au public",
