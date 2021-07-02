@@ -1,4 +1,4 @@
 <p>
-L’indicateur mesure le nombre de points de recharge pour véhicules électriques et hybrides rechargeables, ouverts au public sur le territoire français. Les points de recharge dédiés à une recharge résidentielle ou professionnelle sont exclus (on en compte environ 600 000 en France, chez les particuliers et dans les entreprises). Un point de recharge correspond à une interface associée à un emplacement de stationnement qui permet de recharger un seul véhicule à la fois. 
+L’indicateur mesure le nombre de points de recharge pour véhicules électriques et hybrides rechargeables, ouverts au public sur le territoire français. Les points de recharge dédiés à une recharge résidentielle ou professionnelle sont exclus (on en compte environ 600 000 en France, chez les particuliers et dans les entreprises). Un point de recharge correspond à une interface associée à un emplacement de stationnement qui permet de recharger un seul véhicule à la fois.
 </p>
 <p class="font-italic body-2">Source : Girève <br> Consulter les données sur <a target="_blank" href="https://www.data.gouv.fr/fr/datasets/barometre-des-resultats-de-laction-publique/">www.data.gouv.fr</a></p>
