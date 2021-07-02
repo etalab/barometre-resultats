@@ -1,5 +1,5 @@
 [  {
-    "id_ovq": ["OVQ-DEI","OVQ-LEC","OVQ-REP","OVQ-SUP","OVQ-PDF","OVQ-SNU"],
+    "id_ovq": ["OVQ-DEI","OVQ-LEC","OVQ-REP","OVQ-SUP","OVQ-PDF","OVQ-SNU","OVQ-SNR"],
     "nom_ovq": "Education - Jeunesse",
     "odm_id": "education",
     "odm_kpi_family_activate": true,
@@ -9,11 +9,11 @@
     "odm_image": "/ovq-textes/education/images/img-education.jpg",
     "odm_tab_icon": "icon-graduation-cap",
     "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement",
-    "odm_url_aliases": ["/ecole-inclusive","/limiter-effectifs-cp-ce1","/dedoubler-classes-rep","/deployer-parcoursup","/deployer-devoirs-faits","/assurer-montee-snu"],
+    "odm_url_aliases": ["/ecole-inclusive","/limiter-effectifs-cp-ce1","/dedoubler-classes-rep","/deployer-parcoursup","/deployer-devoirs-faits","/assurer-montee-snu","/savoir-nager-rouler"],
     "odm_text": "/ovq-textes/education/education-resume.md"
   },
   {
-    "id_ovq": ["OVQ-APP","OVQ-NTS","OVQ-THR","OVQ-ATN","OVQ-IAE","OVQ-DPR"],
+    "id_ovq": ["OVQ-APP","OVQ-NTS","OVQ-THR","OVQ-ATN","OVQ-IAE","OVQ-DPR","OVQ-RCN"],
     "nom_ovq": "Economie - Emploi",
     "odm_id": "relance-emploi-economie",
     "odm_kpi_family_activate": true,
@@ -23,11 +23,11 @@
     "odm_image": "/ovq-textes/relance-emploi-economie/images/img-relance_emploi_economie.jpg",
     "odm_tab_icon": "icon-work",
     "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement",
-    "odm_url_aliases": ["/apprentissage","/un-jeune-une-solution","/supprimer-taxe-habitation-residences-principales","/accompagner-transformation-numerique","/pacte-ambition-iae"],
+    "odm_url_aliases": ["/apprentissage","/un-jeune-une-solution","/supprimer-taxe-habitation-residences-principales","/accompagner-transformation-numerique","/pacte-ambition-iae","/renforcer-competences-nation"],
     "odm_text": "/ovq-textes/relance-emploi-economie/relance_emploi_economie-resume.md"
   },
     {
-    "id_ovq": ["OVQ-PVL","OVQ-PUU","OVQ-VPA","OVQ-ZFE"],
+    "id_ovq": ["OVQ-PVL","OVQ-PUU","OVQ-VPA","OVQ-ZFE","OVQ-PLF"],
     "nom_ovq": "Transition écologique",
     "odm_id": "transition-ecologique",
     "odm_kpi_family_activate": true,
@@ -37,7 +37,7 @@
     "odm_image": "/ovq-textes/transition-ecologique/images/img-transition-ecologique.jpg",
     "odm_tab_icon": "icon-leaf",
     "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement",
-    "odm_url_aliases": ["/plan-velo","/plastique-usage-unique","/verdir-parc-automobile","/zones-faible-emission"],
+    "odm_url_aliases": ["/plan-velo","/plastique-usage-unique","/verdir-parc-automobile","/zones-faible-emission","/petites-lignes-ferroviaires"],
     "odm_text": "/ovq-textes/transition-ecologique/transition_ecologique-resume.md"
   },
   {
@@ -83,7 +83,7 @@
     "odm_text": "/ovq-textes/justice/justice-resume.md"
   },
   {
-    "id_ovq": ["OVQ-DMS","OVQ-DCP","OVQ-DPH","OVQ-OAD","OVQ-IPA"],
+    "id_ovq": ["OVQ-DMS","OVQ-DCP","OVQ-DPH","OVQ-OAD","OVQ-IPA","OVQ-MAA"],
     "nom_ovq": "Santé - Famille - Handicap",
     "odm_id": "sante-famille",
     "odm_kpi_family_activate": true,
@@ -93,7 +93,7 @@
     "odm_image": "/ovq-textes/sante-famille/images/img-sante_famille.jpg",
     "odm_tab_icon": "icon-aid-kit",
     "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement",
-    "odm_url_aliases": ["/doubler-maisons-sante","/deployer-conge-paternite","/simplifier-acces-droits-personnes-handicapees","/lunettes-auditifs-dentaires","/lutter-impayes-alimentaires"],
+    "odm_url_aliases": ["/doubler-maisons-sante","/deployer-conge-paternite","/simplifier-acces-droits-personnes-handicapees","/lunettes-auditifs-dentaires","/lutter-impayes-alimentaires","/accompagner-aidants"],
     "odm_text": "/ovq-textes/sante-famille/sante_famille-resume.md"
   },
   {
@@ -111,7 +111,7 @@
     "odm_text": "/ovq-textes/logement-villes/logement_ville-resume.md"
   },
   {
-    "id_ovq": ["OVQ-THD","OVQ-OFS","OVQ-PSP","OVQ-ACV"],
+    "id_ovq": ["OVQ-THD","OVQ-OFS","OVQ-PSP","OVQ-ACV","OVQ-PVD"],
     "nom_ovq": "Services publics et territoires",
     "odm_id": "services-publics-et-territoires",
     "odm_kpi_family_activate": true,
@@ -121,7 +121,7 @@
     "odm_image": "/ovq-textes/services-publics-et-territoires/images/img-services_publics_et_territoires.jpg",
     "odm_tab_icon": "icon-bank",
     "odm_ext_link": "https://gouvernement.qualif.ext.ssl-gouv.fr/les-actions-du-gouvernement",
-    "odm_url_aliases": ["/thd","/france-services","/ameliorer-qualite-service","/action-coeur-ville"],
+    "odm_url_aliases": ["/thd","/france-services","/ameliorer-qualite-service","/action-coeur-ville","/petites-villes-demain"],
     "odm_text": "/ovq-textes/services-publics-et-territoires/services_publics_et_territoires-resume.md"
   },
   {
