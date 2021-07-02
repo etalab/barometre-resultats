@@ -5818,7 +5818,7 @@
   "odm_image_activate": false,
   "odm_image": "/ovq-textes/sante-famille/images/test-image.png",
   "odm_text": "/ovq-textes/sante-famille/accompagner-aidants/sante_famille-accompagner_aidants-resume.md",
-  "odm_text_brief": false,
+  "odm_text_brief": true,
   "indicateurs": [{
     "active": true,
     "id_indicateur_ditp": "608046251e784084a20ad64825bbaab7",
@@ -6676,7 +6676,7 @@
   "odm_image_activate": false,
   "odm_image": "/ovq-textes/justice/images/test-image.png",
   "odm_text": "/ovq-textes/justice/simplifier-aide-juridictionnelle/justice-simplifier_aide_juridictionnelle-resume.md",
-  "odm_text_brief": false,
+  "odm_text_brief": true,
   "indicateurs": [{
     "active": true,
     "id_indicateur_ditp": "11c3d6060e574ab1a07b37fb36a8c858",
