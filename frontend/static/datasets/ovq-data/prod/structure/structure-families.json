@@ -66,7 +66,7 @@
       "OVQ-ZFE",
       "OVQ-PUU"
     ],
-    "odm_kpi_family_activate": true,
+    "odm_kpi_family_activate": false,
     "odm_kpi_families": ["transition-ecologique"],
     "odm_url": "/plan-velo",
     "odm_image_activate": true,
@@ -89,7 +89,7 @@
       "OVQ-RUP",
       "OVQ-PAC"
     ],
-    "odm_kpi_family_activate": false,
+    "odm_kpi_family_activate": true,
     "odm_kpi_families": ["agriculture"],
     "odm_url": "/reduire-phytosanitaires",
     "odm_image_activate": true,
@@ -233,7 +233,7 @@
       "OVQ-DPC",
       "OVQ-SNR"
     ],
-    "odm_kpi_family_activate": false,
+    "odm_kpi_family_activate": true,
     "odm_kpi_families": ["jeunesse-culture-engagement"],
     "odm_url": "/deployer-pass-culture",
     "odm_image_activate": true,
