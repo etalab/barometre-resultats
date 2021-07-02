@@ -112,7 +112,7 @@
       "OVQ-LCS",
       "OVQ-APR"
     ],
-    "odm_kpi_family_activate": false,
+    "odm_kpi_family_activate": true,
     "odm_kpi_families": ["securite"],
     "odm_url": "/renforcer-securite-quotidien",
     "odm_image_activate": true,
