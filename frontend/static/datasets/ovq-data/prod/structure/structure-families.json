@@ -44,7 +44,7 @@
     "id_ovq": ["OVQ-PAC","OVQ-RUP"],
     "nom_ovq": "Agriculture",
     "odm_id": "agriculture",
-    "odm_kpi_family_activate": false,
+    "odm_kpi_family_activate": true,
     "odm_kpi_families": ["agriculture"],
     "odm_url": "/securiser-paiement-pac",
     "odm_image_activate": true,
