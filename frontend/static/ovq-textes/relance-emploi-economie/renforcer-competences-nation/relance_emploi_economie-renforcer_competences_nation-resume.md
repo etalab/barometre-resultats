@@ -1,6 +1,5 @@
-<p>
-  <span id="brief">
-La réforme tend à soutenir le développement des compétences
+<p id="brief">
+  La réforme tend à soutenir le développement des compétences
 </p>
 
 <p>
