@@ -23,7 +23,6 @@
   padding: .5px 1px !important;
   background-color: white !important;
   border-color: white !important;
-  pointer-events: auto !important;
 }
 .custom-badge .v-badge__wrapper .v-badge__badge .v-icon {
   font-size: 18px !important;
