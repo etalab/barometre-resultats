@@ -1,4 +1,4 @@
-<p id="brief">
+<p>
   Pour endiguer le nombre de noyades, qui constituent la première cause de mortalité par accident de la vie courante chez les moins de 25 ans et touchent plus particulièrement les moins de 6 ans, le Gouvernement a engagé en 2019 le programme d’ « Aisance Aquatique » destiné aux enfants de 4 à 6 ans.
 
   Organisé dans le temps scolaire, périscolaire ou pendant les vacances, le programme d’Aisance Aquatique permet aux enfants de s’adapter au milieu aquatique et de développer de nouvelles compétences (entrer et sortir de l’eau, flotter sans aide, prendre sa respiration, se déplacer dans l’eau etc.) lors de cycles qui comptent 8 séances d’apprentissage.

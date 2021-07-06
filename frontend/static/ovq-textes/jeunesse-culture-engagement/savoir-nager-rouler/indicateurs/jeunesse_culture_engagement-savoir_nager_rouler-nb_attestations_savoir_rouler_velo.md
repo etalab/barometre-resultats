@@ -1,4 +1,4 @@
-<p id="brief">
+<p>
   Le dispositif « Savoir rouler à Vélo » (SRAV) apprend aux enfants de 6 à 11 ans à se déplacer en vélo de manière autonome et sécurisée. Au cours d’une formation de 10 heures, les enfants apprennent à :
   - pédaler sur un vélo ;
   - circuler sur un vélo en réelle autonomie ;
