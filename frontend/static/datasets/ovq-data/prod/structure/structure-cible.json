@@ -904,7 +904,7 @@
     "odm_map_highlight_color": "#96ded1",
     "odm_map_only_national": false,
     "odm_map_has_regional_level": true,
-    "odm_map_has_departement_level": false,
+    "odm_map_has_departement_level": true,
     "odm_map_region_max": 12500,
     "odm_map_departement_max": 1000,
     "odm_map_label": "Nombre de volontaires ayant réalisé au moins un jour de mission de service civique dans l'année",
@@ -1508,7 +1508,7 @@
     "odm_map_has_regional_level": true,
     "odm_map_has_departement_level": true,
     "odm_map_region_max": 350000,
-    "odm_map_departement_max": 92000,
+    "odm_map_departement_max": 111000,
     "odm_map_label": "Nombre de recrutements de jeunes",
     "odm_map_legend_subtitle": "<i>département : recrutements entre août et février, national : recrutements entre août et avril Données 2021</i>",
     "odm_map_default_layer": true,
@@ -6137,7 +6137,7 @@
         "value": "latest_value"
       },
       {
-        "text": "",
+        "text": "Cible à atteindre en 2022",
         "text_default": null,
         "text_format": null,
         "text_value": null,
