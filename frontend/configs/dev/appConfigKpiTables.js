@@ -288,7 +288,7 @@ const COMMON_RULES = {
       },
 
       {
-        add: 'en France',
+        add: 'pour la France entière',
         conditions: [
           {
             itemId: 'from_level',
