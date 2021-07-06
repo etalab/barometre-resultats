@@ -199,7 +199,7 @@
     "odm_text": "/ovq-textes/logement-villes/logement_ville-resume.md"
   },
   {
-    "nom_ovq": "Services publics et territoires",
+    "nom_ovq": "Services publics - Territoires",
     "odm_id": "services-publics-et-territoires",
     "id_ovq": [
       "OVQ-PSP",
@@ -227,7 +227,7 @@
     "odm_text": "/ovq-textes/services-publics-et-territoires/services_publics_et_territoires-resume.md"
   },
   {
-    "nom_ovq": "Culture - sports",
+    "nom_ovq": "Culture - Sports",
     "odm_id": "jeunesse-culture-engagement",
     "id_ovq": [
       "OVQ-DPC",
