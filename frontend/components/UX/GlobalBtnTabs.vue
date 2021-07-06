@@ -54,6 +54,7 @@
         offset-y="20px"
         :class="`custom-badge mb-0`"
         icon="icon-times-circle-o"
+        @click="runBtnFunctions(btn, tab.id)"
         >
         <v-btn
           :class="`${btn.btnInnerClass} white--text`"

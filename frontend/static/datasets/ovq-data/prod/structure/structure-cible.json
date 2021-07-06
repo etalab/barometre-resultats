@@ -1507,7 +1507,7 @@
     "odm_map_only_national": false,
     "odm_map_has_regional_level": true,
     "odm_map_has_departement_level": true,
-    "odm_map_region_max": 350000,
+    "odm_map_region_max": 405000,
     "odm_map_departement_max": 111000,
     "odm_map_label": "Nombre de recrutements de jeunes",
     "odm_map_legend_subtitle": "<i>département : recrutements entre août et février, national : recrutements entre août et avril Données 2021</i>",
