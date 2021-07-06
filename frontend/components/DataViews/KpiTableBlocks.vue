@@ -1037,7 +1037,7 @@ export default {
             break
         }
       } else if (!format && value) {
-        value = value
+        value = isNaN(value) ? 0 : value
       } else {
         value = this.noDataText[this.locale]
       }
