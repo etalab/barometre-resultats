@@ -1,4 +1,4 @@
-<style scoped>
+<style >
 .unselect_icon{
   /* width: 16px;
   height: 16px;
@@ -19,6 +19,15 @@
   display: none;
 }
 
+.custom-badge .v-badge__wrapper .v-badge__badge {
+  padding: .5px 1px !important;
+  background-color: white !important;
+  border-color: white !important;
+}
+.custom-badge .v-badge__wrapper .v-badge__badge .v-icon {
+  font-size: 18px !important;
+  color: #000091 !important;
+}
 .unselectable{
   pointer-events: none;
 }
@@ -32,31 +41,62 @@
     >
 
     <!-- TABS BUTTONS -->
-    <v-btn
+    <span
       v-for="(tab, tabIndex) in tabs"
       :key="tab.id"
-      :class="`${btn.btnInnerClass} ${openTabBtns.includes(tab.id) ? 'white--text unselectable' : ''}`"
-      :block="btn.block"
-      :icon="btn.icon"
-      :outlined="btn.outlined"
-      :fab="btn.fab"
-      :color="`${openTabBtns.includes(tab.id) ? btn.color : btn.colorDepressed }`"
-      :large="isMobileWidth ? false : btn.large"
-      :small="isMobileWidth ? true : btn.small"
-      :text="btn.text"
-      :dark="btn.dark"
-      :tile="btn.tile"
-      :rounded="btn.rounded"
-      :disabled="btn.disabled"
-      @click="runBtnFunctions(btn, tab.id)"
+      class="pr-2"
       >
-      {{ tab[tabsTitleKey][locale] }}
-      <div class="unselect_icon" v-if="openTabBtns.includes(tab.id) && openTabBtns.length > 1">
-        <v-icon>
-          icon-times-circle-o
-        </v-icon>
-      </div>
-    </v-btn>
+
+      <!-- MULTIPLE TABS ARE SELECTED -->
+      <v-badge
+        v-if="openTabBtns.includes(tab.id) && openTabBtns.length > 1 "
+        offset-x="18px"
+        offset-y="20px"
+        :class="`custom-badge mb-0`"
+        icon="icon-times-circle-o"
+        >
+        <v-btn
+          :class="`${btn.btnInnerClass} white--text`"
+          :block="btn.block"
+          :icon="btn.icon"
+          :outlined="btn.outlined"
+          :fab="btn.fab"
+          :color="btn.color"
+          :large="isMobileWidth ? false : btn.large"
+          :small="isMobileWidth ? true : btn.small"
+          :text="btn.text"
+          :dark="btn.dark"
+          :tile="btn.tile"
+          :rounded="btn.rounded"
+          :disabled="btn.disabled"
+          @click="runBtnFunctions(btn, tab.id)"
+          >
+          {{ tab[tabsTitleKey][locale] }}
+        </v-btn>
+      </v-badge>
+    
+      <!-- UNSELECTED TABS || SOLE SELECTED TAB -->
+      <v-btn
+        v-else
+        :class="`${btn.btnInnerClass} ${openTabBtns.includes(tab.id) && openTabBtns.length === 1 ? 'white--text' : ''} mb-2`"
+        :block="btn.block"
+        :icon="btn.icon"
+        :outlined="btn.outlined"
+        :fab="btn.fab"
+        :color="`${openTabBtns.includes(tab.id) && openTabBtns.length === 1 ? btn.color : btn.colorDepressed}`"
+        :large="isMobileWidth ? false : btn.large"
+        :small="isMobileWidth ? true : btn.small"
+        :text="btn.text"
+        :dark="btn.dark"
+        :tile="btn.tile"
+        :rounded="btn.rounded"
+        :disabled="btn.disabled"
+        @click="runBtnFunctions(btn, tab.id)"
+        >
+        {{ tab[tabsTitleKey][locale] }}
+      </v-btn>
+
+    </span>
 
     <!-- SELECT ALL FILTERS BUTTON -->
     <v-btn
@@ -278,17 +318,18 @@ export default {
     },
 
     changeOpenTabs(id) {
-      /* if (this.openTabBtns.includes(id)) {
+      var self = this
+      // this.log && console.log('C-GlobalBtnTbs / changeOpenTabs / id : ', id )
+      if (this.openTabBtns.includes(id)) {
         if (this.openTabBtns.length > 1) {
           this.openTabBtns = this.openTabBtns.filter(btn => btn !== id)
         }
       } else {
         this.openTabBtns.unshift(id)  
-      }*/
-      var self = this
-      if (!this.openTabBtns.includes(id)) {
-        this.openTabBtns = [id]
       }
+      // if (!this.openTabBtns.includes(id)) {
+      //   this.openTabBtns = [id]
+      // }
       this.triggerTabBtn = !this.triggerTabBtn
       this.updateSpecialStoreWithKpiFamilies()
       this.$store.commit('toggleTriggerComponentLoaded')
