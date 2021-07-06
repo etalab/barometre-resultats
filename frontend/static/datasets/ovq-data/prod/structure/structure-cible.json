@@ -6166,7 +6166,7 @@
     "odm_map_highlight_color": "#96ded1",
     "odm_map_only_national": false,
     "odm_map_has_regional_level": true,
-    "odm_map_has_departement_level": true,
+    "odm_map_has_departement_level": false,
     "odm_map_region_max": 60000,
     "odm_map_departement_max": 10000,
     "odm_map_label": " Nombre d’entrées en formation financées au sein du Plan d’Investissement dans les Compétences (PIC)",
