@@ -4559,7 +4559,7 @@
     "toPopulateReg": false,
     "initialValue": true,
     "toRound": 0,
-    "initialValueDate": "2018-03-31",
+    "initialValueDate": "2018-12-31",
     "actualValueDate": "2020-12-31",
     "initialValueZero": false,
     "minDateValue": "2017-01-01",
