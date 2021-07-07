@@ -50,12 +50,24 @@
 
       <!-- MULTIPLE TABS ARE SELECTED -->
       <v-badge
-        v-if="openTabBtns.includes(tab.id) && openTabBtns.length > 1 "
         offset-x="18px"
         offset-y="20px"
-        :class="`custom-badge mb-0`"
-        icon="icon-times-circle-o"
+        :class="`custom-badge mb-0 pa-0`" 
+        v-if="openTabBtns.includes(tab.id) && openTabBtns.length > 1 "
         >
+        <v-btn 
+          slot="badge"
+          text
+          small
+          class="pa-0"
+          style="z-index: 1; height: 18px !important; min-width: 18px !important"
+          elevation="0"
+          @click="runBtnFunctions(btn, tab.id)"
+          >
+          <v-icon>
+            icon-times-circle-o
+          </v-icon>
+        </v-btn>
         <v-btn
           :class="`${btn.btnInnerClass} white--text`"
           :block="btn.block"
