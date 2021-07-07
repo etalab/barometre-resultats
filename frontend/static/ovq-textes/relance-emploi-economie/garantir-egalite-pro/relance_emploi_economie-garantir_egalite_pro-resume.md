@@ -1,5 +1,4 @@
-<p>
-  <span id="brief">
+<p id="brief">
 Toutes les entreprises d’au moins 50 salariés doivent calculer, déclarer et publier leur index de l’égalité professionnelle entre les hommes et les femmes, chaque année au 1er mars.
 </p>
 
