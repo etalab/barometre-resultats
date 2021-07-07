@@ -3,5 +3,4 @@
 </p>
 
 <p>
-  Ce téléservice doit permettre un traitement plus rapide et plus efficace des demandes d’aide juridictionnelle, en s’appuyant d’une part sur le dispositif « Dites le nous une fois » (France Connect, API DGFIP) ainsi que sur des dispositifs d’accompagnement des personnes (au sein des services d’accueil dans les juridictions ou à l’extérieur de celles-ci).
-</p>
+Ce téléservice doit permettre un traitement plus rapide et plus efficace des demandes d’aide juridictionnelle, en s’appuyant d’une part sur le dispositif « Dites-le nous une fois » (France Connect, API DGFIP) d’autre part sur des dispositifs d’accompagnement des personnes (au sein des services d’accueil dans les juridictions ou à l’extérieur de celles-ci).</p>
