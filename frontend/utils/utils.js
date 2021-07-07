@@ -293,6 +293,7 @@ export function numberToStringBasic (number, format, log = false, from = '') {
   if (number < 0 ) {
     numberAsString = `- ${Math.abs(number).toString()}`
   } else {
+    number = number.toString() === 'NaN' ? 0 : number
     numberAsString = number.toString()
   }
   const withComma = ['percent', 'float']

@@ -228,6 +228,7 @@ export default {
         // const format = header.format
         const format = item.odmFormat
         if (typeof format !== 'undefined' && value && !isNaN(value)) {
+          value = value.toString() === 'NaN' ? 0 : value
           switch (format) {
             case 'integer':
               value = parseInt(value)
@@ -240,7 +241,8 @@ export default {
               break
           }
         } else if (!format && value) {
-          value = value
+          value = isNaN(value) || value.toString() === 'NaN' ? 0 : value
+          // value = value
         } else {
           value = this.noDataText[this.locale]
         }
