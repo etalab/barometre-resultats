@@ -6718,7 +6718,7 @@
   "odm_ext_link_text": "Garantir l'égalité professionnelle entre les femmes et les hommes",
   "odm_image_activate": false,
   "odm_image": "/ovq-textes/relance-emploi-economie/images/test-image.png",
-  "odm_text": "/ovq-textes/relance-emploi-economie/garantir-egalite-professionnelle/relance_emploi_economie-garantie_egalite_pro-resume.md",
+  "odm_text": "/ovq-textes/relance-emploi-economie/garantir-egalite-pro/relance_emploi_economie-garantir_egalite_pro-resume.md",
   "odm_text_brief": true,
   "indicateurs": [{
     "active": true,
@@ -6727,7 +6727,7 @@
     "nom_indicateur_ditp": "Part des entreprises respectant leur obligation de publier l’index égalité professionnelle",
     "nom_indicateur": "Part des entreprises respectant leur obligation de publier l’index égalité professionnelle",
     "odm_id": "tx-entreprise-egalite-pro",
-    "odm_text": "/ovq-textes/relance-emploi-economie/garantir-egalite-professionnelle/indicateurs/relance_emploi_economie-garantie_egalite_pro-tx_entreprise_egalite_pro.md",
+    "odm_text": "/ovq-textes/relance-emploi-economie/garantir-egalite-pro/indicateurs/relance_emploi_economie-garantir_egalite_pro-tx_entreprise_egalite_pro.md",
     "odm_text_brief": false,
     "odm_kpi_headers_overwrite": [{
         "text": "En",
