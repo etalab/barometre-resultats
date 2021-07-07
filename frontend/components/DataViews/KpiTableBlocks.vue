@@ -1025,6 +1025,7 @@ export default {
       const format = header.format
       // this.log && console.log("\nC-KpiTableBlocks / formatValue / format : ", format)
       if (typeof format !== 'undefined' && value && !isNaN(value)) {
+        value = value.toString() === 'NaN' ? 0 : value
         switch (format) {
           case 'integer':
             value = parseInt(value)
@@ -1037,7 +1038,7 @@ export default {
             break
         }
       } else if (!format && value) {
-        value = value
+        value = isNaN(value) || value.toString() === 'NaN' ? 0 : value
       } else {
         value = this.noDataText[this.locale]
       }
