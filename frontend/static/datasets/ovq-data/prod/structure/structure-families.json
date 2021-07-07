@@ -89,7 +89,7 @@
       "OVQ-RUP",
       "OVQ-PAC"
     ],
-    "odm_kpi_family_activate": false,
+    "odm_kpi_family_activate": true,
     "odm_kpi_families": ["agriculture"],
     "odm_url": "/reduire-phytosanitaires",
     "odm_image_activate": true,
@@ -112,7 +112,7 @@
       "OVQ-LCS",
       "OVQ-APR"
     ],
-    "odm_kpi_family_activate": false,
+    "odm_kpi_family_activate": true,
     "odm_kpi_families": ["securite"],
     "odm_url": "/renforcer-securite-quotidien",
     "odm_image_activate": true,
@@ -135,7 +135,7 @@
       "OVQ-SAJ",
       "OVQ-TIG"
     ],
-    "odm_kpi_family_activate": false,
+    "odm_kpi_family_activate": true,
     "odm_kpi_families": ["justice"],
     "odm_url": "/simplifier-aide-juridictionnelle",
     "odm_image_activate": true,
@@ -159,7 +159,7 @@
       "OVQ-DPH",
       "OVQ-DCP"
     ],
-    "odm_kpi_family_activate": false,
+    "odm_kpi_family_activate": true,
     "odm_kpi_families": ["sante-famille"],
     "odm_url": "/doubler-maisons-sante",
     "odm_image_activate": true,
@@ -183,7 +183,7 @@
       "OVQ-REL",
       "OVQ-LDA"
     ],
-    "odm_kpi_family_activate": false,
+    "odm_kpi_family_activate": true,
     "odm_kpi_families": ["logement-ville"],
     "odm_url": "/accelerer-renovation-energetique",
     "odm_image_activate": true,
@@ -209,7 +209,7 @@
       "OVQ-ACV",
       "OVQ-PVD"
     ],
-    "odm_kpi_family_activate": false,
+    "odm_kpi_family_activate": true,
     "odm_kpi_families": ["services-publics-et-territoires"],
     "odm_url": "/ameliorer-qualite-service",
     "odm_image_activate": true,
@@ -233,7 +233,7 @@
       "OVQ-DPC",
       "OVQ-SNR"
     ],
-    "odm_kpi_family_activate": false,
+    "odm_kpi_family_activate": true,
     "odm_kpi_families": ["jeunesse-culture-engagement"],
     "odm_url": "/deployer-pass-culture",
     "odm_image_activate": true,
