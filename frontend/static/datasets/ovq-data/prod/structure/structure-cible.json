@@ -6635,7 +6635,7 @@
     "odm_chart_xaxis_type": "datetime",
     "odm_chart_marker_size": 4,
     "odm_chart_serie_name": "Nombre de demandes d'aide juridictionnelle formulées par voie dématérialisée",
-    "odm_chart_format": "integer",
+    "odm_chart_format": "float",
     "odm_chart_unit": "%",
     "odm_chart_annotation": false,
     "odm_chart_annotation_key": "targets",
