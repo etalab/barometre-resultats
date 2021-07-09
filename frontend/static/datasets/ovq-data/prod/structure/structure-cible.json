@@ -1192,7 +1192,7 @@
   "maxDateTarget": "2030-01-01",
   "dataPeriod": "month",
   "multiplier": null,
-  "progressionLastUpdate": 0,
+  "progressionLastUpdate": 1,
   "progressionLastUpdateDate": "2021-04-30",
   "trendType": "increasing"
 },
@@ -1282,7 +1282,7 @@
 "maxDateTarget": "2030-01-01",
 "dataPeriod": "month",
 "multiplier": null,
-"progressionLastUpdate": 0,
+"progressionLastUpdate": 1,
 "progressionLastUpdateDate": "2021-04-30",
 "trendType": "increasing"
 }]
@@ -1538,8 +1538,8 @@
     "maxDateTarget": "2030-01-01",
     "dataPeriod": "year",
     "multiplier": null,
-    "progressionLastUpdate": 0,
-    "progressionLastUpdateDate": null,
+    "progressionLastUpdate": 1,
+    "progressionLastUpdateDate": "2021-02-28",
     "trendType": "increasing"
   }]
 },
@@ -1666,8 +1666,8 @@
     "maxDateTarget": "2030-01-01",
     "dataPeriod": "month",
     "multiplier": null,
-    "progressionLastUpdate": 0,
-    "progressionLastUpdateDate": null,
+    "progressionLastUpdate": 1,
+    "progressionLastUpdateDate": "2021-02-28",
     "trendType": "increasing"
   }]
 },
@@ -3180,8 +3180,8 @@
     "maxDateTarget": "2030-01-01",
     "dataPeriod": "month",
     "multiplier": null,
-    "progressionLastUpdate": 0,
-    "progressionLastUpdateDate": null,
+    "progressionLastUpdate": 1,
+    "progressionLastUpdateDate": "2021-03-31",
     "trendType": "increasing"
   }]
 },
@@ -3864,8 +3864,8 @@
     "odm_kpi_format": "integer",
     "odm_kpi_unit": "familles",
     "odm_chart_title": "Nombre de familles bénéficiaires d'une pension alimentaire versée par l'intermédiaire du service public des pensions alimentaires",
-    "odm_chart_type": "histo",
-    "odm_chart_template": "categVertH390_histo",
+    "odm_chart_type": "line",
+    "odm_chart_template": "categVertH390",
     "odm_chart_colors": ["#00AC8C"],
     "odm_chart_xaxis_type": "datetime",
     "odm_chart_marker_size": 0,
@@ -3913,8 +3913,8 @@
     "maxDateTarget": "2030-01-01",
     "dataPeriod": "month",
     "multiplier": null,
-    "progressionLastUpdate": 0,
-    "progressionLastUpdateDate": null,
+    "progressionLastUpdate": 1,
+    "progressionLastUpdateDate": "2021-03-31",
     "trendType": "increasing"
   }]
 },
@@ -4823,8 +4823,8 @@
     "maxDateTarget": "2030-01-01",
     "dataPeriod": "month",
     "multiplier": null,
-    "progressionLastUpdate": 0,
-    "progressionLastUpdateDate": null,
+    "progressionLastUpdate": 1,
+    "progressionLastUpdateDate": "2021-03-31",
     "trendType": "increasing"
   }]
 },
@@ -5560,7 +5560,7 @@
     "maxDateTarget": "2030-01-01",
     "dataPeriod": "month",
     "multiplier": null,
-    "progressionLastUpdate": 0,
+    "progressionLastUpdate": 1,
     "progressionLastUpdateDate": "2021-03-31",
     "trendType": "increasing"
   }]
