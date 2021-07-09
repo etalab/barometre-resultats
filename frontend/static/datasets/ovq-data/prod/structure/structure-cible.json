@@ -5338,6 +5338,7 @@
   "odm_ext_link_2": "https://www.gouvernement.fr/node/10697/#carte_fs",
   "odm_ext_link_text": "France Services : un programme pour garantir les mêmes services publics partout en France",
   "odm_ext_link_text_2": "Localiser mon service",
+  "odm_ext_link_backup": "https://www.maisondeservicesaupublic.fr/",
   "odm_ext_link_text_backup": "Trouver une maison France Services ",
   "odm_image_activate": false,
   "odm_image": "/ovq-textes/services-publics-et-territoires/images/test-image.png",
