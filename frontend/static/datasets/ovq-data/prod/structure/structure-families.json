@@ -36,7 +36,6 @@
       "OVQ-NTS",
       "OVQ-RCN",
       "OVQ-IAE",
-      "OVQ-GEP",
       "OVQ-THR"
     ],
     "odm_kpi_family_activate": true,
@@ -53,7 +52,6 @@
       "/un-jeune-une-solution",
       "/renforcer-competences-nation",
       "/pacte-ambition-iae",
-      "/garantir-egalite-pro",
       "/supprimer-taxe-habitation-residences-principales"
     ],
     "odm_text": "/ovq-textes/relance-emploi-economie/relance_emploi_economie-resume.md"
