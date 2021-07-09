@@ -76,10 +76,10 @@
       <!-- PREFIX -->
       {{ header.textPrefix[locale]}} 
       <!-- DATE -->
-      <span v-if="header.textPrefix[locale]!='depuis la première publication du baromètre'">
+      <span v-if="header.textPrefix[locale]!='depuis la première publication de l\'indicateur'">
         {{ formatDate(itemLocal[header.valueDate]) }}
       </span>
-      <span v-if="header.textPrefix[locale]=='depuis la première publication du baromètre'">
+      <span v-if="header.textPrefix[locale]=='depuis la première publication de l\'indicateur'">
         (données de {{ formatDate(itemLocal[header.valueDate]) }})
       </span>
     </span>
