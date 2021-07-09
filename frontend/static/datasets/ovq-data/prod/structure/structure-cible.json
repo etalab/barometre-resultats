@@ -3868,7 +3868,7 @@
     "odm_chart_template": "categVertH390",
     "odm_chart_colors": ["#00AC8C"],
     "odm_chart_xaxis_type": "datetime",
-    "odm_chart_marker_size": 0,
+    "odm_chart_marker_size": 6,
     "odm_chart_serie_name": "familles bénéficiaires",
     "odm_chart_format": "integer",
     "odm_chart_unit": "familles",
@@ -4778,7 +4778,7 @@
     "odm_chart_template": "categVertH390",
     "odm_chart_colors": ["#00AC8C"],
     "odm_chart_xaxis_type": "datetime",
-    "odm_chart_marker_size": 0,
+    "odm_chart_marker_size": 6,
     "odm_chart_serie_name": "dossiers validés",
     "odm_chart_format": "integer",
     "odm_chart_unit": "dossiers validés",
@@ -6626,7 +6626,7 @@
         "hide_day_on_date": true
       }
     ],
-    "odm_kpi_format": "integer",
+    "odm_kpi_format": "float",
     "odm_kpi_unit": "%",
     "odm_chart_title": "Nombre de demandes d'aide juridictionnelle formulées par voie dématérialisée",
     "odm_chart_type": "histo",
