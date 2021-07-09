@@ -3861,7 +3861,7 @@
         "hide_day_on_date": true
       }
     ],
-    "odm_kpi_format": "float",
+    "odm_kpi_format": "integer",
     "odm_kpi_unit": "familles",
     "odm_chart_title": "Nombre de familles bénéficiaires d'une pension alimentaire versée par l'intermédiaire du service public des pensions alimentaires",
     "odm_chart_type": "line",
@@ -3870,7 +3870,7 @@
     "odm_chart_xaxis_type": "datetime",
     "odm_chart_marker_size": 6,
     "odm_chart_serie_name": "familles bénéficiaires",
-    "odm_chart_format": "float",
+    "odm_chart_format": "integer",
     "odm_chart_unit": "familles",
     "odm_chart_annotation": false,
     "odm_chart_annotation_key": "targets",
