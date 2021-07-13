@@ -1,5 +1,5 @@
 <p id="brief">
-  Il s’agit de dématérialiser l’état civil, ainsi que toute la gestion qui s’y rattache.
+  Il s’agit de dématérialiser l’état civil pour les Français ayant eu dans leur vie un évènement d’état civil à l’étranger, ainsi que toute la gestion qui s’y rattache.
 </p>
 
 <p>
