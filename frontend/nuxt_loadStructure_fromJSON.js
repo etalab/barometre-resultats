@@ -15,6 +15,7 @@ const structureKpis = require(structurePath)
 
 // KPI FAMIILIES === THEMAS
 export const keyKpiFamilyId = 'odm_id'
+export const keyKpiFamilyOvqIds = 'id_ovq'
 export const keyKpiFamilies = 'odm_kpi_families'
 export const keyKpiFamilyName = 'nom_ovq'
 export const keyKpiFamilyActivate = 'odm_kpi_family_activate'
@@ -87,13 +88,24 @@ export const keyKpiMapDefaultLayer = 'odm_map_default_layer'
 export const keyKpiTableFormat = 'odm_kpi_format'
 export const keyKpiTableUnit = 'odm_kpi_unit'
 
+const mapOrder = (array, order, key) => {
+  array.sort((a, b) => {
+    const A = a[key]
+    const B = b[key]
+    return order.indexOf(A) > order.indexOf(B) ? 1 : -1
+  })
+  return array
+}
+
 // group by kpi family
 // console.log( '>>> nuxt_loadStructure_fromJSON.js (start) / structureKpiFamilies : ', structureKpiFamilies )
 const structureData = []
 if (structureKpiFamilies && structureKpis) {
   for (const kpiFamId of structureKpiFamilies) {
     if (kpiFamId[keyKpiFamilyActivate]) {
+      const kpiIds = kpiFamId[keyKpiFamilyOvqIds]
       const kpiGroups = structureKpis.filter(kpi => kpi[keyKpiActivate] && kpi[keyKpiFamilies].includes(kpiFamId[keyKpiFamilyId]))
+      kpiGroups = mapOrder(kpiGroups, kpiIds, keyKpiGroupIdDataset)
       const kpiFamilyData = {
         kpiFamilyId: kpiFamId[keyKpiFamilyId],
         kpiFamilyName: {},
