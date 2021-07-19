@@ -104,7 +104,7 @@ if (structureKpiFamilies && structureKpis) {
   for (const kpiFamId of structureKpiFamilies) {
     if (kpiFamId[keyKpiFamilyActivate]) {
       const kpiIds = kpiFamId[keyKpiFamilyOvqIds]
-      const kpiGroups = structureKpis.filter(kpi => kpi[keyKpiActivate] && kpi[keyKpiFamilies].includes(kpiFamId[keyKpiFamilyId]))
+      let kpiGroups = structureKpis.filter(kpi => kpi[keyKpiActivate] && kpi[keyKpiFamilies].includes(kpiFamId[keyKpiFamilyId]))
       kpiGroups = mapOrder(kpiGroups, kpiIds, keyKpiGroupIdDataset)
       const kpiFamilyData = {
         kpiFamilyId: kpiFamId[keyKpiFamilyId],
