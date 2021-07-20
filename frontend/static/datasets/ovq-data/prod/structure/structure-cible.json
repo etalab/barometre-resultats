@@ -756,7 +756,7 @@
         "hide_day_on_date": true
       }
     ],
-    "odm_kpi_format": "integer",
+    "odm_kpi_format": "float",
     "odm_kpi_unit": "% de réussite",
     "odm_chart_title": "Taux de réussite aux examens de licence 1",
     "odm_chart_type": "line",
@@ -765,7 +765,7 @@
     "odm_chart_xaxis_type": "datetime",
     "odm_chart_marker_size": 6,
     "odm_chart_serie_name": "Taux de réussite aux examens de licence 1",
-    "odm_chart_format": "integer",
+    "odm_chart_format": "float",
     "odm_chart_unit": "% de réussite",
     "odm_chart_annotation": false,
     "odm_chart_annotation_key": "targets",
@@ -5443,7 +5443,7 @@
   "nom_ovq": "Redynamiser les cœurs de ville",
   "nom_ovq_bis": "Redynamiser les cœurs de ville",
   "odm_id": "action-coeur-ville",
-  "odm_activate": true,
+  "odm_activate": false,
   "odm_sources_ids": [{
       "odm_source_id": "national-action-coeur-ville-raw",
       "odm_source_level": "national",
