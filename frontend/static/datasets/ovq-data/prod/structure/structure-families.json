@@ -208,7 +208,6 @@
       "OVQ-ECN",
       "OVQ-THD",
       "OVQ-OFS",
-      "OVQ-ACV",
       "OVQ-PVD"
     ],
     "odm_kpi_family_activate": true,
