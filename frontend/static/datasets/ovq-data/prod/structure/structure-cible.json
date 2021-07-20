@@ -6372,7 +6372,7 @@
         }
       ],
       "odm_kpi_format": "integer",
-      "odm_kpi_unit": "Enfants",
+      "odm_kpi_unit": "enfants",
       "odm_chart_title": "Nombre d'enfants ayant suivi un cycle d’Aisance Aquatique",
       "odm_chart_type": "histo",
       "odm_chart_template": "categVertH390_histo",
@@ -6381,7 +6381,7 @@
       "odm_chart_marker_size": 4,
       "odm_chart_serie_name": "Nombre d'enfants ayant suivi un cycle d’Aisance Aquatique",
       "odm_chart_format": "integer",
-      "odm_chart_unit": "Enfants",
+      "odm_chart_unit": "enfants",
       "odm_chart_annotation": false,
       "odm_chart_annotation_key": "targets",
       "odm_chart_y_annotation_key": "target",
