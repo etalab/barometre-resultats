@@ -6705,7 +6705,8 @@
         "text_default": "En mai 2021 *",
         "text_format": null,
         "text_value": null,
-        "value": null
+        "value": null,
+        "hide_if_main_is_null": true
       },
       {
         "text": "",
