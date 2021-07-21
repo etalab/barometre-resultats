@@ -2087,6 +2087,8 @@
   "odm_urls": ["/verdir-parc-automobile", "/verdir-parc-automobile/"],
   "odm_ext_link": "https://www.gouvernement.fr/node/10688",
   "odm_ext_link_text": "Des aides financières pour acheter un véhicule plus écologique",
+  "odm_ext_link_2": "https://www.gouvernement.fr/les-actions-du-gouvernement/transition-ecologique/passez-a-une-voiture-moins-polluante-l-etat-vous#verdir_le_parc_automobile",
+  "odm_ext_link_text_2": "Localiser mon service",
   "odm_image_activate": false,
   "odm_image": "/ovq-textes/transition-ecologique/images/test-image.png",
   "odm_text": "/ovq-textes/transition-ecologique/verdir-parc-automobile/transition_ecologique-verdir_parc_automobile-resume.md",
