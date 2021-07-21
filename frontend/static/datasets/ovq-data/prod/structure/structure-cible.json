@@ -2523,8 +2523,8 @@
     "maxDateTarget": "2030-01-01",
     "dataPeriod": "month",
     "multiplier": null,
-    "progressionLastUpdate": 0,
-    "progressionLastUpdateDate": null,
+    "progressionLastUpdate": 1,
+    "progressionLastUpdateDate": "2019-12-31",
     "trendType": "increasing"
   },{
     "active": true,
@@ -2910,7 +2910,7 @@
       }
     ],
     "odm_kpi_format": "integer",
-    "odm_kpi_unit": "atteintes aux personnes entre janvier et mai",
+    "odm_kpi_unit": "atteintes aux personnes entre janvier et juin",
     "odm_chart_title": "Atteintes aux personnes dans les transports en commun",
     "odm_chart_type": "histo",
     "odm_chart_template": "categVertH390_histo",
@@ -2954,7 +2954,7 @@
     "toPopulateReg": false,
     "initialValue": true,
     "toRound": 0,
-    "initialValueDate": "2017-05-31",
+    "initialValueDate": "2017-06-30",
     "actualValueDate": "2021-06-30",
     "initialValueZero": false,
     "minDateValue": "2017-01-01",
@@ -3001,7 +3001,7 @@
       }
     ],
     "odm_kpi_format": "integer",
-    "odm_kpi_unit": "atteintes aux biens entre janvier et mai",
+    "odm_kpi_unit": "atteintes aux biens entre janvier et juin",
     "odm_chart_title": "Atteintes aux biens dans les transports en commun",
     "odm_chart_type": "histo",
     "odm_chart_template": "categVertH390_histo",
@@ -3045,7 +3045,7 @@
     "toPopulateReg": false,
     "initialValue": true,
     "toRound": 0,
-    "initialValueDate": "2017-05-31",
+    "initialValueDate": "2017-06-30",
     "actualValueDate": "2021-06-30",
     "initialValueZero": false,
     "minDateValue": "2017-01-01",
