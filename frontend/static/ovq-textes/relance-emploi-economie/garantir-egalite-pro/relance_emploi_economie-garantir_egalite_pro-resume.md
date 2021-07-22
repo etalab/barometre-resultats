@@ -3,5 +3,5 @@ Toutes les entreprises d’au moins 50 salariés doivent calculer, déclarer et 
 </p>
 
 <p>
-Il s’agit de réduire concrètement les écarts de rémunération et de fixer aux entreprises et aux partenaires sociaux une obligation de résultat en la matière
+Il s’agit de réduire concrètement les écarts de rémunération et de fixer aux entreprises et aux partenaires sociaux une obligation de résultat en la matière.
 </p>
