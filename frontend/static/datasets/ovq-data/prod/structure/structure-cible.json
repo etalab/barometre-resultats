@@ -6140,7 +6140,7 @@
     "odm_map_departement_max": 2500,
     "odm_map_label": "Nombre de logements rénovés dans les villes moyennes (+ de 20 000 habitants)",
     "odm_map_legend_subtitle": "<i>Données mai 2021</i>",
-    "odm_map_default_layer": true,
+    "odm_map_default_layer": false,
     "isDep": true,
     "isReg": true,
     "isNat": true,
