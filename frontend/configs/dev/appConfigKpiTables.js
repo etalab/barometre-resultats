@@ -290,7 +290,7 @@ const COMMON_RULES = {
       {
         add: 'pour la France entière',
         conditions: [
-          { checkBreakpoint: true, breakpoints: ['xl']},
+          { checkBreakpoint: true, breakpoints: ['xs', 'sm', 'xl']},
           {
             itemId: 'from_level',
             itemValue: 'nat'
@@ -300,7 +300,7 @@ const COMMON_RULES = {
       {
         add: '<br>pour la France entière',
         conditions: [
-          { checkBreakpoint: true, breakpoints: ['xs', 'sm', 'md', 'lg'] },
+          { checkBreakpoint: true, breakpoints: ['md', 'lg'] },
           {
             itemId: 'from_level',
             itemValue: 'nat'
