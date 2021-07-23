@@ -1121,6 +1121,9 @@ export default {
           if (kpi && cond.hasDepKpi) {
             boolVal = kpi.hasDepartement
           }
+          if (kpi && cond.isMobile) {
+            boolVal = this.isMobileWidth === cond.isMobile
+          }
           boolArray.push(boolVal)
         }
         return boolArray.every(v => v === true)
