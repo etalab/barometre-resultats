@@ -102,7 +102,9 @@
 .kpi-link-btn {
   background-color: #e5e5f4;
 }
-
+.kpi-level-mobile {
+  line-height: 1.15rem;;
+}
 .unselect_icon{
   /* width: 16px;
   height: 16px;
@@ -520,7 +522,7 @@ animation: fadeIn ease 1s;
                                   </span>
                                   <!-- LEVEL NAME / WARNING -->
                                   <span
-                                    class="font-weight-bold"
+                                    :class="`font-weight-bold ${isMobileWidth ? 'kpi-level-mobile' : ''}`"
                                     v-html="capitalizeIfMobile(
                                       getRuleValue(getPropsItemValue(props.items, kpi.fromDatasetKeyValue),
                                       kpi.textSuffixRules, 
@@ -1120,6 +1122,9 @@ export default {
           }
           if (kpi && cond.hasDepKpi) {
             boolVal = kpi.hasDepartement
+          }
+          if (kpi && cond.isMobile) {
+            boolVal = this.isMobileWidth === cond.isMobile
           }
           boolArray.push(boolVal)
         }
