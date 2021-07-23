@@ -103,7 +103,7 @@
   background-color: #e5e5f4;
 }
 .kpi-level-mobile {
-  line-height: 1.15rem;;
+  line-height: 1.1rem;;
 }
 .unselect_icon{
   /* width: 16px;
@@ -512,7 +512,7 @@ animation: fadeIn ease 1s;
                                       false,
                                       kpi
                                     ) !== ' '"
-                                  class="has-warning mb-0"
+                                  :class="`has-warning mb-0 ${isMobileWidth ? 'kpi-level-mobile' : ''}`"
                                   >
                                   <!-- ADD WARNING SUFFIX FROM SPECIAL STORE -->
                                   <span
@@ -522,7 +522,7 @@ animation: fadeIn ease 1s;
                                   </span>
                                   <!-- LEVEL NAME / WARNING -->
                                   <span
-                                    :class="`font-weight-bold ${isMobileWidth ? 'kpi-level-mobile' : ''}`"
+                                    class="font-weight-bold"
                                     v-html="capitalizeIfMobile(
                                       getRuleValue(getPropsItemValue(props.items, kpi.fromDatasetKeyValue),
                                       kpi.textSuffixRules, 
