@@ -315,7 +315,8 @@ const COMMON_RULES = {
         add: ' et à la maille départementale',
         conditions: [
           { hasDepKpi: true },
-          { checkMobile: true, isMobile: false },
+          // { checkMobile: true, isMobile: false, treshold: 1400 },
+          { checkBreakpoint: true, breakpoints: ['lg', 'xl']},
           {
             itemId: 'from_level',
             itemValue: 'nat'
@@ -326,7 +327,8 @@ const COMMON_RULES = {
         add: '<br> et à la maille départementale',
         conditions: [
           { hasDepKpi: true },
-          { checkMobile: true, isMobile: true },
+          // { checkMobile: true, isMobile: true, breakpoint: 1400 },
+          { checkBreakpoint: true, breakpoints: ['xs', 'sm', 'md'] },
           {
             itemId: 'from_level',
             itemValue: 'nat'
