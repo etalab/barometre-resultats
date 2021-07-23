@@ -76,10 +76,10 @@
       <!-- PREFIX -->
       {{ header.textPrefix[locale]}} 
       <!-- DATE -->
-      <span v-if="header.textPrefix[locale]!='depuis la première publication du baromètre'">
+      <span v-if="header.textPrefix[locale]!='depuis la première publication de l\'indicateur'">
         {{ formatDate(itemLocal[header.valueDate]) }}
       </span>
-      <span v-if="header.textPrefix[locale]=='depuis la première publication du baromètre'">
+      <span v-if="header.textPrefix[locale]=='depuis la première publication de l\'indicateur'">
         (données de {{ formatDate(itemLocal[header.valueDate]) }})
       </span>
     </span>
@@ -228,6 +228,7 @@ export default {
         // const format = header.format
         const format = item.odmFormat
         if (typeof format !== 'undefined' && value && !isNaN(value)) {
+          value = value.toString() === 'NaN' ? 0 : value
           switch (format) {
             case 'integer':
               value = parseInt(value)
@@ -240,7 +241,8 @@ export default {
               break
           }
         } else if (!format && value) {
-          value = value
+          value = isNaN(value) || value.toString() === 'NaN' ? 0 : value
+          // value = value
         } else {
           value = this.noDataText[this.locale]
         }

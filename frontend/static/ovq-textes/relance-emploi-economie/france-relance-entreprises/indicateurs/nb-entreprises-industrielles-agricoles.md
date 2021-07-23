@@ -1,4 +1,5 @@
 <p>
 L’indicateur permet de suivre le nombre d’entreprises et d’organismes bénéficiaires de certains dispositifs de soutien à l’investissement mis en place dans le cadre du plan France Relance : soutien à l’investissement industriel dans les territoires, relocalisation dans les secteurs stratégiques, fonds de modernisation automobile et aéronautique et aide au renouvellement des équipements agricoles.
+Les données relatives aux mesures agricoles sont disponibles depuis le mois d’avril, ce qui explique l’évolution observée pour ce dernier mois. Par ailleurs, ces aides agricoles – les primes à la conversion des agroéquipements - étant attribuées via des campagnes ponctuelles, cela se traduit par des variations mensuelles visibles sur le graphique ci-dessous.
 </p>
 <p class="font-italic body-2">Source : Secrétariat général au plan de relance (SGPR) <br> Consulter les données sur <a target="_blank" href="https://www.data.gouv.fr/fr/datasets/barometre-des-resultats-de-laction-publique/">www.data.gouv.fr</a>
