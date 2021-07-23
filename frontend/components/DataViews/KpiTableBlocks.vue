@@ -1126,6 +1126,10 @@ export default {
           if (kpi && cond.checkMobile) {
             boolVal = this.isMobileWidth === cond.isMobile
           }
+          if (kpi && cond.checkBreakpoint) {
+            let currentBreakpoint = this.$vuetify.breakpoint.name
+            boolVal = cond.breakpoints.includes(currentBreakpoint)
+          }
           boolArray.push(boolVal)
         }
         return boolArray.every(v => v === true)
