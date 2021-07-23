@@ -522,7 +522,7 @@ animation: fadeIn ease 1s;
                                   </span>
                                   <!-- LEVEL NAME / WARNING -->
                                   <span
-                                    :class="`font-weight-bold ${isMobileWidth ? 'kpi-level-mobile' : ''}`"
+                                    class="font-weight-bold"
                                     v-html="capitalizeIfMobile(
                                       getRuleValue(getPropsItemValue(props.items, kpi.fromDatasetKeyValue),
                                       kpi.textSuffixRules, 
