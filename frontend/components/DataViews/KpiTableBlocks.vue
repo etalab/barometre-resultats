@@ -103,6 +103,7 @@
   background-color: #e5e5f4;
 }
 .kpi-level-chip {
+  min-height: 32px !important;
   height: auto !important;
 }
 .kpi-level-mobile {
