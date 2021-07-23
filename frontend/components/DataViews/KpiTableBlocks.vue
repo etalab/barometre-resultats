@@ -512,7 +512,7 @@ animation: fadeIn ease 1s;
                                       false,
                                       kpi
                                     ) !== ' '"
-                                  :class="`has-warning mb-0`"
+                                  class="has-warning mb-0"
                                   >
                                   <!-- ADD WARNING SUFFIX FROM SPECIAL STORE -->
                                   <span
