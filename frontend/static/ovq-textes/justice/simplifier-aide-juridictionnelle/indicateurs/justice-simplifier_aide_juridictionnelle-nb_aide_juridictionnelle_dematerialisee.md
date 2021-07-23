@@ -1,5 +1,5 @@
 <p>
-Il s'agit de mesurer l'impact de la réforme en mesurant l'augmentation progressive du nombre de demandes déposées en ligne, sur le nombre total des demandes déposées par les demandeurs au moyen d'un formulaire "papier" ( 1,2 million de demandes en 2019). 
+Il s'agit de mesurer l'impact de la réforme en mesurant l'augmentation progressive du nombre de demandes déposées en ligne, sur le nombre total des demandes déposées par les demandeurs au moyen d'un formulaire "papier" (1,2 million de demandes en 2019). 
 La cible à atteindre est fixée à 15% de demandes en ligne sur le nombre total des demandes déposées.
 </p>
 <p>
