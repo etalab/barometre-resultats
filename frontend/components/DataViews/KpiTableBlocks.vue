@@ -102,8 +102,11 @@
 .kpi-link-btn {
   background-color: #e5e5f4;
 }
+.kpi-level-chip {
+  height: auto !important;
+}
 .kpi-level-mobile {
-  line-height: 1.1rem;;
+  line-height: 1.1rem;
 }
 .unselect_icon{
   /* width: 16px;
@@ -448,7 +451,7 @@ animation: fadeIn ease 1s;
                               <v-chip
                                 disabled
                                 color="grey lighten-4"
-                                :class="`full-opacity d-flex flex-grow-1 ${isMobileWidth ? 'caption' : ''}`"
+                                :class="`full-opacity d-flex flex-grow-1 ${isMobileWidth ? 'caption' : ''} kpi-level-chip`"
                                 >
 
                                 <!-- ICON -->
