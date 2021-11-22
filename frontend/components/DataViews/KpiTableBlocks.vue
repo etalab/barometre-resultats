@@ -102,7 +102,13 @@
 .kpi-link-btn {
   background-color: #e5e5f4;
 }
-
+.kpi-level-chip {
+  min-height: 32px !important;
+  height: auto !important;
+}
+.kpi-level-mobile {
+  line-height: 1.1rem;
+}
 .unselect_icon{
   /* width: 16px;
   height: 16px;
@@ -446,7 +452,7 @@ animation: fadeIn ease 1s;
                               <v-chip
                                 disabled
                                 color="grey lighten-4"
-                                :class="`full-opacity d-flex flex-grow-1 ${isMobileWidth ? 'caption' : ''}`"
+                                :class="`full-opacity d-flex flex-grow-1 ${isMobileWidth ? 'caption' : ''} kpi-level-chip`"
                                 >
 
                                 <!-- ICON -->
@@ -510,7 +516,7 @@ animation: fadeIn ease 1s;
                                       false,
                                       kpi
                                     ) !== ' '"
-                                  class="has-warning mb-0"
+                                  :class="`has-warning mb-0 ${isMobileWidth ? 'kpi-level-mobile' : ''}`"
                                   >
                                   <!-- ADD WARNING SUFFIX FROM SPECIAL STORE -->
                                   <span
@@ -1120,6 +1126,13 @@ export default {
           }
           if (kpi && cond.hasDepKpi) {
             boolVal = kpi.hasDepartement
+          }
+          if (kpi && cond.checkMobile) {
+            boolVal = this.isMobileWidth === cond.isMobile
+          }
+          if (kpi && cond.checkBreakpoint) {
+            let currentBreakpoint = this.$vuetify.breakpoint.name
+            boolVal = cond.breakpoints.includes(currentBreakpoint)
           }
           boolArray.push(boolVal)
         }
