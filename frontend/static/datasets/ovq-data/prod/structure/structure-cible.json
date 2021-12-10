@@ -6639,7 +6639,7 @@
     "initialValueZero": true,
     "minDateValue": "2021-05-31",
     "maxDateTarget": "2030-01-01",
-    "dataPeriod": "month",
+    "dataPeriod": "year",
     "multiplier": null,
     "progressionLastUpdate": 0,
     "progressionLastUpdateDate": null,
