@@ -121,7 +121,7 @@
       "dataPeriod": "year",
       "multiplier": null,
       "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2021-10-31",
+      "progressionLastUpdateDate": "2020-10-31",
       "trendType": "increasing"
     },
     {
@@ -210,7 +210,7 @@
       "dataPeriod": "year",
       "multiplier": null,
       "progressionLastUpdate": 1,
-      "progressionLastUpdateDate": "2021-11-30",
+      "progressionLastUpdateDate": "2020-11-30",
       "trendType": "increasing"
     }
   ]
@@ -1044,7 +1044,7 @@
     "isDepTarget": true,
     "isRegTarget": true,
     "isNatTarget": true,
-    "isCumulative": true,
+    "isCumulative": false,
     "toAggregateReg": false,
     "toAggregateNat": false,
     "toCumulateGlobally": false,
@@ -2267,7 +2267,7 @@
     "initialValueZero": true,
     "minDateValue": "2017-01-01",
     "maxDateTarget": "2030-01-01",
-    "dataPeriod": "quarter",
+    "dataPeriod": "year",
     "multiplier": null,
     "progressionLastUpdate": 0,
     "progressionLastUpdateDate": null,
@@ -2912,7 +2912,7 @@
       }
     ],
     "odm_kpi_format": "integer",
-    "odm_kpi_unit": "atteintes aux personnes entre janvier et juin",
+    "odm_kpi_unit": "atteintes aux personnes entre janvier et octobre",
     "odm_chart_title": "Atteintes aux personnes dans les transports en commun",
     "odm_chart_type": "histo",
     "odm_chart_template": "categVertH390_histo",
@@ -2956,7 +2956,7 @@
     "toPopulateReg": false,
     "initialValue": true,
     "toRound": 0,
-    "initialValueDate": "2017-10-30",
+    "initialValueDate": "2017-10-31",
     "actualValueDate": null,
     "initialValueZero": false,
     "minDateValue": "2017-01-01",
@@ -3003,7 +3003,7 @@
       }
     ],
     "odm_kpi_format": "integer",
-    "odm_kpi_unit": "atteintes aux biens entre janvier et juin",
+    "odm_kpi_unit": "atteintes aux biens entre janvier et octobre",
     "odm_chart_title": "Atteintes aux biens dans les transports en commun",
     "odm_chart_type": "histo",
     "odm_chart_template": "categVertH390_histo",
@@ -3047,7 +3047,7 @@
     "toPopulateReg": false,
     "initialValue": true,
     "toRound": 0,
-    "initialValueDate": "2017-10-30",
+    "initialValueDate": "2017-10-31",
     "actualValueDate": null,
     "initialValueZero": false,
     "minDateValue": "2017-01-01",
@@ -6395,7 +6395,7 @@
       "odm_map_region_max": 1900,
       "odm_map_departement_max": 1100,
       "odm_map_label": "Nombre d'enfants ayant suivi un cycle d’Aisance Aquatique",
-      "odm_map_legend_subtitle": "<i>Dernières données disponibles</i>",
+      "odm_map_legend_subtitle": "<i>Données octobre 2021</i>",
       "odm_map_default_layer": true,
       "isDep": true,
       "isReg": true,
