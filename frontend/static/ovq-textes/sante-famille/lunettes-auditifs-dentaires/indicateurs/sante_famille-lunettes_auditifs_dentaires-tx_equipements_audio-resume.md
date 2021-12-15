@@ -1,5 +1,5 @@
 <p>
-  Il s'agit de la part des aides auditives « 100 % santé » (sans reste à charge pour les bénéficiaires) dans le total des ventes de ces équipements.  La réforme rentrera pleinement en vigueur pour les appareils auditifs à partir du 1er janvier 2021, date à laquelle il n’y aura plus de frais à la charge des patients.
+  Il s'agit de la part des aides auditives « 100 % santé » (sans reste à charge pour les bénéficiaires) dans le total des ventes de ces équipements. La réforme est entrée pleinement en vigueur pour les appareils auditifs le 1er janvier 2021. 
 </p>
 <p class="font-italic body-2">
   Source : 
