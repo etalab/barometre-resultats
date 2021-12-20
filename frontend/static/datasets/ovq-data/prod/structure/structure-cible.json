@@ -4833,8 +4833,8 @@
   "active": true,
   "id_ovq": "OVQ-LDA",
   "nom_ovq_ditp": "Offrir un logement aux sans-abris (Logement d'Abord)",
-  "nom_ovq": "Offrir un logement aux sans-abri : Logement d’abord",
-  "nom_ovq_bis": "Offrir un logement aux sans-abri : Logement d’abord",
+  "nom_ovq": "Faciliter l’accès au logement des personnes sans-abri",
+  "nom_ovq_bis": "Faciliter l’accès au logement des personnes sans-abri",
   "odm_id": "logement-d-abord",
   "odm_activate": true,
   "odm_sources_ids": [{
