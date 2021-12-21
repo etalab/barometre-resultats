@@ -3,7 +3,7 @@ Il s'agit de mesurer l'impact de la réforme en mesurant l'augmentation progress
 La cible à atteindre est fixée à 15% de demandes en ligne sur le nombre total des demandes déposées.
 </p>
 <p>
- L’expérimentation du système d’information de l’aide juridictionnelle (SIAJ) a débuté dans deux départements : le Morbihan à compter de mars 2021 et l’Ille-et-Vilaine depuis le mois de mai 2021. Le déploiement dans l’ensemble des territoires s’effectuera progressivement à compter de septembre 2021 jusqu’en 2022.
+ L’expérimentation du système d’information de l’aide juridictionnelle (SIAJ) a débuté dans deux départements : le Morbihan à compter de mars 2021 et l’Ille-et-Vilaine depuis le mois de mai 2021. Le déploiement dans l’ensemble des territoires s’effectue progressivement depuis septembre 2021.
 </p>
 <p>
  * Au niveau national, le taux affiché est la moyenne des résultats obtenus dans les deux départements expérimentateurs

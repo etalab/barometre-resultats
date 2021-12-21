@@ -4,5 +4,5 @@
 	</span>
 </p>
 <p>
-	Cela se fera grâce au remboursement intégral par la sécurité sociale et les complémentaires santé (« reste à charge zéro ») d’ici à 2021 de certaines lunettes, prothèses dentaires et auditives, pour améliorer le recours à ces soins onéreux.
+	Depuis 2021, le remboursement intégral par la sécurité sociale et les complémentaires santé (« reste à charge zéro ») de certaines lunettes, prothèses dentaires et auditives, améliore le recours à ces soins onéreux.
 </p>
