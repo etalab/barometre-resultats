@@ -3973,7 +3973,7 @@
           "text_format": "datetime",
           "text_value": "initial_value_date",
           "value": "initial_value",
-          "hide_if_main_is_null": true
+          "hide_if_main_is_null": false
         },
         {
           "text": "En",
@@ -4062,7 +4062,7 @@
           "text_format": "datetime",
           "text_value": "initial_value_date",
           "value": "initial_value",
-          "hide_if_main_is_null": true
+          "hide_if_main_is_null": false
         },
         {
           "text": "En",
@@ -4125,9 +4125,9 @@
       "toPopulateReg": false,
       "initialValue": true,
       "toRound": 2,
-      "initialValueDate": null,
+      "initialValueDate": "2019-03-31",
       "actualValueDate": null,
-      "initialValueZero": false,
+      "initialValueZero": true,
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
@@ -4151,7 +4151,7 @@
           "text_format": "datetime",
           "text_value": "initial_value_date",
           "value": "initial_value",
-          "hide_if_main_is_null": true
+          "hide_if_main_is_null": false
         },
         {
           "text": "En",
@@ -4214,9 +4214,9 @@
       "toPopulateReg": false,
       "initialValue": true,
       "toRound": 2,
-      "initialValueDate": null,
+      "initialValueDate": "2019-12-31",
       "actualValueDate": null,
-      "initialValueZero": false,
+      "initialValueZero": true,
       "minDateValue": "2017-01-01",
       "maxDateTarget": "2030-01-01",
       "dataPeriod": "month",
@@ -4371,7 +4371,7 @@
         "text_format": "datetime",
         "text_value": "initial_value_date",
         "value": "initial_value",
-        "hide_if_main_is_null": true
+        "hide_if_main_is_null": false
       },
       {
         "text": "En",
@@ -4435,9 +4435,9 @@
     "toPopulateReg": false,
     "initialValue": true,
     "toRound": 0,
-    "initialValueDate": "2017-06-30",
+    "initialValueDate": "2017-01-01",
     "actualValueDate": null,
-    "initialValueZero": false,
+    "initialValueZero": true,
     "minDateValue": "2017-01-01",
     "maxDateTarget": "2030-01-01",
     "dataPeriod": "year",
@@ -4749,7 +4749,7 @@
     "odm_text_brief": false,
     "odm_kpi_headers_overwrite": [{
         "text": "En",
-        "text_default": "En 2017",
+        "text_default": "En avril 2020",
         "text_format": "datetime",
         "text_value": "initial_value_date",
         "value": "initial_value",
@@ -4817,7 +4817,7 @@
     "toPopulateReg": false,
     "initialValue": true,
     "toRound": 0,
-    "initialValueDate": null,
+    "initialValueDate": "2020-04-30",
     "actualValueDate": null,
     "initialValueZero": true,
     "minDateValue": "2017-01-01",
@@ -5680,7 +5680,7 @@
     "removeSecondValueDelta": false,
     "toPopulateDep": false,
     "toPopulateReg": false,
-    "initialValue": false,
+    "initialValue": true,
     "toRound": 0,
     "initialValueDate": "2017-01-01",
     "actualValueDate": null,
@@ -5742,7 +5742,7 @@
     "odm_text_brief": false,
     "odm_kpi_headers_overwrite": [{
         "text": "En",
-        "text_default": "En 2017",
+        "text_default": "En septembre 2017",
         "text_format": "datetime",
         "text_value": "initial_value_date",
         "value": "initial_value",
@@ -6068,7 +6068,7 @@
     "toPopulateReg": false,
     "initialValue": true,
     "toRound": 0,
-    "initialValueDate": "2017-01-01",
+    "initialValueDate": "2020-10-31",
     "actualValueDate": null,
     "initialValueZero": true,
     "minDateValue": "2017-01-01",
@@ -6352,7 +6352,7 @@
           "text_format": "datetime",
           "text_value": "initial_value_date",
           "value": "initial_value",
-          "hide_if_main_is_null": true
+          "hide_if_main_is_null": false
         },
         {
           "text": "En",
@@ -6416,7 +6416,7 @@
       "toPopulateReg": false,
       "initialValue": true,
       "toRound": 0,
-      "initialValueDate": null,
+      "initialValueDate": "2017-01-01",
       "actualValueDate": null,
       "initialValueZero": true,
       "minDateValue": "2020-12-31",
@@ -6442,7 +6442,7 @@
         "text_format": "datetime",
         "text_value": "initial_value_date",
         "value": "initial_value",
-        "hide_if_main_is_null": true
+        "hide_if_main_is_null": false
       },
       {
         "text": "En",
@@ -6506,10 +6506,10 @@
     "toPopulateReg": false,
     "initialValue": true,
     "toRound": 0,
-    "initialValueDate": null,
+    "initialValueDate": "2019-03-31",
     "actualValueDate": null,
     "initialValueZero": true,
-    "minDateValue": "2017-01-01",
+    "minDateValue": "2019-03-31",
     "maxDateTarget": "2030-01-01",
     "dataPeriod": "month",
     "multiplier": null,
