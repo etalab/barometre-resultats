@@ -1042,7 +1042,7 @@
     "isReg": true,
     "isNat": true,
     "isDepTarget": true,
-    "isRegTarget": true,
+    "isRegTarget": false,
     "isNatTarget": true,
     "isCumulative": false,
     "toAggregateReg": false,
@@ -1326,7 +1326,7 @@
   "odm_text_brief": true,
   "indicateurs": [{
     "active": true,
-    "id_indicateur_ditp": "eb0c7fe5fa3c43e7ac987f66d1b6f613",
+    "id_indicateur_ditp": "27e7fbf605714dc6bc559675437572d2",
     "id_indicateur_fr": "nombre-contrats-apprentissage",
     "nom_indicateur_ditp": "Nombre de contrats d'apprentissage",
     "nom_indicateur": "Nombre de contrats d’apprentissage",
@@ -5360,7 +5360,7 @@
         "text_format": "datetime",
         "text_value": "initial_value_date",
         "value": "initial_value",
-        "hide_if_main_is_null": true
+        "hide_if_main_is_null": false
       },
       {
         "text": "En",
