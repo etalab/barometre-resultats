@@ -914,7 +914,7 @@
     "isReg": true,
     "isNat": true,
     "isDepTarget": false,
-    "isRegTarget": false,
+    "isRegTarget": true,
     "isNatTarget": true,
     "isCumulative": true,
     "toAggregateReg": false,
@@ -983,7 +983,7 @@
     "id_indicateur_ditp": "29d4c0f176594fbea97a5a2d002c1d2b",
     "id_indicateur_fr": "nb-entreprises-industrielles-agricoles",
     "nom_indicateur_ditp": "Nombre d’entreprises industrielles et agricoles (dont PME)",
-    "nom_indicateur": "Nombre d'entreprises industrielles et organismes agricoles bénéficiaires des aides à l'investissement de France Relance",
+    "nom_indicateur": "Nombre d’entreprises industrielles (dont PME) bénéficiaires des aides à l'investissement de France Relance",
     "odm_id": "nb-entreprises-industrielles-agricoles",
     "odm_text": "/ovq-textes/relance-emploi-economie/france-relance-entreprises/indicateurs/nb-entreprises-industrielles-agricoles.md",
     "odm_text_brief": false,
@@ -993,7 +993,7 @@
         "text_format": "datetime",
         "text_value": "initial_value_date",
         "value": "initial_value",
-        "hide_if_main_is_null": true
+        "hide_if_main_is_null": false
       },
       {
         "text": "En",
@@ -1014,7 +1014,7 @@
     ],
     "odm_kpi_format": "integer",
     "odm_kpi_unit": "entreprises industrielles et agricoles",
-    "odm_chart_title": "Nombre d'entreprises industrielles et organismes agricoles bénéficiaires des aides à l'investissement de France Relance",
+    "odm_chart_title": "Nombre d’entreprises industrielles (dont PME) bénéficiaires des aides à l'investissement de France Relance",
     "odm_chart_type": "histo",
     "odm_chart_template": "categVertH390_histo",
     "odm_chart_colors": ["#00AC8C"],
@@ -1035,7 +1035,7 @@
     "odm_map_has_departement_level": true,
     "odm_map_region_max": 1650,
     "odm_map_departement_max": 400,
-    "odm_map_label": "Nombre d'entreprises industrielles et organismes agricoles bénéficiaires des aides à l'investissement de France Relance",
+    "odm_map_label": "Nombre d’entreprises industrielles (dont PME) bénéficiaires des aides à l'investissement de France Relance",
     "odm_map_legend_subtitle": "<i>Données octobre 2021</i>",
     "odm_map_default_layer": true,
     "isDep": true,
@@ -1057,7 +1057,7 @@
     "toPopulateReg": false,
     "initialValue": true,
     "toRound": 0,
-    "initialValueDate": null,
+    "initialValueDate": "2020-01-01",
     "actualValueDate": null,
     "initialValueZero": true,
     "minDateValue": "2017-01-01",
@@ -1404,14 +1404,14 @@
     "initialValue": true,
     "toRound": 0,
     "initialValueDate": "2017-12-31",
-    "actualValueDate": "2020-12-31",
+    "actualValueDate": "2021-09-30",
     "initialValueZero": false,
     "minDateValue": "2017-01-01",
     "maxDateTarget": "2030-01-01",
     "dataPeriod": "month",
     "multiplier": null,
     "progressionLastUpdate": 1,
-    "progressionLastUpdateDate": "2019-12-31",
+    "progressionLastUpdateDate": "2020-12-31",
     "trendType": "increasing"
   }]
 },
@@ -1723,7 +1723,7 @@
         "text_format": "datetime",
         "text_value": "initial_value_date",
         "value": "initial_value",
-        "hide_if_main_is_null": true
+        "hide_if_main_is_null": false
       },
       {
         "text": "En",
@@ -2108,7 +2108,7 @@
         "text_format": "datetime",
         "text_value": "initial_value_date",
         "value": "initial_value",
-        "hide_if_main_is_null": true
+        "hide_if_main_is_null": false
       },
       {
         "text": "En",
@@ -2671,7 +2671,7 @@
         "text_format": "datetime",
         "text_value": "initial_value_date",
         "value": "initial_value",
-        "hide_if_main_is_null": true
+        "hide_if_main_is_null": false
       },
       {
         "text": "En",
@@ -2735,9 +2735,9 @@
     "toPopulateReg": false,
     "initialValue": true,
     "toRound": 2,
-    "initialValueDate": null,
+    "initialValueDate": "2017-12-31",
     "actualValueDate": null,
-    "initialValueZero": false,
+    "initialValueZero": true,
     "minDateValue": "2017-01-01",
     "maxDateTarget": "2030-01-01",
     "dataPeriod": "year",
@@ -4281,7 +4281,7 @@
         "text_format": "datetime",
         "text_value": "initial_value_date",
         "value": "initial_value",
-        "hide_if_main_is_null": true
+        "hide_if_main_is_null": false
       },
       {
         "text": "En",
@@ -4345,9 +4345,9 @@
     "toPopulateReg": false,
     "initialValue": true,
     "toRound": 0,
-    "initialValueDate": "2017-06-30",
+    "initialValueDate": "2017-01-01",
     "actualValueDate": null,
-    "initialValueZero": false,
+    "initialValueZero": true,
     "minDateValue": "2017-01-01",
     "maxDateTarget": "2030-01-01",
     "dataPeriod": "semi",
@@ -4753,7 +4753,7 @@
         "text_format": "datetime",
         "text_value": "initial_value_date",
         "value": "initial_value",
-        "hide_if_main_is_null": true
+        "hide_if_main_is_null": false
       },
       {
         "text": "En",
@@ -5746,7 +5746,7 @@
         "text_format": "datetime",
         "text_value": "initial_value_date",
         "value": "initial_value",
-        "hide_if_main_is_null": true
+        "hide_if_main_is_null": false
       },
       {
         "text": "En",
@@ -5808,11 +5808,11 @@
     "removeSecondValueDelta": false,
     "toPopulateDep": false,
     "toPopulateReg": false,
-    "initialValue": false,
+    "initialValue": true,
     "toRound": 0,
     "initialValueDate": null,
     "actualValueDate": null,
-    "initialValueZero": false,
+    "initialValueZero": true,
     "minDateValue": "2017-01-01",
     "maxDateTarget": "2030-01-01",
     "dataPeriod": "month",
@@ -6004,7 +6004,7 @@
         "text_format": "datetime",
         "text_value": "initial_value_date",
         "value": "initial_value",
-        "hide_if_main_is_null": true
+        "hide_if_main_is_null": false
       },
       {
         "text": "En",
@@ -6066,11 +6066,11 @@
     "removeSecondValueDelta": false,
     "toPopulateDep": false,
     "toPopulateReg": false,
-    "initialValue": false,
+    "initialValue": true,
     "toRound": 0,
-    "initialValueDate": null,
+    "initialValueDate": "2017-01-01",
     "actualValueDate": null,
-    "initialValueZero": false,
+    "initialValueZero": true,
     "minDateValue": "2017-01-01",
     "maxDateTarget": "2030-01-01",
     "dataPeriod": "month",
@@ -6094,7 +6094,7 @@
         "text_format": "datetime",
         "text_value": "initial_value_date",
         "value": "initial_value",
-        "hide_if_main_is_null": true
+        "hide_if_main_is_null": false
       },
       {
         "text": "En",
@@ -6158,7 +6158,7 @@
     "toPopulateReg": false,
     "initialValue": true,
     "toRound": 0,
-    "initialValueDate": null,
+    "initialValueDate": "2017-01-01",
     "actualValueDate": null,
     "initialValueZero": true,
     "minDateValue": "2017-01-01",
