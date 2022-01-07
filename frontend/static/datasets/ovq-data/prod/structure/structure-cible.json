@@ -1408,7 +1408,7 @@
     "initialValueZero": false,
     "minDateValue": "2017-01-01",
     "maxDateTarget": "2030-01-01",
-    "dataPeriod": "month",
+    "dataPeriod": "no",
     "multiplier": null,
     "progressionLastUpdate": 1,
     "progressionLastUpdateDate": "2020-12-31",
