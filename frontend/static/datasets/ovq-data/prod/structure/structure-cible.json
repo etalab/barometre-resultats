@@ -5538,7 +5538,7 @@
     "isDep": true,
     "isReg": false,
     "isNat": false,
-    "isDepTarget": true,
+    "isDepTarget": false,
     "isRegTarget": false,
     "isNatTarget": true,
     "isCumulative": true,
