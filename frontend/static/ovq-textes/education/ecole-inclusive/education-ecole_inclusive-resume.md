@@ -7,8 +7,8 @@
 <p>
   La mise en place de l’école inclusive repose sur :
   <ul>
-    <li>un meilleur accompagnement des familles;</li>
-    <li>un meilleur accueil des élèves au travers d’une offre plus diversifiée et mieux coordonnée;</li>
+    <li>un meilleur accompagnement des familles ;</li>
+    <li>un meilleur accueil des élèves au travers d’une offre plus diversifiée et mieux coordonnée ;</li>
     <li>une amélioration des conditions de travail des accompagnants.</li>
   </ul>
 </p>
