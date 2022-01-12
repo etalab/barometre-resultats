@@ -6,7 +6,7 @@ Organisé dans le temps scolaire, périscolaire ou pendant les vacances, le prog
 L’Etat finance depuis 2019 des classes bleues (temps scolaire) ou des stages bleus (hors temps scolaire), qui concernent à ce jour plus de 97 000 enfants. La liste des bénéficiaires est disponible sur <a href="https://www.agencedusport.fr/Listes-des-beneficiaires" target="_blank">agencedusport.fr/Listes-des-beneficiaires</a>.
 </p>
 <p>
-Les structures financées qui mettent en œuvre des classes ou stages bleus sont géolocalisées sur le site <a href="https://sports.gouv.fr/preventiondesnoyades/" target="_blank">sports.gouv.fr/preventiondesnoyades</a>, dans la rubrique « près de chez vous »
+Les structures financées qui mettent en œuvre des classes ou stages bleus sont géolocalisées sur le site <a href="https://sports.gouv.fr/preventiondesnoyades/" target="_blank">sports.gouv.fr/preventiondesnoyades</a>, dans la rubrique «&nbsp;près de chez vous&nbsp;».
 </p>
 <p>
 L’indicateur permet de suivre l’évolution du nombre d’enfants ayant suivi un cycle de 8 séances en aisance aquatique depuis le lancement du programme en Septembre 2019.

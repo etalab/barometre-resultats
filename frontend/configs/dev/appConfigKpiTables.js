@@ -548,27 +548,6 @@ const COMMON_HEADERS = {
         blockInnerTarget: 'data-main-value'
       },
       {
-        text: { fr: 'Progression depuis la dernière mise à jour' },
-        textPrefix: { fr: 'depuis la première publication de l\'indicateur' },
-        value: 'progression_last_update_percentage',
-        valueDate: 'progression_last_update_date',
-        hideIfNull: true,
-        align: 'center',
-        cols: 1,
-        addSign: true,
-        addArrow: true,
-        asChip: true,
-        animate: false,
-        format: 'integer',
-        kpiValueComponent: 'number',
-        unit: '%',
-        class: 'light-green darken-2 white--text caption font-weight-medium',
-        color: 'light-green darken-2',
-        blockId: 'block-1',
-        blockColor: undefined,
-        blockInnerTarget: 'data-third-value'
-      },
-      {
         text: { fr: 'Cible 2022' },
         value: 'target',
         align: 'center',
