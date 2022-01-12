@@ -1,12 +1,12 @@
 <p id="brief">
-Lancés en 2019, les dispositifs « Aisance Aquatique » et « Savoir Rouler à Vélo »  ont pour objectif de garantir à chaque enfant l’acquisition de savoirs sportifs fondamentaux indispensables à leur épanouissement, leur santé, leur autonomie et leur sécurité. 
+Lancés en 2019, les dispositifs «&nbsp;Aisance Aquatique&nbsp;» et «&nbsp;Savoir Rouler à Vélo&nbsp;»  ont pour objectif de garantir à chaque enfant l’acquisition de savoirs sportifs fondamentaux indispensables à leur épanouissement, leur santé, leur autonomie et leur sécurité. 
 </p>
 
 <p>
   <ul>
     <li>
       <b>Aisance Aquatique et J’apprends à nager</b><br>
-Pour lutter contre les noyades qui constituent la première cause de mortalité par accident de la vie courante chez les moins de 25 ans et touchent particulièrement les moins de 6 ans, le Gouvernement a engagé en 2019 le programme d’Aisance Aquatique destiné aux enfants de 4 à 6 ans. Complémentaire aux cycles traditionnels d’apprentissage de la natation scolaire et au programme « J’apprends à nager » destiné aux 6-12 ans, il permet aux plus jeunes de développer de nouvelles compétences (flotter sans aide, prendre sa respiration, se déplacer dans l’eau) et d’acquérir les fondamentaux pour aller vers le savoir-nager. Ce programme pédagogique s’accompagne d’une politique volontariste de rénovation et de construction de bassins qui a permis d’investir 59 millions d’euros depuis 2019 dans des équipements. 
+Pour lutter contre les noyades qui constituent la première cause de mortalité par accident de la vie courante chez les moins de 25 ans et touchent particulièrement les moins de 6 ans, le Gouvernement a engagé en 2019 le programme d’Aisance Aquatique destiné aux enfants de 4 à 6 ans. Complémentaire aux cycles traditionnels d’apprentissage de la natation scolaire et au programme «&nbsp;J’apprends à nager&nbsp;» destiné aux 6-12 ans, il permet aux plus jeunes de développer de nouvelles compétences (flotter sans aide, prendre sa respiration, se déplacer dans l’eau) et d’acquérir les fondamentaux pour aller vers le savoir-nager. Ce programme pédagogique s’accompagne d’une politique volontariste de rénovation et de construction de bassins qui a permis d’investir 59 millions d’euros depuis 2019 dans des équipements. 
     </li>
     <li>
       <b>Savoir rouler à Vélo</b><br>
