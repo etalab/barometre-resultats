@@ -1,5 +1,5 @@
 <p id="brief">
-Les petites lignes ferroviaires représentent environ un tiers du réseau ferroviaire français accueillant des voyageurs, soit 9 137 km sur un total de 28 364 km. Elles accueillent 17% du trafic des trains régionaux et constituent souvent des moyens de déplacement essentiels, notamment pour les habitants des territoires ruraux et des villes moyennes. Cependant, ce réseau, aujourd’hui vieillissant, connaît des difficultés qui impactent la vie quotidienne des habitants.
+Les petites lignes ferroviaires représentent environ un tiers du réseau ferroviaire français accueillant des voyageurs, soit 9&nbsp;137 km sur un total de 28&nbsp;364 km. Elles accueillent 17% du trafic des trains régionaux et constituent souvent des moyens de déplacement essentiels, notamment pour les habitants des territoires ruraux et des villes moyennes. Cependant, ce réseau, aujourd’hui vieillissant, connaît des difficultés qui impactent la vie quotidienne des habitants.
 </p>
 
 <p>
