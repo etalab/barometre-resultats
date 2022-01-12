@@ -1,5 +1,5 @@
 <p id="brief">
-  Le téléservice de l’aide juridictionnelle vise à simplifier puis dématérialiser de bout en bout l’ensemble des processus de traitement de l’aide juridictionnelle: il concerne les particuliers demandeurs de l’aide juridictionnelle, mais aussi les personnes qui les accompagnent dans cette démarche
+  Le téléservice de l’aide juridictionnelle vise à simplifier puis dématérialiser de bout en bout l’ensemble des processus de traitement de l’aide juridictionnelle: il concerne les particuliers demandeurs de l’aide juridictionnelle, mais aussi les personnes qui les accompagnent dans cette démarche.
 </p>
 
 <p>
