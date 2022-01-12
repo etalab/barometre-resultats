@@ -1190,7 +1190,7 @@
   "initialValueZero": true,
   "minDateValue": "2021-02-28",
   "maxDateTarget": "2030-01-01",
-  "dataPeriod": "month",
+  "dataPeriod": "no",
   "multiplier": null,
   "progressionLastUpdate": 1,
   "progressionLastUpdateDate": "2021-04-30",
@@ -3845,7 +3845,7 @@
         "text_format": "datetime",
         "text_value": "initial_value_date",
         "value": "initial_value",
-        "hide_if_main_is_null": true
+        "hide_if_main_is_null": false
       },
       {
         "text": "En",
@@ -5644,7 +5644,7 @@
     "odm_chart_template": "categVertH390",
     "odm_chart_colors": ["#00AC8C"],
     "odm_chart_xaxis_type": "datetime",
-    "odm_chart_marker_size": 4,
+    "odm_chart_marker_size": 0,
     "odm_chart_serie_name": "Nombre d’utilisateurs du Pass culture",
     "odm_chart_format": "integer",
     "odm_chart_unit": "utilisateurs",
@@ -6158,7 +6158,7 @@
     "toPopulateReg": false,
     "initialValue": true,
     "toRound": 0,
-    "initialValueDate": "2017-01-31",
+    "initialValueDate": "2019-12-31",
     "actualValueDate": null,
     "initialValueZero": true,
     "minDateValue": "2017-01-01",
