@@ -2,7 +2,7 @@
   Dans chaque département, des contrôles sont réalisés dès lors qu’un établissement (scolaire, cultuel, sportif, associatif, …) pourrait présenter un risque de dérives séparatistes, en associant plusieurs services de l’Etat (forces de l’ordre, services fiscaux, éducation nationale, …). 
 </p>
 <p>
-  Les données collectées (contrôles, fermetures, montants financiers redressés ou recouvrés) le sont depuis novembre 2019.
+  Les données collectées (contrôles, fermetures, montants financiers redressés ou recouvrés) le sont depuis novembre 2019 pour les CLIR, et englobent les résultats des Plans de lutte contre la radicalisation dans les quartiers (PLR-Q) installés en 2018.
 </p>
 <p>
   La valeur du mois de juin 2020 correspond au cumul des contrôles réalisés au cours du 1er semestre 2020 (période de confinement).
