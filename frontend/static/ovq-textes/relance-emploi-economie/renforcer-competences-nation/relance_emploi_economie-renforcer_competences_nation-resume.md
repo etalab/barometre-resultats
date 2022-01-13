@@ -1,15 +1,12 @@
-<p id="brief">
-  La réforme tend à soutenir le développement des compétences :
-  <ul>
-    <li>
-      Pour les salariés par le biais du compte personnel de formation (CPF) ;
-    </li>
-    <li>
-      Par le plan d’investissement dans les compétences (PIC), qui associe l’Etat et les Régions, dans une volonté de miser sur les qualifications individuelles.
-    </li>
-  </ul>
+<p>
+  <span id="brief">
+L’ambition est d’offrir à chacun l’accès à des formations permettant de choisir son avenir professionnel tout en répondant aux besoins en compétences des entreprises.
+  </span>
 </p>
 
 <p>
-  Le PIC tend à développer, pour les jeunes et les demandeurs d’emploi les plus en difficulté, des formations gratuites et facilement accessibles, tout en répondant aux besoins des entreprises notamment sur les métiers en tension.
+Le plan d’investissement dans les compétences (PIC) est un outil essentiel, renforcé dans le cadre de France Relance, pour accompagner les jeunes et les demandeurs d’emploi, notamment pour rebondir face à la crise. Ainsi, avec le PIC et ses déclinaisons dans les pactes régionaux d’investissement dans les compétences, ce sont des formations à destination des demandeurs d’emploi et des jeunes, intégralement financées, facilement accessibles, de qualité et tournées vers les besoins des entreprises et des bassins d’emploi, qui sont proposées.
+</p>
+<p>
+Sur l’année 2021, on compte plus de 1,5 million d’entrées en formation pour les personnes éloignées de l’emploi notamment via le PIC.
 </p>

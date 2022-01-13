@@ -103,6 +103,11 @@
   background-color: #e5e5f4;
 }
 
+.level-chip{
+  height: auto!important;
+  white-space: normal!important;
+}
+
 .unselect_icon{
   /* width: 16px;
   height: 16px;
@@ -446,7 +451,7 @@ animation: fadeIn ease 1s;
                               <v-chip
                                 disabled
                                 color="grey lighten-4"
-                                :class="`full-opacity d-flex flex-grow-1 ${isMobileWidth ? 'caption' : ''}`"
+                                :class="`full-opacity d-flex flex-grow-1 level-chip ${isMobileWidth ? 'caption' : ''}`"
                                 >
 
                                 <!-- ICON -->
