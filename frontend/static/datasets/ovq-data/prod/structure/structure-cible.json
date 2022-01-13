@@ -1786,7 +1786,7 @@
     "toPopulateReg": false,
     "initialValue": true,
     "toRound": 0,
-    "initialValueDate": "2017-01-31",
+    "initialValueDate": "2017-12-31",
     "actualValueDate": null,
     "initialValueZero": true,
     "minDateValue": "2017-01-01",
@@ -3112,7 +3112,7 @@
         "text_format": "datetime",
         "text_value": "initial_value_date",
         "value": "initial_value",
-        "hide_if_main_is_null": true
+        "hide_if_main_is_null": false
       },
       {
         "text": "En",
@@ -3174,9 +3174,9 @@
     "removeSecondValueDelta": false,
     "toPopulateDep": false,
     "toPopulateReg": false,
-    "initialValue": false,
+    "initialValue": true,
     "toRound": 0,
-    "initialValueDate": null,
+    "initialValueDate": "2020-05-31",
     "actualValueDate": null,
     "initialValueZero": true,
     "minDateValue": "2017-01-01",
