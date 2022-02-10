@@ -2793,7 +2793,7 @@
     "odm_id": "nb-heures-patrouille",
     "odm_text": "/ovq-textes/securite/renforcer-securite-quotidien/indicateurs/securite-renforcer_securite_quotidien-nb_heures_patrouille-resume.md",
     "odm_text_brief": false,
-    "odm_text_open": true,
+    "odm_text_open": false,
     "odm_kpi_headers_overwrite": [{
         "text": "En",
         "text_default": "En 2017",
@@ -2885,7 +2885,7 @@
     "odm_id": "nb-atteintes-personnes",
     "odm_text": "/ovq-textes/securite/renforcer-securite-quotidien/indicateurs/securite-renforcer_securite_quotidien-nb_atteintes_personnes-resume.md",
     "odm_text_brief": false,
-    "odm_text_open": true,
+    "odm_text_open": false,
     "odm_kpi_headers_overwrite": [{
         "text": "En",
         "text_default": "En 2017",
@@ -2976,7 +2976,7 @@
     "odm_id": "nb-atteintes-biens",
     "odm_text": "/ovq-textes/securite/renforcer-securite-quotidien/indicateurs/securite-renforcer_securite_quotidien-nb_atteintes_biens-resume.md",
     "odm_text_brief": false,
-    "odm_text_open": true,
+    "odm_text_open": false,
     "odm_kpi_headers_overwrite": [{
         "text": "En",
         "text_default": "En 2017",
@@ -3105,7 +3105,7 @@
     "odm_id": "nb-amendes-delictuelles-dressees",
     "odm_text": "/ovq-textes/securite/lutte-stupefiants/indicateurs/securite-lutte_stupefiants-nb_amendes_delictuelles_dressees-resume.md",
     "odm_text_brief": false,
-    "odm_text_open": true,
+    "odm_text_open": false,
     "odm_kpi_headers_overwrite": [{
         "text": "En",
         "text_default": "En 2017",
@@ -3234,7 +3234,7 @@
     "odm_id": "nb-ordonnances-delivrees",
     "odm_text": "/ovq-textes/securite/lutter-violences-femmes/indicateurs/securite-lutter_violences_femmes-nb_ordonnances_delivrees-resume.md",
     "odm_text_brief": false,
-    "odm_text_open": true,
+    "odm_text_open": false,
     "odm_kpi_headers_overwrite": [{
         "text": "En",
         "text_default": "En 2017",
@@ -3363,7 +3363,7 @@
     "odm_id": "nb-controles-clir",
     "odm_text": "/ovq-textes/securite/lutter-contre-principes-republicains/indicateurs/securite-lutter_contre_principes_republicains-nb_controles_clir-resume.md",
     "odm_text_brief": false,
-    "odm_text_open": true,
+    "odm_text_open": false,
     "odm_kpi_headers_overwrite": [{
         "text": "En",
         "text_default": "En 2017",
@@ -3492,7 +3492,7 @@
     "odm_id": "nb-morts-routes",
     "odm_text": "/ovq-textes/securite/reduire-mortalite-routes/indicateurs/securite-reduire_mortalite_routes-nb_morts_routes-resume.md",
     "odm_text_brief": false,
-    "odm_text_open": true,
+    "odm_text_open": false,
     "odm_kpi_headers_overwrite": [{
         "text": "En",
         "text_default": "En 2017",
