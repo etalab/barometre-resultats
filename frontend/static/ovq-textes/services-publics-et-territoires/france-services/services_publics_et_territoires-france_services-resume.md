@@ -1,5 +1,5 @@
 <p id="brief">
-  Le programme France Services a été créé par l’État pour garantir l’accès aux services publics essentiels à tous et sur tout le territoire.
+  Le programme France services a été créé par l’État pour garantir l’accès aux services publics essentiels à tous et sur tout le territoire.
 </p>
 <p>
   Les objectifs : 
