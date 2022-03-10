@@ -1530,7 +1530,7 @@
     "toPopulateDep": false,
     "toPopulateReg": false,
     "initialValue": true,
-    "toRound": 0,    
+    "toRound": 0,
     "initialValueDate": "2019-07-31",
     "actualValueDate": "2021-07-31",
     "initialValueZero": false,
