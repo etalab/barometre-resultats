@@ -1404,7 +1404,7 @@
     "initialValue": true,
     "toRound": 0,
     "initialValueDate": "2017-12-31",
-    "actualValueDate": "2021-10-31",
+    "actualValueDate": "2021-11-30",
     "initialValueZero": false,
     "minDateValue": "2017-01-01",
     "maxDateTarget": "2030-01-01",
@@ -1487,7 +1487,7 @@
       }
     ],
     "odm_kpi_format": "integer",
-    "odm_kpi_unit": "Recrutements de jeunes",
+    "odm_kpi_unit": "Recrutements de jeunes sur douze mois",
     "odm_chart_title": "Nombre de recrutements de jeunes",
     "odm_chart_type": "histo",
     "odm_chart_template": "categVertH390_histo",
