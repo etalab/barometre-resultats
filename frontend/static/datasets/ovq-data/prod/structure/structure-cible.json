@@ -4541,7 +4541,7 @@
     "odm_map_region_max": 15500,
     "odm_map_departement_max": 3100,
     "odm_map_label": "Nombre de pères / conjoints prenant un congé de paternité",
-    "odm_map_legend_subtitle": "<i>Données juin 2021</i>",
+    "odm_map_legend_subtitle": "<i>Données décembre 2021</i>",
     "odm_map_default_layer": true,
     "isDep": true,
     "isReg": true,
