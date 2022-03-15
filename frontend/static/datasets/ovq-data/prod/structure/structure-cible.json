@@ -2783,7 +2783,7 @@
   "odm_image_activate": false,
   "odm_image": "/ovq-textes/securite/images/test-image.png",
   "odm_text": "/ovq-textes/securite/renforcer-securite-quotidien/securite-renforcer_securite_quotidien-resume.md",
-  "odm_text_brief": false,
+  "odm_text_brief": true,
   "indicateurs": [{
     "active": true,
     "id_indicateur_ditp": "678cc73c1cfe461eb4651ae0ce2b3d53",
@@ -3095,7 +3095,7 @@
   "odm_image_activate": false,
   "odm_image": "/ovq-textes/securite/images/test-image.png",
   "odm_text": "/ovq-textes/securite/lutte-stupefiants/securite-lutte_stupefiants-resume.md",
-  "odm_text_brief": false,
+  "odm_text_brief": true,
   "indicateurs": [{
     "active": true,
     "id_indicateur_ditp": "daabbe7212e1426a82ce2082f5e298ea",
@@ -3224,7 +3224,7 @@
   "odm_image_activate": false,
   "odm_image": "/ovq-textes/securite/images/test-image.png",
   "odm_text": "/ovq-textes/securite/lutter-violences-femmes/securite-lutter_violences_femmes-resume.md",
-  "odm_text_brief": false,
+  "odm_text_brief": true,
   "indicateurs": [{
     "active": true,
     "id_indicateur_ditp": "7d62118a16a4498e93d37d2e2f6b127d",
@@ -3353,7 +3353,7 @@
   "odm_image_activate": false,
   "odm_image": "/ovq-textes/securite/images/test-image.png",
   "odm_text": "/ovq-textes/securite/lutter-contre-principes-republicains/securite-lutter_contre_principes_republicains-resume.md",
-  "odm_text_brief": false,
+  "odm_text_brief": true,
   "indicateurs": [{
     "active": true,
     "id_indicateur_ditp": "a805cb02eace4ab5ba1b1bc68eb8e371",
@@ -3482,7 +3482,7 @@
   "odm_image_activate": false,
   "odm_image": "/ovq-textes/securite/images/test-image.png",
   "odm_text": "/ovq-textes/securite/reduire-mortalite-routes/securite-reduire_mortalite_routes-resume.md",
-  "odm_text_brief": false,
+  "odm_text_brief": true,
   "indicateurs": [{
     "active": true,
     "id_indicateur_ditp": "e9d0088bfb6446f2886cc4cdfa1d2417",
