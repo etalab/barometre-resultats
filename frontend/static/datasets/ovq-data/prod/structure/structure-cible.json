@@ -3482,7 +3482,7 @@
   "odm_image_activate": false,
   "odm_image": "/ovq-textes/securite/images/test-image.png",
   "odm_text": "/ovq-textes/securite/reduire-mortalite-routes/securite-reduire_mortalite_routes-resume.md",
-  "odm_text_brief": true,
+  "odm_text_brief": false,
   "indicateurs": [{
     "active": true,
     "id_indicateur_ditp": "e9d0088bfb6446f2886cc4cdfa1d2417",
