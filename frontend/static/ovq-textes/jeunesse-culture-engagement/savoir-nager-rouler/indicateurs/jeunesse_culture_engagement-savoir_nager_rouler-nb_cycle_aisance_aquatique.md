@@ -3,7 +3,7 @@ Pour endiguer le nombre de noyades, qui constituent la première cause de mortal
 </p>
 <p>
 Organisé dans le temps scolaire, périscolaire ou pendant les vacances, le programme d’Aisance Aquatique permet aux enfants de s’adapter au milieu aquatique et de développer de nouvelles compétences (entrer et sortir de l’eau, flotter sans aide, prendre sa respiration, se déplacer dans l’eau etc.) lors de cycles qui comptent 8 à 10 séances d’apprentissage.
-L’Etat finance depuis 2019 des classes bleues (temps scolaire) ou des stages bleus (hors temps scolaire), qui concernent à ce jour plus de 97 000 enfants. La liste des bénéficiaires est disponible sur <a href="https://www.agencedusport.fr/Listes-des-beneficiaires" target="_blank">agencedusport.fr/Listes-des-beneficiaires</a>.
+L’Etat finance depuis 2019 des classes bleues (temps scolaire) ou des stages bleus (hors temps scolaire), qui concernent à ce jour plus de 97 000 enfants. La liste des bénéficiaires est disponible sur <a href="https://www.agencedusport.fr/documentations/archives-liste-des-beneficiaires" target="_blank">agencedusport.fr/documentations/archives-liste-des-beneficiaires</a>.
 </p>
 <p>
 Les structures financées qui mettent en œuvre des classes ou stages bleus sont géolocalisées sur le site <a href="https://sports.gouv.fr/preventiondesnoyades/" target="_blank">sports.gouv.fr/preventiondesnoyades</a>, dans la rubrique «&nbsp;près de chez vous&nbsp;».

@@ -4,7 +4,7 @@ Face à la crise économique et sociale, le Gouvernement a mis en place un plan 
   </span>
 </p>
   <p> 
-Le plan est financé à hauteur de 9 milliards et comporte 3 dimensions :
+Le plan 1Jeune1Solution comporte trois dimensions&nbsp;:
      <ul>
     <li>favoriser l'embauche des jeunes en aidant financièrement les entreprises à travers la mise en place d’une prime de 8&nbsp;000 euros pour l'embauche d'un alternant, et l’augmentation des contrats aidés en faveur des jeunes (PEC, CIE et IAE)&nbsp;;</li>
     <li>mieux qualifier les jeunes vers les emplois d'avenir (transition écologique, santé, numérique,...), en favorisant la formation professionnelle&nbsp;;</li>
