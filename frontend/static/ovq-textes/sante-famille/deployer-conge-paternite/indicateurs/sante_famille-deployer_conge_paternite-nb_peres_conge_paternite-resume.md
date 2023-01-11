@@ -16,7 +16,4 @@
     </li>
   </ul>
 </p>
-<p>
-  La cible définie en nombre de pères / conjoints correspond à un taux de recours, fixée à 80% en 2022, alors que le taux de recours actuel est de 67%.
-</p>
 <p class="font-italic body-2">Source : Caisse nationale de l'assurance maladie / Ministère des Solidarités et de la Santé - DSS <br> Consulter les données sur <a target="_blank" href="https://www.data.gouv.fr/fr/datasets/barometre-des-resultats-de-laction-publique/">www.data.gouv.fr</a></p>

@@ -5,5 +5,5 @@ Les parents séparés peuvent bénéficier d’un nouveau dispositif pour le pai
 </p>
 
 <p>
-En cas d’impayé, l’ARIPA engagera immédiatement une procédure de recouvrement de la pension et versera au parent créancier éligible l’allocation de soutien familial (ASF) de 116€ par enfant et par mois. L’objectif est de prévenir le risque d’impayé notamment pour les familles monoparentales et de permettre aux parents de se concentrer sur les aspects essentiels de l’éducation et du développement des enfants.
+En cas d’impayé, l’ARIPA engagera immédiatement une procédure de recouvrement de la pension et versera au parent créancier éligible l’allocation de soutien familial (ASF) de 184,41€ par enfant et par mois. L’objectif est de prévenir le risque d’impayé notamment pour les familles monoparentales et de permettre aux parents de se concentrer sur les aspects essentiels de l’éducation et du développement des enfants.
 </p>
