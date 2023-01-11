@@ -1,5 +1,5 @@
 <p id="brief">
-  Avec Parcoursup, le ministère chargé de l'Enseignement supérieur, de la Recherche et de l'Innovation a engagé une profonde transformation de l’accès à l’enseignement supérieur pour lutter contre l’échec dans le premier cycle de l’enseignement supérieur.
+  Avec Parcoursup, le ministère de l'Enseignement supérieur et de la Recherche a engagé une profonde transformation de l’accès à l’enseignement supérieur pour lutter contre l’échec dans le premier cycle de l’enseignement supérieur.
 </p>
 <p>
   Le nouveau dispositif d'orientation permet de  :
