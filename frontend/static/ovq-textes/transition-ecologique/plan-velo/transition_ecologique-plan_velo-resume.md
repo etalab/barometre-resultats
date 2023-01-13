@@ -1,16 +1,15 @@
 <p>
   <span id="brief">
-    Présenté le 14 septembre 2018 par le Gouvernement, le Plan « Vélo et mobilités actives », a pour ambition de faire du vélo un mode de transport à part entière. 
+    En 2018, le Gouvernement lançait le premier plan national Vélo et mobilités actives, dans le cadre de la loi d’orientation des mobilités (LOM).
   </span>
-  Il vise à tripler la part du vélo dans les déplacements du quotidien d’ici 2024, en passant de 3 à 9 %.
+  4 ans plus tard, fort du succès de cette première édition, un nouveau plan est lancé afin de redoubler d’effort et définitivement inscrire le vélo dans le quotidien de tous les Français.
 </p>
 
 <p>
-  Ce plan repose sur 4 axes :
+  Le plan vélo et mobilités actives 2022-2027 poursuit trois objectifs principaux :
   <ul>
-    <li>La création de pistes cyclables de qualité et plus généralement l’amélioration de la sécurité routière ;</li>
-    <li>la sûreté : la lutte contre le vol de vélos ;</li>
-    <li>l’incitation : des aides (à la réparation et à l’achat) pour encourager plus de Français à passer au vélo ;</li>
-    <li>le développement d’une « culture vélo ».</li>
+    <li>Faire du vélo et de la marche une alternative attractive à la voiture individuelle pour les déplacements de proximité et combiné aux transports collectifs pour les déplacements de plus longues distances.</li>
+    <li>Faire du vélo un levier pour notre économie en accompagnant l’écosystème des acteurs français.</li>
+    <li>Rendre le vélo accessible à toutes et tous, dès le plus jeune âge et tout au long de la vie.</li>
   </ul>
 </p>
