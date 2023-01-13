@@ -6,7 +6,7 @@ Lancés en 2019, les dispositifs «&nbsp;Aisance Aquatique&nbsp;» et «&nbsp;Sa
   <ul>
     <li>
       <b>Aisance Aquatique et J’apprends à nager</b><br>
-Pour lutter contre les noyades qui constituent la première cause de mortalité par accident de la vie courante chez les moins de 25 ans et touchent particulièrement les moins de 6 ans, le Gouvernement a engagé en 2019 le programme d’Aisance Aquatique destiné aux enfants de 4 à 6 ans. L’aisance aquatique est désormais intégrée aux cycles d’apprentissage de la natation scolaire&nbsp;: cette première brique permet aux enfants, dès la maternelle, d’acquérir les fondamentaux pour évoluer dans l’eau, et garantit une meilleure efficacité de l’apprentissage ultérieur de la natation. Ce programme pédagogique s’accompagne d’une politique volontariste de rénovation et de construction de bassins qui a permis d’investir 59 millions d’euros depuis 2019 dans des équipements. 
+Pour lutter contre les noyades qui constituent la première cause de mortalité par accident de la vie courante chez les moins de 25 ans et touchent particulièrement les moins de 6 ans, le Gouvernement a engagé en 2019 le programme d’Aisance Aquatique destiné aux enfants de 4 à 6 ans. L’aisance aquatique est désormais intégrée aux cycles d’apprentissage de la natation scolaire&nbsp;: cette première brique permet aux enfants, dès la maternelle, d’acquérir les fondamentaux pour évoluer dans l’eau, et garantit une meilleure efficacité de l’apprentissage ultérieur de la natation. Ce programme pédagogique s’accompagne d’une politique volontariste de rénovation et de construction de bassins qui a permis d’investir 80 millions d’euros depuis 2019 dans des équipements. 
     </li>
     <li>
       <b>Savoir rouler à Vélo</b><br>
