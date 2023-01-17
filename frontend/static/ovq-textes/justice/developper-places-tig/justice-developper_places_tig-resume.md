@@ -1,6 +1,6 @@
 <p>
   <span id="brief">
-	La réforme vise à lutter contre la récidive et à favoriser la réinsertion dans la société des personnes personnes placées sous main de justice&nbsp;:
+	La réforme vise à lutter contre la récidive et à favoriser la réinsertion dans la société des personnes placées sous main de justice&nbsp;:
   </span>
 </p>
 </p>

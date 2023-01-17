@@ -16,4 +16,7 @@
     </li>
   </ul>
 </p>
+<p>
+  Les données des deuxième et troisième trimestres de 2022 sont provisoires.
+</p>
 <p class="font-italic body-2">Source : Caisse nationale de l'assurance maladie / Ministère des Solidarités et de la Santé - DSS <br> Consulter les données sur <a target="_blank" href="https://www.data.gouv.fr/fr/datasets/barometre-des-resultats-de-laction-publique/">www.data.gouv.fr</a></p>
