@@ -5,5 +5,5 @@
 </p>
 
 <p>
-    Les résultats sont là&nbsp;: en 2020 plus de 525&nbsp;000 contrats ont été signés. En 2021, le développement de l'apprentissage s'est poursuivi avec plus de 730&nbsp;000 contrats signés.
+    Les résultats sont là&nbsp;: en 2020 plus de 525&nbsp;000 contrats ont été signés. En 2022, le développement de l'apprentissage s'est poursuivi avec plus de 834&nbsp;549 contrats signés.
 </p>
